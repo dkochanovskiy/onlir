@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f4f4f4!important;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    margin: 20px 0 0 0;
+
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 35px;
+    background: #002642;
+}
+.header-logo{
+    background: url('../images/logo.png');
+    width: 250px;
+    height: 100px;
+    float: left;
+}
+.header-change_city{
+    float: left;
+}
+.header-auth_reg{
+    float: right;
+
+}
+.header-green_band{
+    background: #8FBC8F;
+    width: 100%;
+    height: 30px;
+    float: left;
+    margin: 30px 0 0 0;
+}
+.footer-background{
+
+}
