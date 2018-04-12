@@ -32,11 +32,16 @@
     <div class="container">
         <div class="content">
             <div class="content-left">
-                <div class="btn content-button rent">сдать</div>
-                <div class="btn content-button rent">снять</div>
-                <div class="btn content-button order">заказать договор</div>
+                <div class="btn btn-primary content-button rent">сдать</div>
+                <div class="btn btn-primary content-button rent take">снять</div>
+                <div class="btn btn-primary content-button order">заказать договор</div>
             </div>
-            <div class="content-right"></div>
+            <div class="content-right">
+                <div class="rightbar">
+                    <h4>Объявления от риэлторов<br></h4>
+                    Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание новых предложений. Равным образом сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+                </div>
+            </div>
         </div>
     </div>
     <footer>
