@@ -29,16 +29,22 @@
         </div>
         <div class="header-green_band"></div>
     </header>
-    content
+    <div class="container">
+        <div class="content">
+            <div class="content-left">
+                <div class="btn content-button rent">сдать</div>
+                <div class="btn content-button rent">снять</div>
+                <div class="btn content-button order">заказать договор</div>
+            </div>
+            <div class="content-right"></div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <div class="footer-inner">
-                <div class="copy">©</div>
-                <div class="year">2018</div>
-                <div class="brand">onLir</div>
+                © 2018 onLir
             </div>
         </div>
-        <div class="footer-background"></div>
     </footer>
 </body>
 </html>
