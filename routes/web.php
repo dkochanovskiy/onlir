@@ -18,3 +18,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/personal', 'PersonalController@index')->name('personal');
+Route::get('/successfulregistration', 'Auth\SuccessfulRegistrationController@index')->name('successfulregistration');

@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-logo"></div>
+            <a href="/"><div class="header-logo"></div></a>
             <div class="header-change_city">
                 <a href="/">Выбрать город</a>
             </div>
