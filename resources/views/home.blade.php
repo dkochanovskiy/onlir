@@ -1,2 +1,1 @@
-@include('template.template')
-
+@extends('template.template')

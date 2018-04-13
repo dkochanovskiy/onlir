@@ -20,10 +20,10 @@
             </div>
             <div class="header-auth_reg">
                 <div class="auth">
-                    <a href="/">Вход<br>в личный кабинет</a>
+                    <a href="/personal">Вход<br>в личный кабинет</a>
                 </div>
                 <div class="reg">
-                    <a href="/">Регистрация</a>
+                    <a href="/register">Регистрация</a>
                 </div>
             </div>
         </div>

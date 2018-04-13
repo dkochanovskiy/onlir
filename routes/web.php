@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Auth::routes();
+
+Route::get('/personal', 'PersonalController@index')->name('personal');
