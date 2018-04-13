@@ -15,80 +15,68 @@
     <header>
         <div class="container">
             <a href="/"><div class="header-logo"></div></a>
-            <div class="header-change_city">
-                <a href="/">Выбрать город</a>
-            </div>
             <div class="header-auth_reg">
-                <div class="auth">
-                    <a href="/login">Вход<br>в личный кабинет</a>
-                </div>
-                <div class="reg">
-                    <a href="/register">Регистрация</a>
-                </div>
-            </div>
-        </div>
-        <div class="header-green_band"></div>
-    </header>
-    <div class="collapse navbar-collapse" id="app-navbar-collapse">
-        <!-- Left Side Of Navbar -->
-        <ul class="nav navbar-nav">
-            &nbsp;
-        </ul>
-
-        <!-- Right Side Of Navbar -->
-        <ul class="nav navbar-nav navbar-right">
-            <!-- Authentication Links -->
-            @guest
-            <li><a href="{{ route('login') }}">Login</a></li>
-            <li><a href="{{ route('register') }}">Register</a></li>
-            @else
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                Logout
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
-                        </li>
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        &nbsp;
                     </ul>
-                </li>
-                @endguest
-        </ul>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div class="content-left">
-                <div class="btn btn-primary content-button rent">сдать</div>
-                <div class="btn btn-primary content-button rent take">снять</div>
-                <div class="btn btn-primary content-button order">заказать договор</div>
+                    <ul class="nav navbar-nav navbar-right">
+                        @guest
+                        <li><a href="{{ route('login') }}">Вход в личный кабинет</a></li>
+                        <li><a href="{{ route('register') }}">Регистрация</a></li>
+                        @else
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            @endguest
+                    </ul>
+                </div>
             </div>
-            {{--<div class="content-right">--}}
-                {{--<div class="rightbar">--}}
-                    {{--<h4>Объявления от риэлторов<br></h4>--}}
-                    {{--Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание новых предложений. Равным образом сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития.--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            @section('content')
-            @show
         </div>
-    </div>
-    <footer>
+        <div class="title">
+            Аренда недвижимости в России
+        </div>
+        <div class="btn btn-primary order">Заключить договор</div>
         <div class="container">
-            <div class="footer-inner">
-                © 2018 onLir
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">снять</button>
+                <div class="btn-group">
+                    <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">
+                        Квартира
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Квартира</a></li>
+                        <li><a href="#">Комната</a></li>
+                        <li><a href="#">Дом</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </footer>
-    <!-- Scripts -->
+    </header>
+    @section('content')
+    @show
+    {{--<footer>--}}
+        {{--<div class="container">--}}
+            {{--<div class="footer-inner">--}}
+                {{--© 2018 onLir--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</footer>--}}
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

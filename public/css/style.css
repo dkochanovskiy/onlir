@@ -25,52 +25,24 @@ footer{
     width: 250px;
     height: 100px;
     float: left;
-}
-.header-change_city{
-    float: left;
+    clear: both;
 }
 .header-auth_reg{
     float: right;
 }
-.header-green_band{
-    background: #8FBC8F;
+.title{
     width: 100%;
-    height: 30px;
-    float: left;
-    margin: 30px 0 0 0;
-}
-.content{
-    height: 500px;
-    margin: 20px 0 0 0;
-}
-.content-left{
-    width: 75%;
-    padding: 0 30px 0 30px;
-    float: left;
-}
-.content-right{
-    width: 25%;
-    height: 100px;
-    float: left;
-}
-.content-button{
-    font-size: 28px!important;
-    height: 44px;
-    padding: 0 12px!important;
-}
-.rent{
-    width: 138px;
-    float: left;
-}
-.take{
-    margin: 0 0 0 56px!important;
+    height: 52px;
+    background: #337ab7;
+    color: #ffffff;
+    clear: both;
+    font-size: 40px;
+    margin: 40px 0 0 0;
 }
 .order{
-    width: 404px;
-    float: right;
+    font-size: 25px!important;
+    margin: 10px 0 0 0;
 }
-.rightbar{
-    width: 80%;
-    height: auto;
-    margin: 20px auto;
+.search{
+    clear: both;
 }
