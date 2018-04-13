@@ -12,10 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
-
 Auth::routes();
 
-Route::get('/personal', 'PersonalController@index')->name('personal');
-Route::get('/successfulregistration', 'Auth\SuccessfulRegistrationController@index')->name('successfulregistration');
+Route::get('/home', 'HomeController@index')->name('home');
