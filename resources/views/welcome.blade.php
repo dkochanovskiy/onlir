@@ -5,6 +5,7 @@
         <div class="btn btn-primary order">Заключить договор</div>
 
         <form method="post" action="{{ route('welcome')}}" class="form-inline search_form">
+            {{ csrf_field() }}
             <button type="button" class="btn btn-primary search_form-input">снять</button>
             <select name="property" class="form-control search_form-input">
                 <option>Квартира</option>
