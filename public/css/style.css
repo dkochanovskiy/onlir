@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+a{
+    color: #333333!important;
+}
+a:hover{
+
+}
 body{
     background-color: #f4f4f4!important;
     font-family: 'Montserrat', sans-serif;
@@ -21,9 +27,9 @@ footer{
     text-align: center;
 }
 .header-logo{
-    background: url('../images/logo.png');
-    width: 250px;
-    height: 100px;
+    background: url('../images/logo_small.png');
+    width: 180px;
+    height: 72px;
     float: left;
     clear: both;
 }
@@ -47,7 +53,7 @@ footer{
     display: inline-block;
 }
 .search_form{
-    width: 905px;
+    width: 921px;
     height: 34px;
     margin: 100px auto;
 }

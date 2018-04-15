@@ -10,11 +10,15 @@ class WelcomeController extends Controller
         $rules = [
             'min_price' => 'integer',
             'max_price' => 'integer',
-            'city' => 'string',
+            'city' => 'alpha',
         ];
 
         if($request->isMethod('post')){
             $this->validate($request, $rules);
+
+            $request->flash();
+            dump($request->all());
+            dump($request->session()->all());
         }
 
         echo $request->input('property');

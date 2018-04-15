@@ -4,8 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-primary auth_form">
-                <div class="panel-heading">Регистрация</div>
+            <div class="panel panel-default auth_form">
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -63,8 +62,8 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Зарагестрироваться
+                                <button type="submit" class="btn btn-default">
+                                    Зарегистрироваться
                                 </button>
                             </div>
                         </div>
