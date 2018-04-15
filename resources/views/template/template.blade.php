@@ -50,23 +50,6 @@
         <div class="title">
             Аренда недвижимости в России
         </div>
-        <div class="btn btn-primary order">Заключить договор</div>
-        <div class="container">
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary">снять</button>
-                <div class="btn-group">
-                    <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">
-                        Квартира
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Квартира</a></li>
-                        <li><a href="#">Комната</a></li>
-                        <li><a href="#">Дом</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </header>
     @section('content')
     @show

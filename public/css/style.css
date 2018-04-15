@@ -35,14 +35,28 @@ footer{
     height: 52px;
     background: #337ab7;
     color: #ffffff;
-    clear: both;
     font-size: 40px;
     margin: 40px 0 0 0;
+    display: inline-block;
 }
 .order{
     font-size: 25px!important;
-    margin: 10px 0 0 0;
+    width: 249px;
+    margin: 40px 300px 0 0;
+    float: right;
+    display: inline-block;
 }
-.search{
-    clear: both;
+.search_form{
+    width: 905px;
+    height: 34px;
+    margin: 100px auto;
+}
+.search_form-input{
+    border-radius:0!important;
+    margin: 0 0 0 0!important;
+}
+.auth_form{
+    border-radius:0!important;
+    margin: 55px auto;
+    border: none!important;
 }
