@@ -15,7 +15,10 @@
 //    return view('welcome');
 //});
 
-Route::match(['get','post'],'/',['uses'=>'WelcomeController@index','as'=>'welcome']);
+Route::get('/', 'WelcomeController@show')->name('welcome');
+Route::post('/', 'WelcomeController@store');
+
+//Route::match(['get','post'],'/',['uses'=>'WelcomeController@index','as'=>'welcome']);
 
 Auth::routes();
 

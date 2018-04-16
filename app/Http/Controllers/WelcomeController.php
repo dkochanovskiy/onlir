@@ -3,22 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Requests\WelcomeRequest;
+use App\Http\Controllers\Controller;
+use Validator;
 
 class WelcomeController extends Controller
 {
-    public function index(Request $request){
-        $rules = [
-            'min_price' => 'integer',
-            'max_price' => 'integer',
-            'city' => 'alpha',
-        ];
+    public function show(){
+        return view('welcome');
+    }
 
+    public function store(WelcomeRequest $request){
         if($request->isMethod('post')){
-            $this->validate($request, $rules);
+            $messages = [];
+            $validator = Validator::make($request->all(), [
+                'min_price'=>'integer',
+                'max_price'=>'integer',
+                'city'=>'alpha'
+            ], $messages);
 
-            $request->flash();
-            dump($request->all());
-            dump($request->session()->all());
+            if($validator->fails()){
+                dump($validator->errors());
+//                return redirect()->route('welcome')->withErrors($validator)->withInput();
+            }
         }
 
         echo $request->input('property');

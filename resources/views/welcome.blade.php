@@ -4,14 +4,13 @@
     <div class="container">
         <div class="btn btn-default order">Заключить договор</div>
 
-        @if(count($errors) > 0)
+        @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
-                    @foreach($errors->all() as $error)
+                    @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
-
             </div>
         @endif
 
@@ -38,5 +37,24 @@
             <input type="text" value="{{old('city')}}" class="form-control search_form-input" name="city" id="city" placeholder="Город">
             <input type="submit" class="btn btn-default search_form-input" value="Найти" />
         </form>
+        <div class="offers">
+            <div class="offers-item">
+                <div class="offer-img offer-first"></div>
+                <div class="offer-text">
+                    <div class="price">10 000 ╜</div><br>
+                    <div class="description"></div><br>
+                    <div class="address"></div>
+                </div>
+            </div>
+            <div class="offers-item">
+                <div class="offer-img offer-second"></div>
+            </div>
+            <div class="offers-item">
+                <div class="offer-img offer-third"></div>
+            </div>
+            <div class="offers-item">
+                <div class="offer-img offer-fourth"></div>
+            </div>
+        </div>
     </div>
 @endsection

@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default auth_form">
 
-                <div class="panel-body">
+                <div class="panel-body auth">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
@@ -60,6 +60,13 @@
                             </div>
                         </div>
                     </form>
+                    <div class="social_net">
+                        <a href=""><div class="social_net-item v"></div></a>
+                        <a href=""><div class="social_net-item t"></div></a>
+                        <a href=""><div class="social_net-item f"></div></a>
+                        <a href=""><div class="social_net-item g"></div></a>
+                        <a href=""><div class="social_net-item o"></div></a>
+                    </div>
                 </div>
             </div>
         </div>

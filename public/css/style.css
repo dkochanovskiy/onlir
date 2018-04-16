@@ -61,8 +61,73 @@ footer{
     border-radius:0!important;
     margin: 0 0 0 0!important;
 }
+.auth{
+    height: 300px!important;
+}
 .auth_form{
     border-radius:0!important;
     margin: 55px auto;
     border: none!important;
+}
+.social_net{
+    width: 396px;
+    height: 46px;
+    margin: 50px auto;
+}
+.social_net-item{
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    margin:0 15px 0 15px;
+}
+.v{
+    background: url('../images/v.png');
+}
+.t{
+    background: url('../images/t.png');
+}
+.f{
+    background: url('../images/f.png');
+}
+.g{
+    background: url('../images/g.png');
+}
+.o{
+    background: url('../images/o.png');
+}
+.offers{
+    width: 100%;
+    height: 1000px;
+
+}
+.offers-item{
+    outline: 1px dashed red;
+    width: 100%;
+    height: 210px;
+    padding: 15px;
+}
+.offer-img{
+    width: 320px;
+    height: 180px;
+    float:left;
+    outline: 1px dashed #000;
+}
+.offer-first{
+    background: url('../images/1.jpg')no-repeat;
+}
+.offer-second{
+    background: url('../images/2.jpg')no-repeat;
+}
+.offer-third{
+    background: url('../images/3.jpg')no-repeat;
+}
+.offer-fourth{
+    background: url('../images/4.jpg')no-repeat;
+}
+.offer-text{
+    float: left;
+    width: 68%;
+    height: 180px;
+    outline: 1px dashed #000;
+    margin: 0 0 0 30px;
 }
