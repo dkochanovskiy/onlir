@@ -14,29 +14,33 @@
             </div>
         @endif
 
-        <form method="post" action="{{ route('welcome')}}" class="form-inline search_form">
-            <input name="_token" type="hidden" value="{{ csrf_token() }}" />
-            <button type="button" class="btn btn-default search_form-input">снять</button>
-            <select name="property" class="form-control search_form-input">
-                <optgroup label="Жилая">
-                    <option>Квартира</option>
-                    <option>Комната</option>
-                    <option>Дом</option>
-                </optgroup>
-                <optgroup label="Коммерческая">
-                    <option>Офис</option>
-                </optgroup>
-            </select>
-            <select name="room_number" class="form-control search_form-input">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-            <input type="text" value="{{old('min_price')}}" class="form-control search_form-input" name="min_price" id="min_price" placeholder="от">
-            <input type="text" value="{{old('max_price')}}" class="form-control search_form-input" name="max_price" id="max_price" placeholder="до">
-            <input type="text" value="{{old('city')}}" class="form-control search_form-input" name="city" id="city" placeholder="Город">
-            <input type="submit" class="btn btn-default search_form-input" value="Найти" />
-        </form>
+        <div class="search">
+            <div class="search-left">снять</div>
+            <div class="search-right">
+                <form method="post" action="{{ route('welcome')}}" class="form-inline search_form">
+                    <input name="_token" type="hidden" value="{{ csrf_token() }}" />
+                    <select name="property" class="form-control">
+                        <optgroup label="Жилая">
+                            <option>Квартира</option>
+                            <option>Комната</option>
+                            <option>Дом</option>
+                        </optgroup>
+                        <optgroup label="Коммерческая">
+                            <option>Офис</option>
+                        </optgroup>
+                    </select>
+                    <select name="room_number" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <input type="text" value="{{old('min_price')}}" class="form-control" name="min_price" id="min_price" placeholder="от">
+                    <input type="text" value="{{old('max_price')}}" class="form-control" name="max_price" id="max_price" placeholder="до">
+                    <input type="text" value="{{old('city')}}" class="form-control" name="city" id="city" placeholder="Город">
+                    <input type="submit" class="btn btn-default" value="Найти" />
+                </form>
+            </div>
+        </div>
         <div class="pop_news">
             <div class="pop">
                 <h1>Популярные объявления</h1>
@@ -47,7 +51,7 @@
                             <div class="offer-price">10 000 &#8381;</div>
                             <div class="offer-description">1-комнатная квартира</div>
                             <div class="offer-address">ул. Энгельса, 17-46</div>
-                            <a href="/"><div class="offers-item-look">Посмотреть</div></a>
+                            <a href="/"><div class="offer-look">Посмотреть</div></a>
                         </div>
                     </div>
                     <div class="offers-item">
@@ -56,7 +60,7 @@
                             <div class="offer-price">11 000 &#8381;</div>
                             <div class="offer-description">2-комнатная квартира</div>
                             <div class="offer-address">ул. Миронова, 21-22</div>
-                            <a href="/"><div class="offers-item-look">Посмотреть</div></a>
+                            <a href="/"><div class="offer-look">Посмотреть</div></a>
                         </div>
                     </div>
                     <div class="offers-item">
@@ -65,7 +69,7 @@
                             <div class="offer-price">12 000 &#8381;</div>
                             <div class="offer-description">3-комнатная квартира</div>
                             <div class="offer-address">ул. Гагарина, 43-33</div>
-                            <a href="/"><div class="offers-item-look">Посмотреть</div></a>
+                            <a href="/"><div class="offer-look">Посмотреть</div></a>
                         </div>
                     </div>
                     <div class="offers-item">
@@ -74,7 +78,7 @@
                             <div class="offer-price">13 000 &#8381;</div>
                             <div class="offer-description">4-комнатная квартира</div>
                             <div class="offer-address">ул. Щорса, 34-85</div>
-                            <a href="/"><div class="offers-item-look">Посмотреть</div></a>
+                            <a href="/"><div class="offer-look">Посмотреть</div></a>
                         </div>
                     </div>
                 </div>

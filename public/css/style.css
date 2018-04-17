@@ -46,22 +46,30 @@ footer{
     color: #ffffff;
     font-size: 40px;
     display: inline-block;
+    border-radius: 5px;
 }
 .order{
     font-size: 25px!important;
     width: 249px;
     margin: 0 300px 0 0;
     float: right;
-    display: inline-block;
+}
+.search{
+    outline: 1px dashed #ff0000;
+    width: 1085px;
+    height: 100px;
+    margin: 55px 0 0 0;
+}
+.search-left{
+    font-size: 30px;
+}
+.search-right{
+
 }
 .search_form{
     width: 921px;
     height: 34px;
-    margin: 51px auto 10px auto;
-}
-.search_form-input{
-    border-radius:0!important;
-    margin: 0 0 0 0!important;
+    margin: -37px auto 10px auto;
 }
 .auth{
     height: 300px!important;
@@ -178,8 +186,17 @@ p.news-text{
 }
 .offer-price{
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
 }
 .offer-description{
     color: #114877;
+    font-size: 20px;
+}
+.offer-address{
+    font-size: 18px;
+    padding: 10px 0 0 0;
+}
+.offer-look{
+    padding: 45px 0 0 0;
+    font-size: 15px;
 }
