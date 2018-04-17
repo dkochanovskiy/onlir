@@ -46,9 +46,9 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="title">
-            Аренда недвижимости в России
+            <div class="title">
+                Аренда недвижимости в России
+            </div>
         </div>
     </header>
     @section('content')
