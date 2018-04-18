@@ -53,13 +53,13 @@
     </header>
     @section('content')
     @show
-    {{--<footer>--}}
-        {{--<div class="container">--}}
-            {{--<div class="footer-inner">--}}
-                {{--© 2018 onLir--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</footer>--}}
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                © 2018 onLir
+            </div>
+        </div>
+    </footer>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
