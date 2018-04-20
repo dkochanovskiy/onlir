@@ -14,7 +14,9 @@
 <body>
     <header>
         <div class="container">
-            <a href="/"><div class="header-logo"></div></a>
+            <a href="/">
+                <div class="header-logo"></div>
+            </a>
             <div class="header-auth_reg">
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -45,9 +47,6 @@
                             @endguest
                     </ul>
                 </div>
-            </div>
-            <div class="title">
-                Аренда недвижимости в России
             </div>
         </div>
     </header>
