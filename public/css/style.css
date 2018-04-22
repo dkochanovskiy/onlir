@@ -72,7 +72,8 @@ header{
     margin: -37px auto 10px auto;
 }
 .auth{
-    height: 300px!important;
+    height: 380px!important;
+    border-radius: 5px!important;
 }
 .auth_form{
     border-radius:0!important;
@@ -206,15 +207,6 @@ p.news-text{
     color: #ffffff;
     text-align: center;
     border-radius: 5px 5px 0 0;
-}
-.b-container{
-    width:200px;
-    height:150px;
-    background-color: #ccc;
-    margin:0 auto;
-    padding:10px;
-    font-size:30px;
-    color: #fff;
 }
 .popup-auth{
     width:100%;

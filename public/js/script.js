@@ -1,9 +1,16 @@
 $(document).ready(function(){
-    PopUpHide();
+    PopupLoginHide();
+    PopupRegistrationHide();
 });
-function PopUpShow(){
-    $("#popup-auth").show();
+function PopupLoginShow(){
+    $("#popup-login").show();
 }
-function PopUpHide(){
-    $("#popup-auth").hide();
+function PopupLoginHide(){
+    $("#popup-login").hide();
+}
+function PopupRegistrationShow(){
+    $("#popup-registration").show();
+}
+function PopupRegistrationHide(){
+    $("#popup-registration").hide();
 }
