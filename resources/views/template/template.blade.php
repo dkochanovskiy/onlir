@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
+        <div class="header-background"></div>
         <div class="container">
-
             <a href="/">
                 <div class="header-logo"></div>
             </a>

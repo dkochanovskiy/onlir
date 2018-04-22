@@ -51,6 +51,19 @@
                 </div>
             </div>
         </div>
+        <div class="choice-type-property">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option1">Жилая
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2">Загородная
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option3">Коммерческая
+                </label>
+            </div>
+        </div>
         <div class="pop_news">
             <div class="pop">
                 <h1>Популярные объявления</h1>
