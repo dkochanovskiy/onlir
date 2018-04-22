@@ -53,13 +53,13 @@
         </div>
         <div class="choice-type-property">
             <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary">
+                <label class="btn btn-default">
                     <input type="radio" name="options" id="option1">Жилая
                 </label>
-                <label class="btn btn-primary">
+                <label class="btn btn-default">
                     <input type="radio" name="options" id="option2">Загородная
                 </label>
-                <label class="btn btn-primary">
+                <label class="btn btn-default">
                     <input type="radio" name="options" id="option3">Коммерческая
                 </label>
             </div>

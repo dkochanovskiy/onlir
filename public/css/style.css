@@ -14,36 +14,45 @@ a{
 }
 header{
     text-align: center;
-    height: 130px;
+    height: 90px;
+    background: ivory;
 }
 .header-background{
-    background: url('../images/background.png')no-repeat;
-    width: 1920px;
-    height: 610px;
+    background: url('../images/background.jpg')no-repeat 0 -640px;
+    width: 100%;
+    height: 174px;
     position: absolute;
     z-index: -100;
+    margin: 90px 0 0 0;
 }
 .header-logo{
     background: url('../images/logo.png')no-repeat;
     width: 50%;
-    height: 100px;
+    height: 70px;
     float: left;
     clear: both;
     z-index: 100;
     position: absolute;
+    margin: 10px 0;
 }
 .header-auth_reg{
     float: right;
-    width: 50%;
+    width: 10%;
+    padding: 10px 0 10px 0;
+}
+.header-auth_reg li a{
+    padding: 5px 0 13px 0!important;
+}
+.header-auth_reg li a:hover{
+    background: ivory!important;
 }
 .title-search{
     width: 100%;
-    height: 150px;
 }
 .title{
     width: 596px;
     height: 52px;
-    color: #000000;
+    color: #ffffff;
     font-size: 40px;
     border-radius: 5px;
     margin: 0 auto;
@@ -70,6 +79,7 @@ header{
 .search-left{
     font-size: 30px;
     width: 8%;
+    color: #ffffff;
 }
 .search-right{
     width: 92%;
@@ -215,7 +225,6 @@ p.news-text{
     font-size: 20pt;
     color: #ffffff;
     text-align: center;
-    border-radius: 5px 5px 0 0;
 }
 .popup-auth{
     width:100%;
@@ -225,6 +234,7 @@ p.news-text{
     position:fixed;
     top:0;
     visibility: hidden;
+    z-index: 100;
 }
 .popup-auth .popup-auth-content{
     margin:40px auto 0 auto;
@@ -237,4 +247,8 @@ p.news-text{
 }
 .form-horizontal h1{
     margin: 10px 0 20px 0;
+}
+.choice-type-property{
+    width: 100%;
+    position: relative;
 }

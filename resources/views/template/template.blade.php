@@ -20,7 +20,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         @guest
-                        <li><a href="javascript:PopupLoginShow()">Вход в личный кабинет</a></li>
+                        <li><a href="javascript:PopupLoginShow()">Войти</a></li>
                         <li><a href="javascript:PopupRegistrationShow()">Регистрация</a></li>
                     @else
                             <li class="dropdown">
@@ -49,8 +49,8 @@
     @section('content')
     @show
     <footer>
-        <div class="container">
-            <div class="footer-inner">
+        <div class="footer-inner">
+            <div class="container">
                 © 2018 onLir
             </div>
         </div>
