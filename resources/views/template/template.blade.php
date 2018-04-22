@@ -12,6 +12,7 @@
 <body>
     <header>
         <div class="container">
+
             <a href="/">
                 <div class="header-logo"></div>
             </a>
@@ -54,22 +55,20 @@
             </div>
         </div>
     </footer>
+    {{--popups--}}
     <div class="popup-auth" id="popup-login">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="panel panel-default auth_form">
-
                         <div class="panel-body auth">
                             <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                                 {{ csrf_field() }}
                                 <h1>Вход в личный кабинет</h1>
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <label for="email-login" class="col-md-4 control-label">Телефон или e-mail</label>
-
                                     <div class="col-md-6">
                                         <input id="email-login" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
                                         @if ($errors->has('email'))
                                             <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -77,13 +76,10 @@
                                         @endif
                                     </div>
                                 </div>
-
                                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                     <label for="password-login" class="col-md-4 control-label">Пароль</label>
-
                                     <div class="col-md-6">
                                         <input id="password-login" type="password" class="form-control" name="password" required>
-
                                         @if ($errors->has('password'))
                                             <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
@@ -91,7 +87,6 @@
                                         @endif
                                     </div>
                                 </div>
-
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
                                         <div class="checkbox">
@@ -101,13 +96,11 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-4">
                                         <button type="submit" class="btn btn-default">
                                             Войти
                                         </button>
-
                                         <a class="btn btn-link" href="{{ route('password.request') }}">
                                             Забыли пароль?
                                         </a>
@@ -139,10 +132,8 @@
                                 <h1>Регистрация</h1>
                                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                     <label for="name" class="col-md-4 control-label">Имя</label>
-
                                     <div class="col-md-6">
                                         <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
-
                                         @if ($errors->has('name'))
                                             <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -150,13 +141,10 @@
                                         @endif
                                     </div>
                                 </div>
-
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <label for="email" class="col-md-4 control-label">Телефон ил e-mail</label>
-
                                     <div class="col-md-6">
                                         <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
                                         @if ($errors->has('email'))
                                             <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -164,13 +152,10 @@
                                         @endif
                                     </div>
                                 </div>
-
                                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                     <label for="password" class="col-md-4 control-label">Пароль</label>
-
                                     <div class="col-md-6">
                                         <input id="password" type="password" class="form-control" name="password" required>
-
                                         @if ($errors->has('password'))
                                             <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
@@ -178,15 +163,12 @@
                                         @endif
                                     </div>
                                 </div>
-
                                 <div class="form-group">
                                     <label for="password-confirm" class="col-md-4 control-label">Повтор пароля</label>
-
                                     <div class="col-md-6">
                                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                                     </div>
                                 </div>
-
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
                                         <button type="submit" class="btn btn-default">
@@ -201,6 +183,7 @@
             </div>
         </div>
     </div>
+    {{--/popups--}}
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
     <script src="{{ URL::asset('js/script.js') }}"></script>
