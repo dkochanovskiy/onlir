@@ -215,6 +215,7 @@ p.news-text{
     overflow:hidden;
     position:fixed;
     top:0;
+    visibility: hidden;
 }
 .popup-auth .popup-auth-content{
     margin:40px auto 0 auto;
@@ -224,4 +225,7 @@ p.news-text{
     background-color: #c5c5c5;
     border-radius:5px;
     box-shadow: 0 0 10px #000;
+}
+.form-horizontal h1{
+    margin: 10px 0 20px 0;
 }

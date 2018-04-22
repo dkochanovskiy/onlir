@@ -1,16 +1,23 @@
-$(document).ready(function(){
-    PopupLoginHide();
-    PopupRegistrationHide();
-});
 function PopupLoginShow(){
-    $("#popup-login").show();
+    $("#popup-login").css('visibility', 'visible');
 }
 function PopupLoginHide(){
-    $("#popup-login").hide();
+    $("#popup-login").css('visibility', 'hidden');
 }
 function PopupRegistrationShow(){
-    $("#popup-registration").show();
+    $("#popup-registration").css('visibility', 'visible');
 }
 function PopupRegistrationHide(){
-    $("#popup-registration").hide();
+    $("#popup-registration").css('visibility', 'hidden');
 }
+// $('.popup-auth').click(function(){
+//     PopupLoginHide();
+//     PopupRegistrationHide();
+// });
+$(document).mouseup(function (e) {
+    var container = $(".panel-body");
+    if (container.has(e.target).length === 0){
+        PopupLoginHide();
+        PopupRegistrationHide();
+    }
+});
