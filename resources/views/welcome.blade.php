@@ -7,8 +7,8 @@
                 Аренда недвижимости в России
             </div>
             <div class="buttons">
-                <div class="btn btn-default order">Сдать</div>
-                <div class="btn btn-default order">Заключить договор</div>
+                <div class="btn btn-primary order">Сдать</div>
+                <div class="btn btn-primary order">Заказать договор</div>
             </div>
 
             @if ($errors->any())
