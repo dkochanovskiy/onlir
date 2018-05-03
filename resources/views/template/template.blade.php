@@ -11,7 +11,9 @@
 </head>
 <body>
     <header>
-        <div class="header-background"></div>
+        @section('header-background')
+            <div class="header-background"></div>
+        @show
         <div class="container">
             <a href="/">
                 <div class="header-logo"></div>

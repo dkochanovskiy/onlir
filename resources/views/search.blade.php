@@ -1,51 +1,16 @@
 @extends('template.template')
 
+@section('header-background')
+@endsection
+
 @section('content')
     <div class="container">
-        <div class="title-search">
-            <div class="title">
-                Аренда недвижимости в России
-            </div>
-            <div class="buttons">
-                <div class="btn btn-primary order">Сдать</div>
-                <div class="btn btn-primary order">Заказать договор</div>
-            </div>
-
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-
-            <div class="search">
-                <div class="search-wrapper">
-                    <div class="search-left">Снять</div>
-                    <div class="search-right">
-                        @include('template.search-form')
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="choice-type-property">
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default">
-                    <input type="radio" name="options" id="option1">Жилая
-                </label>
-                <label class="btn btn-default">
-                    <input type="radio" name="options" id="option2">Загородная
-                </label>
-                <label class="btn btn-default">
-                    <input type="radio" name="options" id="option3">Коммерческая
-                </label>
-            </div>
+        <div class="search-form-wrapper">
+            @include('template.search-form')
         </div>
         <div class="pop_news">
             <div class="pop">
-                <h1>Популярные объявления</h1>
+                <h1>Аренда квартир в Саранске</h1>
                 <div class="offers">
                     <div class="offers-item">
                         <a href="/"><div class="offer-img offer-first"></div></a>
@@ -86,7 +51,7 @@
                 </div>
             </div>
             <div class="news">
-                <h3>Свежие новости</h3>
+                <div class="news-header">Объявления от риэлторов</div>
                 <div class="news-inner">
                     <div class="news-item">
                         <div class="news-title">Новая модель</div>

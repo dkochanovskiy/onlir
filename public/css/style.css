@@ -8,20 +8,24 @@ body{
     min-width: 1200px;
     height: auto;
 }
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold !important;
+}
 a{
     color: #333333!important;
     text-decoration: underline!important;
 }
 header{
     text-align: center;
-    height: 110px;
+    height: 85px;
 }
 .header-background{
     background: url('../images/background.jpg')no-repeat 0 -640px;
     width: 100%;
-    height: 400px;
+    height: 335px;
     position: absolute;
     z-index: -100;
+    margin: 85px 0 0 0;
 }
 .header-logo{
     background: url('../images/logo.png')no-repeat;
@@ -37,13 +41,9 @@ header{
     float: right;
     width: 10%;
     padding: 10px 0 10px 0;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    margin: 30px 0 0 0;
 }
 .header-auth_reg li a{
     padding: 5px 0 13px 0!important;
-    color: #ffffff!important;
     text-decoration: none!important;
 }
 .header-auth_reg li a:hover{
@@ -52,6 +52,7 @@ header{
 }
 .title-search{
     width: 100%;
+    margin: 140px 0 0 0;
 }
 .title{
     width: 596px;
@@ -77,22 +78,24 @@ header{
     margin: 55px 0 0 0;
 }
 .search-wrapper{
-    width: 944px;
-    margin: 0 auto;
+    width: 950px;
+    margin: 10px auto;
+    display: inline-flex;
 }
 .search-left{
     font-size: 30px;
-    width: 8%;
+    width: 10%;
     color: #ffffff;
+    position:relative;
+    margin: -5px 0 0 0;
 }
 .search-right{
-    width: 92%;
-    margin: 0 0 0 90px;
 }
 .search_form{
     width: 921px;
     height: 34px;
     margin: -37px auto 10px auto;
+    display: contents;
 }
 .auth{
     height: 380px!important;
@@ -142,7 +145,7 @@ header{
 }
 .news-inner{
     background: #ffffff;
-    margin: 23px 0 0 0;
+    margin: 7px 0 0 0;
     padding: 15px;
     outline: 1px solid #c9c9c9;
 }
@@ -182,7 +185,7 @@ p.news-text{
     background: #ffffff!important;
 }
 .offers-item:hover{
-    outline: 1px solid #c9c9c9;
+    outline: 1px solid #337ab7;
 }
 .offer-img{
     width: 320px;
@@ -255,5 +258,14 @@ p.news-text{
 .choice-type-property{
     width: 100%;
     position: relative;
-    margin: 150px 0 0 0;
+    margin: 20px 0 0 0;
+}
+.search-form-wrapper{
+    width: 885px;
+    margin: 80px auto 0 auto;
+}
+.news-header{
+    margin: 10px 0 0 0;
+    font-size: 27px;
+    padding: 5px;
 }

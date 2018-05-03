@@ -18,6 +18,9 @@
 Route::get('/', 'WelcomeController@show')->name('welcome');
 Route::post('/', 'WelcomeController@store');
 
+Route::get('/search', 'SearchController@show')->name('search');
+//Route::post('/', 'SearchController@store');
+
 //Route::match(['get','post'],'/',['uses'=>'WelcomeController@index','as'=>'welcome']);
 
 Auth::routes();
