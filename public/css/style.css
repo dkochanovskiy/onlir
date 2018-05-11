@@ -11,9 +11,6 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-weight: bold !important;
 }
-.ads-from-realtors h3{
-    font-size: 17px;
-}
 a{
     color: #337ab7!important;
     text-decoration: underline!important;
@@ -21,6 +18,9 @@ a{
 header{
     text-align: center;
     height: 85px;
+}
+.ads-from-realtors h3{
+    font-size: 17px;
 }
 .header-background{
     background: url('../images/background.jpg')no-repeat 0 -640px;
@@ -267,4 +267,12 @@ p.ads-from-realtors-text{
 .navbar-right{
     border: 1px solid #337ab7;
     border-radius: 5px;
+}
+.content{
+
+}
+.rightbar{
+    width: 20px;
+    height: 10px;
+    outline: 1px solid #000;
 }
