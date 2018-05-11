@@ -32,20 +32,19 @@
         </div>
         <div class="choice-type-property">
             <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default">
+                <label class="btn btn-default btn-lg">
                     <input type="radio" name="options" id="option1">Жилая
                 </label>
-                <label class="btn btn-default">
+                <label class="btn btn-default btn-lg">
                     <input type="radio" name="options" id="option2">Загородная
                 </label>
-                <label class="btn btn-default">
+                <label class="btn btn-default btn-lg">
                     <input type="radio" name="options" id="option3">Коммерческая
                 </label>
             </div>
         </div>
-        <div class="pop_news">
+        <div class="pop_ads-from-realtors">
             <div class="pop">
-                <h1>Популярные объявления</h1>
                 <div class="offers">
                     <div class="offers-item">
                         <a href="/"><div class="offer-img offer-first"></div></a>
@@ -85,24 +84,24 @@
                     </div>
                 </div>
             </div>
-            <div class="news">
-                <h3>Свежие новости</h3>
-                <div class="news-inner">
-                    <div class="news-item">
-                        <div class="news-title">Новая модель</div>
-                        <div class="news-date">17.04.2018</div>
-                        <p class="news-text">
+            <div class="ads-from-realtors">
+                <h3>Объявления от риэлторов</h3>
+                <div class="ads-from-realtors-inner">
+                    <div class="ads-from-realtors-item">
+                        <div class="ads-from-realtors-title">Новая модель</div>
+                        <div class="ads-from-realtors-date">17.04.2018</div>
+                        <p class="ads-from-realtors-text">
                             Не следует, однако забывать, что новая модель организационной деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако
                             забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет
                             оценить значение соответствующий условий активизации. Товарищи! реализация намеченных плановых
                         </p>
-                        <a href="/"><div class="news-more">Читать далее</div></a>
-                        <div class="news-delimiter"></div>
+                        <a href="/"><div class="ads-from-realtors-more">Читать далее</div></a>
+                        <div class="ads-from-realtors-delimiter"></div>
                     </div>
-                    <div class="news-item">
-                        <div class="news-title">Идейные соображения</div>
-                        <div class="news-date">16.04.2018</div>
-                        <p class="news-text">
+                    <div class="ads-from-realtors-item">
+                        <div class="ads-from-realtors-title">Идейные соображения</div>
+                        <div class="ads-from-realtors-date">16.04.2018</div>
+                        <p class="ads-from-realtors-text">
                             Идейные соображения высшего порядка, а также реализация намеченных плановых заданий
                             представляет собой интересный эксперимент проверки соответствующий условий активизации.
                             Значимость этих проблем настолько очевидна, что новая модель организационной деятельности
@@ -110,13 +109,13 @@
                             показывает, что новая модель организационной деятельности представляет собой интересный
                             эксперимент проверки соответствующий условий активизации.
                         </p>
-                        <a href="/"><div class="news-more">Читать далее</div></a>
-                        <div class="news-delimiter"></div>
+                        <a href="/"><div class="ads-from-realtors-more">Читать далее</div></a>
+                        <div class="ads-from-realtors-delimiter"></div>
                     </div>
-                    <div class="news-item">
-                        <div class="news-title">Повседневная практика</div>
-                        <div class="news-date">15.04.2018</div>
-                        <p class="news-text">
+                    <div class="ads-from-realtors-item">
+                        <div class="ads-from-realtors-title">Повседневная практика</div>
+                        <div class="ads-from-realtors-date">15.04.2018</div>
+                        <p class="ads-from-realtors-text">
                             Повседневная практика показывает, что новая модель организационной деятельности позволяет
                             оценить значение дальнейших направлений развития. Задача организации, в особенности же
                             постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу
@@ -124,26 +123,26 @@
                             потребностям. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой
                             процесс внедрения и модернизации существенных финансовых и административных условий.
                         </p>
-                        <a href="/"><div class="news-more">Читать далее</div></a>
-                        <div class="news-delimiter"></div>
+                        <a href="/"><div class="ads-from-realtors-more">Читать далее</div></a>
+                        <div class="ads-from-realtors-delimiter"></div>
                     </div>
-                    <div class="news-item">
-                        <div class="news-title">Новая модель</div>
-                        <div class="news-date">14.04.2018</div>
-                        <p class="news-text">
+                    <div class="ads-from-realtors-item">
+                        <div class="ads-from-realtors-title">Новая модель</div>
+                        <div class="ads-from-realtors-date">14.04.2018</div>
+                        <p class="ads-from-realtors-text">
                             Равным образом новая модель организационной деятельности играет важную роль в формировании
                             соответствующий условий активизации. Равным образом сложившаяся структура организации
                             позволяет выполнять важные задания по разработке существенных финансовых и административных
                             условий. Не следует, однако забывать, что укрепление и развитие структуры способствует
                             подготовки и реализации дальнейших направлений развития.
                         </p>
-                        <a href="/"><div class="news-more">Читать далее</div></a>
-                        <div class="news-delimiter"></div>
+                        <a href="/"><div class="ads-from-realtors-more">Читать далее</div></a>
+                        <div class="ads-from-realtors-delimiter"></div>
                     </div>
-                    <div class="news-item">
-                        <div class="news-title">Задача организации</div>
-                        <div class="news-date">13.04.2018</div>
-                        <p class="news-text">
+                    <div class="ads-from-realtors-item">
+                        <div class="ads-from-realtors-title">Задача организации</div>
+                        <div class="ads-from-realtors-date">13.04.2018</div>
+                        <p class="ads-from-realtors-text">
                             Задача организации, в особенности же новая модель организационной деятельности представляет
                             собой интересный эксперимент проверки новых предложений. Разнообразный и богатый опыт
                             укрепление и развитие структуры влечет за собой процесс внедрения и модернизации направлений
@@ -152,8 +151,8 @@
                             развитие структуры играет важную роль в формировании системы обучения кадров, соответствует
                             насущным потребностям.
                         </p>
-                        <a href="/"><div class="news-more">Читать далее</div></a>
-                        <div class="news-delimiter"></div>
+                        <a href="/"><div class="ads-from-realtors-more">Читать далее</div></a>
+                        <div class="ads-from-realtors-delimiter"></div>
                     </div>
                 </div>
             </div>
