@@ -44,7 +44,42 @@
             </div>
         </div>
         <div class="pop_right-panel">
+            <h2>
+                Популярные объявления
+            </h2>
             <div class="pop">
+                <div class="top">
+                    <div class="top-item">
+                        <div class="top-item-img">
+                            <a href=""><img src="{{ asset('images/2m.jpg') }}"></a>
+                        </div>
+                        <div class="right-panel-item-text">
+                            <div class="right-panel-item-price">11 000 &#8381;</div>
+                            <div class="right-panel-item-description">2-комнатная квартира</div>
+                            <div class="right-panel-item-address">ул. Миронова, 21-22</div>
+                        </div>
+                    </div>
+                    <div class="top-item">
+                        <div class="top-item-img">
+                            <a href=""><img src="{{ asset('images/2m.jpg') }}"></a>
+                        </div>
+                        <div class="right-panel-item-text">
+                            <div class="right-panel-item-price">11 000 &#8381;</div>
+                            <div class="right-panel-item-description">2-комнатная квартира</div>
+                            <div class="right-panel-item-address">ул. Миронова, 21-22</div>
+                        </div>
+                    </div>
+                    <div class="top-item">
+                        <div class="top-item-img">
+                            <a href=""><img src="{{ asset('images/2m.jpg') }}"></a>
+                        </div>
+                        <div class="right-panel-item-text">
+                            <div class="right-panel-item-price">11 000 &#8381;</div>
+                            <div class="right-panel-item-description">2-комнатная квартира</div>
+                            <div class="right-panel-item-address">ул. Миронова, 21-22</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="offers">
                     <div class="offers-item">
                         <a href="/"><div class="offer-img offer-first"></div></a>

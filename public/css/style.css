@@ -10,6 +10,8 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
     font-weight: bold !important;
+    margin: 0!important;
+    padding: 0!important;
 }
 a{
     color: #337ab7!important;
@@ -140,15 +142,14 @@ header{
 .pop{
     width: 78%;
     float: left;
+    margin: 20px 0 0 0;
 }
 .right-panel{
     width: 20%;
     float:right;
-    margin: 0 0 0 0;
+    margin: -30px 0 0 0;
 }
 .right-panel h3{
-    margin: 0!important;
-    padding: 0!important;
     font-family: 'Montserrat', sans-serif!important;
     text-align: center;
 }
@@ -158,37 +159,37 @@ header{
     padding: 10px!important;
 }
 .right-panel-item{
+    width: 200px;
     background: #ffffff;
-    outline: 1px solid #c9c9c9;
+    outline: 1px solid #c5c5c5;
+    margin: 10px 0 0 0;
 }
 .right-panel-item:hover{
-    outline: 1px solid #ff0000;
+    outline: 1px solid #191970;
 }
 .right-panel-item-img{
     width: 196px!important;
     height: 131px!important;
 }
-.right-panel-title{
-    font-weight: 900;
+.right-panel-item-text{
+    padding: 5px;
 }
-.right-panel-date{
-    color: #337ab7;
-    padding: 2px 0 0 0;
+.top{
+    height: 300px;
+    background: #fff;
+    outline: 1px solid #A9A9A9;
+    margin: 10px 0 0 0;
 }
-p.right-panel-text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 60px!important;
-    padding: 2px;
+.top-item{
+    width: 283px;
+    height: 280px;
+    margin: 10px 0 0 10px;
+    float: left;
+    outline: 1px solid #A9A9A9;
+    background: #DCDCDC;
 }
-.right-panel-more{
-
-}
-.right-panel-delimiter{
-    width: 75%;
-    height: 1px;
-    background: #c9c9c9;
-    margin:10px auto;
+.top-item:hover{
+    outline: 1px solid #808080;
 }
 .offers{
     width: 100%;
@@ -218,7 +219,7 @@ p.right-panel-text{
     background: url('../images/2l.jpg')no-repeat;
 }
 .offer-third{
-    background: url('../images/3.jpg')no-repeat;
+    background: url('../images/3l.jpg')no-repeat;
 }
 .offer-fourth{
     background: url('../images/4.jpg')no-repeat;
