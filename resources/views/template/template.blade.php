@@ -52,11 +52,6 @@
         @section('content')
         @show
     </section>
-    <section>
-        <div class="rightbar">
-
-        </div>
-    </section>
     <footer>
         <div class="footer-inner">
             <div class="container">

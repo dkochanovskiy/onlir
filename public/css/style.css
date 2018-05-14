@@ -4,7 +4,7 @@
 }
 body{
     background-color: #f4f4f4!important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif!important;
     min-width: 1200px;
     height: auto;
 }
@@ -18,9 +18,6 @@ a{
 header{
     text-align: center;
     height: 85px;
-}
-.ads-from-realtors h3{
-    font-size: 17px;
 }
 .header-background{
     background: url('../images/background.jpg')no-repeat 0 -640px;
@@ -137,41 +134,57 @@ header{
 .o{
     background: url('../images/o.png');
 }
-.pop_ads-from-realtors{
+.pop_right-panel{
     width: 100%;
 }
 .pop{
-    width: 79%;
+    width: 78%;
     float: left;
 }
-.ads-from-realtors{
+.right-panel{
     width: 20%;
     float:right;
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
 }
-.ads-from-realtors-inner{
+.right-panel h3{
+    margin: 0!important;
+    padding: 0!important;
+    font-family: 'Montserrat', sans-serif!important;
+    text-align: center;
+}
+.right-panel-inner{
+    width: 95%;
+    margin: 7px auto;
+    padding: 10px!important;
+}
+.right-panel-item{
     background: #ffffff;
-    margin: 11px 0 0 0;
-    padding: 15px;
     outline: 1px solid #c9c9c9;
 }
-.ads-from-realtors-title{
+.right-panel-item:hover{
+    outline: 1px solid #ff0000;
+}
+.right-panel-item-img{
+    width: 196px!important;
+    height: 131px!important;
+}
+.right-panel-title{
     font-weight: 900;
 }
-.ads-from-realtors-date{
+.right-panel-date{
     color: #337ab7;
     padding: 2px 0 0 0;
 }
-p.ads-from-realtors-text{
+p.right-panel-text{
     overflow: hidden;
     text-overflow: ellipsis;
     height: 60px!important;
     padding: 2px;
 }
-.ads-from-realtors-more{
+.right-panel-more{
 
 }
-.ads-from-realtors-delimiter{
+.right-panel-delimiter{
     width: 75%;
     height: 1px;
     background: #c9c9c9;
@@ -202,7 +215,7 @@ p.ads-from-realtors-text{
     background: url('../images/1.jpg')no-repeat;
 }
 .offer-second{
-    background: url('../images/2.jpg')no-repeat;
+    background: url('../images/2l.jpg')no-repeat;
 }
 .offer-third{
     background: url('../images/3.jpg')no-repeat;
@@ -259,7 +272,7 @@ p.ads-from-realtors-text{
     width: 885px;
     margin: 80px auto 0 auto;
 }
-.ads-from-realtors-header{
+.right-panel-header{
     margin: 10px 0 0 0;
     font-size: 27px;
     padding: 5px;
