@@ -64,7 +64,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="panel panel-default auth_form">
+                    <div class="panel panel-primary auth_form">
                         <div class="panel-body auth">
                             <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                                 {{ csrf_field() }}
@@ -102,7 +102,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8 col-md-offset-4">
-                                        <button type="submit" class="btn btn-default">
+                                        <button type="submit" class="btn btn-primary">
                                             Войти
                                         </button>
                                         <a class="btn btn-link" href="{{ route('password.request') }}">
@@ -128,7 +128,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="panel panel-default auth_form">
+                    <div class="panel panel-primary auth_form">
 
                         <div class="panel-body">
                             <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -175,7 +175,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-md-offset-4">
-                                        <button type="submit" class="btn btn-default">
+                                        <button type="submit" class="btn btn-primary">
                                             Зарегистрироваться
                                         </button>
                                     </div>
