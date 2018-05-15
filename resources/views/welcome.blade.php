@@ -1,5 +1,6 @@
 @extends('template.template')
 
+@include('template.header-background')
 @section('content')
     <div class="container">
         <div class="title-search">

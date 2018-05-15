@@ -26,3 +26,8 @@ Route::get('/search', 'SearchController@show')->name('search');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/my_announcements', 'MyAnnouncementsController@index')->name('my_announcements');
+Route::post('/profile', 'ProfileController@index')->name('profile');
+Route::post('/purse', 'PurseController@index')->name('purse');
+Route::post('/amend_contract', 'AmendContractController@index')->name('amend_contract');

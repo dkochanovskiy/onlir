@@ -11,9 +11,6 @@
 </head>
 <body>
     <header>
-        @section('header-background')
-            <div class="header-background"></div>
-        @show
         <div class="container">
             <a href="/">
                 <div class="header-logo"></div>
@@ -27,19 +24,60 @@
                     @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->email }} <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('my_announcements') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('my_announcements-form').submit();">
+                                            Мои объявления
+                                        </a>
+                                        <form id="my_announcements-form" action="{{ route('my_announcements') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('profile') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('profile-form').submit();">
+                                            Профиль
+                                        </a>
+                                        <form id="profile-form" action="{{ route('profile') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('purse') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('purse-form').submit();">
+                                            Кошелек
+                                        </a>
+                                        <form id="purse-form" action="{{ route('purse') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('amend_contract') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('amend_contract-form').submit();">
+                                            Изменить договор
+                                        </a>
+                                        <form id="amend_contract-form" action="{{ route('amend_contract') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            Выйти
                                         </a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+
                                 </ul>
                             </li>
                             @endguest
