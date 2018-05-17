@@ -15,7 +15,7 @@
             <a href="/">
                 <div class="header-logo"></div>
             </a>
-            <div class="header-auth_reg">
+            <div class="header-auth">
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         @guest
@@ -28,12 +28,12 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="{{ route('my_announcements') }}"
+                                        <a href="{{ route('my-announcements') }}"
                                            onclick="event.preventDefault();
-                                                     document.getElementById('my_announcements-form').submit();">
+                                                     document.getElementById('my-announcements-form').submit();">
                                             Мои объявления
                                         </a>
-                                        <form id="my_announcements-form" action="{{ route('my_announcements') }}" method="POST" style="display: none;">
+                                        <form id="my_announcements-form" action="{{ route('my-announcements') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
@@ -58,12 +58,12 @@
                                         </form>
                                     </li>
                                     <li>
-                                        <a href="{{ route('amend_contract') }}"
+                                        <a href="{{ route('amend-contract') }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('amend_contract-form').submit();">
                                             Изменить договор
                                         </a>
-                                        <form id="amend_contract-form" action="{{ route('amend_contract') }}" method="POST" style="display: none;">
+                                        <form id="amend_contract-form" action="{{ route('amend-contract') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>

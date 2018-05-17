@@ -8,6 +8,6 @@ class AmendContractController extends Controller
 {
     public function index()
     {
-        return view('amend_contract');
+        return view('amend-contract');
     }
 }

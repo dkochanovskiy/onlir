@@ -39,18 +39,19 @@ header{
     position: absolute;
     margin: 10px 0;
 }
-.header-auth_reg{
+.header-auth{
     float: right;
     width: 10%;
     padding: 10px 0 10px 0;
 }
-.header-auth_reg li a{
-    padding: 5px 0 13px 0!important;
+.header-auth li a{
+    padding: 5px !important;
     text-decoration: none!important;
     margin: 0 auto;
-    width: 200px;
+    width: auto;
+    text-align: center;
 }
-.header-auth_reg li a:hover{
+.header-auth li a:hover{
     background: none!important;
     text-decoration: underline!important;
 }
@@ -287,4 +288,23 @@ header{
     width: 20px;
     height: 10px;
     outline: 1px solid #000;
+}
+.title-page{
+    margin: 80px 0 70px 0;
+    overflow: hidden;
+}
+.title-page h1, .change_city-wrap  {
+    float: left;
+    width: 49%;
+}
+.change_city{
+    width: 159px;
+    margin: 0 auto;
+}
+.change_city, .fill_contract{
+    display: block!important;
+}
+.fill_contract{
+    width: 198px;
+    margin: 0 auto 10px auto;
 }
