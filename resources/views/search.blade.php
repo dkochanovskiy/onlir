@@ -6,7 +6,7 @@
 @section('content')
     <div class="container">
         <div class="search-form-wrapper">
-            @include('template.search-form')
+            @include('include.search-form')
         </div>
         <div class="pop_news">
             <div class="pop">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            @include('template.right-panel')
+            @include('include.right-panel')
         </div>
     </div>
 @endsection

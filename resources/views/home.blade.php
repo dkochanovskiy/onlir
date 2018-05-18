@@ -12,7 +12,7 @@
     </div>
     <div class="btn btn-primary btn-lg fill_contract">Заполнить договор</div>
     <h2>
-        Тип недвижимости
+        Выберите тип недвижимости
     </h2>
     <div class="property_type">
         <div class="property_type-residential">
