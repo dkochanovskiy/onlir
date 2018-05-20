@@ -92,8 +92,29 @@
     </section>
     <footer>
         <div class="footer-inner">
-            <div class="container">
-                © 2018 onLir
+            <div class="footer-inner-top">
+                <div class="container">
+                    <div class="footer-inner-top-menu">
+                        <div class="footer-inner-top-menu-item">
+                            <a href="/">Главная</a>
+                        </div>
+                        <div class="footer-inner-top-menu-item">
+                            <a href="javascript:PopupLoginShow()">Войти<br></a>
+                            <a href="javascript:PopupRegistrationShow()">Регистрация</a>
+                        </div>
+                        <div class="footer-inner-top-menu-item">
+                            <a href="">Сдать<br></a>
+                            <a href="">Заказать договор</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-inner-top-copy">
+                    © 2018 onlir
+                </div>
+            </div>
+            <div class="footer-inner-bottom">
+                developed by den kochanovskiy<br>
+                dkochanovskiy@gmail.com
             </div>
         </div>
     </footer>

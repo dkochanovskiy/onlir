@@ -237,13 +237,6 @@ header{
     padding: 80px 0 0 0;
     font-size: 15px;
 }
-.footer-inner{
-    height: auto;
-    background: #4682B4;
-    font-size: 20pt;
-    color: #ffffff;
-    text-align: center;
-}
 .popup-auth{
     width:100%;
     min-height:100%;
@@ -310,4 +303,46 @@ header{
 .fill_contract{
     width: 198px;
     margin: 0 auto 10px auto;
+}
+/*footer*/
+.footer-inner{
+    height: auto;
+    font-size: 12pt;
+}
+.footer-inner a{
+    text-decoration: none!important;
+    color: #b4b4b4!important;
+}
+.footer-inner a:hover{
+    text-decoration: underline!important;
+}
+.footer-inner-top{
+    color:#b4b4b4;
+    background: #696969;
+}
+.footer-inner-bottom{
+    background: #4f4f4f;
+    color: #a7a7a7!important;
+    font-family: 'Kavivanar', cursive!important;
+    text-align: right;
+    padding: 10px;
+    line-height: 2;
+}
+.footer-inner-top-menu{
+    margin: 30px 0 0 0;
+    outline: 1px solid red;
+    width: 100px;
+    height: 100px;
+}
+.footer-inner-top-menu-item{
+    width: 12%;
+    outline: 1px solid red;
+    height: 100px;
+    float: left;
+    text-align: left;
+    line-height: 2.5;
+}
+.footer-inner-top-copy{
+    text-align: center;
+    margin: 30px 0 0 0;
 }
