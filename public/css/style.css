@@ -1,3 +1,4 @@
+/*total*/
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +22,8 @@ header{
     text-align: center;
     height: 85px;
 }
+/*/total*/
+/*header*/
 .header-background{
     background: url('../images/background.jpg')no-repeat 0 -640px;
     width: 100%;
@@ -94,8 +97,6 @@ header{
     position:relative;
     margin: -5px 0 0 0;
 }
-.search-right{
-}
 .search_form{
     width: 921px;
     height: 34px;
@@ -162,11 +163,11 @@ header{
 .right-panel-item{
     width: 200px;
     background: #ffffff;
-    outline: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
     margin: 10px 0 0 0;
 }
 .right-panel-item:hover{
-    outline: 1px solid #337ab7;
+    border-bottom: 1px solid #337ab7;
 }
 .right-panel-item-img{
     width: 196px!important;
@@ -178,17 +179,19 @@ header{
 .top{
     height: 300px;
     margin: 10px 0 0 0;
-    background: #DCDCDC;
+    background: #E0FFFF;
 }
 .top-item{
     width: 283px;
     height: 280px;
     margin: 10px 0 0 10px;
     float: left;
-    outline: 1px solid #A9A9A9;
 }
-.top-item:hover{
-    outline: 1px solid #337ab7;
+.top-item-img{
+    opacity: .8;
+}
+.top-item-img:hover{
+    opacity: 1;
 }
 .offers{
     width: 100%;
@@ -323,26 +326,25 @@ header{
 .footer-inner-bottom{
     background: #4f4f4f;
     color: #a7a7a7!important;
-    font-family: 'Kavivanar', cursive!important;
+    /*font-family: 'Kavivanar', cursive!important;*/
     text-align: right;
     padding: 10px;
     line-height: 2;
 }
 .footer-inner-top-menu{
-    margin: 30px 0 0 0;
-    outline: 1px solid red;
-    width: 100px;
+    margin: 30px auto 0 auto;
+    width: 399px;
     height: 100px;
 }
 .footer-inner-top-menu-item{
-    width: 12%;
-    outline: 1px solid red;
-    height: 100px;
-    float: left;
+    width: 130px;
     text-align: left;
     line-height: 2.5;
+    display: inline-block;
+}
+.footer-inner-top-menu-item-left{
+    vertical-align: top;
 }
 .footer-inner-top-copy{
-    text-align: center;
-    margin: 30px 0 0 0;
 }
+/*/footer*/

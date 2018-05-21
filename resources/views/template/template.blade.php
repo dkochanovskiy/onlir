@@ -60,7 +60,7 @@
                                     <li>
                                         <a href="{{ route('amend-contract') }}"
                                            onclick="event.preventDefault();
-                                                     document.getElementById('amend_contract-form').submit();">
+                                                     document.getElementById('amend-contract-form').submit();">
                                             Изменить договор
                                         </a>
                                         <form id="amend_contract-form" action="{{ route('amend-contract') }}" method="POST" style="display: none;">
@@ -95,7 +95,7 @@
             <div class="footer-inner-top">
                 <div class="container">
                     <div class="footer-inner-top-menu">
-                        <div class="footer-inner-top-menu-item">
+                        <div class="footer-inner-top-menu-item footer-inner-top-menu-item-left">
                             <a href="/">Главная</a>
                         </div>
                         <div class="footer-inner-top-menu-item">
@@ -107,14 +107,10 @@
                             <a href="">Заказать договор</a>
                         </div>
                     </div>
+                    <div class="footer-inner-top-copy">
+                        © 2018 onlir
+                    </div>
                 </div>
-                <div class="footer-inner-top-copy">
-                    © 2018 onlir
-                </div>
-            </div>
-            <div class="footer-inner-bottom">
-                developed by den kochanovskiy<br>
-                dkochanovskiy@gmail.com
             </div>
         </div>
     </footer>
