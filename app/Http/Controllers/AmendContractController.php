@@ -8,6 +8,6 @@ class AmendContractController extends Controller
 {
     public function index()
     {
-        return view('amend-contract');
+        return view('personal-area.amend-contract');
     }
 }

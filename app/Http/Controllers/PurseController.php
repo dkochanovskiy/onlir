@@ -8,6 +8,6 @@ class PurseController extends Controller
 {
     public function index()
     {
-        return view('purse');
+        return view('personal-area.purse');
     }
 }

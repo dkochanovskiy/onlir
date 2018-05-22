@@ -31,3 +31,4 @@ Route::post('/my-announcements', 'MyAnnouncementsController@index')->name('my-an
 Route::post('/profile', 'ProfileController@index')->name('profile');
 Route::post('/purse', 'PurseController@index')->name('purse');
 Route::post('/amend-contract', 'AmendContractController@index')->name('amend-contract');
+Route::post('/ad-delivery', 'AdDeliveryController@index')->name('ad-delivery');

@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <title>onLir - Аренда недвижимости в России</title>
+    <title>onlir - Аренда недвижимости в России</title>
 </head>
 <body>
     <header>
@@ -22,6 +22,11 @@
                         <li><a href="javascript:PopupLoginShow()">Войти</a></li>
                         <li><a href="javascript:PopupRegistrationShow()">Регистрация</a></li>
                     @else
+                    </ul>
+                        <div class="messages">
+                            Сообщения
+                        </div>
+                        <ul class="nav navbar-nav personal-area-navbar-right">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                                     {{ Auth::user()->email }} <span class="caret"></span>
@@ -33,7 +38,7 @@
                                                      document.getElementById('my-announcements-form').submit();">
                                             Мои объявления
                                         </a>
-                                        <form id="my_announcements-form" action="{{ route('my-announcements') }}" method="POST" style="display: none;">
+                                        <form id="my-announcements-form" action="{{ route('my-announcements') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
@@ -63,7 +68,17 @@
                                                      document.getElementById('amend-contract-form').submit();">
                                             Изменить договор
                                         </a>
-                                        <form id="amend_contract-form" action="{{ route('amend-contract') }}" method="POST" style="display: none;">
+                                        <form id="amend-contract-form" action="{{ route('amend-contract') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('ad-delivery') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('ad-delivery-form').submit();">
+                                            Подать объявления
+                                        </a>
+                                        <form id="ad-delivery-form" action="{{ route('ad-delivery') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
