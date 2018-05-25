@@ -15,6 +15,13 @@
             <a href="/">
                 <div class="header-logo"></div>
             </a>
+            @guest
+            @else
+                <ul class="header-links">
+                    <li><a href="/"><span class="glyphicon glyphicon-envelope"></span>Сообщения</a></li>
+                    <li><a href="/"><span class="glyphicon glyphicon-star"></span>Избранное</a></li>
+                </ul>
+            @endelse
             <div class="header-auth">
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -23,9 +30,6 @@
                         <li><a href="javascript:PopupRegistrationShow()">Регистрация</a></li>
                     @else
                     </ul>
-                        <div class="messages">
-                            Сообщения
-                        </div>
                         <ul class="nav navbar-nav personal-area-navbar-right">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>

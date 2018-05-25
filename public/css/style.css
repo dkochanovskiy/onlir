@@ -34,12 +34,12 @@ header{
 }
 .header-logo{
     background: url('../images/logo.png')no-repeat;
-    width: 50%;
+    width: 16%;
     height: 65px;
     float: left;
     clear: both;
     z-index: 100;
-    position: absolute;
+    position: relative;
     margin: 10px 0;
 }
 .header-auth{
@@ -348,6 +348,12 @@ header{
 .footer-inner-top-copy{
 }
 /*/footer*/
-.messages{
-    /*outline: none!important;*/
+.header-links{
+    float:left;
+    width: 27%;
+    outline: 1px solid red;
+}
+.header-links li{
+    display: inline;
+    padding: 30px;
 }
