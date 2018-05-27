@@ -32,15 +32,19 @@ header{
     z-index: -100;
     margin: 95px 0 0 0;
 }
-.header-logo{
-    background: url('../images/logo.png')no-repeat;
-    width: 16%;
+.header-logo-wrap{
+    width: 174px;
     height: 65px;
     float: left;
     clear: both;
     z-index: 100;
     position: relative;
     margin: 10px 0;
+}
+.header-logo{
+    background: url('../images/logo.png')no-repeat;
+    width: 174px;
+    height: 65px;
 }
 .header-auth{
     float: right;
@@ -57,6 +61,23 @@ header{
 .header-auth li a:hover{
     background: none!important;
     text-decoration: underline!important;
+}
+.header-registered{
+    width: 83%;
+    height: 100px;
+    position: relative;
+}
+.header-registered-item{
+    height: 100px;
+    float: left;
+    margin: 16px 0 0 0;
+    padding: 0 0 0 22px!important;
+}
+.header-registered-item-wrap{
+    float: right;
+}
+.header-registered-item ul{
+    list-style-type: none!important;
 }
 .title-search{
     width: 100%;
