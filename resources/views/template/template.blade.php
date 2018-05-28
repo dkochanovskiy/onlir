@@ -53,16 +53,6 @@
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="{{ route('profile') }}"
-                                               onclick="event.preventDefault();
-                                         document.getElementById('profile-form').submit();">
-                                                Профиль
-                                            </a>
-                                            <form id="profile-form" action="{{ route('profile') }}" method="POST" style="display: none;">
-                                                {{ csrf_field() }}
-                                            </form>
-                                        </li>
-                                        <li>
                                             <a href="{{ route('purse') }}"
                                                onclick="event.preventDefault();
                                          document.getElementById('purse-form').submit();">
@@ -89,6 +79,16 @@
                                                 Подать объявления
                                             </a>
                                             <form id="ad-delivery-form" action="{{ route('ad-delivery') }}" method="POST" style="display: none;">
+                                                {{ csrf_field() }}
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('settings') }}"
+                                               onclick="event.preventDefault();
+                                         document.getElementById('settings-form').submit();">
+                                                Настройки
+                                            </a>
+                                            <form id="settings-form" action="{{ route('settings') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>

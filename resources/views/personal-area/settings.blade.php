@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Профиль</h1>
+        @include('include.navigation-bar')
+        <div class="container-content"></div>
     </div>
 @endsection

@@ -421,7 +421,7 @@ footer{
     color: #fff;
     text-align: center;
 }
-.container th, .container td{
+.container th{
     width: 56px;
     text-align: center;
 }
@@ -434,4 +434,23 @@ footer{
     width: 116px;
     height: 88px;
     background: url('../images/9-116.jpg')no-repeat;
+}
+.description{
+    width: 600px;
+    margin: 0 0 0 60px;
+    font-size: 17px!important;
+    text-align: center;
+}
+.description-top, .description-bottom{
+}
+.description-top-item{
+    width: 18%;
+    display: inline-block;
+}
+.description-bottom-item{
+    width: 49%;
+    display: inline-block;
+}
+.table-offer td{
+    padding: 0 0 0 8px!important;
 }
