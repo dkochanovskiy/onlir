@@ -146,6 +146,7 @@
     {{--/popups--}}
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-    <script src="{{ URL::asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
 </body>
 </html>

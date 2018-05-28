@@ -454,3 +454,20 @@ footer{
 .table-offer td{
     padding: 0 0 0 8px!important;
 }
+.edit-phone{
+    /*display: none;*/
+    float: left;
+    width: 50%;
+}
+.edit-phone-input{
+    width: 50%;
+    display: inline-block;
+}
+.edit-phone label{
+    width: 11%;
+    display: inline-block;
+}
+.container-content h4{
+    width: 10px!important;
+    float: left;
+}
