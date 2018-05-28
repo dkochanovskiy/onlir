@@ -454,10 +454,27 @@ footer{
 .table-offer td{
     padding: 0 0 0 8px!important;
 }
-.edit-phone{
-    /*display: none;*/
+.phone-wrapper{
+    width: 100%;
+}
+.phone{
+    width: 13%;
     float: left;
-    width: 50%;
+    font-size: 20px;
+    margin: 3px 0 0 0;
+}
+.show-phone{
+    float: left;
+    font-size: 15px;
+    margin: 8px 0 0 10px;
+}
+.edit-phone{
+    visibility: hidden;
+    float: left;
+    width: 18%;
+    position: absolute;
+    left: 455px;
+    top: 138px;
 }
 .edit-phone-input{
     width: 50%;
@@ -470,4 +487,10 @@ footer{
 .container-content h4{
     width: 10px!important;
     float: left;
+}
+.new-password{
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin: 15px 0 0 0;
 }
