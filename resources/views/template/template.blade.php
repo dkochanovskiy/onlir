@@ -39,16 +39,16 @@
                             <ul>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                        {{ Auth::user()->email }} <span class="caret"></span>
+                                        <span class="glyphicon glyphicon-home"></span>&#160;{{ Auth::user()->email }} <span class="caret"></span>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="{{ route('my-announcements') }}"
+                                            <a href="{{ route('home') }}"
                                                onclick="event.preventDefault();
-                                         document.getElementById('my-announcements-form').submit();">
+                                         document.getElementById('home-form').submit();">
                                                 Мои объявления
                                             </a>
-                                            <form id="my-announcements-form" action="{{ route('my-announcements') }}" method="POST" style="display: none;">
+                                            <form id="home-form" action="{{ route('home') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>

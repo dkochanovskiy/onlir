@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        <h1>Мои объявления</h1>
+        <h1>Профиль</h1>
     </div>
 @endsection
