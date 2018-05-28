@@ -73,6 +73,9 @@ header{
     margin: 16px 0 0 0;
     padding: 0 0 0 22px!important;
 }
+.header-registered-item a{
+    text-decoration: none!important;
+}
 .header-registered-item-wrap{
     float: right;
 }
@@ -417,4 +420,18 @@ footer{
     background: #337ab7;
     color: #fff;
     text-align: center;
+}
+.container th, .container td{
+    width: 56px;
+    text-align: center;
+}
+.table-img-a{
+    width: 116px;
+    height: 88px;
+    background: url('../images/1-116.jpg')no-repeat;
+}
+.table-img-b{
+    width: 116px;
+    height: 88px;
+    background: url('../images/9-116.jpg')no-repeat;
 }

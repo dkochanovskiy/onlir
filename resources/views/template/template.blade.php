@@ -33,7 +33,7 @@
                             <a href="/"><span class="glyphicon glyphicon-envelope"></span>&#160;Сообщения</a>
                         </div>
                         <div class="header-registered-item">
-                            <a href="/"><span class="glyphicon glyphicon-star"></span>&#160;Избранное</a>
+                            <a href="{{ route('favorites') }}"><span class="glyphicon glyphicon-star"></span>&#160;Избранное</a>
                         </div>
                         <div class="header-registered-item">
                             <ul>
