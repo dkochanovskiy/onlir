@@ -22,15 +22,15 @@
             <div class="new-password">
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
-                        <label for="inputPassword1" class="control-label">Введите новый пароль:</label>
+                        <div class="new-password-text">Введите новый пароль(минимум 8 символов)</div>
                         <div>
-                            <input type="password" class="form-control" id="inputPassword1">
+                            <input type="password" class="form-control new-password-input" id="inputPassword1">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputPassword2" class="control-label">Еще раз:</label>
+                        <div class="new-password-text">Повторите введенный пароль:</div>
                         <div>
-                            <input type="password" class="form-control" id="inputPassword2">
+                            <input type="password" class="form-control new-password-input" id="inputPassword2">
                         </div>
                     </div>
                     <div class="form-group">

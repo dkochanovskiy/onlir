@@ -380,7 +380,7 @@ footer{
     width: 60%;
 }
 .navigation-bar{
-    width: 149px;
+    width: 159px;
     float: left;
 }
 .navigation-bar li.active a {
@@ -492,5 +492,11 @@ footer{
     width: 100%;
     float: left;
     font-size: 20px;
-    margin: 15px 0 0 0;
+    margin: 50px 0 0 16px;
+}
+.new-password-text{
+    width: 60%;
+}
+.new-password-input{
+    width: 70%!important;
 }

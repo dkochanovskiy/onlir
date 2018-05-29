@@ -28,3 +28,11 @@ $(document).mouseup(function (e) {
 $(function(){
     $("#phone").mask("8(999) 999-9999");
 });
+$('#purse').click('click', function(){
+    $("#purse").addClass('active');
+
+    $("#home").removeClass('active');
+    $("#amend-contract").removeClass('active');
+    $("#ad-delivery").removeClass('active');
+    $("#settings").removeClass('active');
+});
