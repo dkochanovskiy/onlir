@@ -425,16 +425,6 @@ footer{
     width: 56px;
     text-align: center;
 }
-.table-img-a{
-    width: 116px;
-    height: 88px;
-    background: url('../images/1-116.jpg')no-repeat;
-}
-.table-img-b{
-    width: 116px;
-    height: 88px;
-    background: url('../images/9-116.jpg')no-repeat;
-}
 .description{
     width: 600px;
     margin: 0 0 0 60px;
@@ -499,4 +489,16 @@ footer{
 }
 .new-password-input{
     width: 70%!important;
+}
+#slider article{
+    width: 50%;
+    float: left;
+}
+#slider .image{
+    width: 500%;
+    line-height: 0;
+}
+#overflow{
+    width: 100%;
+    overflow: hidden;
 }

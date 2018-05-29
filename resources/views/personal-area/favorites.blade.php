@@ -29,30 +29,29 @@
                     </form>
                 </td>
                 <td>
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
+                    <div class="all">
+                        <input checked type="radio" name="respond" id="desktop">
+                        <article id="slider">
+                            <input checked type="radio" name="slider" id="switch1">
+                            <input type="radio" name="slider" id="switch2">
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="{{ asset('images/1-116.jpg') }}">
-                                <div class="carousel-caption">
+                            <div id="slides">
+                                <div id="overflow">
+                                    <div class="image">
+                                        <article><img src="{{ asset('images/slider/1.jpg') }}"></article>
+                                        <article><img src="{{ asset('images/slider/2.jpg') }}"></article>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
+                            <div id="controls">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                            </div>
+                            <div id="active">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                            </div>
+                        </article>
                     </div>
                 </td>
                 <td>
@@ -81,7 +80,7 @@
                     </form>
                 </td>
                 <td>
-                    <div class="table-img-b"></div>
+                    <div class="table-img"></div>
                 </td>
                 <td>
                     <div class="description">
