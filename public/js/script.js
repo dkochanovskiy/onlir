@@ -36,3 +36,10 @@ $('#purse').click(function(){
 
     $("#purse").addClass('active');
 });
+$("#checkbox").change(function(){
+    if ($('#checkbox').prop('checked')==true){
+        $("input[type='checkbox']").prop('checked',true);
+    } else {
+        $("input[type='checkbox']").prop('checked',false);
+    }
+});

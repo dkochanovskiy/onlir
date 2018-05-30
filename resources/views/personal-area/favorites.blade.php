@@ -3,21 +3,17 @@
 @section('content')
     <div class="container">
         <hr>
+        <div class="deleting">
+            <div class="checkbox">
+                <label>
+                    <input name="checkbox" type="checkbox" id="checkbox">
+                </label>
+            </div>
+            <div class="btn btn-primary deleting-btn">
+                Удалить
+            </div>
+        </div>
         <table class="table-striped table-bordered table-offer">
-            <tr>
-                <td>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">
-                        </label>
-                    </div>
-                </td>
-                <td>
-                    <div class="btn btn-primary">
-                        Удалить
-                    </div>
-                </td>
-            </tr>
             <tr>
                 <td>
                     <form role="form">
@@ -29,30 +25,30 @@
                     </form>
                 </td>
                 <td>
-                    <div class="all">
-                        <input checked type="radio" name="respond" id="desktop">
-                        <article id="slider">
-                            <input checked type="radio" name="slider" id="switch1">
-                            <input type="radio" name="slider" id="switch2">
+                    <div class='slide' >
+                        <input type="radio" name="slider1" id="slider1_1" checked="checked">
+                        <label for="slider1_1"></label>
+                        <div><p></p> <img src="{{ asset('images/slider/1.jpg') }}"></div>
+                        <label for="slider1_2"></label>
 
-                            <div id="slides">
-                                <div id="overflow">
-                                    <div class="image">
-                                        <article><img src="{{ asset('images/slider/1.jpg') }}"></article>
-                                        <article><img src="{{ asset('images/slider/2.jpg') }}"></article>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="controls">
-                                <label for="switch1"></label>
-                                <label for="switch2"></label>
-                            </div>
-                            <div id="active">
-                                <label for="switch1"></label>
-                                <label for="switch2"></label>
-                            </div>
-                        </article>
+                        <input type="radio" name="slider1" id="slider1_2">
+                        <label for="slider1_2"></label>
+                        <div><p></p> <img src="{{ asset('images/slider/2.jpg') }}"></div>
+                        <label for="slider1_3"></label>
+
+                        <input type="radio" name="slider1" id="slider1_3">
+                        <label for="slider1_3"></label>
+                        <div><p></p> <img src="{{ asset('images/slider/3.jpg') }}"></div>
+                        <label for="slider1_4"></label>
+
                     </div>
+                    {{--<div id="slider-wrap">--}}
+                        {{--<div id="slider">--}}
+                            {{--<div class="slide"><img src="{{ asset('images/slider/1.jpg') }}"></div>--}}
+                            {{--<div class="slide"><img src="{{ asset('images/slider/2.jpg') }}"></div>--}}
+                            {{--<div class="slide"><img src="{{ asset('images/slider/3.jpg') }}"></div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </td>
                 <td>
                     <div class="description">
@@ -80,7 +76,23 @@
                     </form>
                 </td>
                 <td>
-                    <div class="table-img"></div>
+                    <div class='slide' >
+                        <input type="radio" name="slider2" id="slider2_1" checked="checked">
+                        <label for="slider2_1"></label>
+                        <div><p></p> <img src="{{ asset('images/slider/4.jpg') }}"></div>
+                        <label for="slider2_2"></label>
+
+                        <input type="radio" name="slider2" id="slider2_2">
+                        <label for="slider2_2"></label>
+                        <div><p></p> <img src="{{ asset('images/slider/5.jpg') }}"></div>
+                        <label for="slider2_3"></label>
+
+                        <input type="radio" name="slider2" id="slider2_3">
+                        <label for="slider2_3"></label>
+                        <div><p></p> <img src="{{ asset('images/slider/6.jpg') }}"></div>
+                        <label for="slider2_4"></label>
+
+                    </div>
                 </td>
                 <td>
                     <div class="description">

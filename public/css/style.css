@@ -22,6 +22,10 @@ header{
     text-align: center;
     height: 85px;
 }
+table{
+    border-collapse: separate!important;
+    border-spacing: 7px 11px!important;
+}
 /*/total*/
 /*header*/
 .header-background{
@@ -490,15 +494,9 @@ footer{
 .new-password-input{
     width: 70%!important;
 }
-#slider article{
-    width: 50%;
-    float: left;
+.deleting{
+    margin: 40px 0 0 18px;
 }
-#slider .image{
-    width: 500%;
-    line-height: 0;
-}
-#overflow{
-    width: 100%;
-    overflow: hidden;
+.deleting-btn{
+    margin: -72px 0 0 52px;
 }
