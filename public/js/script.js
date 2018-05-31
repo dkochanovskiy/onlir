@@ -36,10 +36,35 @@ $('#purse').click(function(){
 
     $("#purse").addClass('active');
 });
-$("#checkbox").change(function(){
-    if ($('#checkbox').prop('checked')==true){
-        $("input[type='checkbox']").prop('checked',true);
+$("#checkbox-active").change(function(){
+    if ($('#checkbox-active').prop('checked')==true){
+        $("input[name='checkbox-active']").prop('checked',true);
+        $("input[name='checkbox-active']").prop('checked',true);
     } else {
-        $("input[type='checkbox']").prop('checked',false);
+        $("input[name='checkbox-active']").prop('checked',false);
+        $("input[name='checkbox-active']").prop('checked',false);
     }
 });
+$("#checkbox-completed").change(function(){
+    if ($('#checkbox-completed').prop('checked')==true){
+        $("input[name='checkbox-completed']").prop('checked',true);
+        $("input[name='checkbox-completed']").prop('checked',true);
+    } else {
+        $("input[name='checkbox-completed']").prop('checked',false);
+        $("input[name='checkbox-completed']").prop('checked',false);
+    }
+});
+function ShowActive(){
+    $("#completed-title").removeClass('active');
+    $("#active-title").addClass('active');
+
+    $("#ads-completed").css('display', 'none');
+    $("#ads-active").css('display', 'block');
+}
+function ShowCompleted(){
+    $("#active-title").removeClass('active');
+    $("#completed-title").addClass('active');
+
+    $("#ads-active").css('display', 'none');
+    $("#ads-completed").css('display', 'block');
+}

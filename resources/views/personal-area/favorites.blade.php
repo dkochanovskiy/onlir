@@ -29,26 +29,16 @@
                         <input type="radio" name="slider1" id="slider1_1" checked="checked">
                         <label for="slider1_1"></label>
                         <div><p></p> <img src="{{ asset('images/slider/1.jpg') }}"></div>
-                        <label for="slider1_2"></label>
 
                         <input type="radio" name="slider1" id="slider1_2">
                         <label for="slider1_2"></label>
                         <div><p></p> <img src="{{ asset('images/slider/2.jpg') }}"></div>
-                        <label for="slider1_3"></label>
 
                         <input type="radio" name="slider1" id="slider1_3">
                         <label for="slider1_3"></label>
                         <div><p></p> <img src="{{ asset('images/slider/3.jpg') }}"></div>
-                        <label for="slider1_4"></label>
 
                     </div>
-                    {{--<div id="slider-wrap">--}}
-                        {{--<div id="slider">--}}
-                            {{--<div class="slide"><img src="{{ asset('images/slider/1.jpg') }}"></div>--}}
-                            {{--<div class="slide"><img src="{{ asset('images/slider/2.jpg') }}"></div>--}}
-                            {{--<div class="slide"><img src="{{ asset('images/slider/3.jpg') }}"></div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
                 </td>
                 <td>
                     <div class="description">
@@ -80,17 +70,14 @@
                         <input type="radio" name="slider2" id="slider2_1" checked="checked">
                         <label for="slider2_1"></label>
                         <div><p></p> <img src="{{ asset('images/slider/4.jpg') }}"></div>
-                        <label for="slider2_2"></label>
 
                         <input type="radio" name="slider2" id="slider2_2">
                         <label for="slider2_2"></label>
                         <div><p></p> <img src="{{ asset('images/slider/5.jpg') }}"></div>
-                        <label for="slider2_3"></label>
 
                         <input type="radio" name="slider2" id="slider2_3">
                         <label for="slider2_3"></label>
                         <div><p></p> <img src="{{ asset('images/slider/6.jpg') }}"></div>
-                        <label for="slider2_4"></label>
 
                     </div>
                 </td>

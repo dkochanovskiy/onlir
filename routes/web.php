@@ -24,7 +24,7 @@ Route::group(['middleware'=>'auth'], function (){
     Route::post('/ad-delivery', 'AdDeliveryController@index');
 
     Route::get('/messages', 'MessagesController@index')->name('messages');
-    Route::post('/messages', 'MessagesController@index');
+//    Route::post('/messages', 'MessagesController@index');
 
     Route::get('/favorites', 'FavoritesController@index')->name('favorites');
     Route::post('/favorites', 'FavoritesController@index');

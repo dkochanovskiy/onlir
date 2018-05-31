@@ -400,13 +400,13 @@ footer{
     height: 30px;
     margin: 0 0 0 50px;
 }
-.container-content-item{
+.container-content-title h3{
     width: 50%;
     float: left;
     text-align: center;
     cursor: pointer;
 }
-.container-content-item.active{
+.container-content-title h3.active{
     border-bottom: 1px solid #337ab7;
 }
 .container-content-content{
@@ -499,4 +499,19 @@ footer{
 }
 .deleting-btn{
     margin: -72px 0 0 52px;
+}
+.container-content-ads{
+    margin: 60px 0 0 0;
+}
+.container-content-ads-active{
+    display: block;
+}
+.container-content-ads-completed{
+    display: none;
+}
+.description-additionally{
+}
+.description-additionally-item{
+    width: 50%;
+    float: left;
 }
