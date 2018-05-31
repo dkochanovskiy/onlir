@@ -9,9 +9,9 @@
                     <input name="checkbox" type="checkbox" id="checkbox">
                 </label>
             </div>
-            <div class="btn btn-primary deleting-btn">
+            <button class="btn btn-primary deleting-btn"><span class="glyphicon glyphicon-trash"></span>
                 Удалить
-            </div>
+            </button>
         </div>
         <table class="table-striped table-bordered table-offer">
             <tr>

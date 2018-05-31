@@ -28,9 +28,9 @@
                             <input name="checkbox" type="checkbox" id="checkbox-active">
                         </label>
                     </div>
-                    <div class="btn btn-primary deleting-btn">
+                    <button class="btn btn-primary deleting-btn"><span class="glyphicon glyphicon-trash"></span>
                         Удалить
-                    </div>
+                    </button>
                 </div>
                 <table class="table-striped table-bordered table-offer">
                     <tr>
@@ -124,9 +124,9 @@
                             <input name="checkbox" type="checkbox" id="checkbox-completed">
                         </label>
                     </div>
-                    <div class="btn btn-primary deleting-btn">
+                    <button class="btn btn-primary deleting-btn"><span class="glyphicon glyphicon-trash"></span>
                         Удалить
-                    </div>
+                    </button>
                 </div>
                 <table class="table-striped table-bordered table-offer">
                     <tr>
@@ -203,7 +203,7 @@
                                     <div class="description-top-item">60м2</div>
                                     <div class="description-top-item">эт7/10</div>
                                     <div class="description-top-item">25000</div>
-                                    <div class="description-top-item"><span class="glyphicon glyphicon-bullhorn"></span>23</div>
+                                    <div class="description-top-item">23</div>
                                 </div>
                                 <div class="description-bottom">
                                     <div class="description-bottom-item">Ул.Энгельса 17</div>
@@ -214,8 +214,8 @@
                                         Осталось 0 дней
                                     </div>
                                     <div class="description-additionally-item">
-                                        <div class="btn btn-primary">Редактировать</div>
-                                        <div class="btn btn-primary">Активировать</div>
+                                        <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Редактировать</button>
+                                        <button class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Активировать</button>
                                     </div>
                                 </div>
                             </div>
@@ -224,7 +224,6 @@
                 </table>
             </div>
         </div>
-
         {{--<div class="container-content-content">--}}
             {{--Активных объявлений нет--}}
         {{--</div>--}}

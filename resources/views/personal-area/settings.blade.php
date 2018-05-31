@@ -15,7 +15,9 @@
                         <div class="edit-phone-input">
                             <input type="text" class="form-control" id="phone">
                         </div>
-                        <button href="javascript:ShowPhoneForm()" type="submit" class="btn btn-primary">Сохранить</button>
+                        <button href="javascript:ShowPhoneForm()" type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-floppy-disk"></span> Сохранить
+                        </button>
                     </form>
                 </div>
             </div>
@@ -35,7 +37,9 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-primary">Изменить</button>
+                            <button type="submit" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-floppy-disk"></span> Сохранить
+                            </button>
                         </div>
                     </div>
                 </form>
