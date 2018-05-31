@@ -41,7 +41,7 @@
                             <div class="form-group">
                                 <div class="col-md-8 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
-                                        Войти
+                                        <span class="glyphicon glyphicon-log-in"></span> Войти
                                     </button>
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         Забыли пароль?
