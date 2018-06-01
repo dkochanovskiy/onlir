@@ -7,9 +7,9 @@ Route::get('/search', 'SearchController@show')->name('search');
 
 Auth::routes();
 
-Route::group(['prefix'=>'AreaPersonal'],['middleware'=>'auth'], function (){
-    Route::get('/my-announcements', 'MyAnnouncementsController@index')->name('my-announcements');
-    Route::post('/my-announcements', 'MyAnnouncementsController@index');
+Route::group(['middleware'=>'auth'], function (){
+    Route::get('/my-announcements', 'AreaPersonal\MyAnnouncementsController@index')->name('my-announcements');
+    Route::post('/my-announcements', 'AreaPersonal\MyAnnouncementsController@index');
 
     Route::get('/settings', 'AreaPersonal\SettingsController@index')->name('settings');
     Route::post('/settings', 'AreaPersonal\SettingsController@index');
