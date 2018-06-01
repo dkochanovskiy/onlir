@@ -36,6 +36,15 @@ $('#purse').click(function(){
 
     $("#purse").addClass('active');
 });
+$("#checkbox-favorites").change(function(){
+    if ($('#checkbox-favorites').prop('checked')==true){
+        $("input[name='checkbox-favorites']").prop('checked',true);
+        $("input[name='checkbox-favorites']").prop('checked',true);
+    } else {
+        $("input[name='checkbox-favorites']").prop('checked',false);
+        $("input[name='checkbox-favorites']").prop('checked',false);
+    }
+});
 $("#checkbox-active").change(function(){
     if ($('#checkbox-active').prop('checked')==true){
         $("input[name='checkbox-active']").prop('checked',true);

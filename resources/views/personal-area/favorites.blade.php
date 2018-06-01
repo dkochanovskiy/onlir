@@ -6,7 +6,7 @@
         <div class="deleting">
             <div class="checkbox">
                 <label>
-                    <input name="checkbox" type="checkbox" id="checkbox">
+                    <input name="checkbox" type="checkbox" id="checkbox-favorites">
                 </label>
             </div>
             <button class="btn btn-primary deleting-btn"><span class="glyphicon glyphicon-trash"></span>
@@ -19,7 +19,7 @@
                     <form role="form">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox">
+                                <input type="checkbox" name="checkbox-favorites">
                             </label>
                         </div>
                     </form>
@@ -60,7 +60,7 @@
                     <form role="form">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox">
+                                <input type="checkbox" name="checkbox-favorites">
                             </label>
                         </div>
                     </form>

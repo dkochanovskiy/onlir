@@ -29,7 +29,8 @@
                     </ul>
                 </div>
             </div>
-            @else
+            @endauth
+            @auth
                 <div class="header-registered">
                     <div class="header-registered-item-wrap">
                         <div class="header-registered-item">
@@ -46,12 +47,12 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="{{ route('home') }}"
+                                            <a href="{{ route('my-announcements') }}"
                                                onclick="event.preventDefault();
-                                         document.getElementById('home-form').submit();">
+                                         document.getElementById('my-announcements-form').submit();">
                                                 Мои объявления
                                             </a>
-                                            <form id="home-form" action="{{ route('home') }}" method="POST" style="display: none;">
+                                            <form id="my-announcements-form" action="{{ route('my-announcements') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
@@ -112,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                @endguest
+            @endauth
         </div>
     </header>
     <section>

@@ -7,25 +7,25 @@ Route::get('/search', 'SearchController@show')->name('search');
 
 Auth::routes();
 
-Route::group(['middleware'=>'auth'], function (){
-    Route::get('/home', 'HomeController@index')->name('home');
-    Route::post('/home', 'HomeController@index');
+Route::group(['prefix'=>'AreaPersonal'],['middleware'=>'auth'], function (){
+    Route::get('/my-announcements', 'MyAnnouncementsController@index')->name('my-announcements');
+    Route::post('/my-announcements', 'MyAnnouncementsController@index');
 
-    Route::get('/settings', 'SettingsController@index')->name('settings');
-    Route::post('/settings', 'SettingsController@index');
+    Route::get('/settings', 'AreaPersonal\SettingsController@index')->name('settings');
+    Route::post('/settings', 'AreaPersonal\SettingsController@index');
 
-    Route::get('/purse', 'PurseController@index')->name('purse');
-    Route::post('/purse', 'PurseController@index');
+    Route::get('/purse', 'AreaPersonal\PurseController@index')->name('purse');
+    Route::post('/purse', 'AreaPersonal\PurseController@index');
 
-    Route::get('/amend-contract', 'AmendContractController@index')->name('amend-contract');
-    Route::post('/amend-contract', 'AmendContractController@index');
+    Route::get('/amend-contract', 'AreaPersonal\AmendContractController@index')->name('amend-contract');
+    Route::post('/amend-contract', 'AreaPersonal\AmendContractController@index');
 
-    Route::get('/ad-delivery', 'AdDeliveryController@index')->name('ad-delivery');
-    Route::post('/ad-delivery', 'AdDeliveryController@index');
+    Route::get('/ad-delivery', 'AreaPersonal\AdDeliveryController@index')->name('ad-delivery');
+    Route::post('/ad-delivery', 'AreaPersonal\AdDeliveryController@index');
 
-    Route::get('/messages', 'MessagesController@index')->name('messages');
-//    Route::post('/messages', 'MessagesController@index');
+    Route::get('/messages', 'AreaPersonal\MessagesController@index')->name('messages');
+//    Route::post('/messages', 'AreaPersonal\MessagesController@index');
 
-    Route::get('/favorites', 'FavoritesController@index')->name('favorites');
-    Route::post('/favorites', 'FavoritesController@index');
+    Route::get('/favorites', 'AreaPersonal\FavoritesController@index')->name('favorites');
+    Route::post('/favorites', 'AreaPersonal\FavoritesController@index');
 });

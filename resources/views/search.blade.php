@@ -50,7 +50,9 @@
                     </div>
                 </div>
             </div>
-            @include('include.right-panel')
+            <div class="right-panel-wrapper">
+                @include('include.right-panel')
+            </div>
         </div>
     </div>
 @endsection
