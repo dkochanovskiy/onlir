@@ -12,6 +12,10 @@
                 <li id="settings"><a href="{{ route('settings') }}">Настройки</a></li>
             </ul>
         </div>
-        <h1>Изменить договор</h1>
+        <div class="container-content">
+            <div class="new-password">
+                Изменить договор
+            </div>
+        </div>
     </div>
 @endsection

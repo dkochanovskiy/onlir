@@ -13,21 +13,21 @@
             </ul>
         </div>
         <div class="container-content">
-            <h3>
+            <div class="new-password">
                 Баланс: 5 рублей
-            </h3>
+            </div>
             <br>
-            <h3>
+            <div class="new-password">
                 Пополнить:&#160;
                 <span class="replenish">
                     100
                 </span>&#160;
                 &#8381;
-            </h3>
+            </div>
             <br>
-            <h3>
+            <div class="new-password">
                 Выберите способ оплаты:
-            </h3>
+            </div>
         </div>
     </div>
 @endsection
