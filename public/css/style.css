@@ -543,8 +543,9 @@ footer{
 }
 .contacts-inner{
     margin: 10px;
-    outline: 1px solid #f18a00;
+    outline: 1px solid #337ab7;
     height: 97%;
+    overflow: auto;
 }
 .messages-inner{
     margin: 10px;
@@ -561,4 +562,6 @@ footer{
     font-size: 20px;
     color: #4f4f4f;
     border-bottom: 1px solid #337ab7;
+    cursor: pointer;
+    padding: 10px 20px;
 }
