@@ -28,14 +28,6 @@ $(document).mouseup(function (e) {
 $(function(){
     $("#phone").mask("8(999) 999-9999");
 });
-$('#purse').click(function(){
-    $("#home").removeClass('active');
-    // $("#amend-contract").removeClass('active');
-    // $("#ad-delivery").removeClass('active');
-    // $("#settings").removeClass('active');
-
-    $("#purse").addClass('active');
-});
 $("#checkbox-favorites").change(function(){
     if ($('#checkbox-favorites').prop('checked')==true){
         $("input[name='checkbox-favorites']").prop('checked',true);
@@ -77,3 +69,9 @@ function ShowCompleted(){
     $("#ads-active").css('display', 'none');
     $("#ads-completed").css('display', 'block');
 }
+$('.contacts-inner-item').click(function(){
+    var id_elem =(this.id);
+    var text = $('#' + id_elem).text();
+    $(".messages-inner-caption").text(text);
+});
+

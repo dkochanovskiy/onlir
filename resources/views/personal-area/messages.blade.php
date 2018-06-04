@@ -5,95 +5,74 @@
     <div class="contacts-messages">
         <div class="contacts">
             <div class="contacts-inner">
-                <div class="contacts-inner-item">
-                    ivan@gmail.com
+                <div class="contacts-inner-item" id="c1">
+                    ivan
                 </div>
-                <div class="contacts-inner-item">
-                    petrov@yandex.ru
+                <div class="contacts-inner-item" id="c2">
+                    petrov
                 </div>
-                <div class="contacts-inner-item">
-                    oleg@rambler.ru
+                <div class="contacts-inner-item" id="c3">
+                    oleg
                 </div>
-                <div class="contacts-inner-item">
-                    kotin@yahoo.com
+                <div class="contacts-inner-item" id="c4">
+                    kotin
                 </div>
-                <div class="contacts-inner-item">
-                    sergey@inbox.ru
+                <div class="contacts-inner-item" id="c5">
+                    sergey
                 </div>
-                <div class="contacts-inner-item">
-                    valera@gmail.com
+                <div class="contacts-inner-item" id="c6">
+                    valera
                 </div>
-                <div class="contacts-inner-item">
-                    anton@yandex.ru
+                <div class="contacts-inner-item" id="c7">
+                    anton
                 </div>
-                <div class="contacts-inner-item">
-                    kirill@rambler.ru
+                <div class="contacts-inner-item" id="c8">
+                    kirill
                 </div>
-                <div class="contacts-inner-item">
-                    mefodiy@yahoo.com
+                <div class="contacts-inner-item" id="c9">
+                    mefodiy
                 </div>
-                <div class="contacts-inner-item">
-                    igor@gmail.com
+                <div class="contacts-inner-item" id="c10">
+                    igor
                 </div>
-                <div class="contacts-inner-item">
-                    vasilevs@yandex.ru
+                <div class="contacts-inner-item" id="c11">
+                    vasilevs
                 </div>
-                <div class="contacts-inner-item">
-                    artem@rambler.ru
+                <div class="contacts-inner-item" id="c12">
+                    artem
                 </div>
-                <div class="contacts-inner-item">
-                    ibragim@yahoo.com
-                </div>
-                <div class="contacts-inner-item">
-                    ivanov@inbox.ru
-                </div>
-                <div class="contacts-inner-item">
-                    sidorov@gmail.com
-                </div>
-                <div class="contacts-inner-item">
-                    golubev@yandex.ru
-                </div>
-                <div class="contacts-inner-item">
-                    vasin@rambler.ru
-                </div>
-                <div class="contacts-inner-item">
-                    vasiliy@yahoo.com
-                </div>
-                <div class="contacts-inner-item">
-                    rinat@gmail.com
-                </div>
-                <div class="contacts-inner-item">
-                    artamon@yandex.ru
-                </div>
-                <div class="contacts-inner-item">
-                    chouyunfat@rambler.ru
-                </div>
-                <div class="contacts-inner-item">
-                    samohung@yahoo.com
-                </div>
-                <div class="contacts-inner-item">
-                    yenbyao@gmail.com
-                </div>
-                <div class="contacts-inner-item">
-                    bonapart@inbox.ru
-                </div>
-                <div class="contacts-inner-item">
-                    barbossa@gmail.com
-                </div>
-                <div class="contacts-inner-item">
-                    sparow@yandex.ru
-                </div>
-                <div class="contacts-inner-item">
-                    misha@rambler.ru
-                </div>
-                <div class="contacts-inner-item">
-                    garik@yahoo.com
+                <div class="contacts-inner-item" id="c13">
+                    ibragim
                 </div>
             </div>
         </div>
         <div class="messages">
             <div class="messages-inner">
-
+                <div class="messages-inner-caption">
+                    ivan
+                </div>
+                <div class="messages-inner-text">
+                    <div class="messages-inner-text-item">
+                        <div class="messages-inner-date">
+                            22 МАЯ 2018 Г.
+                        </div>
+                    </div>
+                    <div class="messages-inner-text-item">
+                        <div class="messages-inner-incomming">
+                            За сколько сдадите квартиру?
+                        </div>
+                    </div>
+                    <div class="messages-inner-text-item">
+                        <div class="messages-inner-outgoing">
+                            Привет, цена не изменится
+                        </div>
+                    </div>
+                    <div class="messages-inner-text-item">
+                        <div class="messages-inner-incomming">
+                            Спасибо
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
