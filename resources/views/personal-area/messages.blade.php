@@ -51,27 +51,25 @@
                 <div class="messages-inner-caption">
                     ivan
                 </div>
-                <div class="messages-inner-text">
-                    <div class="messages-inner-text-item">
-                        <div class="messages-inner-date">
-                            22 МАЯ 2018 Г.
-                        </div>
+                <div class="messages-inner-chat">
+                    <div class="messages-inner-date">
+                        22 МАЯ 2018 Г.
                     </div>
-                    <div class="messages-inner-text-item">
-                        <div class="messages-inner-incomming">
+                    <div class="messages-inner-chat-wrap">
+                        <p class="messages-inner-chat-wrap-item messages-inner-incomming">
                             За сколько сдадите квартиру?
-                        </div>
+                        </p>
                     </div>
-                    <div class="messages-inner-text-item">
-                        <div class="messages-inner-outgoing">
-                            Привет, цена не изменится
-                        </div>
-                    </div>
-                    <div class="messages-inner-text-item">
-                        <div class="messages-inner-incomming">
-                            Спасибо
-                        </div>
-                    </div>
+                    {{--<div class="messages-inner-chat-wrap">--}}
+                        {{--<div class="messages-inner-chat-wrap-item messages-inner-outgoing">--}}
+                            {{--Привет, цена не изменится--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="messages-inner-chat-wrap">--}}
+                        {{--<div class="messages-inner-chat-wrap-item messages-inner-incomming">--}}
+                            {{--Спасибо--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </div>
             </div>
         </div>
