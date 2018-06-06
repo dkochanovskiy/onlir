@@ -56,20 +56,28 @@
                         22 МАЯ 2018 Г.
                     </div>
                     <div class="messages-inner-chat-wrap">
-                        <p class="messages-inner-chat-wrap-item messages-inner-incomming">
+                        <div class="messages-inner-chat-wrap-item messages-inner-incomming">
                             За сколько сдадите квартиру?
-                        </p>
+                        </div>
                     </div>
-                    {{--<div class="messages-inner-chat-wrap">--}}
-                        {{--<div class="messages-inner-chat-wrap-item messages-inner-outgoing">--}}
-                            {{--Привет, цена не изменится--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="messages-inner-chat-wrap">--}}
-                        {{--<div class="messages-inner-chat-wrap-item messages-inner-incomming">--}}
-                            {{--Спасибо--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
+                    <div class="messages-inner-chat-wrap">
+                        <div class="messages-inner-chat-wrap-item messages-inner-outgoing">
+                            Привет, цена не изменится
+                        </div>
+                    </div>
+                    <div class="messages-inner-chat-wrap">
+                        <div class="messages-inner-chat-wrap-item messages-inner-incomming">
+                            Спасибо
+                        </div>
+                    </div>
+                </div>
+                <div class="messages-inner-write-message">
+                    <form action="" method="post">
+                        <textarea class="form-control" rows="1" placeholder="Написать сообщение ..."></textarea>
+                        <button type="submit" class="btn btn-primary ">
+                            <span class="glyphicon glyphicon-send"></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

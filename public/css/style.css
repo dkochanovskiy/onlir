@@ -445,6 +445,9 @@ footer{
     width: 49%;
     display: inline-block;
 }
+.table-offer{
+    margin: 0 0 40px 0;
+}
 .table-offer td{
     padding: 0 0 0 8px!important;
 }
@@ -460,14 +463,14 @@ footer{
 .show-phone{
     float: left;
     font-size: 15px;
-    margin: 8px 0 0 10px;
+    margin: 2px 0 0 20px;
 }
 .edit-phone{
     visibility: hidden;
     float: left;
     width: 18%;
     position: absolute;
-    left: 500px;
+    left: 430px;
     top: 138px;
 }
 .edit-phone-input{
@@ -552,6 +555,8 @@ footer{
     outline: 1px solid #337ab7;
     height: 97%;
     overflow: auto;
+    position:relative;
+    padding-bottom:50px;
 }
 .contacts-inner-search{
     width: 97%;
@@ -580,23 +585,51 @@ footer{
 }
 .messages-inner-incomming{
     float: left;
-    background: #f8c47f;
+    background: #f18a00;
     margin: 0 0 0 10px;
 }
 .messages-inner-outgoing{
     float: right;
-    background: #99bcdb;
+    background: #337ab7;
     margin: 0 10px 0 0;
 }
+.messages-inner-chat{
+    height: 469px;
+}
 .messages-inner-chat-wrap{
-    width: 100%;
-    height: auto;
     margin: 10px 0 0 0;
-    outline: 1px solid red;
+    height: 40px;
+    color: #fff;
 }
 .messages-inner-chat-wrap-item{
     max-width: 80%;
     border-radius: 5px;
     padding: 5px;
-    font-size: 21px;
+    font-size: 16px;
+}
+.messages-inner-write-message{
+    position: absolute;
+    bottom: 0;
+    width: 100%!important;
+}
+.messages-inner-write-message form{
+    width: 100%!important;
+}
+.messages-inner-write-message textarea{
+    border-top: 1px solid #337ab7;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    width: 100%!important;
+    border-radius: 0!important;
+    height: 48px;
+    resize:none;
+}
+.messages-inner-write-message button{
+    margin: -33px 0 0 0;
+    float: right;
+    border-radius: 0!important;
+}
+.navigation-bar a{
+    text-decoration: none!important;
 }

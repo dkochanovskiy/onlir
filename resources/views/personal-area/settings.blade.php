@@ -17,7 +17,9 @@
                 <div class="phone">Телефон:</div>
                 <div class="show-phone" id="show-phone">
                     8(962) 594-3880&#160;
-                    <a href="javascript:EditPhoneForm()"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="javascript:EditPhoneForm()">
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Изменить</button>
+                    </a>
                 </div>
                 <div class="edit-phone" id="edit-phone">
                     <form class="form-horizontal" role="form" id="edit-phone-form">
