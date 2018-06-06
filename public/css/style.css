@@ -636,3 +636,6 @@ footer{
 .navigation-bar a{
     text-decoration: none!important;
 }
+.ad-submission-form input[type=text]{
+    width: 80%!important;
+}

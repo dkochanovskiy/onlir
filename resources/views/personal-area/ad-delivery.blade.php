@@ -13,8 +13,28 @@
         </ul>
     </div>
     <div class="container-content">
-        <div class="new-password">
-            Подать объявление в Москве
+        <div class="ad-submission-form">
+            <form method="post" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="address">Адрес</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="exampleInputPassword1">Пароль</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Проверить меня
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">Отправить</button>
+            </form>
         </div>
     </div>
 </div>
