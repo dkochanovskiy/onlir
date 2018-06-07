@@ -399,7 +399,7 @@ footer{
     height: 500px;
 }
 .container-content{
-    width: 60%;
+    width: 80%;
     float: left;
     margin: 0 0 0 50px;
 }
@@ -636,6 +636,23 @@ footer{
 .navigation-bar a{
     text-decoration: none!important;
 }
+.title-ad-submission{
+    width: 100%;
+    height: auto;
+}
 .ad-submission-form input[type=text]{
     width: 80%!important;
+}
+.title-ad-submission h2{
+    display: inline-block;
+}
+.title-ad-submission .btn-primary{
+    margin: -13px 0 0 50px;
+}
+.fill-contract{
+    margin: 30px 0 0 0;
+}
+.fill-contract-inner{
+    width: 168px;
+    margin: 30px auto;
 }
