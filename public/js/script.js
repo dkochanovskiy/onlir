@@ -74,4 +74,7 @@ $('.contacts-inner-item').click(function(){
     var text = $('#' + id_elem).text();
     $(".messages-inner-caption").text(text);
 });
+$("#address").keyup(function(){
+    $(".to-metro").css('display', 'block');
+});
 

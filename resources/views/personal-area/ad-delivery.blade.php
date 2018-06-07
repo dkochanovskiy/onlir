@@ -32,38 +32,53 @@
             <form method="post" class="form-horizontal" role="form">
                 <div class="form-group">
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                            Выпадающий список
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="propertyTypeMenu" data-toggle="dropdown">
+                            Выберите тип недвижимости
+                            <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">CSS</a></li>
-                            <li><a href="#">JavaScript</a></li>
+                            <li role="presentation" class="dropdown-header">Жилая</li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Дом</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Комната</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Квартира</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Коттедж</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">Коммерческая</li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Готовый бизнес</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Офис</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Торговая площадь</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Складское помощение</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Помещение свободного назначения</a></li>
                         </ul>
                     </div>
-
-                        {{--<button class="btn dropdown-toggle sr-only" type="button" id="propertyTypeMenu" data-toggle="dropdown">--}}
-                            {{--Тип недвижимости--}}
-                            {{--<span class="caret"></span>--}}
-                        {{--</button>--}}
-                        {{--<ul class="dropdown-menu" role="menu" aria-labelledby="propertyTypeMenu">--}}
-                            {{--<li role="presentation" class="dropdown-header">Жилая</li>--}}
-                            {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Дом</a></li>--}}
-                            {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Комната</a></li>--}}
-                            {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Квартира</a></li>--}}
-                            {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Коттедж</a></li>--}}
-                            {{--<li role="presentation" class="divider"></li>--}}
-                            {{--<li role="presentation" class="dropdown-header">Готовый бизнес</li>--}}
-                            {{--<li role="presentation" class="dropdown-header">Офис</li>--}}
-                            {{--<li role="presentation" class="dropdown-header">Торговая площадь</li>--}}
-                            {{--<li role="presentation" class="dropdown-header">Складское помощенеи</li>--}}
-                            {{--<li role="presentation" class="dropdown-header">Помещение свободного назначения</li>--}}
-                        {{--</ul>--}}
-
+                </div>
+                <div class="ad-submission-caption">
+                    <h3>Тип объекта</h3>
+                </div>
+                <div class="ad-submission-caption">
+                    <h3>Об объекте</h3>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="address">Адрес</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <input type="text" class="form-control" id="address">
+                </div>
+                <div class="form-group to-metro">
+                    <label class="col-sm-2 control-label" for="metro"></label>
+                    <input type="text" class="form-control" id="metro" placeholder="Метро">
+                </div>
+                <div class="form-group dropdown to-metro">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="to-metro" data-toggle="dropdown">
+                        До метро
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пешком</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Транспортом</a></li>
+                    </ul>
+                </div>
+                <div class="form-group to-metro">
+                    <input type="text" class="form-control" id="minutes">
+                    <label class="col-sm-2 control-label" for="minutes">1</label>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="exampleInputPassword1">Пароль</label>

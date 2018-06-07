@@ -643,6 +643,12 @@ footer{
 .ad-submission-form input[type=text]{
     width: 80%!important;
 }
+.to-metro{
+    /*display: none;*/
+}
+#metro{
+    width: 10%;
+}
 .title-ad-submission h2{
     display: inline-block;
 }
@@ -655,4 +661,10 @@ footer{
 .fill-contract-inner{
     width: 168px;
     margin: 30px auto;
+}
+.ad-submission-form .dropdown-header{
+    font-size: 20px!important;
+}
+.ad-submission-form a{
+    text-decoration: none!important;
 }
