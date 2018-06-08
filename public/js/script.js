@@ -77,4 +77,34 @@ $('.contacts-inner-item').click(function(){
 $("#address").keyup(function(){
     $(".to-metro").css('display', 'block');
 });
+function House(){
+    $("#propertyType").val('Дом');
+}
+function Room(){
+    $("#propertyType").val('Комната');
+}
+function Apartment(){
+    $("#propertyType").val('Квартира');
+}
+function Cottage(){
+    $("#propertyType").val('Коттедж');
+}
+function ReadyBusiness(){
+    $("#propertyType").val('Готовый бизнес');
+}
+function Office(){
+    $("#propertyType").val('Офис');
+}
+function TradeArea(){
+    $("#propertyType").val('Торговая площадь');
+}
+function WarehouseSpace(){
+    $("#propertyType").val('Складское помещение');
+}
+function FreeDestinationRoom(){
+    $("#propertyType").val('Помещение свободного назначения');
+}
+function Studio(){
+    $("#propertyType").val('Студия');
+}
 

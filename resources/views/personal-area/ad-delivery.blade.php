@@ -32,42 +32,47 @@
             <form method="post" class="form-horizontal" role="form">
                 <div class="form-group">
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="propertyTypeMenu" data-toggle="dropdown">
-                            Выберите тип недвижимости
+                        <button class="btn btn-default dropdown-toggle" type="button" id="propertyTypeMenu" data-toggle="dropdown">
+                            Выберите
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
                             <li role="presentation" class="dropdown-header">Жилая</li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Дом</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Комната</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Квартира</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Коттедж</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:House()">Дом</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Room()">Комната</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Apartment()">Квартира</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Cottage()">Коттедж</a></li>
                             <li role="presentation" class="divider"></li>
                             <li role="presentation" class="dropdown-header">Коммерческая</li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Готовый бизнес</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Офис</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Торговая площадь</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Складское помощение</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Помещение свободного назначения</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:ReadyBusiness()">Готовый бизнес</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Office()">Офис</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:TradeArea()">Торговая площадь</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:WarehouseSpace()">Складское помощение</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:FreeDestinationRoom()">Помещение свободного назначения</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="ad-submission-caption">
-                    <h3>Тип объекта</h3>
-                </div>
-                <div class="ad-submission-caption">
-                    <h3>Об объекте</h3>
-                </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label" for="address">Адрес</label>
+                    <label class="control-label" for="propertyType">или введите тип недвижимости</label>
+                    <input type="text" class="form-control" id="propertyType">
+                </div>
+                <hr>
+                {{--<div class="ad-submission-caption">--}}
+                    {{--<h3>Тип объекта</h3>--}}
+                {{--</div>--}}
+                {{--<div class="ad-submission-caption">--}}
+                    {{--<h3>Об объекте</h3>--}}
+                {{--</div>--}}
+                <div class="form-group">
+                    <label class="control-label" for="address">Введите адрес</label>
                     <input type="text" class="form-control" id="address">
                 </div>
                 <div class="form-group to-metro">
-                    <label class="col-sm-2 control-label" for="metro"></label>
-                    <input type="text" class="form-control" id="metro" placeholder="Метро">
+                    <label class="control-label" for="metro">Ближайшая станция метро</label>
+                    <input type="text" class="form-control" id="metro">
                 </div>
                 <div class="form-group dropdown to-metro">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="to-metro" data-toggle="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="to-metro" data-toggle="dropdown">
                         До метро
                         <span class="caret"></span>
                     </button>
@@ -78,23 +83,31 @@
                 </div>
                 <div class="form-group to-metro">
                     <input type="text" class="form-control" id="minutes">
-                    <label class="col-sm-2 control-label" for="minutes">1</label>
+                    <label class="control-label" for="minutes">минут</label>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="selectNumberRooms" data-toggle="dropdown">
+                            Выберите количество комнат
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Studio()">Студия</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:OneRoom()">1</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:TwoRooms()">2</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:ThreeRooms()">3</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:FourRooms()">4</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:FiveRooms()">5</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:SixRooms()">6</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label" for="exampleInputPassword1">Пароль</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label class="control-label" for="numberRooms">Количество комнат</label>
+                    <input type="text" class="form-control" id="numberRooms">
                 </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label" for="exampleInputFile">File input</label>
-                    <input type="file" id="exampleInputFile">
-                    <p class="help-block">Example block-level help text here.</p>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Проверить меня
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-default">Отправить</button>
+                {{--<button type="submit" class="btn btn-default">Отправить</button>--}}
             </form>
         </div>
     </div>
