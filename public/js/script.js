@@ -78,33 +78,68 @@ $("#address").keyup(function(){
     $(".to-metro").css('display', 'block');
 });
 function House(){
+    $("#propertyTypeMenu").html('Дом <span class="caret"></span>');
     $("#propertyType").val('Дом');
 }
 function Room(){
+    $("#propertyTypeMenu").html('Комната <span class="caret"></span>');
     $("#propertyType").val('Комната');
 }
 function Apartment(){
+    $("#propertyTypeMenu").html('Квартира <span class="caret"></span>');
     $("#propertyType").val('Квартира');
 }
 function Cottage(){
+    $("#propertyTypeMenu").html('Коттедж <span class="caret"></span>');
     $("#propertyType").val('Коттедж');
 }
 function ReadyBusiness(){
+    $("#propertyTypeMenu").html('Готовый бизнес <span class="caret"></span>');
     $("#propertyType").val('Готовый бизнес');
 }
 function Office(){
+    $("#propertyTypeMenu").html('Офис <span class="caret"></span>');
     $("#propertyType").val('Офис');
 }
 function TradeArea(){
+    $("#propertyTypeMenu").html('Торговая площадь <span class="caret"></span>');
     $("#propertyType").val('Торговая площадь');
 }
 function WarehouseSpace(){
+    $("#propertyTypeMenu").html('Складское помещение <span class="caret"></span>');
     $("#propertyType").val('Складское помещение');
 }
 function FreeDestinationRoom(){
+    $("#propertyTypeMenu").html('Помещение свободного назначения <span class="caret"></span>');
     $("#propertyType").val('Помещение свободного назначения');
 }
 function Studio(){
-    $("#propertyType").val('Студия');
+    $("#numberRooms").val('Студия');
+    $("#selectNumberRooms").html('Студия <span class="caret"></span>');
 }
+function OneRoom(){
+    $("#numberRooms").val('1');
+    $("#selectNumberRooms").html('1 <span class="caret"></span>');
+}
+function TwoRooms(){
+    $("#numberRooms").val('2');
+    $("#selectNumberRooms").html('2 <span class="caret"></span>');
+}
+function ThreeRooms(){
+    $("#numberRooms").val('3');
+    $("#selectNumberRooms").html('3 <span class="caret"></span>');
+}
+function FourRooms(){
+    $("#numberRooms").val('4');
+    $("#selectNumberRooms").html('4 <span class="caret"></span>');
+}
+function FiveRooms(){
+    $("#numberRooms").val('5');
+    $("#selectNumberRooms").html('5 <span class="caret"></span>');
+}
+function SixRooms(){
+    $("#numberRooms").val('6');
+    $("#selectNumberRooms").html('6 <span class="caret"></span>');
+}
+
 

@@ -657,7 +657,31 @@ footer{
 #minutes{
     width: 18%;
     display: inline;
+}
+#numberBerths{
+    width: 5%;
+    display: inline;
     margin: 0 3px 0 43px;
+}
+#totalArea{
+    width: 6%;
+    display: inline;
+}
+#residentialArea{
+    width: 6%;
+    display: inline;
+}
+#kitchen{
+    width: 6%;
+    display: inline;
+}
+#floorNumber{
+    width: 6%;
+    display: inline;
+}
+#totalFloors{
+    width: 6%;
+    display: inline;
 }
 .title-ad-submission h2{
     display: inline-block;
