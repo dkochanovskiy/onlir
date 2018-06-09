@@ -139,16 +139,96 @@
                         <div class="radio">
                             <label>
                                 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                Первая опция&mdash;выбирайте его, если вам нравится этот пункт
+                                Балкон
                             </label>
                         </div>
                         <div class="radio">
                             <label>
                                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Вторая опция - это несколько другое, и она отменяет выбор первой опции
+                                Лоджия
                             </label>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="furniture" id="furniture1" value="option1" checked>
+                                Мебель есть /
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="furniture" id="furniture2" value="option2">
+                                Частично /
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="furniture" id="furniture3" value="option3">
+                                Нет /
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="kitchen_set" id="kitchen_set1" value="option1" checked>
+                                Кухонный гарнитур есть /
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="kitchen_set" id="kitchen_set2" value="option2">
+                                Частично /
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="kitchen_set" id="kitchen_set3" value="option3">
+                                Нет /
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="dropdown">
+                            <label class="control-label" for="selectNumberRooms">Лифт: </label>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="selectElevator" data-toggle="dropdown">
+                                Пассажирский и грузовой
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:PassengerСargo()">Пассажирский и грузовой</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Passenger()">Пассажирский</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Сargo()">Грузовой</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Absent()">Нет</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="elevator">Лифт</label>
+                        <input type="text" class="form-control" id="elevator">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="selectRepairs">Ремонт</label>
+                    <div class="btn-group" data-toggle="buttons" id="selectRepairs">
+                        <label class="btn btn-default btn-lg">
+                            <input type="radio" name="repairs" id="repairsOption1">Косметический
+                        </label>
+                        <label class="btn btn-default btn-lg">
+                            <input type="radio" name="repairs" id="repairsOption2">Дизайнерский
+                        </label>
+                        <label class="btn btn-default btn-lg">
+                            <input type="radio" name="repairs" id="repairsOption3">Евро
+                        </label>
+                        <label class="btn btn-default btn-lg">
+                            <input type="radio" name="repairs" id="repairsOption4">Без ремонта
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="repairs">Ремонт</label>
+                    <input type="text" class="form-control" id="repairs">
                 </div>
 
                 {{--<button type="submit" class="btn btn-default">Отправить</button>--}}

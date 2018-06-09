@@ -702,3 +702,7 @@ footer{
 .ad-submission-form a{
     text-decoration: none!important;
 }
+.apartment .radio{
+    display: inline!important;
+    margin: 0 0 0 10px;
+}

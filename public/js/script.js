@@ -141,5 +141,37 @@ function SixRooms(){
     $("#numberRooms").val('6');
     $("#selectNumberRooms").html('6 <span class="caret"></span>');
 }
+function PassengerСargo(){
+    $("#elevator").val('Пассажирский и грузовой');
+    $("#selectElevator").html('Пассажирский и грузовой <span class="caret"></span>');
+}
+function Passenger(){
+    $("#elevator").val('Пассажирский');
+    $("#selectElevator").html('Пассажирский <span class="caret"></span>');
+}
+function Сargo(){
+    $("#elevator").val('Грузовой');
+    $("#selectElevator").html('Грузовой <span class="caret"></span>');
+}
+function Absent(){
+    $("#elevator").val('Нет');
+    $("#selectElevator").html('Нет <span class="caret"></span>');
+}
+$('input:radio[name=repairs]').on('change', function() {
+    alert( this.value);
+});
+// function Cosmetic(){
+//     $("#repairs").val('Косметический');
+// }
+// function Designer(){
+//     $("#repairs").val('Дизайнерский');
+// }
+// function Euro(){
+//     $("#repairs").val('Евро');
+// }
+// function withoutRepair(){
+//     $("#repairs").val('Без ремонта');
+// }
+
 
 
