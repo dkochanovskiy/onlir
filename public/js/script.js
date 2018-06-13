@@ -27,7 +27,7 @@ $(document).mouseup(function (e) {
 });
 $(function(){
     $("#phone").mask("8(999) 999-9999");
-    $("#your-phone").mask("8(999) 999-9999");
+    // $("#your-phone").mask("8(999) 999-9999");
 });
 $("#checkbox-favorites").change(function(){
     if ($('#checkbox-favorites').prop('checked')==true){
@@ -81,38 +81,137 @@ $("#address").keyup(function(){
 function House(){
     $("#propertyTypeMenu").html('Дом <span class="caret"></span>');
     $("#propertyType").val('Дом');
+
+    $("#room").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#house").css('display', 'block');
 }
 function Room(){
     $("#propertyTypeMenu").html('Комната <span class="caret"></span>');
     $("#propertyType").val('Комната');
+
+    $("#house").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#room").css('display', 'block');
 }
 function Apartment(){
     $("#propertyTypeMenu").html('Квартира <span class="caret"></span>');
     $("#propertyType").val('Квартира');
+
+    $("#room").css('display', 'none');
+    $("#house").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#apartment").css('display', 'block');
 }
 function Cottage(){
     $("#propertyTypeMenu").html('Коттедж <span class="caret"></span>');
     $("#propertyType").val('Коттедж');
+
+    $("#room").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#house").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#cottage").css('display', 'block');
 }
 function ReadyBusiness(){
     $("#propertyTypeMenu").html('Готовый бизнес <span class="caret"></span>');
     $("#propertyType").val('Готовый бизнес');
+
+    $("#room").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#house").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#ready-business").css('display', 'block');
 }
 function Office(){
     $("#propertyTypeMenu").html('Офис <span class="caret"></span>');
     $("#propertyType").val('Офис');
+
+    $("#room").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#house").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#office").css('display', 'block');
 }
 function TradeArea(){
     $("#propertyTypeMenu").html('Торговая площадь <span class="caret"></span>');
     $("#propertyType").val('Торговая площадь');
+
+    $("#room").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#house").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#trade-area").css('display', 'block');
 }
 function WarehouseSpace(){
     $("#propertyTypeMenu").html('Складское помещение <span class="caret"></span>');
     $("#propertyType").val('Складское помещение');
+
+    $("#room").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#house").css('display', 'none');
+    $("#free-destination-room").css('display', 'none');
+
+    $("#warehouse-spacepace").css('display', 'block');
 }
 function FreeDestinationRoom(){
     $("#propertyTypeMenu").html('Помещение свободного назначения <span class="caret"></span>');
     $("#propertyType").val('Помещение свободного назначения');
+
+    $("#room").css('display', 'none');
+    $("#apartment").css('display', 'none');
+    $("#cottage").css('display', 'none');
+    $("#ready-business").css('display', 'none');
+    $("#office").css('display', 'none');
+    $("#trade-area").css('display', 'none');
+    $("#warehouse-spacepace").css('display', 'none');
+    $("#house").css('display', 'none');
+
+    $("#free-destination-room").css('display', 'block');
 }
 function Studio(){
     $("#numberRooms").val('Студия');

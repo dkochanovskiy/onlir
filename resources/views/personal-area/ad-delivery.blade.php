@@ -86,7 +86,7 @@
                     <input type="text" class="form-control" id="minutes">
                     <label class="control-label" for="minutes">минут</label>
                 </div>
-                @include('include/apartment')
+                @include('include.property-type.apartment')
                 <div class="ad-submission-caption rent">
                     <h3>Арендная плата</h3>
                 </div>
@@ -114,7 +114,7 @@
                     <label class="control-label" for="your-name"></label>
                     <input type="text" class="form-control" id="your-name">
                 </div>
-                <div class="ad-submission-caption">
+                <div class="ad-submission-caption your-phone">
                     <h3>Ваш телефон</h3>
                 </div>
                 <div class="form-group">

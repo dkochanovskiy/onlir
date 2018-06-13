@@ -1,4 +1,4 @@
-<div class="apartment">
+<div id="apartment">
     <div class="form-group">
         <div class="dropdown">
             <label class="control-label" for="selectNumberRooms">Количество комнат: </label>

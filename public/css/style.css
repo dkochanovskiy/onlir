@@ -722,7 +722,7 @@ footer{
 .ad-submission-form a{
     text-decoration: none!important;
 }
-.apartment .radio{
+#apartment .radio{
     display: inline!important;
     margin: 0 0 0 10px;
 }
@@ -739,7 +739,7 @@ footer{
     margin: 0 0 0 40px;
 }
 .your-name{
-    width: 50%;
+    width: 192px;
     display: inline-block;
 }
 #your-name{
