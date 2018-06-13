@@ -676,12 +676,32 @@ footer{
     display: inline;
 }
 #floorNumber{
-    width: 6%;
+    width: 42px;
     display: inline;
 }
 #totalFloors{
-    width: 6%;
+    width: 42px;
     display: inline;
+}
+#rent{
+    width: 76px;
+    float: left;
+    margin: 0 0 0 10px ;
+}
+#pledge{
+    width: 76px;
+    display: inline-block!important;
+}
+.pledge{
+    width: 144px;
+    display: inline-block!important;
+    margin: 0 0 0 70px;
+}
+.pledge .ad-submission-form-label{
+    width: 10px;
+    font-size: 20px;
+    float: left!important;
+    margin: -40px 0 0 140px;
 }
 .title-ad-submission h2{
     display: inline-block;
@@ -705,4 +725,25 @@ footer{
 .apartment .radio{
     display: inline!important;
     margin: 0 0 0 10px;
+}
+.rent{
+    width: 192px;
+    float: left;
+}
+.ad-submission-form-label{
+    font-size: 20px;
+    margin: -7px 0 0 20px;
+}
+.including-communal{
+    display: inline-block!important;
+    margin: 0 0 0 40px;
+}
+.your-name{
+    width: 50%;
+    display: inline-block;
+}
+#your-name{
+    width: 200px;
+    float: left;
+    margin: 0 0 0 -49px ;
 }

@@ -27,6 +27,7 @@ $(document).mouseup(function (e) {
 });
 $(function(){
     $("#phone").mask("8(999) 999-9999");
+    $("#your-phone").mask("8(999) 999-9999");
 });
 $("#checkbox-favorites").change(function(){
     if ($('#checkbox-favorites').prop('checked')==true){
@@ -157,21 +158,25 @@ function Absent(){
     $("#elevator").val('Нет');
     $("#selectElevator").html('Нет <span class="caret"></span>');
 }
-$('input:radio[name=repairs]').on('change', function() {
+$('input[name=repairs]:checked').on('change', function() {
     alert( this.value);
 });
-// function Cosmetic(){
-//     $("#repairs").val('Косметический');
-// }
-// function Designer(){
-//     $("#repairs").val('Дизайнерский');
-// }
-// function Euro(){
-//     $("#repairs").val('Евро');
-// }
-// function withoutRepair(){
-//     $("#repairs").val('Без ремонта');
-// }
+function Cosmetic(){
+    $("#repairs").val('Косметический');
+$("#selectRepairs").html('Косметический <span class="caret"></span>');
+}
+function Designer(){
+    $("#repairs").val('Дизайнерский');
+$("#selectRepairs").html('Дизайнерский <span class="caret"></span>');
+}
+function Euro(){
+    $("#repairs").val('Евро');
+$("#selectRepairs").html('Евро <span class="caret"></span>');
+}
+function withoutRepair(){
+    $("#repairs").val('Без ремонта');
+$("#selectRepairs").html('Без ремонта <span class="caret"></span>');
+}
 
 
 
