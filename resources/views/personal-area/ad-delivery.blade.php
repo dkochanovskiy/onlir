@@ -58,12 +58,6 @@
                     <label class="control-label" for="propertyType">Тип недвижимости</label>
                     <input type="text" class="form-control" id="propertyType">
                 </div>
-                {{--<div class="ad-submission-caption">--}}
-                    {{--<h3>Тип объекта</h3>--}}
-                {{--</div>--}}
-                {{--<div class="ad-submission-caption">--}}
-                    {{--<h3>Об объекте</h3>--}}
-                {{--</div>--}}
                 <div class="form-group">
                     <label class="control-label" for="address">Введите адрес</label>
                     <input type="text" class="form-control" id="address">
@@ -114,13 +108,136 @@
                     <label class="control-label" for="your-name"></label>
                     <input type="text" class="form-control" id="your-name">
                 </div>
-                <div class="ad-submission-caption your-phone">
-                    <h3>Ваш телефон</h3>
+                <div class="phone-communication-wrap">
+                    <div class="phone-communication-caption">
+                        <h3>Телефон(ы) для связи</h3>
+                    </div>
+                    <div class="phone-communication-inner">
+                        <div class="phone-communication-font">
+                            <span>8(962) 594-3880&#160;</span>
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Удалить</button>
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label" for="your-phone"></label>
-                    <input type="text" class="form-control" id="your-phone">
+                <div class="facilities">
+                    <h3>
+                        Удобства
+                    </h3>
+                    <div class="facilities-inner">
+                        <div class="facilities-item">
+                            Техника
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Холодильник
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Стиральная машина
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Посудомоечная машина
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Телевизор
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Микроволновая печь
+                                </label>
+                            </div>
+                        </div>
+                        <div class="facilities-item other">
+                            Прочее
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Кондиционер
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Интернет
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="photos">
+                    <h3>Фотографии</h3>
+                    <div class="photos-inner">
+                        <div class="add-photo">
+                            <div class="camera">
+                                <button type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-camera"></span>
+                                </button>
+                            </div>
+                            <div class="add-button">
+                                <button type="button" class="btn btn-primary">
+                                    <span class="glyphicon glyphicon-plus">
+                                        Загрузить фото
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="photos-desc">
+                            Не допускаются фотографии содержащие водяные знаки, чужие объекты, контакты и рекламные
+                            баннеры. Максимальный размер фото 10 мб.   JGP, PNG, GIF
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ways-accommodation">
+                    <h3>Способы размещения</h3>
+                    <div class="ways-accommodation-inner">
+                        <div class="ways-accommodation-item free-charge">
+                            <div class="ways-accommodation-input">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="option1" checked>
+                                        Бесплатное
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ways-accommodation-item top-3">
+                            <div class="ways-accommodation-input">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="option2">
+                                        Топ-3 (Популярные объявления)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ways-accommodation-item allotted">
+                            <div class="ways-accommodation-input">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="ways-accommodation3" value="option3">
+                                        Выделенное
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{--<div class="form-group">--}}
+                    {{--<label class="control-label" for="your-phone1"></label>--}}
+                    {{--<input type="text" class="form-control input-phone-communication" id="your-phone1">--}}
+                {{--</div>--}}
 
                 {{--<button type="submit" class="btn btn-default">Отправить</button>--}}
             </form>

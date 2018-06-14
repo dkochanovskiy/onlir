@@ -747,3 +747,74 @@ footer{
     float: left;
     margin: 0 0 0 -49px ;
 }
+.phone-communication-font{
+
+}
+.input-phone-communication{
+    width: 200px!important;
+    float: left;
+}
+.phone-communication-caption{
+    width: 268px;
+    display: inline-block;!important;
+}
+.phone-communication-inner{
+    width: 372px;
+    display: inline-block;
+}
+.phone-communication-font:first-child{
+    margin: 2px 0 0 20px;
+    font-size: 18px!important;
+}
+.facilities-item{
+    width: 49%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align:top;
+}
+.facilities-inner{
+    margin: 10px 0 0 0;
+}
+.add-photo{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #337ab7;
+    margin: 30px auto;
+    border-radius: 4px;
+}
+.camera{
+    width: 40px;
+    height: 40px;
+    margin: 60px auto -100px auto!important;
+}
+.add-button{
+    width: 155px;
+    height: 34px;
+    margin: 100px auto;
+}
+.photos-desc{
+    width: 500px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.ways-accommodation-item{
+    width: 70%;
+    height: 80px;
+    border: 1px solid #337ab7;
+    border-radius: 4px;
+    margin: 10px 0 10px 0;
+}
+.free-charge{
+    background: #e7e6e6;
+}
+.top-3{
+    background: #ffff00;
+}
+.alloted{
+     background: #fff2cc;
+ }
+.ways-accommodation-input{
+    margin: 10px 0 0 16px;
+    font-size: 18px;
+}
