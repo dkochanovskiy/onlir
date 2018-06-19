@@ -203,13 +203,18 @@
                     <h3>Способы размещения</h3>
                     <div class="ways-accommodation-inner">
                         <div class="ways-accommodation-item free-charge">
-                            <div class="ways-accommodation-input">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="option1" checked>
-                                        Бесплатное
-                                    </label>
+                            <div class="ways-accommodation-input-wrap">
+                                <div class="ways-accommodation-input">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="option1" checked>
+                                            Бесплатное
+                                        </label>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="ways-accommodation-cost">
+                                0 р/21 день
                             </div>
                         </div>
                         <div class="ways-accommodation-item top-3">
