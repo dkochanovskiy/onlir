@@ -81,10 +81,11 @@
                     <label class="control-label" for="minutes">минут</label>
                 </div>
                 @include('include.property-type.apartment')
-                <div class="ad-submission-caption rent">
-                    <h3>Арендная плата</h3>
-                </div>
+
                 <div class="form-group">
+                    <div class="ad-submission-caption rent">
+                        <label class="control-label">Арендная плата</label>
+                    </div>
                     <input type="text" class="form-control" id="rent">
                     <label class="control-label ad-submission-form-label" for="rent">₽</label>
 
@@ -102,7 +103,7 @@
                     </div>
                 </div>
                 <div class="ad-submission-caption rent">
-                    <h3>Ваше имя</h3>
+                    <label class="control-label">Ваше имя</label>
                 </div>
                 <div class="form-group your-name">
                     <label class="control-label" for="your-name"></label>
@@ -110,7 +111,7 @@
                 </div>
                 <div class="phone-communication-wrap">
                     <div class="phone-communication-caption">
-                        <h3>Телефон(ы) для связи</h3>
+                        <label class="control-label">Телефон(ы) для связи</label>
                     </div>
                     <div class="phone-communication-inner">
                         <div class="phone-communication-font">
@@ -121,9 +122,9 @@
                     </div>
                 </div>
                 <div class="facilities">
-                    <h3>
+                    <label class="control-label">
                         Удобства
-                    </h3>
+                    </label>
                     <div class="facilities-inner">
                         <div class="facilities-item">
                             Техника
@@ -176,7 +177,7 @@
                     </div>
                 </div>
                 <div class="photos">
-                    <h3>Фотографии</h3>
+                    <label>Фотографии</label>
                     <div class="photos-inner">
                         <div class="add-photo">
                             <div class="camera">
@@ -200,21 +201,28 @@
                     </div>
                 </div>
                 <div class="ways-accommodation">
-                    <h3>Способы размещения</h3>
+                    <label>Способы размещения</label>
                     <div class="ways-accommodation-inner">
                         <div class="ways-accommodation-item free-charge">
                             <div class="ways-accommodation-input-wrap">
                                 <div class="ways-accommodation-input">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="option1" checked>
+                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Бесплатное" checked>
                                             Бесплатное
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="ways-accommodation-cost">
-                                0 р/21 день
+                                <span id="freeCost">
+                                    0
+                                </span>
+                                р/
+                                <span id="freeDays">
+                                    21
+                                </span>
+                                день
                             </div>
                             <div class="active-until">
                                 Активно до 27.06.2018
@@ -225,14 +233,21 @@
                                 <div class="ways-accommodation-input">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="option2">
+                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="Топ-3 (Популярные объявления)">
                                             Топ-3 (Популярные объявления)
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="ways-accommodation-cost">
-                                310 р/7 день
+                                <span id="topCost">
+                                    310
+                                </span>
+                                р/
+                                <span id="topDays">
+                                    7
+                                </span>
+                                дней
                             </div>
                             <div class="discount">
                                 Скидка: Экономия 75 рублей
@@ -243,14 +258,21 @@
                                 <div class="ways-accommodation-input">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="optionsRadios" id="ways-accommodation3" value="option3">
+                                            <input type="radio" name="optionsRadios" id="ways-accommodation3" value="Выделенное">
                                             Выделенное
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ways-accommodation-cost">
-                                100 р/1 день
+                            <div class="ways-accommodation-cost" id="allotted">
+                               <span id="allottedCost">
+                                    100
+                                </span>
+                                р/
+                                <span id="allottedDays">
+                                    1
+                                </span>
+                                дней
                             </div>
                             <div class="discount">
                                 Скидка: Экономия 40 рублей
@@ -265,19 +287,24 @@
                 <div class="selected-tariff-wrap">
                     <div class="selected-tariff-inner">
                         <div id="selected-tariff">
-                            Топ – 3:
+                            Бесплатное
                         </div>
+                        :
                         <div id="cost">
-                            <b>310 р на 7 дней</b>
+                            <b>0 р на 21 дней</b>
                         </div>
                     </div>
                     <div class="total">
-                        <b>Итого:  310 Р</b>
+                        <b>Итого:
+                            <span id="total">
+                                0
+                            </span> Р</b>
                     </div>
                 </div>
+                <hr>
                 <div class="submit-advertisement-button">
                     <div class="submit-advertisement-button-inner">
-
+                        <div class="btn btn-success">Подать объявление</div>
                     </div>
                 </div>
                 {{--<div class="form-group">--}}

@@ -257,25 +257,43 @@ function Absent(){
     $("#elevator").val('Нет');
     $("#selectElevator").html('Нет <span class="caret"></span>');
 }
-$('input[name=repairs]:checked').on('change', function() {
+    $('input[name=repairs]:checked').on('change', function() {
     alert( this.value);
 });
 function Cosmetic(){
     $("#repairs").val('Косметический');
-$("#selectRepairs").html('Косметический <span class="caret"></span>');
+    $("#selectRepairs").html('Косметический <span class="caret"></span>');
 }
 function Designer(){
     $("#repairs").val('Дизайнерский');
-$("#selectRepairs").html('Дизайнерский <span class="caret"></span>');
+    $("#selectRepairs").html('Дизайнерский <span class="caret"></span>');
 }
 function Euro(){
     $("#repairs").val('Евро');
-$("#selectRepairs").html('Евро <span class="caret"></span>');
+    $("#selectRepairs").html('Евро <span class="caret"></span>');
 }
 function withoutRepair(){
     $("#repairs").val('Без ремонта');
-$("#selectRepairs").html('Без ремонта <span class="caret"></span>');
+    $("#selectRepairs").html('Без ремонта <span class="caret"></span>');
 }
+$(":radio[name='optionsRadios']").change(function(){
+    var selected = $('input[name=optionsRadios]:checked').val();
+    $("#selected-tariff").text(selected);
+
+    if(selected == 'Бесплатное'){
+        $("#cost").html('<b>' + $("#freeCost").text() + ' р/' + $("#freeDays").text() + 'день' + '</b>');
+        $("#total").html('<b>' + $("#freeCost").text() + '</b>');
+    }
+    if(selected == 'Топ-3 (Популярные объявления)'){
+        $("#cost").html('<b>' + $("#topCost").text() + ' р/' + $("#topDays").text() + 'дней' + '</b>');
+        $("#total").html('<b>' + $("#topCost").text() + '</b>');
+    }
+    if(selected == 'Выделенное'){
+        $("#cost").html('<b>' + $("#allottedCost").text() + ' р/' + $("#allottedDays").text() + 'дней' + '</b>');
+        $("#total").html('<b>' + $("#allottedCost").text() + '</b>');
+    }
+});
+
 
 
 

@@ -854,7 +854,7 @@ footer{
     display: inline-block;
 }
 .selected-tariff-wrap{
-    width: 160px;
+    width: 321px;
     display: inline-block;
     margin: 40px 110px 0 0;
     float: right;
@@ -875,11 +875,9 @@ footer{
 .submit-advertisement-button{
     width: 100%;
     height: 100px;
-    outline: 1px solid royalblue;
+    position: relative;
 }
 .submit-advertisement-button-inner{
-    width: 50%;
-    height: 100px;
-    outline: 1px solid orange;
+    width: 155px;
     float: right;
 }
