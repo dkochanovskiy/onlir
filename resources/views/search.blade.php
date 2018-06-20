@@ -53,6 +53,7 @@
             <div class="right-panel-wrapper">
                 @include('include.right-panel')
             </div>
+            @include('include.pagination')
         </div>
     </div>
 @endsection

@@ -881,3 +881,19 @@ footer{
     width: 155px;
     float: right;
 }
+.pagination-wrap{
+    width: 75%;
+}
+.pagination-wrap a{
+    text-decoration: none!important;
+}
+.pagination-inner{
+    width: 231px;
+    margin: 0 auto;
+}
+#apartment_description{
+    width: 769px!important;
+    margin: 0 auto;
+    height: 130px;
+    padding: 10px;
+}

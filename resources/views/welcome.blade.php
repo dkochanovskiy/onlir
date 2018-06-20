@@ -120,6 +120,7 @@
                 </div>
             </div>
             @include('include.right-panel')
+            @include('include.pagination')
         </div>
     </div>
 @endsection

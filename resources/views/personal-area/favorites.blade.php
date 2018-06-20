@@ -97,5 +97,6 @@
                 </td>
             </tr>
         </table>
+        @include('include.pagination')
     </div>
 @endsection

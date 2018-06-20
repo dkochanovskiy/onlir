@@ -176,6 +176,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="can-wrap">
+                    Можно с детьми
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary" id="labelCanChildrenYes">
+                            <input type="radio" name="canChildrens" id="canChildrenYes">Да
+                        </label>
+                        <label class="btn btn-default" id="labelCanChildrenNo">
+                            <input type="radio" name="canChildrens" id="canChildrenNo">Нет
+                        </label>
+                    </div>
+                </div>
+                <div class="apartment_description">
+                    <label for="apartment_description">Описание квартиры</label>
+                    <textarea name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
+                </div>
                 <div class="photos">
                     <label>Фотографии</label>
                     <div class="photos-inner">
