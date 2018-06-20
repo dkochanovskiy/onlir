@@ -216,27 +216,68 @@
                             <div class="ways-accommodation-cost">
                                 0 р/21 день
                             </div>
+                            <div class="active-until">
+                                Активно до 27.06.2018
+                            </div>
                         </div>
                         <div class="ways-accommodation-item top-3">
-                            <div class="ways-accommodation-input">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="option2">
-                                        Топ-3 (Популярные объявления)
-                                    </label>
+                            <div class="ways-accommodation-input-wrap">
+                                <div class="ways-accommodation-input">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="option2">
+                                            Топ-3 (Популярные объявления)
+                                        </label>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="ways-accommodation-cost">
+                                310 р/7 день
+                            </div>
+                            <div class="discount">
+                                Скидка: Экономия 75 рублей
                             </div>
                         </div>
                         <div class="ways-accommodation-item allotted">
-                            <div class="ways-accommodation-input">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" id="ways-accommodation3" value="option3">
-                                        Выделенное
-                                    </label>
+                            <div class="ways-accommodation-input-wrap">
+                                <div class="ways-accommodation-input">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="ways-accommodation3" value="option3">
+                                            Выделенное
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="ways-accommodation-cost">
+                                100 р/1 день
+                            </div>
+                            <div class="discount">
+                                Скидка: Экономия 40 рублей
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="balance">
+                    <b>Баланс: 10 &#8381;</b><br>
+                    <a href="{{ route('purse') }}">Пополнить</a>
+                </div>
+                <div class="selected-tariff-wrap">
+                    <div class="selected-tariff-inner">
+                        <div id="selected-tariff">
+                            Топ – 3:
+                        </div>
+                        <div id="cost">
+                            <b>310 р на 7 дней</b>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <b>Итого:  310 Р</b>
+                    </div>
+                </div>
+                <div class="submit-advertisement-button">
+                    <div class="submit-advertisement-button-inner">
+
                     </div>
                 </div>
                 {{--<div class="form-group">--}}

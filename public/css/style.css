@@ -818,13 +818,13 @@ footer{
     margin: 10px 0 0 16px;
     font-size: 18px;
     display: inline-block;
-    outline: 1px solid red;
-    width: 49%;
+    width: 47%;
 }
 .ways-accommodation-cost{
     display: inline-block;
-    outline: 1px solid black;
-    width: 49%;
+    width: 47%;
+    text-align: right;
+    font-size: 18px;
 }
 .no-active-ads{
     margin: 50px auto;
@@ -835,4 +835,51 @@ footer{
     font-size: 20px;
     color: #337ab7;
     padding: 60px 0 0 0;
+}
+.active-until{
+    font-size: 18px;
+    margin: 4px 0 0 18px;
+    color: #f18a00;
+}
+.discount{
+    font-size: 18px;
+    text-align: right;
+    margin: 4px 18px 0 0;
+    color: #DC143C;
+}
+.balance{
+    margin: 40px 0 0 40px;
+    width: 87px;
+    float: left;
+    display: inline-block;
+}
+.selected-tariff-wrap{
+    width: 160px;
+    display: inline-block;
+    margin: 40px 110px 0 0;
+    float: right;
+}
+.selected-tariff-inner{
+}
+#selected-tariff{
+    display: inline-block;
+}
+#cost{
+    display: inline-block;
+}
+.total{
+    float: right;
+    margin: 50px 0 0 0;
+    font-size: 16px;
+}
+.submit-advertisement-button{
+    width: 100%;
+    height: 100px;
+    outline: 1px solid royalblue;
+}
+.submit-advertisement-button-inner{
+    width: 50%;
+    height: 100px;
+    outline: 1px solid orange;
+    float: right;
 }
