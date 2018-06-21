@@ -49,14 +49,20 @@
     <div class="form-group">
         <div class="radio">
             <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                <input type="radio" name="balcony" id="optionsRadios1" value="option1" checked>
                 Балкон
             </label>
         </div>
         <div class="radio">
             <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                <input type="radio" name="balcony" id="optionsRadios2" value="option2">
                 Лоджия
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="balcony" id="optionsRadios3" value="option3">
+                Отсутствует
             </label>
         </div>
     </div>
@@ -120,20 +126,41 @@
         <input type="text" class="form-control" id="elevator">
     </div>
     <div class="form-group">
-        <div class="dropdown">
-            <label class="control-label" for="selectRepairs">Ремонт: </label>
-            <button class="btn btn-default dropdown-toggle" type="button" id="selectRepairs" data-toggle="dropdown">
-                Косметический
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Cosmetic()">Косметический</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Designer()">Дизайнерский</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Euro()">Евро</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:withoutRepair()">Без ремонта</a></li>
-            </ul>
+        Ремонт
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary" id="cosmetic">
+                <input type="radio" name="repairs" value="Косметический">Косметический
+            </label>
+            <label class="btn btn-default" id="designer">
+                <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
+            </label>
+            <label class="btn btn-default" id="euro">
+                <input type="radio" name="repairs" value="Евро">Евро
+            </label>
+            <label class="btn btn-default" id="withoutRepair">
+                <input type="radio" name="repairs" value="Без ремонта">Без ремонта
+            </label>
         </div>
     </div>
+    <div class="form-group">
+        <label class="control-label" for="inputRepairs">Ремонт</label>
+        <input type="text" class="form-control" id="inputRepairs" value="Косметический">
+    </div>
+    {{--<div class="form-group">--}}
+        {{--<div class="dropdown">--}}
+            {{--<label class="control-label" for="selectRepairs">Ремонт: </label>--}}
+            {{--<button class="btn btn-default dropdown-toggle" type="button" id="selectRepairs" data-toggle="dropdown">--}}
+                {{--Косметический--}}
+                {{--<span class="caret"></span>--}}
+            {{--</button>--}}
+            {{--<ul class="dropdown-menu">--}}
+                {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Cosmetic()">Косметический</a></li>--}}
+                {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Designer()">Дизайнерский</a></li>--}}
+                {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Euro()">Евро</a></li>--}}
+                {{--<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:withoutRepair()">Без ремонта</a></li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <div class="form-group">
         <label class="control-label" for="repairs">Ремонт</label>
         <input type="text" class="form-control" id="repairs">

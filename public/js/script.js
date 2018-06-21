@@ -325,7 +325,172 @@ $('#labelPossibleWithAnimalsYes').on('click', function(){
 
     $('#inputPossibleWithAnimals').val('Да');
 });
+$('#labelYouCanSmokeNo').on('click', function(){
+    $('#labelYouCanSmokeNo').removeClass('btn-default');
+    $('#labelYouCanSmokeNo').addClass('btn-primary');
+    $('#labelYouCanSmokeYes').removeClass('btn-primary');
+    $('#labelYouCanSmokeYes').addClass('btn-default');
 
+    $('#inputYouCanSmoke').val('Нет');
+});
+$('#labelYouCanSmokeYes').on('click', function(){
+    $('#labelYouCanSmokeYes').removeClass('btn-default');
+    $('#labelYouCanSmokeYes').addClass('btn-primary');
+    $('#labelYouCanSmokeNo').removeClass('btn-primary');
+    $('#labelYouCanSmokeNo').addClass('btn-default');
+
+    $('#inputYouCanSmoke').val('Да');
+});
+$('#cosmetic').on('click', function(){
+    $('#designer').removeClass('btn-primary');
+    $('#designer').addClass('btn-default');
+
+    $('#euro').removeClass('btn-primary');
+    $('#euro').addClass('btn-default');
+
+    $('#withoutRepair').removeClass('btn-primary');
+    $('#withoutRepair').addClass('btn-default');
+
+    $('#cosmetic').removeClass('btn-default');
+    $('#cosmetic').addClass('btn-primary');
+
+    $('#inputRepairs').val('Косметический');
+});
+$('#designer').on('click', function(){
+    $('#euro').removeClass('btn-primary');
+    $('#euro').addClass('btn-default');
+
+    $('#withoutRepair').removeClass('btn-primary');
+    $('#withoutRepair').addClass('btn-default');
+
+    $('#cosmetic').removeClass('btn-primary');
+    $('#cosmetic').addClass('btn-default');
+
+    $('#designer').removeClass('btn-default');
+    $('#designer').addClass('btn-primary');
+
+    $('#inputRepairs').val('Дизайнерский');
+});
+$('#euro').on('click', function(){
+    $('#withoutRepair').removeClass('btn-primary');
+    $('#withoutRepair').addClass('btn-default');
+
+    $('#cosmetic').removeClass('btn-primary');
+    $('#cosmetic').addClass('btn-default');
+
+    $('#designer').removeClass('btn-primary');
+    $('#designer').addClass('btn-default');
+
+    $('#euro').removeClass('btn-default');
+    $('#euro').addClass('btn-primary');
+
+    $('#inputRepairs').val('Евро');
+});
+$('#withoutRepair').on('click', function(){
+    $('#cosmetic').removeClass('btn-primary');
+    $('#cosmetic').addClass('btn-default');
+
+    $('#designer').removeClass('btn-primary');
+    $('#designer').addClass('btn-default');
+
+    $('#euro').removeClass('btn-primary');
+    $('#euro').addClass('btn-default');
+
+    $('#withoutRepair').removeClass('btn-default');
+    $('#withoutRepair').addClass('btn-primary');
+
+    $('#inputRepairs').val('Без ремонта');
+});
+$('#A').on('click', function(){
+    $('#B').removeClass('btn-primary');
+    $('#B').addClass('btn-default');
+
+    $('#C').removeClass('btn-primary');
+    $('#C').addClass('btn-default');
+
+    $('#D').removeClass('btn-primary');
+    $('#D').addClass('btn-default');
+
+    $('#doNotSpecify').removeClass('btn-primary');
+    $('#doNotSpecify').addClass('btn-default');
+
+    $('#A').removeClass('btn-default');
+    $('#A').addClass('btn-primary');
+
+    $('#inputBuildingClass').val('A');
+});
+$('#B').on('click', function(){
+    $('#C').removeClass('btn-primary');
+    $('#C').addClass('btn-default');
+
+    $('#D').removeClass('btn-primary');
+    $('#D').addClass('btn-default');
+
+    $('#doNotSpecify').removeClass('btn-primary');
+    $('#doNotSpecify').addClass('btn-default');
+
+    $('#A').removeClass('btn-primary');
+    $('#A').addClass('btn-default');
+
+    $('#B').removeClass('btn-default');
+    $('#B').addClass('btn-primary');
+
+    $('#inputBuildingClass').val('B');
+});
+$('#C').on('click', function(){
+    $('#D').removeClass('btn-primary');
+    $('#D').addClass('btn-default');
+
+    $('#doNotSpecify').removeClass('btn-primary');
+    $('#doNotSpecify').addClass('btn-default');
+
+    $('#A').removeClass('btn-primary');
+    $('#A').addClass('btn-default');
+
+    $('#B').removeClass('btn-primary');
+    $('#B').addClass('btn-default');
+
+    $('#C').removeClass('btn-default');
+    $('#C').addClass('btn-primary');
+
+    $('#inputBuildingClass').val('C');
+});
+$('#D').on('click', function(){
+    $('#doNotSpecify').removeClass('btn-primary');
+    $('#doNotSpecify').addClass('btn-default');
+
+    $('#A').removeClass('btn-primary');
+    $('#A').addClass('btn-default');
+
+    $('#B').removeClass('btn-primary');
+    $('#B').addClass('btn-default');
+
+    $('#C').removeClass('btn-primary');
+    $('#C').addClass('btn-default');
+
+    $('#D').removeClass('btn-default');
+    $('#D').addClass('btn-primary');
+
+    $('#inputBuildingClass').val('D');
+});
+$('#doNotSpecify').on('click', function(){
+    $('#A').removeClass('btn-primary');
+    $('#A').addClass('btn-default');
+
+    $('#B').removeClass('btn-primary');
+    $('#B').addClass('btn-default');
+
+    $('#C').removeClass('btn-primary');
+    $('#C').addClass('btn-default');
+
+    $('#D').removeClass('btn-primary');
+    $('#D').addClass('btn-default');
+
+    $('#doNotSpecify').removeClass('btn-default');
+    $('#doNotSpecify').addClass('btn-primary');
+
+    $('#inputBuildingClass').val('Не указывать');
+});
 
 
 

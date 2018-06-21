@@ -55,8 +55,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="propertyType">Тип недвижимости</label>
-                    <input type="text" class="form-control" id="propertyType">
+                    <label for="propertyType">Тип недвижимости</label>
+                    <input type="text" id="propertyType">
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="address">Введите адрес</label>
@@ -80,11 +80,12 @@
                     <input type="text" class="form-control" id="minutes">
                     <label class="control-label" for="minutes">минут</label>
                 </div>
-                @include('include.property-type.apartment')
+                @include('include.property-type.office')
 
                 <div class="form-group">
+                    <div style="font-size: 18px">Арендная плата</div>
                     <div class="ad-submission-caption rent">
-                        <label class="control-label">Арендная плата</label>
+                        <label class="control-label">Цена в месяц</label>
                     </div>
                     <input type="text" class="form-control" id="rent">
                     <label class="control-label ad-submission-form-label" for="rent">₽</label>
@@ -218,8 +219,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="inputYouCanSmoke">Можно с детьми</label>
-                    <input type="text" class="form-control" id="inputPossibleWithChildren" value="Да">
+                    <label class="control-label" for="inputYouCanSmoke">Можно курить</label>
+                    <input type="text" class="form-control" id="inputYouCanSmoke" value="Да">
                 </div>
                 <div class="apartment_description">
                     <label for="apartment_description">Описание квартиры</label>
