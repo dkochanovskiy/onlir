@@ -176,16 +176,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="can-wrap">
+                <div class="form-group">
                     Можно с детьми
                     <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary" id="labelCanChildrenYes">
-                            <input type="radio" name="canChildrens" id="canChildrenYes">Да
+                        <label class="btn btn-primary" id="labelPossibleWithChildrenYes">
+                            <input type="radio" name="possibleWithChildren" value="Да">Да
                         </label>
-                        <label class="btn btn-default" id="labelCanChildrenNo">
-                            <input type="radio" name="canChildrens" id="canChildrenNo">Нет
+                        <label class="btn btn-default" id="labelPossibleWithChildrenNo">
+                            <input type="radio" name="possibleWithChildren" value="Нет">Нет
                         </label>
                     </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputPossibleWithChildren">Можно с детьми</label>
+                    <input type="text" class="form-control" id="inputPossibleWithChildren" value="Да">
+                </div>
+                <div class="form-group">
+                    Можно с животными
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary" id="labelPossibleWithAnimalsYes">
+                            <input type="radio" name="possibleWithAnimals" value="Да">Да
+                        </label>
+                        <label class="btn btn-default" id="labelPossibleWithAnimalsNo">
+                            <input type="radio" name="possibleWithAnimals" value="Нет">Нет
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputPossibleWithAnimals">Можно с животными</label>
+                    <input type="text" class="form-control" id="inputPossibleWithAnimals" value="Да">
+                </div>
+                <div class="form-group">
+                    Можно курить
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary" id="labelYouCanSmokeYes">
+                            <input type="radio" name="youCanSmoke" value="Да">Да
+                        </label>
+                        <label class="btn btn-default" id="labelYouCanSmokeNo">
+                            <input type="radio" name="youCanSmoke" value="Нет">Нет
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="inputYouCanSmoke">Можно с детьми</label>
+                    <input type="text" class="form-control" id="inputPossibleWithChildren" value="Да">
                 </div>
                 <div class="apartment_description">
                     <label for="apartment_description">Описание квартиры</label>

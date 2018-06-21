@@ -293,22 +293,37 @@ $(":radio[name='optionsRadios']").change(function(){
         $("#total").html('<b>' + $("#allottedCost").text() + '</b>');
     }
 });
-$(":radio[name='canChildrens']").change(function(){
-    var selected = $('input[name=optionsRadios]:checked').val();
-    $("#selected-tariff").text(selected);
+$('#labelPossibleWithChildrenNo').on('click', function(){
+    $('#labelPossibleWithChildrenNo').removeClass('btn-default');
+    $('#labelPossibleWithChildrenNo').addClass('btn-primary');
+    $('#labelPossibleWithChildrenYes').removeClass('btn-primary');
+    $('#labelPossibleWithChildrenYes').addClass('btn-default');
 
-    if(selected == 'Бесплатное'){
-        $("#cost").html('<b>' + $("#freeCost").text() + ' р/' + $("#freeDays").text() + 'день' + '</b>');
-        $("#total").html('<b>' + $("#freeCost").text() + '</b>');
-    }
-    if(selected == 'Топ-3 (Популярные объявления)'){
-        $("#cost").html('<b>' + $("#topCost").text() + ' р/' + $("#topDays").text() + 'дней' + '</b>');
-        $("#total").html('<b>' + $("#topCost").text() + '</b>');
-    }
-    if(selected == 'Выделенное'){
-        $("#cost").html('<b>' + $("#allottedCost").text() + ' р/' + $("#allottedDays").text() + 'дней' + '</b>');
-        $("#total").html('<b>' + $("#allottedCost").text() + '</b>');
-    }
+    $('#inputPossibleWithChildren').val('Нет');
+});
+$('#labelPossibleWithChildrenYes').on('click', function(){
+    $('#labelPossibleWithChildrenYes').removeClass('btn-default');
+    $('#labelPossibleWithChildrenYes').addClass('btn-primary');
+    $('#labelPossibleWithChildrenNo').removeClass('btn-primary');
+    $('#labelPossibleWithChildrenNo').addClass('btn-default');
+
+    $('#inputPossibleWithChildren').val('Да');
+});
+$('#labelPossibleWithAnimalsNo').on('click', function(){
+    $('#labelPossibleWithAnimalsNo').removeClass('btn-default');
+    $('#labelPossibleWithAnimalsNo').addClass('btn-primary');
+    $('#labelPossibleWithAnimalsYes').removeClass('btn-primary');
+    $('#labelPossibleWithAnimalsYes').addClass('btn-default');
+
+    $('#inputPossibleWithAnimals').val('Нет');
+});
+$('#labelPossibleWithAnimalsYes').on('click', function(){
+    $('#labelPossibleWithAnimalsYes').removeClass('btn-default');
+    $('#labelPossibleWithAnimalsYes').addClass('btn-primary');
+    $('#labelPossibleWithAnimalsNo').removeClass('btn-primary');
+    $('#labelPossibleWithAnimalsNo').addClass('btn-default');
+
+    $('#inputPossibleWithAnimals').val('Да');
 });
 
 
