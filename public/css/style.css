@@ -679,10 +679,6 @@ footer{
     width: 42px;
     display: inline;
 }
-#totalFloors{
-    width: 42px;
-    display: inline;
-}
 #rent{
     width: 76px;
     float: left;
@@ -896,4 +892,8 @@ footer{
     margin: 0 auto;
     height: 130px;
     padding: 10px;
+}
+.header-in-the-form{
+    font-size: 18px;
+    font-weight: 700;
 }

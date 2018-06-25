@@ -108,7 +108,7 @@
     </div>
     <div class="form-group">
         <div class="dropdown">
-            <label class="control-label" for="selectNumberRooms">Лифт: </label>
+            <label class="control-label" for="selectElevator">Лифт: </label>
             <button class="btn btn-default dropdown-toggle" type="button" id="selectElevator" data-toggle="dropdown">
                 Пассажирский и грузовой
                 <span class="caret"></span>
@@ -126,7 +126,7 @@
         <input type="text" class="form-control" id="elevator">
     </div>
     <div class="form-group">
-        Ремонт
+        <label class="col-md-2 control-label">Ремонт</label>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary" id="cosmetic">
                 <input type="radio" name="repairs" value="Косметический">Косметический

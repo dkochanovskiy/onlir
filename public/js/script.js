@@ -491,6 +491,28 @@ $('#doNotSpecify').on('click', function(){
 
     $('#inputBuildingClass').val('Не указывать');
 });
+$('#labelDisplayCasesYes').on('click', function(){
+    $('#labelDisplayCasesNo').removeClass('btn-primary');
+    $('#labelDisplayCasesNo').addClass('btn-default');
+
+    $('#labelDisplayCasesYes').removeClass('btn-default');
+    $('#labelDisplayCasesYes').addClass('btn-primary');
+
+    $('#inputDisplayCases').val('Да');
+});
+$('#labelDisplayCasesNo').on('click', function(){
+    $('#labelDisplayCasesYes').removeClass('btn-primary');
+    $('#labelDisplayCasesYes').addClass('btn-default');
+
+    $('#labelDisplayCasesNo').removeClass('btn-default');
+    $('#labelDisplayCasesNo').addClass('btn-primary');
+
+    $('#inputDisplayCases').val('Нет');
+});
+function DropDownList(name, text, input){
+    $('#' + name).html(text + ' <span class="caret"></span>');
+    $('#' + input).val(text);
+}
 
 
 

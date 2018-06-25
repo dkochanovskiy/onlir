@@ -80,7 +80,7 @@
                     <input type="text" class="form-control" id="minutes">
                     <label class="control-label" for="minutes">минут</label>
                 </div>
-                @include('include.property-type.office')
+                @include('include.property-type.trade-area')
 
                 <div class="form-group">
                     <div style="font-size: 18px">Арендная плата</div>
