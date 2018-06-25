@@ -311,6 +311,8 @@
     <input type="hidden" id="inputYouCanSmoke" value="Да">
     <div class="form-group">
         <label for="apartment_description" class="col-md-3 control-label">Описание квартиры</label>
-        <textarea class="col-md-3" name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
+        <div class="col-md-9">
+            <textarea class="col-md-3" name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
+        </div>
     </div>
 </div>
