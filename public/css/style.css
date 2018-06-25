@@ -658,36 +658,6 @@ footer{
     width: 18%;
     display: inline;
 }
-#numberBerths{
-    width: 5%;
-    display: inline;
-    margin: 0 3px 0 43px;
-}
-#totalArea{
-    width: 6%;
-    display: inline;
-}
-#residentialArea{
-    width: 6%;
-    display: inline;
-}
-#kitchen{
-    width: 6%;
-    display: inline;
-}
-#floorNumber{
-    width: 42px;
-    display: inline;
-}
-#rent{
-    width: 76px;
-    float: left;
-    margin: 0 0 0 10px ;
-}
-#pledge{
-    width: 76px;
-    display: inline-block!important;
-}
 .pledge{
     width: 144px;
     display: inline-block!important;
@@ -726,22 +696,9 @@ footer{
     width: 192px;
     float: left;
 }
-.ad-submission-form-label{
-    font-size: 20px;
-    margin: -7px 0 0 20px;
-}
 .including-communal{
     display: inline-block!important;
     margin: 0 0 0 40px;
-}
-.your-name{
-    width: 192px;
-    display: inline-block;
-}
-#your-name{
-    width: 200px;
-    float: left;
-    margin: 0 0 0 -49px ;
 }
 .phone-communication-font{
 
@@ -904,7 +861,7 @@ footer{
     display: none;
 }
 #apartment{
-    display: none;
+    display: block;
 }
 #cottage{
     display: none;
@@ -913,7 +870,7 @@ footer{
     display: none;
 }
 #office{
-    display: block;
+    display: none;
 }
 #trade-area{
     display: none;

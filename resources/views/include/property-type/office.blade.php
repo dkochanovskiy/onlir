@@ -24,7 +24,7 @@
     <input type="hidden" id="inputBuildingClass" name="inputBuildingClass" value="A">
     <div class="form-group">
         <div class="dropdown">
-            <label class="col-md-2 control-label" for="typeOfBuilding">Тип здания</label>
+            <label class="col-md-3 control-label" for="typeOfBuilding">Тип здания</label>
             <div class="col-md-9">
                 <button class="btn btn-default dropdown-toggle" type="button" id="typeOfBuilding" data-toggle="dropdown">
                     Многофункциональный комплекс
@@ -49,7 +49,7 @@
     </div>
     <input type="hidden" id="inputTypeOfBuilding" name="inputTypeOfBuilding" value="Многофункциональный комплекс">
     <div class="form-group">
-        <label for="buildingArea" class="col-md-2 control-label">Площадь здания</label>
+        <label for="buildingArea" class="col-md-3 control-label">Площадь здания</label>
         <div class="col-md-1">
             <input type="text" name="buildingArea" class="form-control" id="buildingArea">
         </div>
@@ -57,7 +57,7 @@
     </div>
     <div class="form-group">
         <div class="dropdown">
-            <label class="col-md-2 control-label" for="heating">Отопление</label>
+            <label class="col-md-3 control-label" for="heating">Отопление</label>
             <div class="col-md-9">
                 <button class="btn btn-default dropdown-toggle" type="button" id="heating" data-toggle="dropdown">
                     Центральное
@@ -74,7 +74,7 @@
     <input type="hidden" id="inputHeating" name="inputHeating" value="Центральное">
     <div class="form-group">
         <div class="dropdown">
-            <label class="col-md-2 control-label" for="ventilation">Вентиляция</label>
+            <label class="col-md-3 control-label" for="ventilation">Вентиляция</label>
             <div class="col-md-9">
                 <button class="btn btn-default dropdown-toggle" type="button" id="ventilation" data-toggle="dropdown">
                     Естественная
@@ -91,7 +91,7 @@
     <input type="hidden" id="inputVentilation" name="inputVentilation" value="Естественная">
     <div class="form-group">
         <div class="dropdown">
-            <label class="col-md-2 control-label" for="conditioning">Кондиционирование</label>
+            <label class="col-md-3 control-label" for="conditioning">Кондиционирование</label>
             <div class="col-md-9">
                 <button class="btn btn-default dropdown-toggle" type="button" id="conditioning" data-toggle="dropdown">
                     Местное
@@ -111,18 +111,18 @@
         Арендная плата
     </div>
     <div class="form-group">
-        <label for="pricePerMonth" class="col-md-2 control-label">Цена в месяц</label>
+        <label for="pricePerMonth" class="col-md-3 control-label">Цена в месяц</label>
         <div class="col-md-2">
             <input type="text" name="pricePerMonth" class="form-control" id="pricePerMonth">
         </div>
         <label for="pricePerMonth" class="col-md-1 control-label">₽</label>
-        <div class="checkbox col-md-offset-2 col-md-10">
+        <div class="checkbox col-md-offset-3 col-md-9">
             <label>
                 <input type="checkbox" name="includingUtilityBills" value="">
                 включая коммунальные платежи
             </label>
         </div>
-        <div class="checkbox col-md-offset-2 col-md-10">
+        <div class="checkbox col-md-offset-3 col-md-9">
             <label>
                 <input type="checkbox" name="includingOperatingCosts" value="">
                 включая эксплуатационные расходы
@@ -130,7 +130,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="RatePerSquareMeter" class="col-md-2 control-label">Ставка за м<sup>2</sup></label>
+        <label for="RatePerSquareMeter" class="col-md-3 control-label">Ставка за м<sup>2</sup></label>
         <div class="col-md-2">
             <input type="text" name="RatePerSquareMeter" class="form-control" id="RatePerSquareMeter">
         </div>
@@ -150,7 +150,7 @@
     </div>
     <div class="form-group">
         <div class="dropdown">
-            <label class="col-md-2 control-label" for="prepayment">Предоплата</label>
+            <label class="col-md-3 control-label" for="prepayment">Предоплата</label>
             <div class="col-md-9">
                 <button class="btn btn-default dropdown-toggle" type="button" id="prepayment" data-toggle="dropdown">
                     1 месяц

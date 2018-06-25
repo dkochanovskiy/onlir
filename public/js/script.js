@@ -254,8 +254,8 @@ function Сargo(){
     $("#selectElevator").html('Грузовой <span class="caret"></span>');
 }
 function Absent(){
-    $("#elevator").val('Нет');
-    $("#selectElevator").html('Нет <span class="caret"></span>');
+    $("#elevator").val('Отсутствует');
+    $("#selectElevator").html('Отсутствует <span class="caret"></span>');
 }
     $('input[name=repairs]:checked').on('change', function() {
     alert( this.value);
