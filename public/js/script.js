@@ -513,6 +513,30 @@ function DropDownList(name, text, input){
     $('#' + name).html(text + ' <span class="caret"></span>');
     $('#' + input).val(text);
 }
+$('#fromTheYard').on('click', function(){
+    $('#fromTheStreet').removeClass('btn-primary');
+    $('#fromTheStreet').addClass('btn-default');
+
+    $('#fromTheYard').removeClass('btn-default');
+    $('#fromTheYard').addClass('btn-primary');
+
+    $('#inputEntrance').val('со двора');
+});
+$('#fromTheStreet').on('click', function(){
+    $('#fromTheYard').removeClass('btn-primary');
+    $('#fromTheYard').addClass('btn-default');
+
+    $('#fromTheStreet').removeClass('btn-default');
+    $('#fromTheStreet').addClass('btn-primary');
+
+    $('#inputEntrance').val('с улицы');
+});
+$('#noLimits').on('click', function(){
+    $('#except').prop('disabled',true);
+});
+$('#allExcept').on('click', function(){
+    $('#except').prop('disabled',false);
+});
 
 
 

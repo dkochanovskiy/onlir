@@ -33,34 +33,35 @@
                 <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                 <div class="form-group">
                     <div class="dropdown">
-                        <label class="control-label" for="propertyTypeMenu">Тип недвижимости: </label>
-                        <button class="btn btn-default dropdown-toggle" type="button" id="propertyTypeMenu" data-toggle="dropdown">
-                            Квартира
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li role="presentation" class="dropdown-header">Жилая</li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:House()">Дом</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Room()">Комната</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Apartment()">Квартира</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Cottage()">Коттедж</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li role="presentation" class="dropdown-header">Коммерческая</li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:ReadyBusiness()">Готовый бизнес</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Office()">Офис</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:TradeArea()">Торговая площадь</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:WarehouseSpace()">Складское помещение</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:FreeDestinationRoom()">Помещение свободного назначения</a></li>
-                        </ul>
+                        <label class="col-md-3 control-label" for="propertyTypeMenu">Тип недвижимости </label>
+                        <div class="col-md-9">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="propertyTypeMenu" data-toggle="dropdown">
+                                Квартира
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li role="presentation" class="dropdown-header">Жилая</li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:House()">Дом</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Room()">Комната</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Apartment()">Квартира</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Cottage()">Коттедж</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Коммерческая</li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:ReadyBusiness()">Готовый бизнес</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Office()">Офис</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:TradeArea()">Торговая площадь</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:WarehouseSpace()">Складское помещение</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:FreeDestinationRoom()">Помещение свободного назначения</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <input type="hidden" name="propertyType" id="propertyType" value="Квартира">
                 <div class="form-group">
-                    <label for="propertyType">Тип недвижимости</label>
-                    <input type="text" id="propertyType">
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="address">Введите адрес</label>
-                    <input type="text" class="form-control" id="address">
+                    <label for="address" class="col-md-3 control-label">Название здания</label>
+                    <div class="col-md-6">
+                        <input type="text" name="address" class="form-control" id="address">
+                    </div>
                 </div>
                 <div class="form-group to-metro">
                     <label class="control-label" for="metro">Ближайшая станция метро</label>
@@ -80,152 +81,15 @@
                     <input type="text" class="form-control" id="minutes">
                     <label class="control-label" for="minutes">минут</label>
                 </div>
+                @include('include.property-type.house')
+                @include('include.property-type.room')
+                @include('include.property-type.apartment')
+                @include('include.property-type.cottage')
+                @include('include.property-type.ready-business')
+                @include('include.property-type.office')
                 @include('include.property-type.trade-area')
-
-                <div class="form-group">
-                    <div style="font-size: 18px">Арендная плата</div>
-                    <div class="ad-submission-caption rent">
-                        <label class="control-label">Цена в месяц</label>
-                    </div>
-                    <input type="text" class="form-control" id="rent">
-                    <label class="control-label ad-submission-form-label" for="rent">₽</label>
-
-                    <div class="checkbox including-communal">
-                        <label>
-                            <input type="checkbox" value="">
-                            включая коммунальные
-                        </label>
-                    </div>
-
-                    <div class="pledge">
-                        <label class="control-label" for="pledge">Залог</label>
-                        <input type="text" class="form-control" id="pledge">
-                        <label class="control-label ad-submission-form-label" for="pledge">₽</label>
-                    </div>
-                </div>
-                <div class="ad-submission-caption rent">
-                    <label class="control-label">Ваше имя</label>
-                </div>
-                <div class="form-group your-name">
-                    <label class="control-label" for="your-name"></label>
-                    <input type="text" class="form-control" id="your-name">
-                </div>
-                <div class="phone-communication-wrap">
-                    <div class="phone-communication-caption">
-                        <label class="control-label">Телефон(ы) для связи</label>
-                    </div>
-                    <div class="phone-communication-inner">
-                        <div class="phone-communication-font">
-                            <span>8(962) 594-3880&#160;</span>
-                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Удалить</button>
-                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="facilities">
-                    <label class="control-label">
-                        Удобства
-                    </label>
-                    <div class="facilities-inner">
-                        <div class="facilities-item">
-                            Техника
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    Холодильник
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    Стиральная машина
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    Посудомоечная машина
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    Телевизор
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    Микроволновая печь
-                                </label>
-                            </div>
-                        </div>
-                        <div class="facilities-item other">
-                            Прочее
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    Кондиционер
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="">
-                                    Интернет
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    Можно с детьми
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary" id="labelPossibleWithChildrenYes">
-                            <input type="radio" name="possibleWithChildren" value="Да">Да
-                        </label>
-                        <label class="btn btn-default" id="labelPossibleWithChildrenNo">
-                            <input type="radio" name="possibleWithChildren" value="Нет">Нет
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="inputPossibleWithChildren">Можно с детьми</label>
-                    <input type="text" class="form-control" id="inputPossibleWithChildren" value="Да">
-                </div>
-                <div class="form-group">
-                    Можно с животными
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary" id="labelPossibleWithAnimalsYes">
-                            <input type="radio" name="possibleWithAnimals" value="Да">Да
-                        </label>
-                        <label class="btn btn-default" id="labelPossibleWithAnimalsNo">
-                            <input type="radio" name="possibleWithAnimals" value="Нет">Нет
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="inputPossibleWithAnimals">Можно с животными</label>
-                    <input type="text" class="form-control" id="inputPossibleWithAnimals" value="Да">
-                </div>
-                <div class="form-group">
-                    Можно курить
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary" id="labelYouCanSmokeYes">
-                            <input type="radio" name="youCanSmoke" value="Да">Да
-                        </label>
-                        <label class="btn btn-default" id="labelYouCanSmokeNo">
-                            <input type="radio" name="youCanSmoke" value="Нет">Нет
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="inputYouCanSmoke">Можно курить</label>
-                    <input type="text" class="form-control" id="inputYouCanSmoke" value="Да">
-                </div>
-                <div class="apartment_description">
-                    <label for="apartment_description">Описание квартиры</label>
-                    <textarea name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
-                </div>
+                @include('include.property-type.warehouse-space')
+                @include('include.property-type.free-destination-room')
                 <div class="photos">
                     <label>Фотографии</label>
                     <div class="photos-inner">

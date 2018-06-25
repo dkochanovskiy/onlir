@@ -1,13 +1,7 @@
 <div id="office">
     <div class="form-group">
-        <label for="buildingName" class="col-md-2 control-label">Название здания</label>
-        <div class="col-md-10">
-            <input type="text" name="buildingName" class="form-control" id="buildingName">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="buildingClass" class="col-md-2 control-label">Класс здания</label>
-        <div class="col-md-10">
+        <label for="buildingClass" class="col-md-3 control-label">Класс здания</label>
+        <div class="col-md-8">
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-primary" id="A">
                     <input type="radio" name="buildingClass" value="A">A
@@ -47,6 +41,8 @@
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Торговый дом', 'inputTypeOfBuilding')">Торговый дом</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Торгово-развлекательный центр', 'inputTypeOfBuilding')">Торгово-развлекательный центр</a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Складской комплекс', 'inputTypeOfBuilding')">Складской комплекс</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Объект свободного назначения', 'inputTypeOfBuilding')">Объект свободного назначения</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Другое', 'inputTypeOfBuilding')">Другое</a></li>
                 </ul>
             </div>
         </div>

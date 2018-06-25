@@ -1,7 +1,7 @@
 <div id="apartment">
     <div class="form-group">
         <div class="dropdown">
-            <label class="control-label" for="selectNumberRooms">Количество комнат: </label>
+            <label class="col-md-3 control-label" for="selectNumberRooms">Количество комнат: </label>
             <button class="btn btn-default dropdown-toggle" type="button" id="selectNumberRooms" data-toggle="dropdown">
                 1
                 <span class="caret"></span>
@@ -164,5 +164,149 @@
     <div class="form-group">
         <label class="control-label" for="repairs">Ремонт</label>
         <input type="text" class="form-control" id="repairs">
+    </div>
+    <div class="form-group">
+        <div style="font-size: 18px">Арендная плата</div>
+        <div class="ad-submission-caption rent">
+            <label class="control-label">Цена в месяц</label>
+        </div>
+        <input type="text" class="form-control" id="rent">
+        <label class="control-label ad-submission-form-label" for="rent">₽</label>
+
+        <div class="checkbox including-communal">
+            <label>
+                <input type="checkbox" value="">
+                включая коммунальные
+            </label>
+        </div>
+
+        <div class="pledge">
+            <label class="control-label" for="pledge">Залог</label>
+            <input type="text" class="form-control" id="pledge">
+            <label class="control-label ad-submission-form-label" for="pledge">₽</label>
+        </div>
+    </div>
+    <div class="ad-submission-caption rent">
+        <label class="control-label">Ваше имя</label>
+    </div>
+    <div class="form-group your-name">
+        <label class="control-label" for="your-name"></label>
+        <input type="text" class="form-control" id="your-name">
+    </div>
+    <div class="phone-communication-wrap">
+        <div class="phone-communication-caption">
+            <label class="control-label">Телефон(ы) для связи</label>
+        </div>
+        <div class="phone-communication-inner">
+            <div class="phone-communication-font">
+                <span>8(962) 594-3880&#160;</span>
+                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Удалить</button>
+                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
+            </div>
+        </div>
+    </div>
+    <div class="facilities">
+        <label class="control-label">
+            Удобства
+        </label>
+        <div class="facilities-inner">
+            <div class="facilities-item">
+                Техника
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Холодильник
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Стиральная машина
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Посудомоечная машина
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Телевизор
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Микроволновая печь
+                    </label>
+                </div>
+            </div>
+            <div class="facilities-item other">
+                Прочее
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Кондиционер
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Интернет
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        Можно с детьми
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary" id="labelPossibleWithChildrenYes">
+                <input type="radio" name="possibleWithChildren" value="Да">Да
+            </label>
+            <label class="btn btn-default" id="labelPossibleWithChildrenNo">
+                <input type="radio" name="possibleWithChildren" value="Нет">Нет
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inputPossibleWithChildren">Можно с детьми</label>
+        <input type="text" class="form-control" id="inputPossibleWithChildren" value="Да">
+    </div>
+    <div class="form-group">
+        Можно с животными
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary" id="labelPossibleWithAnimalsYes">
+                <input type="radio" name="possibleWithAnimals" value="Да">Да
+            </label>
+            <label class="btn btn-default" id="labelPossibleWithAnimalsNo">
+                <input type="radio" name="possibleWithAnimals" value="Нет">Нет
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inputPossibleWithAnimals">Можно с животными</label>
+        <input type="text" class="form-control" id="inputPossibleWithAnimals" value="Да">
+    </div>
+    <div class="form-group">
+        Можно курить
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary" id="labelYouCanSmokeYes">
+                <input type="radio" name="youCanSmoke" value="Да">Да
+            </label>
+            <label class="btn btn-default" id="labelYouCanSmokeNo">
+                <input type="radio" name="youCanSmoke" value="Нет">Нет
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="inputYouCanSmoke">Можно курить</label>
+        <input type="text" class="form-control" id="inputYouCanSmoke" value="Да">
+    </div>
+    <div class="apartment_description">
+        <label for="apartment_description">Описание квартиры</label>
+        <textarea name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
     </div>
 </div>

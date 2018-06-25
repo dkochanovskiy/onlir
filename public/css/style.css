@@ -897,3 +897,31 @@ footer{
     font-size: 18px;
     font-weight: 700;
 }
+#house{
+    display: none;
+}
+#room{
+    display: none;
+}
+#apartment{
+    display: none;
+}
+#cottage{
+    display: none;
+}
+#ready-business{
+    display: none;
+}
+#office{
+    display: block;
+}
+#trade-area{
+    display: none;
+}
+#warehouse-space{
+    display: none;
+}
+#free-destination-room{
+     display: none;
+ }
+
