@@ -31,9 +31,11 @@
         <div class="col-md-2">
             <input type="text" name="numberBerths" class="form-control" id="totalArea">
         </div>
-        <div class="row">
-            <div class="col-md-1">
-                <label class="control-label" for="totalArea">м<sup>2</sup></label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label class="control-label" for="totalArea">м<sup>2</sup></label>
+                </div>
             </div>
         </div>
     </div>
@@ -42,9 +44,11 @@
         <div class="col-md-2">
             <input type="text" class="form-control" id="residentialArea">
         </div>
-        <div class="row">
-            <div class="col-md-1">
-                <label class="control-label" for="residentialArea">м<sup>2</sup></label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label class="control-label" for="residentialArea">м<sup>2</sup></label>
+                </div>
             </div>
         </div>
     </div>
@@ -53,9 +57,11 @@
         <div class="col-md-2">
             <input type="text" class="form-control" id="kitchen">
         </div>
-        <div class="row">
-            <div class="col-md-1">
-                <label class="control-label" for="kitchen">м<sup>2</sup></label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label class="control-label" for="kitchen">м<sup>2</sup></label>
+                </div>
             </div>
         </div>
     </div>
@@ -64,15 +70,21 @@
         <div class="col-md-2">
             <input type="text" class="form-control" id="floorNumber">
         </div>
-        <label class="col-md-1 control-label" for="totalFloors">
+        <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    из
+                    <label class="control-label" for="totalFloors">
+                        из
+                    </label>
                 </div>
             </div>
-        </label>
-        <div class="col-md-2">
-            <input type="text" class="form-control" id="totalFloors">
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="totalFloors">
+                </div>
+            </div>
         </div>
     </div>
     <hr>
@@ -317,13 +329,15 @@
         <div class="col-md-2">
             <input type="text" class="form-control" id="rent">
         </div>
-        <label for="rent" class="col-md-1 control-label">
+        <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    ₽
+                    <label for="rent" class="control-label">
+                        ₽
+                    </label>
                 </div>
             </div>
-        </label>
+        </div>
         <div class="col-md-3">
             <div class="checkbox">
                 <label>
@@ -336,11 +350,15 @@
         <div class="col-md-2">
             <input type="text" class="form-control" id="pledge">
         </div>
-        <div class="row">
-            <div class="col-md-1">
-                <label class="control-label" for="pledge">
-                    ₽
-                </label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-1">
+                        <label class="control-label" for="pledge">
+                            ₽
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

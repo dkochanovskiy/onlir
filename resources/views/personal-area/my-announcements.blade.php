@@ -13,6 +13,11 @@
         </ul>
     </div>
     <div class="container-content">
+        <div class="col-md-offset-8 col-md-2" style="margin-bottom: 30px">
+            <button type="button" class="btn btn-success">
+                <span class="glyphicon glyphicon-fire"></span> Подать объявление
+            </button>
+        </div>
         <div class="container-content-title-wrap">
             <div class="container-content-title">
                 <a href="javascript:ShowActive()">

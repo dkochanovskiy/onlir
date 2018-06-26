@@ -147,7 +147,7 @@
                                 <div class="ways-accommodation-input">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="Топ-3 (Популярные объявления)">
+                                            <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="Топ-3">
                                             Топ-3
                                         </label>
                                     </div>

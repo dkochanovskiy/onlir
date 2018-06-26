@@ -1,11 +1,18 @@
 <div id="trade-area">
     <div class="form-group">
         <label for="commercialArea" class="col-md-3 control-label">Площадь</label>
-        <div class="col-md-1">
+        <div class="col-md-2">
             <input type="text" name="commercialArea" class="form-control" id="commercialArea">
         </div>
-        <label for="commercialArea" class="col-md-1 control-label">м<sup>2</sup></label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="commercialArea" class="control-label">м<sup>2</sup></label>
+                </div>
+            </div>
+        </div>
     </div>
+    <hr>
     <div class="form-group">
         <label for="commercialArea" class="col-md-3 control-label">Витринные окна</label>
         <div class="col-md-2">
@@ -40,12 +47,19 @@
         </div>
     </div>
     <input type="hidden" id="inputRepairs" value="Косметический">
+    <hr>
     <div class="form-group">
         <label for="electricPower" class="col-md-3 control-label">Электрическая мощность</label>
         <div class="col-md-2">
             <input type="text" name="electricPower" class="form-control" id="electricPower">
         </div>
-        <label for="electricPower" class="col-md-1 control-label">кВт</label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="electricPower" class="control-label">кВт</label>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <div class="dropdown">
@@ -67,13 +81,25 @@
     </div>
     <input type="hidden" id="inputNumberOfWetPoints" name="inputNumberOfWetPoints" value="Отсутствуют">
     <div class="form-group">
-        <label class="col-md-3 control-label" for="floorNumber">Этаж/этажность </label>
+        <label class="col-md-3 control-label" for="floorNumber">Этаж/этажность</label>
         <div class="col-md-2">
-            <input type="text" class="form-control col-md-3" name="floorNumber">
+            <input type="text" class="form-control" id="floorNumber">
         </div>
-        <label class="col-md-1 control-label" for="totalFloors">из </label>
-        <div class="col-md-2">
-            <input type="text" class="form-control" name="totalFloors">
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label class="control-label" for="totalFloors">
+                        из
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="totalFloors">
+                </div>
+            </div>
         </div>
     </div>
     <div class="form-group">
@@ -94,6 +120,7 @@
         </div>
     </div>
     <input type="hidden" id="inputElevator" name="inputElevator" value="Пассажирский и грузовой">
+    <hr>
     <div class="form-group">
         <label class="col-md-3 control-label">Часы работы </label>
             <label class="col-md-1 control-label" for="startTime">с </label>
@@ -159,4 +186,5 @@
             <input type="text" name="except" class="form-control" id="except" disabled placeholder="табачной продукции">
         </div>
     </div>
+    <hr>
 </div>

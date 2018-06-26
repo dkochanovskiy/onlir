@@ -53,9 +53,11 @@
         <div class="col-md-1">
             <input type="text" name="buildingArea" class="form-control" id="buildingArea">
         </div>
-        <div class="row">
-            <div class="col-md-1">
-                <label for="buildingArea" class="col-md-1 control-label">м<sup>2</sup></label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="buildingArea" class="control-label">м<sup>2</sup></label>
+                </div>
             </div>
         </div>
     </div>
@@ -119,7 +121,13 @@
         <div class="col-md-2">
             <input type="text" name="pricePerMonth" class="form-control" id="pricePerMonth">
         </div>
-        <label for="pricePerMonth" class="col-md-1 control-label">₽</label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="pricePerMonth" class="control-label">₽</label>
+                </div>
+            </div>
+        </div>
         <div class="checkbox col-md-offset-3 col-md-9">
             <label>
                 <input type="checkbox" name="includingUtilityBills" value="">
@@ -138,7 +146,13 @@
         <div class="col-md-2">
             <input type="text" name="RatePerSquareMeter" class="form-control" id="RatePerSquareMeter">
         </div>
-        <label for="RatePerSquareMeter" class="col-md-1 control-label">₽</label>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="RatePerSquareMeter" class="control-label">₽</label>
+                </div>
+            </div>
+        </div>
         <div class="checkbox col-md-2">
             <label>
                 <input type="checkbox" name="per month" value="">

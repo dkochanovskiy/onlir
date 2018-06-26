@@ -284,7 +284,7 @@ $(":radio[name='optionsRadios']").change(function(){
         $("#cost").html('<b>' + $("#freeCost").text() + ' р/' + $("#freeDays").text() + 'день' + '</b>');
         $("#total").html('<b>' + $("#freeCost").text() + '</b>');
     }
-    if(selected == 'Топ-3 (Популярные объявления)'){
+    if(selected == 'Топ-3'){
         $("#cost").html('<b>' + $("#topCost").text() + ' р/' + $("#topDays").text() + 'дней' + '</b>');
         $("#total").html('<b>' + $("#topCost").text() + '</b>');
     }
