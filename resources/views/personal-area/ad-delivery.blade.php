@@ -91,7 +91,6 @@
                 @include('include.property-type.warehouse-space')
                 @include('include.property-type.free-destination-room')
                 <div class="photos">
-                    <label>Фотографии</label>
                     <div class="photos-inner">
                         <div class="add-photo">
                             <div class="camera">
@@ -114,9 +113,10 @@
                         </div>
                     </div>
                 </div>
+                <hr>
                 <div class="ways-accommodation">
-                    <label>Способы размещения</label>
-                    <div class="ways-accommodation-inner">
+                    <label class="col-md-3 control-label">Способы размещения</label>
+                    <div class="col-md-9">
                         <div class="ways-accommodation-item free-charge">
                             <div class="ways-accommodation-input-wrap">
                                 <div class="ways-accommodation-input">
@@ -148,7 +148,7 @@
                                     <div class="radio">
                                         <label>
                                             <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="Топ-3 (Популярные объявления)">
-                                            Топ-3 (Популярные объявления)
+                                            Топ-3
                                         </label>
                                     </div>
                                 </div>

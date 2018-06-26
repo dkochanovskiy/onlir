@@ -30,6 +30,9 @@ section{
     height: auto!important;
     min-height: 280px!important;
 }
+textarea{
+    resize: none!important;
+}
 /*/total*/
 /*header*/
 .header-background{
@@ -875,4 +878,11 @@ footer{
 #free-destination-room{
      display: none;
  }
+.delimeter{
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: #dcdcdc;
+    margin: 20px 0 20px 0 ;
+}
 

@@ -31,32 +31,51 @@
         <div class="col-md-2">
             <input type="text" name="numberBerths" class="form-control" id="totalArea">
         </div>
-        <label class="col-md-3 control-label" for="totalArea">м<sup>2</sup></label>
+        <div class="row">
+            <div class="col-md-1">
+                <label class="control-label" for="totalArea">м<sup>2</sup></label>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label class="col-md-3 control-label" for="residentialArea">Жилая площадь</label>
         <div class="col-md-2">
             <input type="text" class="form-control" id="residentialArea">
         </div>
-        <label class="col-md-3 control-label" for="residentialArea">м<sup>2</sup></label>
+        <div class="row">
+            <div class="col-md-1">
+                <label class="control-label" for="residentialArea">м<sup>2</sup></label>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label class="col-md-3 control-label" for="kitchen">Кухня</label>
         <div class="col-md-2">
             <input type="text" class="form-control" id="kitchen">
         </div>
-        <label class="col-md-3 control-label" for="kitchen">м<sup>2</sup></label>
+        <div class="row">
+            <div class="col-md-1">
+                <label class="control-label" for="kitchen">м<sup>2</sup></label>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <label class="col-md-3 control-label" for="floorNumber">Этаж/этажность</label>
         <div class="col-md-2">
             <input type="text" class="form-control" id="floorNumber">
         </div>
-        <label class="col-md-3 control-label" for="totalFloors">из</label>
+        <label class="col-md-1 control-label" for="totalFloors">
+            <div class="row">
+                <div class="col-md-1">
+                    из
+                </div>
+            </div>
+        </label>
         <div class="col-md-2">
             <input type="text" class="form-control" id="totalFloors">
         </div>
     </div>
+    <hr>
     <div class="form-group">
         <div class="col-md-offset-3">
             <div class="radio">
@@ -123,6 +142,7 @@
             </div>
         </div>
     </div>
+    <hr>
     <div class="form-group">
         <div class="dropdown">
             <label class="col-md-3 control-label" for="selectElevator">Лифт</label>
@@ -163,62 +183,16 @@
     <input type="hidden" id="inputRepairs" value="Косметический">
     <hr>
     <div class="header-in-the-form">
-        Арендная плата
-    </div>
-    <div class="form-group">
-        <label for="rent" class="col-md-3 control-label">Цена в месяц</label>
-        <div class="col-md-2">
-            <input type="text" class="form-control" id="rent">
-        </div>
-        <label for="rent" class="col-md-1 control-label">
-            <div class="row">
-                <div class="col-md-1">
-                    ₽
-                </div>
-            </div>
-        </label>
-        <div class="col-md-3">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="">
-                    включая коммунальные
-                </label>
-            </div>
-        </div>
-        <label for="pledge" class="col-md-1 control-label">Залог</label>
-        <div class="col-md-2">
-            <input type="text" class="form-control" id="pledge">
-        </div>
-        <label class="col-md-1 control-label" for="pledge">₽</label>
-    </div>
-    <hr>
-    <div class="form-group">
-        <label for="your-name" class="col-md-3 control-label">Ваше имя</label>
-        <div class="col-md-2">
-            <input type="text" class="form-control" id="your-name">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="your-name" class="col-md-3 control-label">Телефон(ы) для связи</label>
-        <div class="phone-communication-inner">
-            <div class="phone-communication-font">
-                <span>8(962) 594-3880&#160;</span>
-                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Удалить</button>
-                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
-            </div>
-        </div>
-    </div>
-    <div class="header-in-the-form">
         Удобства
     </div>
     <div class="form-group">
-        <div class="col-md-offset-1 col-md-5">
+        <div class="col-md-6">
             <div class="row">
-                <label class="col-md-1 control-label">
+                <label class="col-md-offset-4 col-md-1 control-label">
                     Техника
                 </label>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-offset-3 col-md-6">
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" value="">
@@ -253,7 +227,7 @@
         </div>
         <div class="col-md-4">
             <div class="row">
-                <label class="col-md-1 control-label">
+                <label class="col-md-4 control-label">
                     Прочее
                 </label>
             </div>
@@ -273,6 +247,7 @@
             </div>
         </div>
     </div>
+    <hr>
     <div class="form-group">
         <label class="col-md-3 control-label">Можно с детьми</label>
         <div class="btn-group" data-toggle="buttons">
@@ -309,10 +284,65 @@
         </div>
     </div>
     <input type="hidden" id="inputYouCanSmoke" value="Да">
+    <hr>
     <div class="form-group">
         <label for="apartment_description" class="col-md-3 control-label">Описание квартиры</label>
-        <div class="col-md-9">
-            <textarea class="col-md-3" name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
+        <div class="col-md-8">
+            <textarea rows="5" class="form-control" name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
         </div>
     </div>
+    <hr>
+    <div class="form-group">
+        <label for="your-name" class="col-md-3 control-label">Ваше имя</label>
+        <div class="col-md-2">
+            <input type="text" class="form-control" id="your-name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="your-name" class="col-md-3 control-label">Телефон для связи</label>
+        <div class="phone-communication-inner">
+            <div class="phone-communication-font">
+                <span>8(962) 594-3880&#160;</span>
+                {{--<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Удалить</button>--}}
+                {{--<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Добавить</button>--}}
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="header-in-the-form">
+        Арендная плата
+    </div>
+    <div class="form-group">
+        <label for="rent" class="col-md-2 control-label">Цена в месяц</label>
+        <div class="col-md-2">
+            <input type="text" class="form-control" id="rent">
+        </div>
+        <label for="rent" class="col-md-1 control-label">
+            <div class="row">
+                <div class="col-md-1">
+                    ₽
+                </div>
+            </div>
+        </label>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    включая коммунальные
+                </label>
+            </div>
+        </div>
+        <label for="pledge" class="col-md-1 control-label">Залог</label>
+        <div class="col-md-2">
+            <input type="text" class="form-control" id="pledge">
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <label class="control-label" for="pledge">
+                    ₽
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr>
 </div>

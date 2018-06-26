@@ -53,7 +53,11 @@
         <div class="col-md-1">
             <input type="text" name="buildingArea" class="form-control" id="buildingArea">
         </div>
-        <label for="buildingArea" class="col-md-1 control-label">м<sup>2</sup></label>
+        <div class="row">
+            <div class="col-md-1">
+                <label for="buildingArea" class="col-md-1 control-label">м<sup>2</sup></label>
+            </div>
+        </div>
     </div>
     <div class="form-group">
         <div class="dropdown">
