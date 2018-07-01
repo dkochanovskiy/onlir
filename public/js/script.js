@@ -356,6 +356,21 @@ $('#cosmetic').on('click', function(){
 
     $('#inputRepairs').val('Косметический');
 });
+$('#ta-cosmetic').on('click', function(){
+    $('#ta-designer').removeClass('btn-primary');
+    $('#ta-designer').addClass('btn-default');
+
+    $('#ta-euro').removeClass('btn-primary');
+    $('#ta-euro').addClass('btn-default');
+
+    $('#ta-withoutRepair').removeClass('btn-primary');
+    $('#ta-withoutRepair').addClass('btn-default');
+
+    $('#ta-cosmetic').removeClass('btn-default');
+    $('#ta-cosmetic').addClass('btn-primary');
+
+    $('#inputRepairs').val('Косметический');
+});
 $('#designer').on('click', function(){
     $('#euro').removeClass('btn-primary');
     $('#euro').addClass('btn-default');
@@ -536,6 +551,42 @@ $('#noLimits').on('click', function(){
 });
 $('#allExcept').on('click', function(){
     $('#except').prop('disabled',false);
+});
+$('#directLease').on('click', function(){
+    $('#sublease').removeClass('btn-primary');
+    $('#sublease').addClass('btn-default');
+
+    $('#directLease').removeClass('btn-default');
+    $('#directLease').addClass('btn-primary');
+
+    $('#inputOfLease').val('Прямая аренда');
+});
+$('#sublease').on('click', function(){
+    $('#directLease').removeClass('btn-primary');
+    $('#directLease').addClass('btn-default');
+
+    $('#sublease').removeClass('btn-default');
+    $('#sublease').addClass('btn-primary');
+
+    $('#inputOfLease').val('Субаренда');
+});
+$('#rentalHolidaysYes').on('click', function(){
+    $('#rentalHolidaysNo').removeClass('btn-primary');
+    $('#rentalHolidaysNo').addClass('btn-default');
+
+    $('#rentalHolidaysYes').removeClass('btn-default');
+    $('#rentalHolidaysYes').addClass('btn-primary');
+
+    $('#inputRentalHolidays').val('Да');
+});
+$('#rentalHolidaysNo').on('click', function(){
+    $('#rentalHolidaysYes').removeClass('btn-primary');
+    $('#rentalHolidaysYes').addClass('btn-default');
+
+    $('#rentalHolidaysNo').removeClass('btn-default');
+    $('#rentalHolidaysNo').addClass('btn-primary');
+
+    $('#inputRentalHolidays').val('Нет');
 });
 
 

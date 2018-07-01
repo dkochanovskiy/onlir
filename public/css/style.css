@@ -657,10 +657,6 @@ footer{
     width: 50%;
     display: inline-block;!important;
 }
-#minutes{
-    width: 18%;
-    display: inline;
-}
 .pledge{
     width: 144px;
     display: inline-block!important;
@@ -850,6 +846,7 @@ footer{
 .header-in-the-form{
     font-size: 18px;
     font-weight: 700;
+    margin: 0 0 30px 0;
 }
 #house{
     display: none;
@@ -867,10 +864,10 @@ footer{
     display: none;
 }
 #office{
-    display: none;
+    display: block;
 }
 #trade-area{
-    display: block;
+    display: none;
 }
 #warehouse-space{
     display: none;

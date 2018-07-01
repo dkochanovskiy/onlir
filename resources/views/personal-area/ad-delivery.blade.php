@@ -57,30 +57,54 @@
                     </div>
                 </div>
                 <input type="hidden" name="propertyType" id="propertyType" value="Квартира">
+                <hr>
+                <div class="header-in-the-form">
+                    Об объекте
+                </div>
                 <div class="form-group">
-                    <label for="address" class="col-md-3 control-label">Название здания</label>
+                    <label for="address" class="col-md-3 control-label">Адрес</label>
                     <div class="col-md-6">
                         <input type="text" name="address" class="form-control" id="address">
                     </div>
                 </div>
-                <div class="form-group to-metro">
-                    <label class="control-label" for="metro">Ближайшая станция метро</label>
-                    <input type="text" class="form-control" id="metro">
+                <div class="form-group">
+                    <label for="metro" class="col-md-3 control-label">Ближайшая станция метро</label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="metro">
+                    </div>
                 </div>
-                <div class="form-group dropdown to-metro">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="to-metro" data-toggle="dropdown">
-                        До метро
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Пешком</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Транспортом</a></li>
-                    </ul>
+                <div class="form-group">
+                    <div class="dropdown">
+                        <label class="col-md-3 control-label" for="toMetro">До метро</label>
+                        <div class="col-md-2">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="toMetro" data-toggle="dropdown">
+                                Пешком
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Пешком', 'inputToMetro')">Пешком</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Транспортом', 'inputToMetro')">Транспортом</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="minutes">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <label class="col-md-2 control-label" for="minutes">минут</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group to-metro">
-                    <input type="text" class="form-control" id="minutes">
-                    <label class="control-label" for="minutes">минут</label>
+                <input type="hidden" id="inputToMetro" name="inputToMetro" value="Пешком">
+                <hr>
+                <div class="form-group">
+                    <label for="buildingName" class="col-md-3 control-label">Название здания</label>
+                    <div class="col-md-6">
+                        <input type="text" name="address" class="form-control" id="buildingName">
+                    </div>
                 </div>
+                <div id="include"></div>
                 @include('include.property-type.house')
                 @include('include.property-type.room')
                 @include('include.property-type.apartment')

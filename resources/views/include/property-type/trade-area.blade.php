@@ -31,22 +31,22 @@
         <label class="col-md-3 control-label">Ремонт</label>
         <div class="col-md-9">
             <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary" id="cosmetic">
+                <label class="btn btn-primary" id="taCosmetic">
                     <input type="radio" name="repairs" value="Косметический">Косметический
                 </label>
-                <label class="btn btn-default" id="designer">
+                <label class="btn btn-default" id="taDesigner">
                     <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
                 </label>
-                <label class="btn btn-default" id="euro">
+                <label class="btn btn-default" id="taEuro">
                     <input type="radio" name="repairs" value="Евро">Евро
                 </label>
-                <label class="btn btn-default" id="withoutRepair">
+                <label class="btn btn-default" id="taWithoutRepair">
                     <input type="radio" name="repairs" value="Без ремонта">Без ремонта
                 </label>
             </div>
         </div>
     </div>
-    <input type="hidden" id="inputRepairs" value="Косметический">
+    <input type="hidden" id="taInputRepairs" value="Косметический">
     <hr>
     <div class="form-group">
         <label for="electricPower" class="col-md-3 control-label">Электрическая мощность</label>
@@ -186,5 +186,167 @@
             <input type="text" name="except" class="form-control" id="except" disabled placeholder="табачной продукции">
         </div>
     </div>
+    <hr>
+    <div class="header-in-the-form">
+        Инфраструктура
+    </div>
+    <div class="form-group">
+        <div class="col-md-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Бизнес-центр
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Офис
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Кинотеатр
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Школа
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Игровая зона
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Институт
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Гостиница
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Банкомат
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Кафе
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Супермаркет
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Торговый центр
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Ресторан
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Салон красоты
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Аптека
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Отделение банка
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Парк
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Складские помещения
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Стадион
+                </label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Буфет
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Автомойка
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Автосервис
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Фитнес-центр
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Больница
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Остановка общественного транспорта
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    @include('include.lease')
+    <hr>
+    @include('include.contact-information')
     <hr>
 </div>
