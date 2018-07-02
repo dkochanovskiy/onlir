@@ -1,5 +1,116 @@
 <div id="office">
     <div class="form-group">
+        <label for="yardage" class="col-md-3 control-label">Площадь</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" id="yardage">
+        </div>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="yardage" class="control-label">м<sup>2</sup></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-3 control-label">Мебель</label>
+        <div class="col-md-9">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="furnitureYes">
+                    <input type="radio" name="furniture" value="Да">Да
+                </label>
+                <label class="btn btn-default" id="furnitureNo">
+                    <input type="radio" name="furniture" value="Нет">Нет
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputFurniture" value="Да">
+    <div class="form-group">
+        <label class="col-md-3 control-label">Планировка</label>
+        <div class="col-md-9">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="openTypePlanning">
+                    <input type="radio" name="planing" value="Открытого типа">Открытого типа
+                </label>
+                <label class="btn btn-default" id="closedTypePlanning">
+                    <input type="radio" name="planing" value="Закрытого типа">Закрытого типа
+                </label>
+                <label class="btn btn-default" id="mixedTypePlanning">
+                    <input type="radio" name="planing" value="Смешанного типа">Смешанного типа
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputPlanning" value="Открытого типа">
+    <div class="form-group">
+        <label class="col-md-3 control-label">Ремонт</label>
+        <div class="col-md-9">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="oCosmetic">
+                    <input type="radio" name="repairs" value="Косметический">Косметический
+                </label>
+                <label class="btn btn-default" id="oDesigner">
+                    <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
+                </label>
+                <label class="btn btn-default" id="oEuro">
+                    <input type="radio" name="repairs" value="Евро">Евро
+                </label>
+                <label class="btn btn-default" id="oWithoutRepair">
+                    <input type="radio" name="repairs" value="Без ремонта">Без ремонта
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="oInputRepairs" value="Косметический">
+    <div class="form-group">
+        <label for="oElectricPower" class="col-md-3 control-label">Электрическая мощность</label>
+        <div class="col-md-2">
+            <input type="text" name="oElectricPower" class="form-control" id="oElectricPower">
+        </div>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="oElectricPower" class="control-label">кВт</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="dropdown">
+            <label class="col-md-3 control-label" for="oNumberOfWetPoints">Количество мокрых точек</label>
+            <div class="col-md-9">
+                <button class="btn btn-default dropdown-toggle" type="button" id="oNumberOfWetPoints" data-toggle="dropdown">
+                    Отсутствуют
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oNumberOfWetPoints', 'Отсутствуют', 'inputONumberOfWetPoints')">Отсутствуют</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oNumberOfWetPoints', '1', 'inputONumberOfWetPoints')">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oNumberOfWetPoints', '2', 'inputONumberOfWetPoints')">2</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oNumberOfWetPoints', '3', 'inputONumberOfWetPoints')">3</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oNumberOfWetPoints', '4', 'inputONumberOfWetPoints')">4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputONumberOfWetPoints" name="inputONumberOfWetPoints" value="Отсутствуют">
+    <div class="form-group">
+        <div class="checkbox">
+            <label class="control-label col-md-offset-3 col-md-3">
+                <input type="checkbox" name="separateRoom" value="">
+                Отдельное помещение
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="buildingName" class="col-md-3 control-label">Название здания</label>
+        <div class="col-md-6">
+            <input type="text" name="address" class="form-control" id="buildingName">
+        </div>
+    </div>
+    <div class="form-group">
         <label for="buildingClass" class="col-md-3 control-label">Класс здания</label>
         <div class="col-md-8">
             <div class="btn-group" data-toggle="buttons">

@@ -98,12 +98,6 @@
                 </div>
                 <input type="hidden" id="inputToMetro" name="inputToMetro" value="Пешком">
                 <hr>
-                <div class="form-group">
-                    <label for="buildingName" class="col-md-3 control-label">Название здания</label>
-                    <div class="col-md-6">
-                        <input type="text" name="address" class="form-control" id="buildingName">
-                    </div>
-                </div>
                 <div id="include"></div>
                 @include('include.property-type.house')
                 @include('include.property-type.room')

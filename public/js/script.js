@@ -341,6 +341,7 @@ $('#labelYouCanSmokeYes').on('click', function(){
 
     $('#inputYouCanSmoke').val('Да');
 });
+// ------------------------------------------------------------------------------------------------
 $('#cosmetic').on('click', function(){
     $('#designer').removeClass('btn-primary');
     $('#designer').addClass('btn-default');
@@ -356,20 +357,35 @@ $('#cosmetic').on('click', function(){
 
     $('#inputRepairs').val('Косметический');
 });
-$('#ta-cosmetic').on('click', function(){
-    $('#ta-designer').removeClass('btn-primary');
-    $('#ta-designer').addClass('btn-default');
+$('#taCosmetic').on('click', function(){
+    $('#taDesigner').removeClass('btn-primary');
+    $('#taDesigner').addClass('btn-default');
 
-    $('#ta-euro').removeClass('btn-primary');
-    $('#ta-euro').addClass('btn-default');
+    $('#taEuro').removeClass('btn-primary');
+    $('#taEuro').addClass('btn-default');
 
-    $('#ta-withoutRepair').removeClass('btn-primary');
-    $('#ta-withoutRepair').addClass('btn-default');
+    $('#taWithoutRepair').removeClass('btn-primary');
+    $('#taWithoutRepair').addClass('btn-default');
 
-    $('#ta-cosmetic').removeClass('btn-default');
-    $('#ta-cosmetic').addClass('btn-primary');
+    $('#taCosmetic').removeClass('btn-default');
+    $('#taCosmetic').addClass('btn-primary');
 
-    $('#inputRepairs').val('Косметический');
+    $('#taInputRepairs').val('Косметический');
+});
+$('#oCosmetic').on('click', function(){
+    $('#oDesigner').removeClass('btn-primary');
+    $('#oDesigner').addClass('btn-default');
+
+    $('#oEuro').removeClass('btn-primary');
+    $('#oEuro').addClass('btn-default');
+
+    $('#oWithoutRepair').removeClass('btn-primary');
+    $('#oWithoutRepair').addClass('btn-default');
+
+    $('#oCosmetic').removeClass('btn-default');
+    $('#oCosmetic').addClass('btn-primary');
+
+    $('#oInputRepairs').val('Косметический');
 });
 $('#designer').on('click', function(){
     $('#euro').removeClass('btn-primary');
@@ -386,6 +402,36 @@ $('#designer').on('click', function(){
 
     $('#inputRepairs').val('Дизайнерский');
 });
+$('#taDesigner').on('click', function(){
+    $('#taEuro').removeClass('btn-primary');
+    $('#taEuro').addClass('btn-default');
+
+    $('#taWithoutRepair').removeClass('btn-primary');
+    $('#taWithoutRepair').addClass('btn-default');
+
+    $('#taCosmetic').removeClass('btn-primary');
+    $('#taCosmetic').addClass('btn-default');
+
+    $('#taDesigner').removeClass('btn-default');
+    $('#taDesigner').addClass('btn-primary');
+
+    $('#taInputRepairs').val('Дизайнерский');
+});
+$('#oDesigner').on('click', function(){
+    $('#oEuro').removeClass('btn-primary');
+    $('#oEuro').addClass('btn-default');
+
+    $('#oWithoutRepair').removeClass('btn-primary');
+    $('#oWithoutRepair').addClass('btn-default');
+
+    $('#oCosmetic').removeClass('btn-primary');
+    $('#oCosmetic').addClass('btn-default');
+
+    $('#oDesigner').removeClass('btn-default');
+    $('#oDesigner').addClass('btn-primary');
+
+    $('#oInputRepairs').val('Дизайнерский');
+});
 $('#euro').on('click', function(){
     $('#withoutRepair').removeClass('btn-primary');
     $('#withoutRepair').addClass('btn-default');
@@ -400,6 +446,36 @@ $('#euro').on('click', function(){
     $('#euro').addClass('btn-primary');
 
     $('#inputRepairs').val('Евро');
+});
+$('#taEuro').on('click', function(){
+    $('#taWithoutRepair').removeClass('btn-primary');
+    $('#taWithoutRepair').addClass('btn-default');
+
+    $('#taCosmetic').removeClass('btn-primary');
+    $('#taCosmetic').addClass('btn-default');
+
+    $('#taDesigner').removeClass('btn-primary');
+    $('#taDesigner').addClass('btn-default');
+
+    $('#taEuro').removeClass('btn-default');
+    $('#taEuro').addClass('btn-primary');
+
+    $('#taInputRepairs').val('Евро');
+});
+$('#oEuro').on('click', function(){
+    $('#oWithoutRepair').removeClass('btn-primary');
+    $('#oWithoutRepair').addClass('btn-default');
+
+    $('#oCosmetic').removeClass('btn-primary');
+    $('#oCosmetic').addClass('btn-default');
+
+    $('#oDesigner').removeClass('btn-primary');
+    $('#oDesigner').addClass('btn-default');
+
+    $('#oEuro').removeClass('btn-default');
+    $('#oEuro').addClass('btn-primary');
+
+    $('#oInputRepairs').val('Евро');
 });
 $('#withoutRepair').on('click', function(){
     $('#cosmetic').removeClass('btn-primary');
@@ -416,6 +492,37 @@ $('#withoutRepair').on('click', function(){
 
     $('#inputRepairs').val('Без ремонта');
 });
+$('#taWithoutRepair').on('click', function(){
+    $('#taCosmetic').removeClass('btn-primary');
+    $('#taCosmetic').addClass('btn-default');
+
+    $('#taDesigner').removeClass('btn-primary');
+    $('#taDesigner').addClass('btn-default');
+
+    $('#taEuro').removeClass('btn-primary');
+    $('#taEuro').addClass('btn-default');
+
+    $('#taWithoutRepair').removeClass('btn-default');
+    $('#taWithoutRepair').addClass('btn-primary');
+
+    $('#taInputRepairs').val('Без ремонта');
+});
+$('#oWithoutRepair').on('click', function(){
+    $('#oCosmetic').removeClass('btn-primary');
+    $('#oCosmetic').addClass('btn-default');
+
+    $('#oDesigner').removeClass('btn-primary');
+    $('#oDesigner').addClass('btn-default');
+
+    $('#oEuro').removeClass('btn-primary');
+    $('#oEuro').addClass('btn-default');
+
+    $('#oWithoutRepair').removeClass('btn-default');
+    $('#oWithoutRepair').addClass('btn-primary');
+
+    $('#oInputRepairs').val('Без ремонта');
+});
+// ------------------------------------------------------------------------------------------------
 $('#A').on('click', function(){
     $('#B').removeClass('btn-primary');
     $('#B').addClass('btn-default');
@@ -587,6 +694,61 @@ $('#rentalHolidaysNo').on('click', function(){
     $('#rentalHolidaysNo').addClass('btn-primary');
 
     $('#inputRentalHolidays').val('Нет');
+});
+$('#furnitureYes').on('click', function(){
+    $('#furnitureNo').removeClass('btn-primary');
+    $('#furnitureNo').addClass('btn-default');
+
+    $('#furnitureYes').removeClass('btn-default');
+    $('#furnitureYes').addClass('btn-primary');
+
+    $('#inputFurniture').val('Да');
+});
+$('#furnitureNo').on('click', function(){
+    $('#furnitureYes').removeClass('btn-primary');
+    $('#furnitureYes').addClass('btn-default');
+
+    $('#furnitureNo').removeClass('btn-default');
+    $('#furnitureNo').addClass('btn-primary');
+
+    $('#inputFurniture').val('Нет');
+});
+// ------------------------------------------------------------------------------------------------
+$('#openTypePlanning').on('click', function(){
+    $('#closedTypePlanning').removeClass('btn-primary');
+    $('#closedTypePlanning').addClass('btn-default');
+
+    $('#mixedTypePlanning').removeClass('btn-primary');
+    $('#mixedTypePlanning').addClass('btn-default');
+
+    $('#openTypePlanning').removeClass('btn-default');
+    $('#openTypePlanning').addClass('btn-primary');
+
+    $('#inputPlanning').val('Открытого типа');
+});
+$('#closedTypePlanning').on('click', function(){
+    $('#openTypePlanning').removeClass('btn-primary');
+    $('#openTypePlanning').addClass('btn-default');
+
+    $('#mixedTypePlanning').removeClass('btn-primary');
+    $('#mixedTypePlanning').addClass('btn-default');
+
+    $('#closedTypePlanning').removeClass('btn-default');
+    $('#closedTypePlanning').addClass('btn-primary');
+
+    $('#inputPlanning').val('Закрытого типа');
+});
+$('#mixedTypePlanning').on('click', function(){
+    $('#openTypePlanning').removeClass('btn-primary');
+    $('#openTypePlanning').addClass('btn-default');
+
+    $('#closedTypePlanning').removeClass('btn-primary');
+    $('#closedTypePlanning').addClass('btn-default');
+
+    $('#mixedTypePlanning').removeClass('btn-default');
+    $('#mixedTypePlanning').addClass('btn-primary');
+
+    $('#inputPlanning').val('Смешанного типа');
 });
 
 
