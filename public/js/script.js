@@ -750,6 +750,78 @@ $('#mixedTypePlanning').on('click', function(){
 
     $('#inputPlanning').val('Смешанного типа');
 });
+// ------------------------------------------------------------------------------------------------
+$('#internetYes').on('click', function(){
+    $('#internetNo').removeClass('btn-primary');
+    $('#internetNo').addClass('btn-default');
 
+    $('#internetYes').removeClass('btn-default');
+    $('#internetYes').addClass('btn-primary');
 
+    $('#inputInternet').val('Да');
+});
+$('#internetNo').on('click', function(){
+    $('#internetYes').removeClass('btn-primary');
+    $('#internetYes').addClass('btn-default');
 
+    $('#internetNo').removeClass('btn-default');
+    $('#internetNo').addClass('btn-primary');
+
+    $('#inputInternet').val('Нет');
+});
+// ------------------------------------------------------------------------------------------------
+$('#oAccessFree').on('click', function(){
+    $('#oAccesSystem').removeClass('btn-primary');
+    $('#oAccesSystem').addClass('btn-default');
+
+    $('#oAccessFree').removeClass('btn-default');
+    $('#oAccessFree').addClass('btn-primary');
+
+    $('#oInputAccess').val('Свободный');
+});
+$('#oAccesSystem').on('click', function(){
+    $('#oAccessFree').removeClass('btn-primary');
+    $('#oAccessFree').addClass('btn-default');
+
+    $('#oAccesSystem').removeClass('btn-default');
+    $('#oAccesSystem').addClass('btn-primary');
+
+    $('#oInputAccess').val('Пропускная система');
+});
+// ------------------------------------------------------------------------------------------------
+$('#oUnderground').on('click', function(){
+    $('#oMultilevel').removeClass('btn-primary');
+    $('#oMultilevel').addClass('btn-default');
+
+    $('#oGround').removeClass('btn-primary');
+    $('#oGround').addClass('btn-default');
+
+    $('#oUnderground').removeClass('btn-default');
+    $('#oUnderground').addClass('btn-primary');
+
+    $('#oParkingPlace').val('Подземная');
+});
+$('#oMultilevel').on('click', function(){
+    $('#oUnderground').removeClass('btn-primary');
+    $('#oUnderground').addClass('btn-default');
+
+    $('#oGround').removeClass('btn-primary');
+    $('#oGround').addClass('btn-default');
+
+    $('#oMultilevel').removeClass('btn-default');
+    $('#oMultilevel').addClass('btn-primary');
+
+    $('#oParkingPlace').val('Многоуровневая');
+});
+$('#oGround').on('click', function(){
+    $('#oMultilevel').removeClass('btn-primary');
+    $('#oMultilevel').addClass('btn-default');
+
+    $('#oUnderground').removeClass('btn-primary');
+    $('#oUnderground').addClass('btn-default');
+
+    $('#oGround').removeClass('btn-default');
+    $('#oGround').addClass('btn-primary');
+
+    $('#oParkingPlace').val('Наземная');
+});

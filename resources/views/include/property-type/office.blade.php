@@ -103,7 +103,103 @@
             </label>
         </div>
     </div>
-
+    <div class="form-group">
+        <label class="col-md-3 control-label">Интернет</label>
+        <div class="col-md-9">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="internetYes">
+                    <input type="radio" name="internet" value="Да">Да
+                </label>
+                <label class="btn btn-default" id="internetNo">
+                    <input type="radio" name="internet" value="Нет">Нет
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputInternet" value="Да">
+    <div class="form-group">
+        <label class="col-md-3 control-label" for="oFloorNumber">Этаж/этажность</label>
+        <div class="col-md-2">
+            <input type="text" class="form-control" id="oFloorNumber">
+        </div>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label class="control-label" for="oTotalFloors">
+                        из
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="oTotalFloors">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="dropdown">
+            <label class="col-md-3 control-label" for="oSelectElevator">Лифт </label>
+            <div class="col-md-9">
+                <button class="btn btn-default dropdown-toggle" type="button" id="oSelectElevator" data-toggle="dropdown">
+                    Пассажирский и грузовой
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oSelectElevator', 'Пассажирский и грузовой', 'oInputElevator')">Пассажирский и грузовой</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oSelectElevator', 'Пассажирский', 'oInputElevator')">Пассажирский</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oSelectElevator', 'Грузовой', 'oInputElevator')">Грузовой</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('oSelectElevator', 'Отсутствует', 'oInputElevator')">Отсутствует</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="oInputElevator" name="oInputElevator" value="Пассажирский и грузовой">
+    <div class="form-group">
+        <label class="col-md-3 control-label">Доступ</label>
+        <div class="col-md-4">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="oAccessFree">
+                    <input type="radio" name="oAccess" value="Свободный">Свободный
+                </label>
+                <label class="btn btn-default" id="oAccesSystem">
+                    <input type="radio" name="oAcces" value="Пропускная система">Пропускная система
+                </label>
+            </div>
+        </div>
+        <div class="checkbox">
+            <label class="control-label col-md-2">
+                <input type="checkbox" name="oRoundTheClock" value="">
+                Круглосуточный
+            </label>
+        </div>
+    </div>
+    <input type="hidden" id="oInputAccess" value="Свободный">
+    <div class="form-group">
+        <label class="col-md-3 control-label">Парковка</label>
+        <div class="col-md-5">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="oUnderground">
+                    <input type="radio" name="oParkingPlace" value="Подземная">Подземная
+                </label>
+                <label class="btn btn-default" id="oMultilevel">
+                    <input type="radio" name="oParkingPlace" value="Многоуровневая">Многоуровневая
+                </label>
+                <label class="btn btn-default" id="oGround">
+                    <input type="radio" name="oParkingPlace" value="Наземная">Наземная
+                </label>
+            </div>
+        </div>
+        <div class="checkbox">
+            <label class="control-label col-md-2">
+                <input type="checkbox" name="oProtected" value="">
+                Охраняемая
+            </label>
+        </div>
+    </div>
+    <input type="hidden" id="oParkingPlace" value="Подземная">
     <div class="form-group">
         <label for="buildingName" class="col-md-3 control-label">Название здания</label>
         <div class="col-md-6">
