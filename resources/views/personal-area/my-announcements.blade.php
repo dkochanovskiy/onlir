@@ -85,10 +85,20 @@
                                         <div class="description-top-item">60м2</div>
                                         <div class="description-top-item">эт7/10</div>
                                         <div class="description-top-item">25000</div>
+                                        <div class="description-top-item"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 23</div>
                                     </div>
                                     <div class="description-bottom">
                                         <div class="description-bottom-item">Ул.Энгельса 17</div>
                                         <div class="description-bottom-item">8-962-594-38-80</div>
+                                    </div>
+                                    <div class="description-additionally">
+                                        <div class="description-additionally-item">
+                                            Осталось 0 дней
+                                        </div>
+                                        <div class="description-additionally-item">
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Редактировать</button>
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Активировать</button>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -124,28 +134,30 @@
                             </div>
                         </td>
                         <td>
-                            <div class="description">
-                                <div class="description-top">
-                                    <div class="description-top-item">1-ком.</div>
-                                    <div class="description-top-item">60м2</div>
-                                    <div class="description-top-item">эт7/10</div>
-                                    <div class="description-top-item">25000</div>
-                                    <div class="description-top-item"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 23</div>
-                                </div>
-                                <div class="description-bottom">
-                                    <div class="description-bottom-item">Ул.Энгельса 17</div>
-                                    <div class="description-bottom-item">8-962-594-38-80</div>
-                                </div>
-                                <div class="description-additionally">
-                                    <div class="description-additionally-item">
-                                        Осталось 0 дней
+                            <a href="{{ route('ad')}}">
+                                <div class="description">
+                                    <div class="description-top">
+                                        <div class="description-top-item">1-ком.</div>
+                                        <div class="description-top-item">60м2</div>
+                                        <div class="description-top-item">эт7/10</div>
+                                        <div class="description-top-item">25000</div>
+                                        <div class="description-top-item"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 23</div>
                                     </div>
-                                    <div class="description-additionally-item">
-                                        <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Редактировать</button>
-                                        <button class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Активировать</button>
+                                    <div class="description-bottom">
+                                        <div class="description-bottom-item">Ул.Энгельса 17</div>
+                                        <div class="description-bottom-item">8-962-594-38-80</div>
+                                    </div>
+                                    <div class="description-additionally">
+                                        <div class="description-additionally-item">
+                                            Осталось 0 дней
+                                        </div>
+                                        <div class="description-additionally-item">
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Редактировать</button>
+                                            <button class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Активировать</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </td>
                     </tr>
                 </table>

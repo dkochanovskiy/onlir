@@ -31,7 +31,7 @@
             <div class="col-md-12 ad-photo-contacts">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6">28 июня , 18:30</div>
+                        <div class="col-md-offset-2 col-md-3">28 июня , 18:30</div>
                         <div class="col-md-6">730 просмотров, 26 за сегодня</div>
                         <div class="col-md-offset-2 col-md-8 ad-photo-contacts-slider">
                             <div class="slide ad-slide">
@@ -102,6 +102,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-12 header-in-the-form">
+                Подробное описание
+            </div>
+            <div class="col-md-12">
+
             </div>
         </div>
     </div>
