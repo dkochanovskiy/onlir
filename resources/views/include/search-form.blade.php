@@ -1,4 +1,4 @@
-<form method="post" action="{{ route('welcome')}}" class="form-inline search_form">
+<form method="post" action="{{ route('welcome')}}" class="form-inline">
     <input name="_token" type="hidden" value="{{ csrf_token() }}" />
     <select name="property" class="form-control">
         <optgroup label="Жилая">

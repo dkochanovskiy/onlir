@@ -4,6 +4,7 @@ Route::get('/', 'WelcomeController@show')->name('welcome');
 Route::post('/', 'WelcomeController@store');
 
 Route::get('/search', 'SearchController@show')->name('search');
+Route::get('/ad', 'AdController@show')->name('ad');
 Route::get('/password/email', 'SearchController@show')->name('search');
 
 Auth::routes();

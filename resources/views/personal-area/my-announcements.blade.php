@@ -13,11 +13,7 @@
         </ul>
     </div>
     <div class="container-content">
-        <div class="col-md-offset-8 col-md-2" style="margin-bottom: 30px">
-            <button type="button" class="btn btn-success">
-                <span class="glyphicon glyphicon-fire"></span> Подать объявление
-            </button>
-        </div>
+        @include('include.button-submit-an-announcement')
         <div class="container-content-title-wrap">
             <div class="container-content-title">
                 <a href="javascript:ShowActive()">
@@ -63,34 +59,39 @@
                             </form>
                         </td>
                         <td>
-                            <div class='slide' >
+                            <div class="slide my-announcements-slide">
                                 <input type="radio" name="slider3" id="slider3_1" checked="checked">
                                 <label for="slider3_1"></label>
-                                <div><p></p> <img src="{{ asset('images/slider/1.jpg') }}"></div>
-
+                                <div>
+                                    <img class="my-announcements-img-slide" src="{{ asset('images/slider/1.jpg') }}">
+                                </div>
                                 <input type="radio" name="slider3" id="slider3_2">
                                 <label for="slider3_2"></label>
-                                <div><p></p> <img src="{{ asset('images/slider/2.jpg') }}"></div>
-
+                                <div>
+                                    <img class="my-announcements-img-slide" src="{{ asset('images/slider/2.jpg') }}">
+                                </div>
                                 <input type="radio" name="slider3" id="slider3_3">
                                 <label for="slider3_3"></label>
-                                <div><p></p> <img src="{{ asset('images/slider/3.jpg') }}"></div>
-
+                                <div>
+                                    <img class="my-announcements-img-slide" src="{{ asset('images/slider/3.jpg') }}">
+                                </div>
                             </div>
                         </td>
                         <td>
-                            <div class="description">
-                                <div class="description-top">
-                                    <div class="description-top-item">1-ком.</div>
-                                    <div class="description-top-item">60м2</div>
-                                    <div class="description-top-item">эт7/10</div>
-                                    <div class="description-top-item">25000</div>
+                            <a href="{{ route('ad')}}">
+                                <div class="description">
+                                    <div class="description-top">
+                                        <div class="description-top-item">1-ком.</div>
+                                        <div class="description-top-item">60м2</div>
+                                        <div class="description-top-item">эт7/10</div>
+                                        <div class="description-top-item">25000</div>
+                                    </div>
+                                    <div class="description-bottom">
+                                        <div class="description-bottom-item">Ул.Энгельса 17</div>
+                                        <div class="description-bottom-item">8-962-594-38-80</div>
+                                    </div>
                                 </div>
-                                <div class="description-bottom">
-                                    <div class="description-bottom-item">Ул.Энгельса 17</div>
-                                    <div class="description-bottom-item">8-962-594-38-80</div>
-                                </div>
-                            </div>
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -104,19 +105,22 @@
                             </form>
                         </td>
                         <td>
-                            <div class='slide' >
+                            <div class="slide my-announcements-slide">
                                 <input type="radio" name="slider4" id="slider4_1" checked="checked">
                                 <label for="slider4_1"></label>
-                                <div><p></p> <img src="{{ asset('images/slider/4.jpg') }}"></div>
-
+                                <div>
+                                    <img class="my-announcements-img-slide" src="{{ asset('images/slider/4.jpg') }}">
+                                </div>
                                 <input type="radio" name="slider4" id="slider4_2">
                                 <label for="slider4_2"></label>
-                                <div><p></p> <img src="{{ asset('images/slider/5.jpg') }}"></div>
-
+                                <div>
+                                    <img class="my-announcements-img-slide" src="{{ asset('images/slider/5.jpg') }}">
+                                </div>
                                 <input type="radio" name="slider4" id="slider4_3">
                                 <label for="slider4_3"></label>
-                                <div><p></p> <img src="{{ asset('images/slider/6.jpg') }}"></div>
-
+                                <div>
+                                    <img class="my-announcements-img-slide" src="{{ asset('images/slider/6.jpg') }}">
+                                </div>
                             </div>
                         </td>
                         <td>

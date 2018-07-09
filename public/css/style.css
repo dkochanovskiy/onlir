@@ -764,8 +764,8 @@ footer{
     background: #ffff00;
 }
 .alloted{
-     background: #fff2cc;
- }
+    background: #fff2cc;
+}
 .ways-accommodation-input-wrap{
     margin: 10px 0 0 16px;
     font-size: 18px;
@@ -873,8 +873,8 @@ footer{
     display: none;
 }
 #free-destination-room{
-     display: none;
- }
+    display: none;
+}
 .delimeter{
     width: 100%;
     display: block;
@@ -882,4 +882,105 @@ footer{
     background: #dcdcdc;
     margin: 20px 0 20px 0 ;
 }
+.slide.my-announcements-slide{
+    width: 116px;
+    height: 100px;
+}
+.slide.ad-slide{
 
+}
+.slide {
+    position: relative;
+    text-align: center;
+}
+.slide  input {
+    display: none;
+}
+.slide.ad-slide  input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.8);
+    border: 2px solid rgba(190, 190, 190, 0.8);
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 20px;
+    top: 250px;
+    transition: background 0.8s ease-out 0s;
+}
+.slide.my-announcements-slide  input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.8);
+    border: 2px solid rgba(190, 190, 190, 0.8);
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 4px;
+    top: 90%;
+    transition: background 0.8s ease-out 0s;
+}
+.slide  input + label:hover {
+    background: rgba(250, 250, 250, 0.8);
+}
+.slide  input:checked + label {
+    background: rgba(220, 220, 220, 0.8);
+}
+.slide  div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+.slide  div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+.my-announcements-img-slide{
+    width:116px;
+    height:77px;
+}
+.slide  input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+.slide  div  p {
+    position: absolute;
+    font-size:18px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 3px #222;
+}
+.ad-description{
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+.ad-photo-contacts-slider{
+    border: 1px solid #337ab7;
+    padding: 30px 0 0 0;
+    height: 320px;
+}
+img .ad-img-slide {
+    width:320px!important;
+    height:240px!important;
+}
+.button-submit-an-announcement{
+    margin: 0 0 30px 0;
+}
+.ad-nickname{
+    font-size: 20px;
+    padding: 20px 0 0 0;
+    margin: 0 0 50px 0;
+}
