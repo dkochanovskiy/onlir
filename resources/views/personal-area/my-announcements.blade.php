@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <hr>
+    <hr class="col-md-12">
     <div class="navigation-bar">
         <ul class="nav nav-pills nav-stacked">
             <li class="active" id="home"><a href="{{ route('my-announcements') }}">Мои объявления</a></li>

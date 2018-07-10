@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="col-md-12">
     <div class="form-group">
         <div class="col-md-offset-3">
             <div class="radio">
@@ -154,7 +154,7 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="col-md-12">
     <div class="form-group">
         <div class="dropdown">
             <label class="col-md-3 control-label" for="selectElevator">Лифт</label>
@@ -193,7 +193,7 @@
         </div>
     </div>
     <input type="hidden" id="inputRepairs" value="Косметический">
-    <hr>
+    <hr class="col-md-12">
     <div class="header-in-the-form">
         Удобства
     </div>
@@ -259,7 +259,7 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="col-md-12">
     <div class="form-group">
         <label class="col-md-3 control-label">Можно с детьми</label>
         <div class="btn-group" data-toggle="buttons">
@@ -296,16 +296,16 @@
         </div>
     </div>
     <input type="hidden" id="inputYouCanSmoke" value="Да">
-    <hr>
+    <hr class="col-md-12">
     <div class="form-group">
         <label for="apartment_description" class="col-md-3 control-label">Описание квартиры</label>
         <div class="col-md-8">
             <textarea rows="5" class="form-control" name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
         </div>
     </div>
-    <hr>
+    <hr class="col-md-12">
     @include('include.contact-information')
-    <hr>
+    <hr class="col-md-12">
     <div class="header-in-the-form">
         Арендная плата
     </div>
@@ -347,5 +347,5 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="col-md-12">
 </div>

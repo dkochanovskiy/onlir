@@ -120,7 +120,7 @@
         </div>
     </div>
     <input type="hidden" id="inputElevator" name="inputElevator" value="Пассажирский и грузовой">
-    <hr>
+    <hr class="col-md-12">
     <div class="form-group">
         <label class="col-md-3 control-label">Часы работы </label>
             <label class="col-md-1 control-label" for="startTime">с </label>

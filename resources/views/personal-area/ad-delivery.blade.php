@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <hr>
+    <hr class="col-md-12">
     <div class="navigation-bar">
         <ul class="nav nav-pills nav-stacked">
             <li id="home"><a href="{{ route('my-announcements') }}">Мои объявления</a></li>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <input type="hidden" name="propertyType" id="propertyType" value="Квартира">
-                <hr>
+                <hr class="col-md-12">
                 <div class="header-in-the-form">
                     Об объекте
                 </div>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <input type="hidden" id="inputToMetro" name="inputToMetro" value="Пешком">
-                <hr>
+                <hr class="col-md-12">
                 <div id="include"></div>
                 @include('include.property-type.house')
                 @include('include.property-type.room')
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <hr>
+                <hr class="col-md-12">
                 <div class="ways-accommodation">
                     <label class="col-md-3 control-label">Способы размещения</label>
                     <div class="col-md-9">

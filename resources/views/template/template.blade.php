@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    {{--<link rel="stylesheet" type="text/css" href="{{ asset('css/slider-style.css') }}" />--}}
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/slider-style-css.css') }}" />
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
     <title>onlir - Аренда недвижимости в России</title>
 </head>
 <body>
@@ -106,7 +103,6 @@
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
-
                                     </ul>
                                 </li>
                             </ul>
@@ -148,10 +144,8 @@
     @include('include.popup.popup-login')
     @include('include.popup.popup-registration')
     {{--/popups--}}
-    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jquery-1.7.2.min.js') }}"></script>
     <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
-    {{--<script src="{{ asset('js/slider-script.js') }}"></script>--}}
     <script src="{{ asset('js/script.js') }}"></script>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

@@ -10,7 +10,7 @@
             <div class="col-md-offset-1 col-md-10" style="margin-bottom: 30px;">
                 @include('include.search-form')
             </div>
-            <hr>
+            <hr class="col-md-12">
             <div class="col-md-12 ad-description">
                 <div class="col-md-offset-2 col-md-4">
                     <div class="row">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr class="col-md-12">
             <div class="col-md-12 ad-photo-contacts">
                 <div class="col-md-6">
                     <div class="row">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr class="col-md-12">
             <div class="ad-options">
                 <div class="col-md-12">
                     <div class="row">
@@ -248,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-                <hr>
+                <hr class="col-md-12">
                 <div class="col-md-offset-1 col-md-10">
                     <div class="row">
                         <div class="col-md-12 header-in-the-form">
