@@ -985,3 +985,19 @@ img .ad-img-slide {
     padding: 20px 0 0 0;
     margin: 0 0 50px 0;
 }
+.ad-detailed-description{
+    font-size: 17px;
+    padding: 20px!important;
+}
+.ad-options{
+    font-size: 20px;
+}
+.ad-options span{
+    background: #dcdcdc;
+}
+.ad-options-value{
+    color: #fff;
+    background: #337ab7;
+    width: 100px;
+    height: 100px;
+}
