@@ -8,6 +8,6 @@ class FavoritesController extends Controller
 {
     public function index()
     {
-        return view('personal-area.favorites');
+        return view('personal-area.izbrannoye');
     }
 }

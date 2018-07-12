@@ -31,10 +31,10 @@
                 <div class="header-registered">
                     <div class="header-registered-item-wrap">
                         <div class="header-registered-item">
-                            <a href="{{ route('messages') }}"><span class="glyphicon glyphicon-envelope"></span>&#160;Сообщения</a>
+                            <a href="{{ route('soobshcheniya') }}"><span class="glyphicon glyphicon-envelope"></span>&#160;Сообщения</a>
                         </div>
                         <div class="header-registered-item">
-                            <a href="{{ route('favorites') }}"><span class="glyphicon glyphicon-star"></span>&#160;Избранное</a>
+                            <a href="{{ route('izbrannoye') }}"><span class="glyphicon glyphicon-star"></span>&#160;Избранное</a>
                         </div>
                         <div class="header-registered-item">
                             <ul>
@@ -44,52 +44,52 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="{{ route('my-announcements') }}"
+                                            <a href="{{ route('moi-obyavleniya') }}"
                                                onclick="event.preventDefault();
                                          document.getElementById('my-announcements-form').submit();">
                                                 Мои объявления
                                             </a>
-                                            <form id="my-announcements-form" action="{{ route('my-announcements') }}" method="POST" style="display: none;">
+                                            <form id="my-announcements-form" action="{{ route('moi-obyavleniya') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="{{ route('purse') }}"
+                                            <a href="{{ route('koshelek') }}"
                                                onclick="event.preventDefault();
                                          document.getElementById('purse-form').submit();">
                                                 Кошелек
                                             </a>
-                                            <form id="purse-form" action="{{ route('purse') }}" method="POST" style="display: none;">
+                                            <form id="purse-form" action="{{ route('koshelek') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="{{ route('amend-contract') }}"
+                                            <a href="{{ route('redaktirovaniye-dogovora') }}"
                                                onclick="event.preventDefault();
                                          document.getElementById('amend-contract-form').submit();">
-                                                Изменить договор
+                                                Редактирование договора
                                             </a>
-                                            <form id="amend-contract-form" action="{{ route('amend-contract') }}" method="POST" style="display: none;">
+                                            <form id="amend-contract-form" action="{{ route('redaktirovaniye-dogovora') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="{{ route('ad-delivery') }}"
+                                            <a href="{{ route('razmeshcheniye-obyavleniya') }}"
                                                onclick="event.preventDefault();
                                          document.getElementById('ad-delivery-form').submit();">
                                                 Подать объявления
                                             </a>
-                                            <form id="ad-delivery-form" action="{{ route('ad-delivery') }}" method="POST" style="display: none;">
+                                            <form id="ad-delivery-form" action="{{ route('razmeshcheniye-obyavleniya') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="{{ route('settings') }}"
+                                            <a href="{{ route('nastroyki') }}"
                                                onclick="event.preventDefault();
                                          document.getElementById('settings-form').submit();">
                                                 Настройки
                                             </a>
-                                            <form id="settings-form" action="{{ route('settings') }}" method="POST" style="display: none;">
+                                            <form id="settings-form" action="{{ route('nastroyki') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
@@ -103,6 +103,7 @@
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>
+
                                     </ul>
                                 </li>
                             </ul>

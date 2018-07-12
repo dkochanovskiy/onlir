@@ -382,11 +382,21 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '1 месяц', 'inputPrepayment')">1 месяц</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '2 месяца', 'inputPrepayment')">2 месяца</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '3 месяца', 'inputPrepayment')">3 месяца</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '4 месяца', 'inputPrepayment')">4 месяца</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', 'До 12 месяцев', 'inputPrepayment')">До 12 месяцев</a></li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '1 месяц', 'inputPrepayment')">1 месяц</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '2 месяца', 'inputPrepayment')">2 месяца</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '3 месяца', 'inputPrepayment')">3 месяца</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', '4 месяца', 'inputPrepayment')">4 месяца</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('prepayment', 'До 12 месяцев', 'inputPrepayment')">До 12 месяцев</a>
+                    </li>
                 </ul>
             </div>
         </div>

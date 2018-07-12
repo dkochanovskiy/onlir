@@ -8,6 +8,6 @@ class MyAnnouncementsController extends Controller
 {
     public function index()
     {
-        return view('personal-area.my-announcements');
+        return view('personal-area.moi-obyavleniya');
     }
 }

@@ -8,6 +8,6 @@ class AdDeliveryController extends Controller
 {
     public function index()
     {
-        return view('personal-area.ad-delivery');
+        return view('personal-area.razmeshcheniye-obyavleniya');
     }
 }

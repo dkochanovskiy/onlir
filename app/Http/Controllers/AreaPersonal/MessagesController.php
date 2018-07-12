@@ -14,7 +14,7 @@ class MessagesController extends Controller
     public function index()
     {
         $messages = Message::all();
-        return view('personal-area.messages', compact('messages'));
+        return view('personal-area.soobshcheniya', compact('soobshcheniya'));
     }
 
     public function postMessages(Request $request){

@@ -19,7 +19,7 @@
     <input type="text" value="{{old('max_price')}}" class="form-control" name="max_price" id="max_price" placeholder="до">
     <input type="text" value="{{old('city')}}" class="form-control" name="city" id="city" placeholder="Город">
     {{--<input type="submit" class="btn btn-default" value="Найти" />--}}
-    <a href="{{ route('search') }}">
+    <a href="{{ route('rezultaty-poiska') }}">
         <button class="btn btn-primary">
             <span class="glyphicon glyphicon-search"></span> Поиск
         </button>
