@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <input type="hidden" class="form-control" id="numberRooms" value="1">
+    <input type="hidden" id="numberRooms" value="1">
     <div class="form-group">
         <label for="numberBerths" class="col-md-3 control-label">Количество спальных мест</label>
         <div class="col-md-2">
@@ -303,8 +303,6 @@
             <textarea rows="5" class="form-control" name="apartment_description" id="apartment_description" placeholder="Опишите вашу квартиру..."></textarea>
         </div>
     </div>
-    <hr class="col-md-12">
-    @include('include.contact-information')
     <hr class="col-md-12">
     <div class="header-in-the-form">
         Арендная плата

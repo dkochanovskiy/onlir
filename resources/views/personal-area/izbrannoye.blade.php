@@ -25,7 +25,7 @@
                     </form>
                 </td>
                 <td>
-                    <div class='slide' >
+                    <div class="slide" >
                         <input type="radio" name="slider1" id="slider1_1" checked="checked">
                         <label for="slider1_1"></label>
                         <div><p></p> <img src="{{ asset('images/slider/1.jpg') }}"></div>

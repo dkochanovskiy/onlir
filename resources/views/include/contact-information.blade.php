@@ -8,7 +8,7 @@
     </div>
 </div>
 <div class="form-group">
-    <label for="your-name" class="col-md-3 control-label">Телефон для связи</label>
+    <label class="col-md-3 control-label">Телефон для связи</label>
     <div class="phone-communication-inner">
         <div class="phone-communication-font">
             <span>8(962) 594-3880&#160;</span>

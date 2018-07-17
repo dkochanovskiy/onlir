@@ -81,14 +81,14 @@
     </div>
     <input type="hidden" id="inputNumberOfWetPoints" name="inputNumberOfWetPoints" value="Отсутствуют">
     <div class="form-group">
-        <label class="col-md-3 control-label" for="floorNumber">Этаж/этажность</label>
+        <label class="col-md-3 control-label" for="taFloorNumber">Этаж/этажность</label>
         <div class="col-md-2">
-            <input type="text" class="form-control" id="floorNumber">
+            <input type="text" class="form-control" id="taFloorNumber">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="totalFloors">
+                    <label class="control-label" for="taTotalFloors">
                         из
                     </label>
                 </div>
@@ -97,29 +97,29 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-4">
-                    <input type="text" class="form-control" id="totalFloors">
+                    <input type="text" class="form-control" id="taTotalFloors">
                 </div>
             </div>
         </div>
     </div>
     <div class="form-group">
         <div class="dropdown">
-            <label class="col-md-3 control-label" for="selectElevator">Лифт </label>
+            <label class="col-md-3 control-label" for="taSelectElevator">Лифт </label>
             <div class="col-md-9">
-                <button class="btn btn-default dropdown-toggle" type="button" id="selectElevator" data-toggle="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="taSelectElevator" data-toggle="dropdown">
                     Пассажирский и грузовой
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectElevator', 'Пассажирский и грузовой', 'inputElevator')">Пассажирский и грузовой</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectElevator', 'Пассажирский', 'inputElevator')">Пассажирский</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectElevator', 'Грузовой', 'inputElevator')">Грузовой</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectElevator', 'Отсутствует', 'inputElevator')">Отсутствует</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('taSelectElevator', 'Пассажирский и грузовой', 'taInputElevator')">Пассажирский и грузовой</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('taSelectElevator', 'Пассажирский', 'taInputElevator')">Пассажирский</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('taSelectElevator', 'Грузовой', 'taInputElevator')">Грузовой</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('taSelectElevator', 'Отсутствует', 'taInputElevator')">Отсутствует</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <input type="hidden" id="inputElevator" name="inputElevator" value="Пассажирский и грузовой">
+    <input type="hidden" id="taInputElevator" name="taInputElevator" value="Пассажирский и грузовой">
     <hr class="col-md-12">
     <div class="form-group">
         <label class="col-md-3 control-label">Часы работы </label>
@@ -344,9 +344,4 @@
             </div>
         </div>
     </div>
-    <hr>
-    @include('include.lease')
-    <hr>
-    @include('include.contact-information')
-    <hr>
 </div>

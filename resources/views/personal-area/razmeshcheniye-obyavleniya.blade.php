@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <hr class="col-md-12">
-    <div class="navigation-bar">
+    <div class="navigation-bar text-center">
         <ul class="nav nav-pills nav-stacked">
             <li id="home"><a href="{{ route('moi-obyavleniya') }}">Мои объявления</a></li>
             <li id="purse"><a href="{{ route('koshelek') }}">Кошелек</a></li>
@@ -108,6 +108,11 @@
                 @include('include.property-type.trade-area')
                 @include('include.property-type.warehouse-space')
                 @include('include.property-type.free-destination-room')
+                <hr>
+                @include('include.lease')
+                <hr>
+                @include('include.contact-information')
+                <hr>
                 <div class="photos">
                     <div class="photos-inner">
                         <div class="add-photo">
@@ -239,12 +244,6 @@
                         <div class="btn btn-success">Подать объявление</div>
                     </div>
                 </div>
-                {{--<div class="form-group">--}}
-                    {{--<label class="control-label" for="your-phone1"></label>--}}
-                    {{--<input type="text" class="form-control input-phone-communication" id="your-phone1">--}}
-                {{--</div>--}}
-
-                {{--<button type="submit" class="btn btn-default">Отправить</button>--}}
             </form>
         </div>
     </div>

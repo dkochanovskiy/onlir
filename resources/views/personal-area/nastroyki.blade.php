@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <hr class="col-md-12">
-        <div class="navigation-bar">
+        <div class="navigation-bar text-center">
             <ul class="nav nav-pills nav-stacked">
                 <li id="home"><a href="{{ route('moi-obyavleniya') }}">Мои объявления</a></li>
                 <li id="purse"><a href="{{ route('koshelek') }}">Кошелек</a></li>

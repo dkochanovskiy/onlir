@@ -11,6 +11,9 @@ body{
 header{
     /*height: 85px;*/
 }
+a:hover{
+    background: none!important;
+}
 table{
     border-collapse: separate!important;
     border-spacing: 7px 11px!important;
@@ -821,7 +824,7 @@ footer{
     display: none;
 }
 #apartment{
-    display: none;
+    display: block;
 }
 #cottage{
     display: none;
@@ -830,7 +833,7 @@ footer{
     display: none;
 }
 #office{
-    display: block;
+    display: none;
 }
 #trade-area{
     display: none;
