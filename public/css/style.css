@@ -821,10 +821,10 @@ footer{
     display: none;
 }
 #room{
-    display: none;
+    display: block;
 }
 #apartment{
-    display: block;
+    display: none;
 }
 #cottage{
     display: none;

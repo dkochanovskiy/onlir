@@ -8,18 +8,18 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Studio()">Студия</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:OneRoom()">1</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:TwoRooms()">2</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:ThreeRooms()">3</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:FourRooms()">4</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:FiveRooms()">5</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:SixRooms()">6</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', 'Студия', 'outputSelectNumberRooms')">Студия</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '1', 'outputSelectNumberRooms')">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '2', 'outputSelectNumberRooms')">2</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '3', 'outputSelectNumberRooms')">3</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '4', 'outputSelectNumberRooms')">4</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '5', 'outputSelectNumberRooms')">5</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '6', 'outputSelectNumberRooms')">6</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <input type="hidden" id="numberRooms" value="1">
+    <input type="hidden" id="outputSelectNumberRooms" value="1">
     <div class="form-group">
         <label for="numberBerths" class="col-md-3 control-label">Количество спальных мест</label>
         <div class="col-md-2">
@@ -157,22 +157,22 @@
     <hr class="col-md-12">
     <div class="form-group">
         <div class="dropdown">
-            <label class="col-md-3 control-label" for="selectElevator">Лифт</label>
+            <label class="col-md-3 control-label" for="aSelectElevator">Лифт</label>
             <div class="col-md-2">
-                <button class="btn btn-default dropdown-toggle" type="button" id="selectElevator" data-toggle="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="aSelectElevator" data-toggle="dropdown">
                     Пассажирский
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:PassengerСargo()">Пассажирский и грузовой</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Passenger()">Пассажирский</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Сargo()">Грузовой</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Absent()">Отсутствует</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Пассажирский и грузовой', 'aOutputElevator')">Пассажирский и грузовой</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Пассажирский', 'aOutputElevator')">Пассажирский</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Грузовой', 'aOutputElevator')">Грузовой</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Отсутствует', 'aOutputElevator')">Отсутствует</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <input type="hidden" id="elevator" value="Пассажирский">
+    <input type="hidden" id="aOutputElevator" value="Пассажирский">
     <div class="form-group">
         <label class="col-md-3 control-label">Ремонт</label>
         <div class="col-md-9">

@@ -213,53 +213,6 @@ function FreeDestinationRoom(){
 
     $("#free-destination-room").css('display', 'block');
 }
-function Studio(){
-    $("#numberRooms").val('Студия');
-    $("#selectNumberRooms").html('Студия <span class="caret"></span>');
-}
-function OneRoom(){
-    $("#numberRooms").val('1');
-    $("#selectNumberRooms").html('1 <span class="caret"></span>');
-}
-function TwoRooms(){
-    $("#numberRooms").val('2');
-    $("#selectNumberRooms").html('2 <span class="caret"></span>');
-}
-function ThreeRooms(){
-    $("#numberRooms").val('3');
-    $("#selectNumberRooms").html('3 <span class="caret"></span>');
-}
-function FourRooms(){
-    $("#numberRooms").val('4');
-    $("#selectNumberRooms").html('4 <span class="caret"></span>');
-}
-function FiveRooms(){
-    $("#numberRooms").val('5');
-    $("#selectNumberRooms").html('5 <span class="caret"></span>');
-}
-function SixRooms(){
-    $("#numberRooms").val('6');
-    $("#selectNumberRooms").html('6 <span class="caret"></span>');
-}
-function PassengerСargo(){
-    $("#elevator").val('Пассажирский и грузовой');
-    $("#selectElevator").html('Пассажирский и грузовой <span class="caret"></span>');
-}
-function Passenger(){
-    $("#elevator").val('Пассажирский');
-    $("#selectElevator").html('Пассажирский <span class="caret"></span>');
-}
-function Сargo(){
-    $("#elevator").val('Грузовой');
-    $("#selectElevator").html('Грузовой <span class="caret"></span>');
-}
-function Absent(){
-    $("#elevator").val('Отсутствует');
-    $("#selectElevator").html('Отсутствует <span class="caret"></span>');
-}
-    $('input[name=repairs]:checked').on('change', function() {
-    alert( this.value);
-});
 function Cosmetic(){
     $("#repairs").val('Косметический');
     $("#selectRepairs").html('Косметический <span class="caret"></span>');
