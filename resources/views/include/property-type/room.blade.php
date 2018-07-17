@@ -109,5 +109,92 @@
             </div>
         </div>
     </div>
-    <input type="text" id="rOutputElevator" value="Пассажирский">
+    <input type="hidden" id="rOutputElevator" value="Пассажирский">
+    <div class="form-group">
+        <label class="col-md-3 control-label">Ремонт</label>
+        <div class="col-md-9">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="rCosmetic">
+                    <input type="radio" name="repairs" value="Косметический">Косметический
+                </label>
+                <label class="btn btn-default" id="rDesigner">
+                    <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
+                </label>
+                <label class="btn btn-default" id="rEuro">
+                    <input type="radio" name="repairs" value="Евро">Евро
+                </label>
+                <label class="btn btn-default" id="rWithoutRepair">
+                    <input type="radio" name="repairs" value="Без ремонта">Без ремонта
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="rOutputRepairs" value="Косметический">
+    <hr class="col-md-12">
+    <div class="form-group">
+        <div class="col-md-offset-3">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rBalcony" id="rBalcony1" checked>
+                    Балкон
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rBalcony" id="rBalcony2">
+                    Лоджия
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rBalcony" id="rBalcony3">
+                    Отсутствует
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-3">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rFurniture" id="rFurniture1" checked>
+                    Мебель есть
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rFurniture" id="rFurniture2">
+                    Частично
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rFurniture" id="rFurniture3">
+                    Отсутствует
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-3">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rKitchenSet" id="rKitchenSet1" checked>
+                    Кухонный гарнитур есть
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rKitchenSet" id="rKitchenSet2">
+                    Частично
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="rKitchenSet" id="rKitchenSet3">
+                    Отсутствует
+                </label>
+            </div>
+        </div>
+    </div>
 </div>
