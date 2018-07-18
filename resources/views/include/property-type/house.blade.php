@@ -141,4 +141,134 @@
         </div>
     </div>
     <input type="hidden" id="hOutputRepairs" value="Косметический">
+    <hr class="col-md-12">
+    <div class="header-in-the-form">
+        Удобства
+    </div>
+    <div class="form-group">
+        <div class="col-md-8">
+            <div class="row">
+                <label class="col-md-2 control-label">В доме</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <label class="col-md-6 control-label">На улице (рядом)</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Ванная
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Стиральная машина
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Посудомоечная машина
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Телевизор
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Микроволновая печь
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Баня
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Кухонный гарнитур
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Холодильник
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Кондиционер
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Интернет
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Гараж
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Бассейн
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Школа
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Детский сад
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Детская площадка
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Парковка
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-10 checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Пруд
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
