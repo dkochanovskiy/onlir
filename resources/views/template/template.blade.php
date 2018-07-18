@@ -16,10 +16,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <header style="margin: 10px 0 0 0">
+            <header>
                 <div class="col-md-2">
                     <a href="{{ route('welcome') }}">
-                        <img class="center-block" src="{{ asset('images/logo.png') }}" alt="Логотип Onlir" style="margin: 15px 0 0 0">
+                        <img class="center-block" src="{{ asset('images/logo.png') }}" alt="Логотип Onlir">
                     </a>
                 </div>
                 @guest

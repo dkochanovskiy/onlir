@@ -9,6 +9,12 @@ Route::post('/rezultaty-poiska', 'SearchController@show');
 Route::get('/obyavleniye', 'AdController@show')->name('obyavleniye');
 Route::post('/obyavleniye', 'AdController@show');
 
+Route::get('/obyavleniye-o', 'OAdController@show')->name('obyavleniye-o');
+Route::post('/obyavleniye-o', 'OAdController@show');
+
+Route::get('/obyavleniye-ta', 'TaAdController@show')->name('obyavleniye-ta');
+Route::post('/obyavleniye-ta', 'TaAdController@show');
+
 Auth::routes();
 
 Route::group(['middleware'=>'auth'], function (){

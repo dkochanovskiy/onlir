@@ -69,16 +69,10 @@ footer a:hover{
     /*list-style-type: none!important;*/
 }
 .title-search{
-    width: 100%;
-    margin: 100px 0 0 0;
+    /*margin: 230px 0 0 0;*/
 }
-.title{
-    width: 596px;
-    height: 52px;
+.white-color{
     color: #ffffff;
-    font-size: 40px;
-    border-radius: 5px;
-    margin: 0 auto;
 }
 .order{
     font-size: 25px!important;

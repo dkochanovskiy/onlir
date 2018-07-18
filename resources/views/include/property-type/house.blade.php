@@ -224,13 +224,13 @@
                 </div>
                 <div class="col-md-offset-2 col-md-10 checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="hGarage">
                         Гараж
                     </label>
                 </div>
                 <div class="col-md-offset-2 col-md-10 checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="hPool">
                         Бассейн
                     </label>
                 </div>
@@ -240,31 +240,31 @@
             <div class="row">
                 <div class="col-md-offset-2 col-md-10 checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="hSchool">
                         Школа
                     </label>
                 </div>
                 <div class="col-md-offset-2 col-md-10 checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="hKindergarten">
                         Детский сад
                     </label>
                 </div>
                 <div class="col-md-offset-2 col-md-10 checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="hPlayground">
                         Детская площадка
                     </label>
                 </div>
                 <div class="col-md-offset-2 col-md-10 checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="hParkingPlace">
                         Парковка
                     </label>
                 </div>
                 <div class="col-md-offset-2 col-md-10 checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="hPond">
                         Пруд
                     </label>
                 </div>
