@@ -913,3 +913,6 @@ $('#inHome').on('click', function(){
 
     $('#outputBathroom').val('В доме');
 });
+$('.carousel').carousel({
+    interval: 5000
+});
