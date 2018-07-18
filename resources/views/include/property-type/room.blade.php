@@ -24,6 +24,12 @@
         <div class="col-md-2">
             <input type="text" name="roomsInTheApartment" class="form-control" id="roomsInTheApartment">
         </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                изолированная
+            </label>
+        </div>
     </div>
     <div class="form-group">
         <label for="rNumberBerths" class="col-md-3 control-label">Количество спальных мест</label>
@@ -115,16 +121,16 @@
         <div class="col-md-9">
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-primary" id="rCosmetic">
-                    <input type="radio" name="repairs" value="Косметический">Косметический
+                    <input type="radio" name="rRepairs" value="Косметический">Косметический
                 </label>
                 <label class="btn btn-default" id="rDesigner">
-                    <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
+                    <input type="radio" name="rRepairs" value="Дизайнерский">Дизайнерский
                 </label>
                 <label class="btn btn-default" id="rEuro">
-                    <input type="radio" name="repairs" value="Евро">Евро
+                    <input type="radio" name="rRepairs" value="Евро">Евро
                 </label>
                 <label class="btn btn-default" id="rWithoutRepair">
-                    <input type="radio" name="repairs" value="Без ремонта">Без ремонта
+                    <input type="radio" name="rRepairs" value="Без ремонта">Без ремонта
                 </label>
             </div>
         </div>

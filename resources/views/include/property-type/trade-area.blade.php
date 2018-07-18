@@ -32,16 +32,16 @@
         <div class="col-md-9">
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-primary" id="taCosmetic">
-                    <input type="radio" name="repairs" value="Косметический">Косметический
+                    <input type="radio" name="teRepairs" value="Косметический">Косметический
                 </label>
                 <label class="btn btn-default" id="taDesigner">
-                    <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
+                    <input type="radio" name="teRepairs" value="Дизайнерский">Дизайнерский
                 </label>
                 <label class="btn btn-default" id="taEuro">
-                    <input type="radio" name="repairs" value="Евро">Евро
+                    <input type="radio" name="teRepairs" value="Евро">Евро
                 </label>
                 <label class="btn btn-default" id="taWithoutRepair">
-                    <input type="radio" name="repairs" value="Без ремонта">Без ремонта
+                    <input type="radio" name="teRepairs" value="Без ремонта">Без ремонта
                 </label>
             </div>
         </div>

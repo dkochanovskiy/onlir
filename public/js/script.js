@@ -352,6 +352,21 @@ $('#rCosmetic').on('click', function(){
 
     $('#rOutputRepairs').val('Косметический');
 });
+$('#hCosmetic').on('click', function(){
+    $('#hDesigner').removeClass('btn-primary');
+    $('#hDesigner').addClass('btn-default');
+
+    $('#hEuro').removeClass('btn-primary');
+    $('#hEuro').addClass('btn-default');
+
+    $('#hWithoutRepair').removeClass('btn-primary');
+    $('#hWithoutRepair').addClass('btn-default');
+
+    $('#hCosmetic').removeClass('btn-default');
+    $('#hCosmetic').addClass('btn-primary');
+
+    $('#hOutputRepairs').val('Косметический');
+});
 $('#designer').on('click', function(){
     $('#euro').removeClass('btn-primary');
     $('#euro').addClass('btn-default');
@@ -411,6 +426,21 @@ $('#rDesigner').on('click', function(){
     $('#rDesigner').addClass('btn-primary');
 
     $('#rOutputRepairs').val('Дизайнерский');
+});
+$('#hDesigner').on('click', function(){
+    $('#hEuro').removeClass('btn-primary');
+    $('#hEuro').addClass('btn-default');
+
+    $('#hWithoutRepair').removeClass('btn-primary');
+    $('#hWithoutRepair').addClass('btn-default');
+
+    $('#hCosmetic').removeClass('btn-primary');
+    $('#hCosmetic').addClass('btn-default');
+
+    $('#hDesigner').removeClass('btn-default');
+    $('#hDesigner').addClass('btn-primary');
+
+    $('#hOutputRepairs').val('Дизайнерский');
 });
 $('#euro').on('click', function(){
     $('#withoutRepair').removeClass('btn-primary');
@@ -472,6 +502,21 @@ $('#rEuro').on('click', function(){
 
     $('#rOutputRepairs').val('Евро');
 });
+$('#hEuro').on('click', function(){
+    $('#hWithoutRepair').removeClass('btn-primary');
+    $('#hWithoutRepair').addClass('btn-default');
+
+    $('#hCosmetic').removeClass('btn-primary');
+    $('#hCosmetic').addClass('btn-default');
+
+    $('#hDesigner').removeClass('btn-primary');
+    $('#hDesigner').addClass('btn-default');
+
+    $('#hEuro').removeClass('btn-default');
+    $('#hEuro').addClass('btn-primary');
+
+    $('#hOutputRepairs').val('Евро');
+});
 $('#withoutRepair').on('click', function(){
     $('#cosmetic').removeClass('btn-primary');
     $('#cosmetic').addClass('btn-default');
@@ -531,6 +576,21 @@ $('#rWithoutRepair').on('click', function(){
     $('#rWithoutRepair').addClass('btn-primary');
 
     $('#rOutputRepairs').val('Без ремонта');
+});
+$('#hWithoutRepair').on('click', function(){
+    $('#hCosmetic').removeClass('btn-primary');
+    $('#hCosmetic').addClass('btn-default');
+
+    $('#hDesigner').removeClass('btn-primary');
+    $('#hDesigner').addClass('btn-default');
+
+    $('#hEuro').removeClass('btn-primary');
+    $('#hEuro').addClass('btn-default');
+
+    $('#hWithoutRepair').removeClass('btn-default');
+    $('#hWithoutRepair').addClass('btn-primary');
+
+    $('#hOutputRepairs').val('Без ремонта');
 });
 // ------------------------------------------------------------------------------------------------
 $('#A').on('click', function(){
@@ -834,4 +894,22 @@ $('#oGround').on('click', function(){
     $('#oGround').addClass('btn-primary');
 
     $('#oParkingPlace').val('Наземная');
+});
+$('#onTheStreet').on('click', function(){
+    $('#inHome').removeClass('btn-primary');
+    $('#inHome').addClass('btn-default');
+
+    $('#onTheStreet').removeClass('btn-default');
+    $('#onTheStreet').addClass('btn-primary');
+
+    $('#outputBathroom').val('На улице');
+});
+$('#inHome').on('click', function(){
+    $('#onTheStreet').removeClass('btn-primary');
+    $('#onTheStreet').addClass('btn-default');
+
+    $('#inHome').removeClass('btn-default');
+    $('#inHome').addClass('btn-primary');
+
+    $('#outputBathroom').val('В доме');
 });

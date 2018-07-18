@@ -13,7 +13,7 @@
 </div>
 <input type="hidden" id="inputOfLease" value="Прямая аренда">
 <div class="form-group">
-    <label for="theMinimumPeasePeriodFrom" class="col-md-4 control-label">Минимальный срок аренды от</label>
+    <label for="theMinimumPeasePeriodFrom" class="col-md-3 control-label">Минимальный срок аренды от</label>
     <div class="col-md-2">
         <input type="text" name="theMinimumPeasePeriodFrom" class="form-control" id="theMinimumPeasePeriodFrom">
     </div>

@@ -818,10 +818,10 @@ footer{
     margin: 0 0 30px 0;
 }
 #house{
-    display: none;
+    display: block;
 }
 #room{
-    display: block;
+    display: none;
 }
 #apartment{
     display: none;

@@ -48,16 +48,16 @@
         <div class="col-md-9">
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-primary" id="oCosmetic">
-                    <input type="radio" name="repairs" value="Косметический">Косметический
+                    <input type="radio" name="oRepairs" value="Косметический">Косметический
                 </label>
                 <label class="btn btn-default" id="oDesigner">
-                    <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
+                    <input type="radio" name="oRepairs" value="Дизайнерский">Дизайнерский
                 </label>
                 <label class="btn btn-default" id="oEuro">
-                    <input type="radio" name="repairs" value="Евро">Евро
+                    <input type="radio" name="oRepairs" value="Евро">Евро
                 </label>
                 <label class="btn btn-default" id="oWithoutRepair">
-                    <input type="radio" name="repairs" value="Без ремонта">Без ремонта
+                    <input type="radio" name="oRepairs" value="Без ремонта">Без ремонта
                 </label>
             </div>
         </div>
@@ -238,18 +238,66 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Многофункциональный комплекс', 'inputTypeOfBuilding')">Многофункциональный комплекс</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Офисное здание', 'inputTypeOfBuilding')">Офисное здание</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Бизнес-центр', 'inputTypeOfBuilding')">Бизнес-центр</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Деловой центр', 'inputTypeOfBuilding')">Деловой центр</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Административное здание', 'inputTypeOfBuilding')">Административное здание</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Технопарк', 'inputTypeOfBuilding')">Технопарк</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Особняк', 'inputTypeOfBuilding')">Особняк</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Торговый дом', 'inputTypeOfBuilding')">Торговый дом</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Торгово-развлекательный центр', 'inputTypeOfBuilding')">Торгово-развлекательный центр</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Складской комплекс', 'inputTypeOfBuilding')">Складской комплекс</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Объект свободного назначения', 'inputTypeOfBuilding')">Объект свободного назначения</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Другое', 'inputTypeOfBuilding')">Другое</a></li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Многофункциональный комплекс', 'inputTypeOfBuilding')">
+                            Многофункциональный комплекс
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Офисное здание', 'inputTypeOfBuilding')">
+                            Офисное здание
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Бизнес-центр', 'inputTypeOfBuilding')">
+                            Бизнес-центр
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Деловой центр', 'inputTypeOfBuilding')">
+                            Деловой центр
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Административное здание', 'inputTypeOfBuilding')">
+                            Административное здание
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Технопарк', 'inputTypeOfBuilding')">
+                            Технопарк
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Особняк', 'inputTypeOfBuilding')">
+                            Особняк
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Торговый дом', 'inputTypeOfBuilding')">
+                            Торговый дом
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Торгово-развлекательный центр', 'inputTypeOfBuilding')">
+                            Торгово-развлекательный центр
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Складской комплекс', 'inputTypeOfBuilding')">
+                            Складской комплекс
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Объект свободного назначения', 'inputTypeOfBuilding')">
+                            Объект свободного назначения
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('typeOfBuilding', 'Другое', 'inputTypeOfBuilding')">
+                            Другое
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -277,9 +325,15 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('heating', 'Центральное', 'inputHeating')">Центральное</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('heating', 'Автономное', 'inputHeating')">Автономное</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('heating', 'Отсутствует', 'inputHeating')">Отсутствует</a></li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('heating', 'Центральное', 'inputHeating')">Центральное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('heating', 'Автономное', 'inputHeating')">Автономное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('heating', 'Отсутствует', 'inputHeating')">Отсутствует</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -294,9 +348,15 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('ventilation', 'Естественная', 'inputVentilation')">Естественная</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('ventilation', 'Приточная', 'inputVentilation')">Приточная</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('ventilation', 'Отсутствует', 'inputVentilation')">Отсутствует</a></li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('ventilation', 'Естественная', 'inputVentilation')">Естественная</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('ventilation', 'Приточная', 'inputVentilation')">Приточная</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('ventilation', 'Отсутствует', 'inputVentilation')">Отсутствует</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -311,9 +371,15 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('conditioning', 'Местное', 'inputСonditioning')">Местное</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('conditioning', 'Центральное', 'inputСonditioning')">Центральное</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('conditioning', 'Отсутствует', 'inputСonditioning')">Отсутствует</a></li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('conditioning', 'Местное', 'inputСonditioning')">Местное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('conditioning', 'Центральное', 'inputСonditioning')">Центральное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('conditioning', 'Отсутствует', 'inputСonditioning')">Отсутствует</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -498,9 +564,5 @@
             </div>
         </div>
     </div>
-    <hr>
-    @include('include.lease')
-    <hr>
-    @include('include.contact-information')
     <hr>
 </div>

@@ -92,19 +92,19 @@
         <div class="col-md-offset-3">
             <div class="radio">
                 <label>
-                    <input type="radio" name="balcony" id="optionsRadios1" checked>
+                    <input type="radio" name="balcony" id="balcony1" checked>
                     Балкон
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="balcony" id="optionsRadios2">
+                    <input type="radio" name="balcony" id="balcony2">
                     Лоджия
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="balcony" id="optionsRadios3">
+                    <input type="radio" name="balcony" id="balcony3">
                     Отсутствует
                 </label>
             </div>
@@ -136,19 +136,19 @@
         <div class="col-md-offset-3">
             <div class="radio">
                 <label>
-                    <input type="radio" name="kitchen_set" id="kitchen_set1" checked>
+                    <input type="radio" name="kitchenSet" id="kitchenSet1" checked>
                     Кухонный гарнитур есть
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="kitchen_set" id="kitchen_set2">
+                    <input type="radio" name="kitchenSet" id="kitchenSet2">
                     Частично
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="kitchen_set" id="kitchen_set3">
+                    <input type="radio" name="kitchenSet" id="kitchenSet3">
                     Отсутствует
                 </label>
             </div>
