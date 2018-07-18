@@ -24,7 +24,7 @@
                 <div class="edit-phone" id="edit-phone">
                     <form class="form-horizontal" role="form" id="edit-phone-form">
                         <div class="edit-phone-input">
-                            <input type="text" class="form-control" id="phone">
+                            <input type="text" class="form-control timeMask">
                         </div>
                         <button href="javascript:ShowPhoneForm()" type="submit" class="btn btn-primary">
                             <span class="glyphicon glyphicon-floppy-disk"></span> Сохранить

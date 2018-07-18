@@ -25,10 +25,7 @@ $(document).mouseup(function (e) {
         PopupRegistrationHide();
     }
 });
-$(function(){
-    $("#phone").mask("8(999) 999-9999");
-    // $("#your-phone").mask("8(999) 999-9999");
-});
+$(".timeMask").mask("8(999) 999-9999");
 $("#checkbox-favorites").change(function(){
     if ($('#checkbox-favorites').prop('checked')==true){
         $("input[name='checkbox-favorites']").prop('checked',true);
