@@ -893,3 +893,8 @@ img .ad-img-slide {
     width: 100px;
     height: 100px;
 }
+
+.sf-property-type{
+    width: 10px;
+    position: relative;
+}
