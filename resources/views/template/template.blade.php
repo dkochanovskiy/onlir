@@ -25,11 +25,11 @@
                 @guest
                 <div class="col-md-offset-7 col-md-3 margin-30">
                     <a href="javascript:PopupLoginShow()">
-                        <span class="glyphicon glyphicon-user"></span> Войти
+                        Войти <span class="glyphicon glyphicon-user"></span>
                     </a>
                     /
                     <a href="javascript:PopupRegistrationShow()">
-                        <span class="glyphicon glyphicon-ok"></span> Регистрация
+                        Регистрация <span class="glyphicon glyphicon-ok"></span>
                     </a>
                 </div>
                 @endauth

@@ -4,7 +4,7 @@
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
-                <h1 class="white-color">Аренда недвижимости в России</h1>
+                <h1 class="main-title white-color">Аренда недвижимости в России</h1>
             </div>
         </div>
         <div class="row margin-30">
@@ -28,31 +28,37 @@
             </div>
         @endif
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12 margin-30">
         <div class="row">
-            <div class="col-md-1">
-                <div class="search-left white-color">Снять</div>
-            </div>
-            <div class="col-md-11">
+            <div class="col-md-offset-2 col-md-10">
                 @include('include.search-form')
-            </div>
             </div>
         </div>
     </div>
-    {{--<div class="choice-type-property">--}}
-        {{--<div class="btn-group" data-toggle="buttons">--}}
-            {{--<label class="btn btn-primary btn-lg">--}}
-                {{--<input type="radio" name="options" id="option1">Жилая--}}
-            {{--</label>--}}
-            {{--<label class="btn btn-primary btn-lg">--}}
-                {{--<input type="radio" name="options" id="option2">Загородная--}}
-            {{--</label>--}}
-            {{--<label class="btn btn-primary btn-lg">--}}
-                {{--<input type="radio" name="options" id="option3">Коммерческая--}}
-            {{--</label>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-    {{--<div class="pop_right-panel">--}}
+    <div class="col-md-12 margin-30">
+        <div class="form-group">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="residentialLocation">
+                    <input type="radio" name="locationRadio" value="Жилая">Жилая
+                </label>
+                <label class="btn btn-default" id="countrysideLocation">
+                    <input type="radio" name="locationRadio" value="Загородная">Загородная
+                </label>
+                <label class="btn btn-default" id="commercialLocation">
+                    <input type="radio" name="locationRadio" value="Коммерческая">Коммерческая
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label for="outputLocation" class="col-md-3 control-label">Расположение</label>
+            <div class="col-md-6">
+                <input type="text" name="outputLocation" class="form-control" id="outputLocation">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
         {{--<h2>--}}
             {{--Популярные объявления--}}
         {{--</h2>--}}
@@ -130,5 +136,5 @@
         {{--</div>--}}
         {{--@include('include.right-panel')--}}
         {{--@include('include.pagination')--}}
-    {{--</div>--}}
+    </div>
 @endsection

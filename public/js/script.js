@@ -916,3 +916,39 @@ $('#inHome').on('click', function(){
 $('.carousel').carousel({
     interval: 5000
 });
+$('#residentialLocation').on('click', function(){
+    $('#countrysideLocation').removeClass('btn-primary');
+    $('#countrysideLocation').addClass('btn-default');
+
+    $('#commercialLocation').removeClass('btn-primary');
+    $('#commercialLocation').addClass('btn-default');
+
+    $('#residentialLocation').removeClass('btn-default');
+    $('#residentialLocation').addClass('btn-primary');
+
+    $('#outputLocation').val('Жилая');
+});
+$('#countrysideLocation').on('click', function(){
+    $('#residentialLocation').removeClass('btn-primary');
+    $('#residentialLocation').addClass('btn-default');
+
+    $('#commercialLocation').removeClass('btn-primary');
+    $('#commercialLocation').addClass('btn-default');
+
+    $('#countrysideLocation').removeClass('btn-default');
+    $('#countrysideLocation').addClass('btn-primary');
+
+    $('#outputLocation').val('Загородная');
+});
+$('#commercialLocation').on('click', function(){
+    $('#residentialLocation').removeClass('btn-primary');
+    $('#residentialLocation').addClass('btn-default');
+
+    $('#countrysideLocation').removeClass('btn-primary');
+    $('#countrysideLocation').addClass('btn-default');
+
+    $('#commercialLocation').removeClass('btn-default');
+    $('#commercialLocation').addClass('btn-primary');
+
+    $('#outputLocation').val('Коммерческая');
+});
