@@ -17,27 +17,20 @@
     <div class="container">
         <div class="row">
             <header>
-                <div class="col-md-2">
+                <div class="col-md-2 margin-30">
                     <a href="{{ route('welcome') }}">
                         <img class="center-block" src="{{ asset('images/logo.png') }}" alt="Логотип Onlir">
                     </a>
                 </div>
                 @guest
-                <div class="col-md-offset-8 col-md-1">
-                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="javascript:PopupLoginShow()">
-                                    Войти
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:PopupRegistrationShow()">
-                                    Регистрация
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-md-offset-7 col-md-3 margin-30">
+                    <a href="javascript:PopupLoginShow()">
+                        <span class="glyphicon glyphicon-user"></span> Войти
+                    </a>
+                    /
+                    <a href="javascript:PopupRegistrationShow()">
+                        <span class="glyphicon glyphicon-ok"></span> Регистрация
+                    </a>
                 </div>
                 @endauth
                 @auth

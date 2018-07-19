@@ -5,11 +5,18 @@
 body{
     background-color: #fff!important;
     font-family: 'Montserrat', sans-serif!important;
+    font-size: 16px;
     /*min-width: 1200px;*/
     /*height: auto;*/
 }
+a{
+    font-size: 16px;
+}
 header{
     /*height: 85px;*/
+}
+p{
+    margin: 0 0 -10px!important;
 }
 a:hover{
     background: none!important;
@@ -36,6 +43,9 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline!important;
+}
+.btn{
+    font-size: 16px!important;
 }
 .margin-30{
     margin: 30px 0 0 0;
@@ -81,25 +91,21 @@ footer a:hover{
     margin: 0 10px 0 10px;
 }
 .buttons{
-    width: 386px;
-    height: auto;
-    margin: 30px auto;
+    /*width: 386px;*/
+    /*height: auto;*/
+    /*margin: 30px auto;*/
 }
 .search{
-    width: 100%;
-    margin: 55px 0 0 0;
+    /*width: 100%;*/
+    /*margin: 55px 0 0 0;*/
 }
 .search-wrapper{
-    width: 968px;
-    margin: 10px auto;
-    display: inline-flex;
+    /*width: 968px;*/
+    /*margin: 10px auto;*/
+    /*display: inline-flex;*/
 }
 .search-left{
     font-size: 30px;
-    width: 10%;
-    color: #ffffff;
-    position:relative;
-    margin: -5px 0 0 0;
 }
 .search_form{
     width: 921px;
