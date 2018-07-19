@@ -5,12 +5,12 @@
 body{
     background-color: #fff!important;
     font-family: 'Montserrat', sans-serif!important;
-    font-size: 16px;
+    font-size: 16px!important;
     /*min-width: 1200px;*/
     /*height: auto;*/
 }
 a{
-    font-size: 16px;
+    font-size: 16px!important;
 }
 header{
     /*height: 85px;*/
@@ -149,12 +149,12 @@ footer a:hover{
     background: url('../images/o.png');
 }
 .pop_right-panel{
-    width: 100%;
+    /*width: 100%;*/
 }
 .pop{
-    width: 78%;
-    float: left;
-    margin: 20px 0 0 0;
+    /*width: 78%;*/
+    /*float: left;*/
+    /*margin: 20px 0 0 0;*/
 }
 .right-panel{
     width: 20%;
@@ -172,7 +172,7 @@ footer a:hover{
 }
 .right-panel-item{
     width: 200px;
-    background: #ffffff;
+    /*background: #ffffff;*/
     border-bottom: 1px solid #c5c5c5;
     margin: 10px 0 0 0;
 }
@@ -210,11 +210,9 @@ footer a:hover{
 }
 .offers-item{
     outline: 1px solid #e4e4e4;
-    width: 100%;
     height: 210px;
     padding: 15px;
     margin: 10px 0 0 0;
-    background: #ffffff!important;
 }
 .offers-item:hover{
     outline: 1px solid #337ab7;
@@ -796,7 +794,7 @@ footer{
     float: right;
 }
 .pagination-wrap{
-    width: 75%;
+    /*width: 75%;*/
 }
 .pagination-wrap a{
     text-decoration: none!important;
