@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12 margin-30">
         <h2>
             Популярные объявления
         </h2>
@@ -111,52 +111,93 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-12 margin-30">
+                        <h2>
+                            Объявления
+                        </h2>
+                    </div>
                     <div class="col-md-12 offers-item">
                         <a href="/">
                             <div class="offer-img offer-first"></div>
                         </a>
-                        <div class="offer-text">
-                            <div class="offer-price">10 000 &#8381;</div>
-                            <div class="offer-description">1-комн. 60м2 этаж 7/10</div>
-                            <div class="offer-address">ул. Энгельса, 17-46</div>
-                            <a href="/"><div class="offer-look">Посмотреть</div></a>
+                        <div class="row">
+                            <div class="col-md-6 offer-text">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="offer-price">10 000 &#8381;</div>
+                                    </div>
+                                    <div class="col-md-12">1-комн. 60м2 этаж 7/10</div>
+                                    <div class="col-md-12">ул. Энгельса, 17-46</div>
+                                    <div class="col-md-12">
+                                        <a href="/">
+                                            <div class="offer-look">Посмотреть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12 offers-item">
                         <a href="/">
                             <div class="offer-img offer-second"></div>
                         </a>
-                        <div class="offer-text">
-                            <div class="offer-price">11 000 &#8381;</div>
-                            <div class="offer-description">1-комн. 60м2 этаж 7/10</div>
-                            <div class="offer-address">ул. Миронова, 21</div>
-                            <a href="/"><div class="offer-look">Посмотреть</div></a>
+                        <div class="row">
+                            <div class="col-md-6 offer-text">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="offer-price">10 000 &#8381;</div>
+                                    </div>
+                                    <div class="col-md-12">1-комн. 60м2 этаж 7/10</div>
+                                    <div class="col-md-12">ул. Энгельса, 17-46</div>
+                                    <div class="col-md-12">
+                                        <a href="/">
+                                            <div class="offer-look">Посмотреть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12 offers-item">
                         <a href="/">
                             <div class="offer-img offer-third"></div>
                         </a>
-                        <div class="offer-text">
-                            <div class="offer-price">12 000 &#8381;</div>
-                            <div class="offer-description">1-комн. 60м2 этаж 7/10</div>
-                            <div class="offer-address">ул. Гагарина, 43</div>
-                            <a href="/">
-                                <div class="offer-look">Посмотреть</div>
-                            </a>
+                        <div class="row">
+                            <div class="col-md-6 offer-text">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="offer-price">10 000 &#8381;</div>
+                                    </div>
+                                    <div class="col-md-12">1-комн. 60м2 этаж 7/10</div>
+                                    <div class="col-md-12">ул. Энгельса, 17-46</div>
+                                    <div class="col-md-12">
+                                        <a href="/">
+                                            <div class="offer-look">Посмотреть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12 offers-item">
                         <a href="/">
                             <div class="offer-img offer-fourth"></div>
                         </a>
-                        <div class="offer-text">
-                            <div class="offer-price">13 000 &#8381;</div>
-                            <div class="offer-description">1-комн. 60м2 этаж 7/10</div>
-                            <div class="offer-address">ул. Щорса, 34</div>
-                            <a href="/">
-                                <div class="offer-look">Посмотреть</div>
-                            </a>
+                        <div class="row">
+                            <div class="col-md-6 offer-text">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="offer-price">10 000 &#8381;</div>
+                                    </div>
+                                    <div class="col-md-12">1-комн. 60м2 этаж 7/10</div>
+                                    <div class="col-md-12">ул. Энгельса, 17-46</div>
+                                    <div class="col-md-12">
+                                        <a href="/">
+                                            <div class="offer-look">Посмотреть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12">
