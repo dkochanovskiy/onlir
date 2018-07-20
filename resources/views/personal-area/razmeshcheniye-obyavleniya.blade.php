@@ -164,7 +164,7 @@
                     <label class="col-md-3 control-label">Способы размещения</label>
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-10 ways-accommodation-item free-charge">
+                            <div class="col-md-6 ways-accommodation-item free-charge">
                                 <div class="row">
                                     <div class="col-md-3 ways-accommodation-input-wrap">
                                         <div class="radio">
@@ -174,17 +174,35 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-md-9 ways-accommodation-cost">
+                                    <div class="col-md-8 ways-accommodation-cost">
                                         <span id="freeCost">0</span>р/<span id="freeDays">21</span>день
                                     </div>
                                     <div class="col-md-12">
-                                        <div class="">
+                                        <div class="active-until">
                                             Активно до 27.06.2018
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-10 ways-accommodation-item top-3">
+                                <div class="row">
+                                    <div class="col-md-3 ways-accommodation-input-wrap">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Бесплатное" checked>
+                                                Бесплатное
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 ways-accommodation-cost">
+                                        <span id="freeCost">0</span>р/<span id="freeDays">21</span>день
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="active-until">
+                                            Активно до 27.06.2018
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="ways-accommodation-input-wrap">
                                     <div class="ways-accommodation-input">
                                         <div class="radio">
@@ -195,17 +213,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="ways-accommodation-cost">
-                                <span id="topCost">
-                                    310
-                                </span>
-                                    р/
-                                    <span id="topDays">
-                                    7
-                                </span>
-                                    дней
+                                <div class="col-md-8 ways-accommodation-cost">
+                                    <span id="freeCost">0</span>р/<span id="freeDays">21</span>день
                                 </div>
-                                <div class="discount">
+                                <div class="col-md-12">
                                     Скидка: Экономия 75 рублей
                                 </div>
                             </div>

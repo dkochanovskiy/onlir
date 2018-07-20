@@ -609,14 +609,12 @@ footer a:hover{
     background: #fff2cc;
 }
 .ways-accommodation-input-wrap{
-    margin: 10px 0 0 16px;
     font-size: 18px;
-    display: inline-block;
 }
 .ways-accommodation-cost{
-    display: inline-block;
     text-align: right;
     font-size: 18px;
+    margin: 7px 0 0 0;
 }
 .no-active-ads{
     outline: 1px solid #337ab7;
