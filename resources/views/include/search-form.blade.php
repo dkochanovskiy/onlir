@@ -58,14 +58,14 @@
     <div class="form-group">
         <input type="text" value="{{old('city')}}" class="btn btn-default sf-input-text" name="city" id="city" placeholder="Город">
     </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary search">
-            <span class="glyphicon glyphicon-search"></span> Поиск
-        </button>
-    </div>
-    {{--<a href="{{ route('rezultaty-poiska') }}">--}}
-        {{--<button type="submit" class="btn btn-primary">--}}
+    {{--<div class="form-group">--}}
+        {{--<button type="submit" class="btn btn-primary search">--}}
             {{--<span class="glyphicon glyphicon-search"></span> Поиск--}}
         {{--</button>--}}
-    {{--</a>--}}
+    {{--</div>--}}
+    <a href="{{ route('rezultaty-poiska') }}">
+        <button type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-search"></span> Поиск
+        </button>
+    </a>
 </form>
