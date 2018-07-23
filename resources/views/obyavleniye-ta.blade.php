@@ -145,72 +145,213 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            Ремонт
+                            Часы работы
                         </div>
                         <div class="col-md-4">
-                            Дизайнерский
+                            с 8:00 до 21:00
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            Можно с детьми
+                            Вход
                         </div>
                         <div class="col-md-4">
-                            С животными запрещено
-                        </div>
-                        <div class="col-md-4">
-                            Курить запрещено
+                            С улицы
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="col-md-offset-1 col-md-10">
                     <div class="row">
-                        <div class="col-md-12 header-in-the-form">
-                            Удобства
+                        <div class="col-md-4">
+                            Тип помещения
                         </div>
-                        <div class="row">
-                            <div class="col-md-offset-1 col-md-12">
-                                Холодильник
-                            </div>
-                            <div class="col-md-offset-1 col-md-12">
-                                Телевизор
-                            </div>
-                            <div class="col-md-offset-1 col-md-12">
-                                Посудомоечная машина
-                            </div>
-                            <div class="col-md-offset-1 col-md-12">
-                                Стиральная машина
-                            </div>
-                            <div class="col-md-offset-1 col-md-12">
-                                Интернет
-                            </div>
-                            <div class="col-md-offset-1 col-md-12">
-                                Кондиционер
-                            </div>
+                        <div class="col-md-4">
+                            Street retail
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Назначение помещения
+                        </div>
+                        <div class="col-md-8">
+                            Все, кроме: табачной продукции, рыбной продукции
                         </div>
                     </div>
                 </div>
                 <hr>
-                <div class="col-md-offset-1 col-md-10">
+                <hr>
+                <div class="col-md-offset-1 col-md-11">
                     <div class="row">
                         <div class="col-md-12 header-in-the-form">
-                            На улице(рядом с домом)
+                            Арендная плата
                         </div>
-                        <div class="col-md-offset-1 col-md-12">
-                            Школа
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Цена в месяц
                         </div>
-                        <div class="col-md-offset-1 col-md-12">
-                            Детский сад
+                        <div class="col-md-4">
+                            23.000 &#8381;
                         </div>
-                        <div class="col-md-offset-1 col-md-12">
-                            Детская площадка
+                        <div class="col-md-12">
+                            включая коммунальные платежи / включая эксплуатационные расходы
                         </div>
-                        <div class="col-md-offset-1 col-md-12">
-                            Парковка
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Ставка за м<sup>2</sup>
                         </div>
-                        <div class="col-md-offset-1 col-md-12">
-                            Пандус
+                        <div class="col-md-4">
+                            1.200 &#8381; / месяц
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Предоплата
+                        </div>
+                        <div class="col-md-4">
+                            3 месяца
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Тип аренды
+                        </div>
+                        <div class="col-md-4">
+                            Прямая аренда
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Минимальный срок аренды от
+                        </div>
+                        <div class="col-md-4">
+                            6 месяцев
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Арендные каникулы
+                        </div>
+                        <div class="col-md-4">
+                            Да
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-md-offset-1 col-md-11">
+                    <div class="row">
+                        <div class="col-md-4">
+                            Название здания
+                        </div>
+                        <div class="col-md-4">
+                            БЦ Вавилон
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Класс здания
+                        </div>
+                        <div class="col-md-4">
+                            -----
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Тип здания
+                        </div>
+                        <div class="col-md-4">
+                            Деловой центр
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Площадь здания
+                        </div>
+                        <div class="col-md-4">
+                            656 м<sup>2</sup>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Отопление
+                        </div>
+                        <div class="col-md-4">
+                            Центральное
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Вентиляция
+                        </div>
+                        <div class="col-md-4">
+                            Отсутствует
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Кондиционирование
+                        </div>
+                        <div class="col-md-4">
+                            Центральное
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-md-offset-1 col-md-11">
+                    <div class="row">
+                        <div class="col-md-12 header-in-the-form">
+                            Инфраструктура
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Конференц-зал
+                        </div>
+                        <div class="col-md-4">
+                            Салон красоты
+                        </div>
+                        <div class="col-md-4">
+                            Букет
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Банкомат
+                        </div>
+                        <div class="col-md-4">
+                            Аптека
+                        </div>
+                        <div class="col-md-4">
+                            Автомойка
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Кафе
+                        </div>
+                        <div class="col-md-4">
+                            Отделение банка
+                        </div>
+                        <div class="col-md-4">
+                            Автосервис
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Супермаркет
+                        </div>
+                        <div class="col-md-4">
+                            Столовая
+                        </div>
+                        <div class="col-md-4">
+                            Складские помещения
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Торговый центр
+                        </div>
+                        <div class="col-md-8">
+                            Остановка общественного транспорта
                         </div>
                     </div>
                 </div>
