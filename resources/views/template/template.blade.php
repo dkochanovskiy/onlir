@@ -17,9 +17,9 @@
     <div class="container">
         <div class="row">
             <header>
-                <div class="col-md-2 margin-30">
+                <div class="col-md-2">
                     <a href="{{ route('welcome') }}">
-                        <img class="center-block" src="{{ asset('images/logo.png') }}" alt="Логотип Onlir">
+                        <img src="{{ asset('images/logo.png') }}" alt="Логотип Onlir">
                     </a>
                 </div>
                 @guest
