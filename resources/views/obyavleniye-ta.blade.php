@@ -4,65 +4,30 @@
 @endsection
 
 @section('content')
-    <div class="container" style="margin-bottom: 30px;">
-        <div class="row">
-            @include('include.button-submit-an-announcement')
-            <div class="col-md-offset-1 col-md-10" style="margin-bottom: 30px;">
-                @include('include.search-form')
-            </div>
-            <hr class="col-md-12">
-            <div class="col-md-12 ad-description">
-                <div class="col-md-offset-2 col-md-4">
-                    <div class="row">
-                        <div class="col-md-12">2-комн. квартира 60м2 7/10 эт</div>
-                        <div class="col-md-12">Москва, Ул.Энгельса 26</div>
-                        <div class="col-md-12">М(метро) Пражская , 2 мин. пешком</div>
-                    </div>
-                </div>
-                <div class="col-md-offset-2 col-md-4 ad-description">
-                    <div class="row">
-                        <div class="col-md-12"> 28 000 Р / мес.</div>
-                        <div class="col-md-12">Коммунальные платежи включены</div>
-                        <div class="col-md-12">Без залога</div>
-                    </div>
-                </div>
-            </div>
-            <hr class="col-md-12">
-            <div class="col-md-12 ad-photo-contacts">
+    @include('include.button-submit-an-announcement')
+    <div class="col-md-offset-1 col-md-10" style="margin-bottom: 30px;">
+        @include('include.search-form')
+    </div>
+    <hr class="col-md-12">
+    <div class="col-md-12 parrent">
+        <div class="col-md-8">
+            <div class="row">
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-offset-2 col-md-3">28 июня , 18:30</div>
                         <div class="col-md-6">730 просмотров, 26 за сегодня</div>
                         <div class="col-md-offset-2 col-md-8 ad-photo-contacts-slider">
-                            <div class="slide ad-slide">
-                                <input type="radio" name="slider3" id="slider3_1" checked="checked">
-                                <label for="slider3_1"></label>
-                                <div>
-                                    <img class="ad-img-slide" src="{{ asset('images/1.jpg') }}">
-                                </div>
-                                <input type="radio" name="slider3" id="slider3_2">
-                                <label for="slider3_2"></label>
-                                <div>
-                                    <img class="ad-img-slide" src="{{ asset('images/2l.jpg') }}">
-                                </div>
-                                <input type="radio" name="slider3" id="slider3_3">
-                                <label for="slider3_3"></label>
-                                <div><img class="ad-img-slide" src="{{ asset('images/3l.jpg') }}"></div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <img src="{{ asset('images/question-mark.png') }}">
                         </div>
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="col-md-12 ad-nickname">
-                                    valera101@gmail.com
-                                </div>
-                            </div>
+                        <div class="col-md-9 ad-nickname">
+                            valera101@gmail.com
                         </div>
                         <div class="col-md-12">
                             <div class="row">
@@ -102,121 +67,99 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-offset-1 col-md-10">
-                <div class="row">
-                    <div class="col-md-12 header-in-the-form">
-                        Подробное описание
-                    </div>
-                    <div class="col-md-11 ad-detailed-description">
-                        Сдаётся 2-х комнатная квартира с косметическим ремонтом на длительный срок. Комнаты изолированные, просторные, чистые. Вся мебель и бытовая техника для комфортного проживания присутствует всё современное. Сан.узел раздельный в плитке. Два балкона в комнатах. Рассмотрим всех жильцов. Звоните.
-                    </div>
-                </div>
-            </div>
-            <hr class="col-md-12">
-            <div class="ad-options">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
-                            Количество комнат
-                        </div>
-                        <div class="col-md-1">
-                            1
-                        </div>
-                        <div class="col-md-offset-2 col-md-5">
-                            Изолированные
+                        <div class="col-md-offset-1 col-md-10 margin-30">
+                            <div class="row">
+                                <div class="col-md-12 header-in-the-form">
+                                    Подробное описание
+                                </div>
+                                <div class="col-md-11 ad-detailed-description">
+                                    Сдаётся 2-х комнатная квартира с косметическим ремонтом на длительный срок. Комнаты изолированные, просторные, чистые. Вся мебель и бытовая техника для комфортного проживания присутствует всё современное. Сан.узел раздельный в плитке. Два балкона в комнатах. Рассмотрим всех жильцов. Звоните.
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-md-12">
+                <hr>
+                <div class="col-md-offset-1 col-md-11">
                     <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
-                            Количество спальных мест
+                        <div class="col-md-4">
+                            Общая площадь
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-4">
+                            120 м<sup>2</sup>
+                        </div>
+                        <div class="col-md-4">
+                            Меблированна
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Витринные окна
+                        </div>
+                        <div class="col-md-4">
+                            Да
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Ремонт
+                        </div>
+                        <div class="col-md-4">
+                            Косметический
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Электрическая мощность
+                        </div>
+                        <div class="col-md-4">
+                            10 кВт
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            Количество мокрых точек
+                        </div>
+                        <div class="col-md-4">
                             3
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
-                            Общая площадь
-                        </div>
-                        <div class="col-md-1">
-                            50 м <sup>2</sup>
-                        </div>
-                        <div class="col-md-offset-2 col-md-1">
-                            Лоджия
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
-                            Жилая площадь
-                        </div>
-                        <div class="col-md-1">
-                            35 м <sup>2</sup>
-                        </div>
-                        <div class="col-md-offset-2 col-md-3">
-                            Меблированная частично
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
-                            Кухня
-                        </div>
-                        <div class="col-md-1">
-                            10 м <sup>2</sup>
-                        </div>
-                        <div class="col-md-offset-2 col-md-3">
-                            Есть кухонный гарнитур
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
+                        <div class="col-md-4">
                             Этаж/этажность
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-4">
                             5 из 10
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
+                        <div class="col-md-4">
                             Лифт
                         </div>
-                        <div class="col-md-3">
-                            Грузовой и пассажирский
+                        <div class="col-md-4">
+                            Отсутствует
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
+                        <div class="col-md-4">
                             Ремонт
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             Дизайнерский
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
-                            <span>Можно с детьми</span>
+                        <div class="col-md-4">
+                            Можно с детьми
                         </div>
-                        <div class="col-md-3">
-                            <span>С животными запрещено</span>
+                        <div class="col-md-4">
+                            С животными запрещено
                         </div>
-                        <div class="col-md-3">
-                            <span>Курить запрещено</span>
+                        <div class="col-md-4">
+                            Курить запрещено
                         </div>
                     </div>
                 </div>
@@ -228,27 +171,27 @@
                         </div>
                         <div class="row">
                             <div class="col-md-offset-1 col-md-12">
-                                <span>Холодильник</span>
+                                Холодильник
                             </div>
                             <div class="col-md-offset-1 col-md-12">
-                                <span>Телевизор</span>
+                                Телевизор
                             </div>
                             <div class="col-md-offset-1 col-md-12">
-                                <span>Посудомоечная машина</span>
+                                Посудомоечная машина
                             </div>
                             <div class="col-md-offset-1 col-md-12">
-                                <span>Стиральная машина</span>
+                                Стиральная машина
                             </div>
                             <div class="col-md-offset-1 col-md-12">
-                                <span>Интернет</span>
+                                Интернет
                             </div>
                             <div class="col-md-offset-1 col-md-12">
-                                <span>Кондиционер</span>
+                                Кондиционер
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr class="col-md-12">
+                <hr>
                 <div class="col-md-offset-1 col-md-10">
                     <div class="row">
                         <div class="col-md-12 header-in-the-form">
@@ -271,6 +214,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="col-md-4 ad-description">
+            <div class="row">
+                <div class="col-md-12">2-комн. квартира 60м2 7/10 эт</div>
+                <div class="col-md-12">Москва, Ул.Энгельса 26</div>
+                <div class="col-md-12">М(метро) Пражская , 2 мин. пешком</div>
+                <div class="col-md-12"> 28 000 Р / мес.</div>
+                <div class="col-md-12">Коммунальные платежи включены</div>
+                <div class="col-md-12">Без залога</div>
             </div>
         </div>
     </div>

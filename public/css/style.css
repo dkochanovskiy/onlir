@@ -661,7 +661,6 @@ footer a:hover{
 .header-in-the-form{
     font-size: 18px;
     font-weight: 700;
-    margin: 0 0 30px 0;
 }
 #house{
     display: block;
@@ -707,9 +706,8 @@ footer a:hover{
 }
 .ad-description{
     font-size: 17px;
-    font-weight: 700;
     margin: 0 0 10px 0;
-    position: sticky;
+    position: sticky!important;
     top: 0;
 }
 .ad-photo-contacts-slider{
@@ -735,7 +733,7 @@ img .ad-img-slide {
     padding: 20px!important;
 }
 .ad-options{
-    font-size: 20px;
+    /*font-size: 20px;*/
 }
 .ad-options-value{
     color: #fff;

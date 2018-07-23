@@ -86,70 +86,85 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-offset-1 col-md-3">
-                            Количество комнат
+                            Год постройки
                         </div>
                         <div class="col-md-1">
-                            1
-                        </div>
-                        <div class="col-md-offset-2 col-md-5">
-                            Изолированные
+                            2005
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-1 col-md-3">
-                            Количество спальных мест
+                            Тип дома
                         </div>
                         <div class="col-md-1">
-                            3
+                            Кирпичный
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-1 col-md-3">
-                            Общая площадь
+                            Площадь дома
                         </div>
-                        <div class="col-md-1">
-                            50 м <sup>2</sup>
-                        </div>
-                        <div class="col-md-offset-2 col-md-1">
-                            Лоджия
+                        <div class="col-md-2">
+                            120 м <sup>2</sup>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-1 col-md-3">
                             Жилая площадь
                         </div>
-                        <div class="col-md-1">
-                            35 м <sup>2</sup>
+                        <div class="col-md-2">
+                            100 м <sup>2</sup>
                         </div>
-                        <div class="col-md-offset-2 col-md-3">
-                            Меблированная частично
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-3">
-                            Кухня
-                        </div>
-                        <div class="col-md-1">
-                            10 м <sup>2</sup>
-                        </div>
-                        <div class="col-md-offset-2 col-md-3">
-                            Есть кухонный гарнитур
+                        <div class="col-md-offset-2 col-md-1">
+                            Меблированный
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-1 col-md-3">
-                            Этаж/этажность
+                            Этажей в доме
                         </div>
                         <div class="col-md-1">
-                            5 из 10
+                            2
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-1 col-md-3">
-                            Лифт
+                            Количество комнат
+                        </div>
+                        <div class="col-md-1">
+                            5
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-3">
+                            Количество спален
+                        </div>
+                        <div class="col-md-1">
+                            4
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-3">
+                            Санузел
                         </div>
                         <div class="col-md-3">
-                            Грузовой и пассажирский
+                            В доме
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-3">
+                            Площадь участка
+                        </div>
+                        <div class="col-md-3">
+                            100 соток
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-3">
+                            Отопление
+                        </div>
+                        <div class="col-md-3">
+                            Центральное газовое
                         </div>
                     </div>
                     <div class="row">
@@ -157,14 +172,14 @@
                             Ремонт
                         </div>
                         <div class="col-md-3">
-                            Дизайнерский
+                            Косметический
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-offset-1 col-md-3">
                             Можно с детьми
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             С животными запрещено
                         </div>
                         <div class="col-md-3">
