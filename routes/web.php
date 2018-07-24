@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware'=>'web', function(){
+Route::group(['middleware'=>'web'], function(){
     Route::get('/', 'WelcomeController@show')->name('welcome');
     Route::post('/', 'WelcomeController@store');
 
@@ -15,9 +15,9 @@ Route::group(['middleware'=>'web', function(){
 
     Route::get('/obyavleniye-ta', 'TaAdController@show')->name('obyavleniye-ta');
     Route::post('/obyavleniye-ta', 'TaAdController@show');
-}]);
 
-Auth::routes();
+    Auth::routes();
+});
 
 Route::group(['middleware'=>'auth'], function (){
     Route::get('/moi-obyavleniya', 'AreaPersonal\MyAnnouncementsController@index')->name('moi-obyavleniya');
