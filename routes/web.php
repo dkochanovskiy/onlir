@@ -1,19 +1,21 @@
 <?php
 
-Route::get('/', 'WelcomeController@show')->name('welcome');
-Route::post('/', 'WelcomeController@store');
+Route::group(['middleware'=>'web', function(){
+    Route::get('/', 'WelcomeController@show')->name('welcome');
+    Route::post('/', 'WelcomeController@store');
 
-Route::get('/rezultaty-poiska', 'SearchController@show')->name('rezultaty-poiska');
-Route::post('/rezultaty-poiska', 'SearchController@show');
+    Route::get('/rezultaty-poiska', 'SearchController@show')->name('rezultaty-poiska');
+    Route::post('/rezultaty-poiska', 'SearchController@show');
 
-Route::get('/obyavleniye', 'AdController@show')->name('obyavleniye');
-Route::post('/obyavleniye', 'AdController@show');
+    Route::get('/obyavleniye', 'AdController@show')->name('obyavleniye');
+    Route::post('/obyavleniye', 'AdController@show');
 
-Route::get('/obyavleniye-o', 'OAdController@show')->name('obyavleniye-o');
-Route::post('/obyavleniye-o', 'OAdController@show');
+    Route::get('/obyavleniye-o', 'OAdController@show')->name('obyavleniye-o');
+    Route::post('/obyavleniye-o', 'OAdController@show');
 
-Route::get('/obyavleniye-ta', 'TaAdController@show')->name('obyavleniye-ta');
-Route::post('/obyavleniye-ta', 'TaAdController@show');
+    Route::get('/obyavleniye-ta', 'TaAdController@show')->name('obyavleniye-ta');
+    Route::post('/obyavleniye-ta', 'TaAdController@show');
+}]);
 
 Auth::routes();
 
