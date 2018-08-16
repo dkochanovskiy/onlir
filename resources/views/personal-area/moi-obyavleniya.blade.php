@@ -103,7 +103,7 @@
                                     <div class="description-top-item">60м2</div>
                                     <div class="description-top-item">эт7/10</div>
                                     <div class="description-top-item">25000</div>
-                                    <div class="description-top-item"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 23</div>
+                                    <div class="description-top-item"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 23</div>
                                 </div>
                                 <div class="description-bottom">
                                     <div class="description-bottom-item">Ул.Энгельса 17</div>
@@ -143,7 +143,7 @@
                                     <div class="description-top-item">60м2</div>
                                     <div class="description-top-item">эт7/10</div>
                                     <div class="description-top-item">25000</div>
-                                    <div class="description-top-item"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 23</div>
+                                    <div class="description-top-item"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 23</div>
                                 </div>
                                 <div class="description-bottom">
                                     <div class="description-bottom-item">Ул.Энгельса 17</div>

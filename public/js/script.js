@@ -10,6 +10,10 @@ function PopupRegistrationShow(){
 function PopupRegistrationHide(){
     $("#popup-registration").css('visibility', 'hidden');
 }
+function LoginThroughRegistration(){
+    $("#popup-registration").css('visibility', 'hidden');
+    $("#popup-login").css('visibility', 'visible');
+}
 function EditPhoneForm(){
     $("#show-phone").css('visibility', 'hidden');
     $("#edit-phone").css('visibility', 'visible');
@@ -683,6 +687,98 @@ $('#doNotSpecify').on('click', function(){
 
     $('#inputBuildingClass').val('Не указывать');
 });
+// ------------------------------------------------------------------------------------------------
+$('#taA').on('click', function(){
+    $('#taB').removeClass('btn-primary');
+    $('#taB').addClass('btn-default');
+
+    $('#taC').removeClass('btn-primary');
+    $('#taC').addClass('btn-default');
+
+    $('#taD').removeClass('btn-primary');
+    $('#taD').addClass('btn-default');
+
+    $('#taDoNotSpecify').removeClass('btn-primary');
+    $('#taDoNotSpecify').addClass('btn-default');
+
+    $('#taA').removeClass('btn-default');
+    $('#taA').addClass('btn-primary');
+
+    $('#inputTABuildingClass').val('A');
+});
+$('#taB').on('click', function(){
+    $('#taC').removeClass('btn-primary');
+    $('#taC').addClass('btn-default');
+
+    $('#taD').removeClass('btn-primary');
+    $('#taD').addClass('btn-default');
+
+    $('#taDoNotSpecify').removeClass('btn-primary');
+    $('#taDoNotSpecify').addClass('btn-default');
+
+    $('#taA').removeClass('btn-primary');
+    $('#taA').addClass('btn-default');
+
+    $('#taB').removeClass('btn-default');
+    $('#taB').addClass('btn-primary');
+
+    $('#inputTABuildingClass').val('B');
+});
+$('#taC').on('click', function(){
+    $('#taD').removeClass('btn-primary');
+    $('#taD').addClass('btn-default');
+
+    $('#taDoNotSpecify').removeClass('btn-primary');
+    $('#taDoNotSpecify').addClass('btn-default');
+
+    $('#taA').removeClass('btn-primary');
+    $('#taA').addClass('btn-default');
+
+    $('#taB').removeClass('btn-primary');
+    $('#taB').addClass('btn-default');
+
+    $('#taC').removeClass('btn-default');
+    $('#taC').addClass('btn-primary');
+
+    $('#inputTABuildingClass').val('C');
+});
+$('#taD').on('click', function(){
+    $('#taDoNotSpecify').removeClass('btn-primary');
+    $('#taDoNotSpecify').addClass('btn-default');
+
+    $('#taA').removeClass('btn-primary');
+    $('#taA').addClass('btn-default');
+
+    $('#taB').removeClass('btn-primary');
+    $('#taB').addClass('btn-default');
+
+    $('#taC').removeClass('btn-primary');
+    $('#taC').addClass('btn-default');
+
+    $('#taD').removeClass('btn-default');
+    $('#taD').addClass('btn-primary');
+
+    $('#inputTABuildingClass').val('D');
+});
+$('#taDoNotSpecify').on('click', function(){
+    $('#taA').removeClass('btn-primary');
+    $('#taA').addClass('btn-default');
+
+    $('#taB').removeClass('btn-primary');
+    $('#taB').addClass('btn-default');
+
+    $('#taC').removeClass('btn-primary');
+    $('#taC').addClass('btn-default');
+
+    $('#taD').removeClass('btn-primary');
+    $('#taD').addClass('btn-default');
+
+    $('#taDoNotSpecify').removeClass('btn-default');
+    $('#taDoNotSpecify').addClass('btn-primary');
+
+    $('#inputTABuildingClass').val('Не указывать');
+});
+// ------------------------------------------------------------------------------------------------
 $('#labelDisplayCasesYes').on('click', function(){
     $('#labelDisplayCasesNo').removeClass('btn-primary');
     $('#labelDisplayCasesNo').addClass('btn-default');

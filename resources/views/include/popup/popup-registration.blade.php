@@ -7,7 +7,7 @@
                     <div class="panel-body">
                         <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                             {{ csrf_field() }}
-                            <h1>Регистрация</h1>
+                            <h1 class="text-center">Регистрация</h1>
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">Имя</label>
                                 <div class="col-md-6">
@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                <label for="email" class="col-md-4 control-label">Телефон ил e-mail</label>
+                                <label for="email" class="col-md-4 control-label">Телефон или e-mail</label>
                                 <div class="col-md-6">
                                     <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
                                     @if ($errors->has('email'))
@@ -55,6 +55,10 @@
                                 </div>
                             </div>
                         </form>
+                        <div class="text-center">
+                            Есть аккаунт на onlir?
+                            <a href="javascript:LoginThroughRegistration()" id="loginThroughRegistration">Войти</a>
+                        </div>
                     </div>
                 </div>
             </div>

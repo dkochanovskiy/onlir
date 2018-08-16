@@ -12,6 +12,110 @@
             </div>
         </div>
     </div>
+    <div class="form-group">
+        <label for="taBuildingName" class="col-md-3 control-label">Название здания</label>
+        <div class="col-md-6">
+            <input type="text" name="taBuildingName" class="form-control" id="taBuildingName" placeholder="БЦ: Вавилон">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="taBuildingClass" class="col-md-3 control-label">Класс здания</label>
+        <div class="col-md-8">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary" id="taA">
+                    <input type="radio" name="taBuildingClass" value="A">A
+                </label>
+                <label class="btn btn-default" id="taB">
+                    <input type="radio" name="taBuildingClass" value="B">B
+                </label>
+                <label class="btn btn-default" id="taC">
+                    <input type="radio" name="taBuildingClass" value="C">C
+                </label>
+                <label class="btn btn-default" id="taD">
+                    <input type="radio" name="taBuildingClass" value="D">D
+                </label>
+                <label class="btn btn-default" id="taDoNotSpecify">
+                    <input type="radio" name="taBuildingClass" value="Не указывать">Не указывать
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputTABuildingClass" name="inputTABuildingClass" value="A">
+    <div class="form-group">
+        <div class="dropdown">
+            <label class="col-md-3 control-label" for="taTypeOfBuilding">Тип здания</label>
+            <div class="col-md-9">
+                <button class="btn btn-default dropdown-toggle" type="button" id="taTypeOfBuilding" data-toggle="dropdown">
+                    Многофункциональный комплекс
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Многофункциональный комплекс', 'inputTATypeOfBuilding')">
+                            Многофункциональный комплекс
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Офисное здание', 'inputTATypeOfBuilding')">
+                            Офисное здание
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Бизнес-центр', 'inputTATypeOfBuilding')">
+                            Бизнес-центр
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Деловой центр', 'inputTATypeOfBuilding')">
+                            Деловой центр
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Административное здание', 'inputTATypeOfBuilding')">
+                            Административное здание
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Технопарк', 'inputTATypeOfBuilding')">
+                            Технопарк
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Особняк', 'inputTATypeOfBuilding')">
+                            Особняк
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Торговый дом', 'inputTATypeOfBuilding')">
+                            Торговый дом
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Торгово-развлекательный центр', 'inputTATypeOfBuilding')">
+                            Торгово-развлекательный центр
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Складской комплекс', 'inputTATypeOfBuilding')">
+                            Складской комплекс
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Объект свободного назначения', 'inputTATypeOfBuilding')">
+                            Объект свободного назначения
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('taTypeOfBuilding', 'Другое', 'inputTATypeOfBuilding')">
+                            Другое
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputTATypeOfBuilding" name="inputTATypeOfBuilding" value="Многофункциональный комплекс">
+
     <hr>
     <div class="form-group">
         <label for="commercialArea" class="col-md-3 control-label">Витринные окна</label>
