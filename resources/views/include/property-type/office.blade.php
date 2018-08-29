@@ -428,7 +428,7 @@
         </div>
         <div class="checkbox col-md-2">
             <label>
-                <input type="checkbox" name="per month" value="">
+                <input type="checkbox" name="perMonth" value="">
                 в месяц
             </label>
         </div>

@@ -115,7 +115,88 @@
         </div>
     </div>
     <input type="hidden" id="inputTATypeOfBuilding" name="inputTATypeOfBuilding" value="Многофункциональный комплекс">
-
+    <div class="form-group">
+        <label for="tdBuildingArea" class="col-md-3 control-label">Площадь здания</label>
+        <div class="col-md-1">
+            <input type="text" name="tdBuildingArea" class="form-control" id="tdBuildingArea">
+        </div>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="tdBuildingArea" class="control-label">м<sup>2</sup></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="dropdown">
+            <label class="col-md-3 control-label" for="tdHeating">Отопление</label>
+            <div class="col-md-9">
+                <button class="btn btn-default dropdown-toggle" type="button" id="tdHeating" data-toggle="dropdown">
+                    Центральное
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdHeating', 'Центральное', 'inputTDHeating')">Центральное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdHeating', 'Автономное', 'inputTDHeating')">Автономное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdHeating', 'Отсутствует', 'inputTDHeating')">Отсутствует</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputTDHeating" name="inputTDHeating" value="Центральное">
+    <div class="form-group">
+        <div class="dropdown">
+            <label class="col-md-3 control-label" for="tdVentilation">Вентиляция</label>
+            <div class="col-md-9">
+                <button class="btn btn-default dropdown-toggle" type="button" id="tdVentilation" data-toggle="dropdown">
+                    Естественная
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdVentilation', 'Естественная', 'inputTDVentilation')">Естественная</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdVentilation', 'Приточная', 'inputTDVentilation')">Приточная</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdVentilation', 'Отсутствует', 'inputTDVentilation')">Отсутствует</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputTDVentilation" name="inputTDVentilation" value="Естественная">
+    <div class="form-group">
+        <div class="dropdown">
+            <label class="col-md-3 control-label" for="tdConditioning">Кондиционирование</label>
+            <div class="col-md-9">
+                <button class="btn btn-default dropdown-toggle" type="button" id="tdConditioning" data-toggle="dropdown">
+                    Местное
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdConditioning', 'Местное', 'inputTDСonditioning')">Местное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdConditioning', 'Центральное', 'inputTDСonditioning')">Центральное</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdConditioning', 'Отсутствует', 'inputTDСonditioning')">Отсутствует</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="inputTDСonditioning" name="inputTDСonditioning" value="Местное">
     <hr>
     <div class="form-group">
         <label for="commercialArea" class="col-md-3 control-label">Витринные окна</label>
@@ -448,4 +529,87 @@
             </div>
         </div>
     </div>
+    <hr>
+    <div class="header-in-the-form">
+        Арендная плата
+    </div>
+    <div class="form-group">
+        <label for="tdPricePerMonth" class="col-md-3 control-label">Цена в месяц</label>
+        <div class="col-md-2">
+            <input type="text" name="tdPricePerMonth" class="form-control" id="tdPricePerMonth">
+        </div>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="tdPricePerMonth" class="control-label">₽</label>
+                </div>
+            </div>
+        </div>
+        <div class="checkbox col-md-offset-3 col-md-9">
+            <label>
+                <input type="checkbox" name="tdIncludingUtilityBills" value="">
+                включая коммунальные платежи
+            </label>
+        </div>
+        <div class="checkbox col-md-offset-3 col-md-9">
+            <label>
+                <input type="checkbox" name="tdIncludingOperatingCosts" value="">
+                включая эксплуатационные расходы
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="tdRatePerSquareMeter" class="col-md-3 control-label">Ставка за м<sup>2</sup></label>
+        <div class="col-md-2">
+            <input type="text" name="tdRatePerSquareMeter" class="form-control" id="tdRatePerSquareMeter">
+        </div>
+        <div class="col-md-1">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="tdRatePerSquareMeter" class="control-label">₽</label>
+                </div>
+            </div>
+        </div>
+        <div class="checkbox col-md-2">
+            <label>
+                <input type="checkbox" name="tdPerMonth" value="">
+                в месяц
+            </label>
+        </div>
+        <div class="checkbox col-md-2">
+            <label>
+                <input type="checkbox" name="tdInYear" value="">
+                в год
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="dropdown">
+            <label class="col-md-3 control-label" for="tdPrepayment">Предоплата</label>
+            <div class="col-md-9">
+                <button class="btn btn-default dropdown-toggle" type="button" id="tdPrepayment" data-toggle="dropdown">
+                    1 месяц
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '1 месяц', 'tdOnputPrepayment')">1 месяц</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '2 месяца', 'tdOnputPrepayment')">2 месяца</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '3 месяца', 'tdOnputPrepayment')">3 месяца</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '4 месяца', 'tdOnputPrepayment')">4 месяца</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', 'До 12 месяцев', 'tdOnputPrepayment')">До 12 месяцев</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="tdOnputPrepayment" name="tdOnputPrepayment" value="1 месяц">
 </div>

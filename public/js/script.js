@@ -14,6 +14,10 @@ function LoginThroughRegistration(){
     $("#popup-registration").css('visibility', 'hidden');
     $("#popup-login").css('visibility', 'visible');
 }
+function RegistrationThroughLogin(){
+    $("#popup-login").css('visibility', 'hidden');
+    $("#popup-registration").css('visibility', 'visible');
+}
 function EditPhoneForm(){
     $("#show-phone").css('visibility', 'hidden');
     $("#edit-phone").css('visibility', 'visible');
@@ -1047,4 +1051,25 @@ $('#commercialLocation').on('click', function(){
     $('#commercialLocation').addClass('btn-primary');
 
     $('#outputLocation').val('Коммерческая');
+});
+function ShowHidePassword(){
+    var input_p = $('#input_p');
+    var span = $('#span');
+    input_p.attr('type', input_p.attr('type') === 'password' ? 'text' : 'password');
+    if(span.hasClass('glyphicon glyphicon-eye-close')){
+        span.removeClass('glyphicon glyphicon-eye-close');
+        span.addClass('glyphicon glyphicon-eye-open');
+    }else if(span.hasClass('glyphicon glyphicon-eye-open')){
+        span.removeClass('glyphicon glyphicon-eye-open');
+        span.addClass('glyphicon glyphicon-eye-close');
+    }
+}
+$("#allotted").mouseover(function () {
+    $("#DescriptionOfTheWayOfAccommodation").text('Выделяется среди всех обычных объявлений');
+});
+$("#elevation").mouseover(function () {
+    $("#DescriptionOfTheWayOfAccommodation").text('Раз в сутки Объявление поднимается на верхнюю строчку поиска');
+});
+$("#top").mouseover(function () {
+    $("#DescriptionOfTheWayOfAccommodation").text('Входят в топ 3 популярный объявлений на главной странице');
 });

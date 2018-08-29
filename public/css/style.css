@@ -42,6 +42,9 @@ footer a:hover{
 .btn{
     font-size: 16px!important;
 }
+.margin-10{
+    margin: 10px 0 0 0;
+}
 .margin-20{
     margin: 20px 0 0 0;
 }
@@ -75,7 +78,7 @@ footer a:hover{
     display: contents;
 }
 .auth{
-    height: 380px!important;
+    height: 470px;
     border-radius: 5px!important;
 }
 .auth_form{
@@ -84,13 +87,13 @@ footer a:hover{
     border: none!important;
 }
 .social-net{
-    margin: 30px auto;
+    margin: 30px 0 0 140px;
 }
 .social_net-item{
     width: 46px;
     height: 46px;
     display: inline-block;
-    margin:0 15px 0 15px;
+    margin:0 0 0 15px;
 }
 .v{
     background: url('../images/v.png');
@@ -558,35 +561,43 @@ footer a:hover{
     text-align: center;
 }
 .ways-accommodation-item{
-    height: 80px;
+    height: 50px;
     border: 1px solid #337ab7;
     border-radius: 4px;
     margin: 10px 0 10px 0;
 }
-.free-charge{
-    background: #e7e6e6;
+.ways-accommodation-item:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-.top-3{
-    background: #ffff00;
-}
-.alloted{
-    background: #fff2cc;
-}
+/*.free-charge{*/
+    /*background: #e7e6e6;*/
+/*}*/
+/*.elevation{*/
+
+/*}*/
+/*.top-3{*/
+    /*background: #ffff00;*/
+/*}*/
+/*.allotted{*/
+    /*background: #f2dede;*/
+/*}*/
 .ways-accommodation-input-wrap{
     font-size: 18px;
+    padding-top: 7px;
 }
 .ways-accommodation-cost{
     text-align: right;
     font-size: 18px;
-    margin: 7px 0 0 0;
+    margin: 15px 0 0 0;
 }
 .no-active-ads{
     outline: 1px solid #337ab7;
     color: #337ab7;
 }
 .active-until{
+    text-align: right;
     font-size: 18px;
-    margin: 4px 0 0 18px;
+    margin: 13px 0 0 18px;
     color: #f18a00;
 }
 .discount{
@@ -632,7 +643,7 @@ footer a:hover{
     display: none;
 }
 #apartment{
-    display: block;
+    display: none;
 }
 #cottage{
     display: none;
@@ -644,7 +655,7 @@ footer a:hover{
     display: none;
 }
 #trade-area{
-    display: none;
+    display: block;
 }
 #warehouse-space{
     display: none;
@@ -727,4 +738,9 @@ img .ad-img-slide {
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
     background: #337ab7!important;
+}
+.eye{
+    position: absolute;
+    top: 10px;
+    right:30px;
 }

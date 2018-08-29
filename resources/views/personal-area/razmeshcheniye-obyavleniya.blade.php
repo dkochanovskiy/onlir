@@ -164,7 +164,7 @@
                     <label class="col-md-3 control-label">Способы размещения</label>
                     <div class="col-md-9">
                         <div class="row">
-                            <div class="col-md-10 ways-accommodation-item free-charge">
+                            <div class="col-md-10 ways-accommodation-item bg-danger">
                                 <div class="row">
                                     <div class="col-md-3 ways-accommodation-input-wrap">
                                         <div class="radio">
@@ -174,94 +174,58 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-md-8 ways-accommodation-cost">
-                                        <span id="freeCost">0</span>р/<span id="freeDays">21</span>день
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="active-until">
-                                            Активно до 27.06.2018
-                                        </div>
+                                    <div class="col-md-8 active-until">
+                                        Активно до 27.06.2018
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-10 ways-accommodation-item top-3">
+                            <div class="col-md-10 ways-accommodation-item bg-info" id="allotted">
                                 <div class="row">
                                     <div class="col-md-3 ways-accommodation-input-wrap">
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Бесплатное" checked>
-                                                Топ-3
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 ways-accommodation-cost">
-                                        <span id="freeCost">310</span>р/<span id="freeDays">7</span>дней
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="discount">
-                                            Скидка: Экономия 75 рублей
-                                        </div>
-                                    </div>
-                                </div>
-                                {{--<div class="ways-accommodation-input-wrap">--}}
-                                    {{--<div class="ways-accommodation-input">--}}
-                                        {{--<div class="radio">--}}
-                                            {{--<label>--}}
-                                                {{--<input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="Топ-3">--}}
-                                                {{--Топ-3--}}
-                                            {{--</label>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                                {{--<div class="col-md-8 ways-accommodation-cost">--}}
-                                    {{--<span id="freeCost">310</span>р/<span id="freeDays">7</span>день--}}
-                                {{--</div>--}}
-                                {{--<div class="discount">--}}
-                                    {{--Скидка: Экономия 75 рублей--}}
-                                {{--</div>--}}
-                            </div>
-                            <div class="col-md-10 ways-accommodation-item allotted">
-                                <div class="row">
-                                    <div class="col-md-3 ways-accommodation-input-wrap">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Бесплатное" checked>
+                                                <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Выделенное">
                                                 Выделенное
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-md-8 ways-accommodation-cost">
-                                        <span id="freeCost">100</span>р/<span id="freeDays">1</span>дней
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="discount">
-                                            Скидка: Экономия 40 рублей
-                                        </div>
+                                        <span id="freeCost">20</span>р/в сутки
                                     </div>
                                 </div>
-                                {{--<div class="ways-accommodation-input-wrap">--}}
-                                    {{--<div class="ways-accommodation-input">--}}
-                                        {{--<div class="radio">--}}
-                                            {{--<label>--}}
-                                                {{--<input type="radio" name="optionsRadios" id="ways-accommodation3" value="Выделенное">--}}
-                                                {{--Выделенное--}}
-                                            {{--</label>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                                {{--<div class="ways-accommodation-cost" id="allotted">--}}
-                               {{--<span id="allottedCost">--}}
-                                    {{--100--}}
-                                {{--</span>--}}
-                                    {{--р/--}}
-                                    {{--<span id="allottedDays">--}}
-                                    {{--1--}}
-                                {{--</span>--}}
-                                    {{--дней--}}
-                                {{--</div>--}}
-                                {{--<div class="discount">--}}
-                                    {{--Скидка: Экономия 40 рублей--}}
-                                {{--</div>--}}
+                            </div>
+                            <div class="col-md-10 ways-accommodation-item bg-success" id="elevation">
+                                <div class="row">
+                                    <div class="col-md-3 ways-accommodation-input-wrap">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Поднятие">
+                                                Поднятие
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 ways-accommodation-cost">
+                                        <span id="freeCost">25</span>р/разовое
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10 ways-accommodation-item bg-warning" id="top">
+                                <div class="row">
+                                    <div class="col-md-3 ways-accommodation-input-wrap">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Топ-3">
+                                                Топ-3
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 ways-accommodation-cost">
+                                        <span id="freeCost">55</span>р/в сутки
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10" style="height: 30px" id="DescriptionOfTheWayOfAccommodation">
+
                             </div>
                         </div>
                     </div>
@@ -273,23 +237,23 @@
                     <b>Баланс: 10 &#8381;</b><br>
                     <a href="{{ route('koshelek') }}">Пополнить</a>
                 </div>
-                <div class="selected-tariff-wrap">
-                    <div class="selected-tariff-inner">
-                        <div id="selected-tariff">
-                            Бесплатное
-                        </div>
-                        :
-                        <div id="cost">
-                            <b>0 р на 21 дней</b>
-                        </div>
-                    </div>
-                    <div class="total">
-                        <b>Итого:
-                            <span id="total">
-                                0
-                            </span> Р</b>
-                    </div>
-                </div>
+                {{--<div class="selected-tariff-wrap">--}}
+                    {{--<div class="selected-tariff-inner">--}}
+                        {{--<div id="selected-tariff">--}}
+                            {{--Бесплатное--}}
+                        {{--</div>--}}
+                        {{--:--}}
+                        {{--<div id="cost">--}}
+                            {{--<b>0 р на 21 дней</b>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="total">--}}
+                        {{--<b>Итого:--}}
+                            {{--<span id="total">--}}
+                                {{--0--}}
+                            {{--</span> Р</b>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
                 <hr>
                 <div class="row margin-30">
                     <div class="col-md-offset-4 col-md-4">Не забудьте
