@@ -57,7 +57,7 @@ footer a:hover{
     height: 320px;
     position: absolute;
     z-index: -100;
-    margin: 120px 0 0 0;
+    margin: 10px 0 0 0;
 }
 .white-color{
     color: #ffffff;
@@ -643,7 +643,7 @@ footer a:hover{
     display: none;
 }
 #apartment{
-    display: none;
+    display: block;
 }
 #cottage{
     display: none;
@@ -655,7 +655,7 @@ footer a:hover{
     display: none;
 }
 #trade-area{
-    display: block;
+    display: none;
 }
 #warehouse-space{
     display: none;
@@ -731,7 +731,7 @@ img .ad-img-slide {
     margin: 0 0 0 -5px;
 }
 .main-title{
-    margin: 145px 0 0 0;
+    margin: 130px 0 0 0;
 }
 .edit{
     margin: -10px 0 0 0;

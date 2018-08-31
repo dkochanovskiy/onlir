@@ -1,6 +1,6 @@
 @extends('template.template')
 
-@section('header-background')
+
 @endsection
 
 @section('content')
