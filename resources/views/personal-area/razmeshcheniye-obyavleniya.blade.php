@@ -51,31 +51,50 @@
                                     <ul class="dropdown-menu">
                                         <li role="presentation" class="dropdown-header">Жилая</li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:House()">Дом</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Дом', 'propertyType')">
+                                                Дом
+                                            </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:Room()">Комната</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:Apartment()">Квартира</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Комната', 'propertyType')">
+                                                Комната
+                                            </a>
+                                        </li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Квартира', 'propertyType')">
+                                                Квартира
+                                            </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:Cottage()">Коттедж</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Коттедж', 'propertyType')">
+                                                Коттедж
+                                            </a>
                                         </li>
                                         <li role="presentation" class="divider"></li>
                                         <li role="presentation" class="dropdown-header">Коммерческая</li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:ReadyBusiness()">Готовый бизнес</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Готовый бизнес', 'propertyType')">
+                                                Готовый бизнес
+                                            </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:Office()">Офис</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Офис', 'propertyType')">
+                                                Офис
+                                            </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:TradeArea()">Торговая площадь</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Торговая площадь', 'propertyType')">
+                                                Торговая площадь
+                                            </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:WarehouseSpace()">Складское помещение</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Складское помещение', 'propertyType')">
+                                                Складское помещение
+                                            </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:FreeDestinationRoom()">Помещение свободного назначения</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Помещение свободного назначения', 'propertyType')">
+                                                Помещение свободного назначения
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -137,47 +156,7 @@
                         @include('include.property-type.warehouse-space')
                         @include('include.property-type.free-destination-room')
                         <hr>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Ремонт</label>
-                            <div class="col-md-9">
-                                <div class="btn-group" data-toggle="buttons">
-                                    <label class="btn btn-primary" id="cosmetic">
-                                        <input type="radio" name="repairs" value="Косметический">Косметический
-                                    </label>
-                                    <label class="btn btn-default" id="designer">
-                                        <input type="radio" name="repairs" value="Дизайнерский">Дизайнерский
-                                    </label>
-                                    <label class="btn btn-default" id="euro">
-                                        <input type="radio" name="repairs" value="Евро">Евро
-                                    </label>
-                                    <label class="btn btn-default" id="withoutRepair">
-                                        <input type="radio" name="repairs" value="Без ремонта">Без ремонта
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="hidden" id="inputRepairs" value="Косметический">
 
-                        <hr>
-                        <div class="header-in-the-form">
-                            Контактная информация
-                        </div>
-                        <div class="form-group">
-                            <label for="your-name" class="col-md-3 control-label">Ваше имя</label>
-                            <div class="col-md-2">
-                                <input type="text" class="form-control" id="your-name">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Телефон для связи</label>
-                            <div class="phone-communication-inner">
-                                <div class="phone-communication-font">
-                                    <span>8(962) 594-3880&#160;</span>
-                                    {{--<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> Удалить</button>--}}
-                                    {{--<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Добавить</button>--}}
-                                </div>
-                            </div>
-                        </div>
                         <hr>
                         <div class="col-md-12">
                             <div class="row">
