@@ -25,19 +25,38 @@
                     </form>
                 </td>
                 <td>
-                    <div class="slide" >
-                        <input type="radio" name="slider1" id="slider1_1" checked="checked">
-                        <label for="slider1_1"></label>
-                        <div><p></p> <img src="{{ asset('images/slider/1.jpg') }}"></div>
+                    <div class="wrapper">
+                        <div id="photo1" class="carousel slide" data-ride="carousel">
+                            <!--Показатели-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#photo1" data-slide-to="0" class="active"></li>
+                                <li data-target="#photo1" data-slide-to="1"></li>
+                                <li data-target="#photo1" data-slide-to="2"></li>
+                            </ol>
 
-                        <input type="radio" name="slider1" id="slider1_2">
-                        <label for="slider1_2"></label>
-                        <div><p></p> <img src="{{ asset('images/slider/2.jpg') }}"></div>
+                            <!--Обертка для слайдов-->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="{{ asset('images/slider/1.jpg') }}" alt="Рисунок песком">
+                                </div>
+                                <div class="item">
+                                    <img src="{{ asset('images/slider/2.jpg') }}" alt="Рисунок песком">
+                                </div>
+                                <div class="item">
+                                    <img src="{{ asset('images/slider/3.jpg') }}" alt="Рисунок песком">
+                                </div>
+                            </div>
 
-                        <input type="radio" name="slider1" id="slider1_3">
-                        <label for="slider1_3"></label>
-                        <div><p></p> <img src="{{ asset('images/slider/3.jpg') }}"></div>
-
+                            <!--Элементы управления-->
+                            <a class="left carousel-control" href="#photo1" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo1" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </td>
                 <td>
@@ -66,19 +85,38 @@
                     </form>
                 </td>
                 <td>
-                    <div class='slide' >
-                        <input type="radio" name="slider2" id="slider2_1" checked="checked">
-                        <label for="slider2_1"></label>
-                        <div><p></p> <img src="{{ asset('images/slider/4.jpg') }}"></div>
+                    <div class="wrapper">
+                        <div id="photo2" class="carousel slide" data-ride="carousel">
+                            <!--Показатели-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#photo2" data-slide-to="0" class="active"></li>
+                                <li data-target="#photo2" data-slide-to="1"></li>
+                                <li data-target="#photo2" data-slide-to="2"></li>
+                            </ol>
 
-                        <input type="radio" name="slider2" id="slider2_2">
-                        <label for="slider2_2"></label>
-                        <div><p></p> <img src="{{ asset('images/slider/5.jpg') }}"></div>
+                            <!--Обертка для слайдов-->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="{{ asset('images/slider/1.jpg') }}" alt="Рисунок песком">
+                                </div>
+                                <div class="item">
+                                    <img src="{{ asset('images/slider/2.jpg') }}" alt="Рисунок песком">
+                                </div>
+                                <div class="item">
+                                    <img src="{{ asset('images/slider/3.jpg') }}" alt="Рисунок песком">
+                                </div>
+                            </div>
 
-                        <input type="radio" name="slider2" id="slider2_3">
-                        <label for="slider2_3"></label>
-                        <div><p></p> <img src="{{ asset('images/slider/6.jpg') }}"></div>
-
+                            <!--Элементы управления-->
+                            <a class="left carousel-control" href="#photo2" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#photo2" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </td>
                 <td>

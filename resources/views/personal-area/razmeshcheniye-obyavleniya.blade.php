@@ -51,48 +51,68 @@
                                     <ul class="dropdown-menu">
                                         <li role="presentation" class="dropdown-header">Жилая</li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Дом', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Дом','house','room','apartment','cottage','ready-business','office',
+                                            'trade-area','warehouse-spacepace','free-destination-room')">
                                                 Дом
                                             </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Комната', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Комната','room','house','apartment','cottage','ready-business','office',
+                                            'trade-area','warehouse-spacepace','free-destination-room')">
                                                 Комната
                                             </a>
                                         </li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Квартира', 'propertyType')">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Квартира','apartment','room','house','cottage','ready-business','office',
+                                            'trade-area','warehouse-spacepace','free-destination-room')">
                                                 Квартира
                                             </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Коттедж', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Коттедж','cottage','room','house','apartment','ready-business','office',
+                                            'trade-area','warehouse-spacepace','free-destination-room')">
                                                 Коттедж
                                             </a>
                                         </li>
                                         <li role="presentation" class="divider"></li>
                                         <li role="presentation" class="dropdown-header">Коммерческая</li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Готовый бизнес', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Готовый бизнес','ready-business','room','house','apartment','cottage',
+                                            'office','trade-area','warehouse-spacepace','free-destination-room')">
                                                 Готовый бизнес
                                             </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Офис', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Офис','office','room','house','apartment','cottage','ready-business',
+                                            'trade-area','warehouse-spacepace','free-destination-room')">
                                                 Офис
                                             </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Торговая площадь', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Торговая площадь','trade-area','room','house','apartment','cottage',
+                                            'ready-business','office','warehouse-spacepace','free-destination-room')">
                                                 Торговая площадь
                                             </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Складское помещение', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Складское помещение','warehouse-spacepace','room','house','apartment',
+                                            'cottage','ready-business','office','trade-area','free-destination-room')">
                                                 Складское помещение
                                             </a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('propertyTypeMenu', 'Помещение свободного назначения', 'propertyType')">
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            ('Помещение свободного назначения','free-destination-room','room','house',
+                                            'apartment','cottage','ready-business','office','trade-area',
+                                            'warehouse-spacepace')">
                                                 Помещение свободного назначения
                                             </a>
                                         </li>
@@ -205,7 +225,7 @@
                                             <div class="col-md-3 ways-accommodation-input-wrap">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Выделенное">
+                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="Выделенное">
                                                         Выделенное
                                                     </label>
                                                 </div>
@@ -220,7 +240,7 @@
                                             <div class="col-md-3 ways-accommodation-input-wrap">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Поднятие">
+                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation3" value="Поднятие">
                                                         Поднятие
                                                     </label>
                                                 </div>
@@ -235,7 +255,7 @@
                                             <div class="col-md-3 ways-accommodation-input-wrap">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Топ-3">
+                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation4" value="Топ-3">
                                                         Топ-3
                                                     </label>
                                                 </div>

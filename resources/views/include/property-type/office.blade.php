@@ -79,7 +79,7 @@
     <div class="form-group">
         <div class="dropdown">
             <label class="col-md-3 control-label" for="oNumberOfWetPoints">Количество мокрых точек</label>
-            <div class="col-md-9">
+            <div class="col-md-3">
                 <button class="btn btn-default dropdown-toggle" type="button" id="oNumberOfWetPoints" data-toggle="dropdown">
                     Отсутствуют
                     <span class="caret"></span>
@@ -93,15 +93,16 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <input type="hidden" id="inputONumberOfWetPoints" name="inputONumberOfWetPoints" value="Отсутствуют">
-    <div class="form-group">
         <div class="checkbox">
-            <label class="control-label col-md-offset-3 col-md-3">
+            <label class="control-label col-md-3 margin-6">
                 <input type="checkbox" name="separateRoom" value="">
                 Отдельное помещение
             </label>
         </div>
+    </div>
+    <input type="hidden" id="inputONumberOfWetPoints" name="inputONumberOfWetPoints" value="Отсутствуют">
+    <div class="form-group">
+
     </div>
     <div class="form-group">
         <label class="col-md-3 control-label">Интернет</label>
@@ -170,7 +171,7 @@
             </div>
         </div>
         <div class="checkbox">
-            <label class="control-label col-md-2">
+            <label class="control-label col-md-2 margin-6">
                 <input type="checkbox" name="oRoundTheClock" value="">
                 Круглосуточный
             </label>
@@ -193,7 +194,7 @@
             </div>
         </div>
         <div class="checkbox">
-            <label class="control-label col-md-2">
+            <label class="control-label col-md-2 margin-6">
                 <input type="checkbox" name="oProtected" value="">
                 Охраняемая
             </label>
