@@ -213,27 +213,6 @@
     </div>
     <input type="hidden" id="inputDisplayCases" name="inputDisplayCases" value="Да">
     <div class="form-group">
-        <label class="col-md-3 control-label">Ремонт</label>
-        <div class="col-md-9">
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary" id="taCosmetic">
-                    <input type="radio" name="teRepairs" value="Косметический">Косметический
-                </label>
-                <label class="btn btn-default" id="taDesigner">
-                    <input type="radio" name="teRepairs" value="Дизайнерский">Дизайнерский
-                </label>
-                <label class="btn btn-default" id="taEuro">
-                    <input type="radio" name="teRepairs" value="Евро">Евро
-                </label>
-                <label class="btn btn-default" id="taWithoutRepair">
-                    <input type="radio" name="teRepairs" value="Без ремонта">Без ремонта
-                </label>
-            </div>
-        </div>
-    </div>
-    <input type="hidden" id="taInputRepairs" value="Косметический">
-    <hr>
-    <div class="form-group">
         <label for="electricPower" class="col-md-3 control-label">Электрическая мощность</label>
         <div class="col-md-2">
             <input type="text" name="electricPower" class="form-control" id="electricPower">
@@ -529,87 +508,4 @@
             </div>
         </div>
     </div>
-    <hr>
-    <div class="header-in-the-form">
-        Арендная плата
-    </div>
-    <div class="form-group">
-        <label for="tdPricePerMonth" class="col-md-3 control-label">Цена в месяц</label>
-        <div class="col-md-2">
-            <input type="text" name="tdPricePerMonth" class="form-control" id="tdPricePerMonth">
-        </div>
-        <div class="col-md-1">
-            <div class="row">
-                <div class="col-md-1">
-                    <label for="tdPricePerMonth" class="control-label">₽</label>
-                </div>
-            </div>
-        </div>
-        <div class="checkbox col-md-offset-3 col-md-9">
-            <label>
-                <input type="checkbox" name="tdIncludingUtilityBills" value="">
-                включая коммунальные платежи
-            </label>
-        </div>
-        <div class="checkbox col-md-offset-3 col-md-9">
-            <label>
-                <input type="checkbox" name="tdIncludingOperatingCosts" value="">
-                включая эксплуатационные расходы
-            </label>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="tdRatePerSquareMeter" class="col-md-3 control-label">Ставка за м<sup>2</sup></label>
-        <div class="col-md-2">
-            <input type="text" name="tdRatePerSquareMeter" class="form-control" id="tdRatePerSquareMeter">
-        </div>
-        <div class="col-md-1">
-            <div class="row">
-                <div class="col-md-1">
-                    <label for="tdRatePerSquareMeter" class="control-label">₽</label>
-                </div>
-            </div>
-        </div>
-        <div class="checkbox col-md-2">
-            <label>
-                <input type="checkbox" name="tdPerMonth" value="">
-                в месяц
-            </label>
-        </div>
-        <div class="checkbox col-md-2">
-            <label>
-                <input type="checkbox" name="tdInYear" value="">
-                в год
-            </label>
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="dropdown">
-            <label class="col-md-3 control-label" for="tdPrepayment">Предоплата</label>
-            <div class="col-md-9">
-                <button class="btn btn-default dropdown-toggle" type="button" id="tdPrepayment" data-toggle="dropdown">
-                    1 месяц
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '1 месяц', 'tdOnputPrepayment')">1 месяц</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '2 месяца', 'tdOnputPrepayment')">2 месяца</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '3 месяца', 'tdOnputPrepayment')">3 месяца</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', '4 месяца', 'tdOnputPrepayment')">4 месяца</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="javascript:DropDownList('tdPrepayment', 'До 12 месяцев', 'tdOnputPrepayment')">До 12 месяцев</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <input type="hidden" id="tdOnputPrepayment" name="tdOnputPrepayment" value="1 месяц">
 </div>

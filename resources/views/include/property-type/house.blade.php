@@ -121,26 +121,6 @@
         </div>
     </div>
     <input type="hidden" id="hOutputHeating" value="Центральное газовое">
-    <div class="form-group">
-        <label class="col-md-3 control-label">Ремонт</label>
-        <div class="col-md-9">
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary" id="hCosmetic">
-                    <input type="radio" name="hRepairs" value="Косметический">Косметический
-                </label>
-                <label class="btn btn-default" id="hDesigner">
-                    <input type="radio" name="hRepairs" value="Дизайнерский">Дизайнерский
-                </label>
-                <label class="btn btn-default" id="hEuro">
-                    <input type="radio" name="hRepairs" value="Евро">Евро
-                </label>
-                <label class="btn btn-default" id="hWithoutRepair">
-                    <input type="radio" name="hRepairs" value="Без ремонта">Без ремонта
-                </label>
-            </div>
-        </div>
-    </div>
-    <input type="hidden" id="hOutputRepairs" value="Косметический">
     <hr class="col-md-12">
     <div class="header-in-the-form">
         Удобства

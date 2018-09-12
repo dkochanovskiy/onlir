@@ -116,26 +116,6 @@
         </div>
     </div>
     <input type="hidden" id="rOutputElevator" value="Пассажирский">
-    <div class="form-group">
-        <label class="col-md-3 control-label">Ремонт</label>
-        <div class="col-md-9">
-            <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-primary" id="rCosmetic">
-                    <input type="radio" name="rRepairs" value="Косметический">Косметический
-                </label>
-                <label class="btn btn-default" id="rDesigner">
-                    <input type="radio" name="rRepairs" value="Дизайнерский">Дизайнерский
-                </label>
-                <label class="btn btn-default" id="rEuro">
-                    <input type="radio" name="rRepairs" value="Евро">Евро
-                </label>
-                <label class="btn btn-default" id="rWithoutRepair">
-                    <input type="radio" name="rRepairs" value="Без ремонта">Без ремонта
-                </label>
-            </div>
-        </div>
-    </div>
-    <input type="hidden" id="rOutputRepairs" value="Косметический">
     <hr class="col-md-12">
     <div class="form-group">
         <div class="col-md-offset-3">
