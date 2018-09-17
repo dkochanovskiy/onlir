@@ -244,6 +244,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="lease">
+                            @include('include.lease')
+                        </div>
                         <hr>
                         <div class="header-in-the-form">
                             Контактная информация

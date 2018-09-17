@@ -221,7 +221,7 @@
         Удобства
     </div>
     <div class="form-group">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="row">
                 <label class="col-md-offset-4 col-md-1 control-label">
                     Техника
@@ -262,23 +262,50 @@
         </div>
         <div class="col-md-4">
             <div class="row">
-                <label class="col-md-4 control-label">
+                <label class="col-md-offset-4 col-md-1 control-label">
                     Прочее
                 </label>
             </div>
+            <div class="col-md-offset-3 col-md-6">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Кондиционер
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Интернет
+                    </label>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="">
-                    Кондиционер
+        <div class="col-md-4">
+            <div class="row">
+                <label class="col-md-offset-2 col-md-7 control-label">
+                    На улице (рядом)
                 </label>
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="">
-                    Интернет
-                </label>
+            <div class="col-md-offset-3 col-md-6">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Школа
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Детская площадка
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Детский сад
+                    </label>
+                </div>
             </div>
         </div>
     </div>

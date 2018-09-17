@@ -98,142 +98,20 @@ function DropDownListPropertyType(propertyType, show, hide1, hide2, hide3, hide4
     $("#" + hide9).css('display', 'none');
 
     $("#" + show).css('display', 'block');
+
+    if (propertyType == 'Дом'
+        || propertyType == 'Комната'
+        || propertyType == 'Квартира'
+        || propertyType == 'Коттедж'){
+            $('#lease').css('display', 'none');
+    } else if(propertyType == 'Готовый бизнес'
+        || propertyType == 'Офис'
+        || propertyType == 'Торговая площадь'
+        || propertyType == 'Складское помещение'
+        || propertyType == 'Помещение свободного назначения'){
+            $('#lease').css('display', 'block');
+    }
 }
-// function House(){
-//     $("#propertyTypeMenu").html('Дом <span class="caret"></span>');
-//     $("#propertyType").val('Дом');
-//
-//     $("#room").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#house").css('display', 'block');
-// }
-// function Room(){
-//     $("#propertyTypeMenu").html('Комната <span class="caret"></span>');
-//     $("#propertyType").val('Комната');
-//
-//     $("#house").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#room").css('display', 'block');
-// }
-// function Apartment(){
-//     $("#propertyTypeMenu").html('Квартира <span class="caret"></span>');
-//     $("#propertyType").val('Квартира');
-//
-//     $("#room").css('display', 'none');
-//     $("#house").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#apartment").css('display', 'block');
-// }
-// function Cottage(){
-//     $("#propertyTypeMenu").html('Коттедж <span class="caret"></span>');
-//     $("#propertyType").val('Коттедж');
-//
-//     $("#room").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#house").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#cottage").css('display', 'block');
-// }
-// function ReadyBusiness(){
-//     $("#propertyTypeMenu").html('Готовый бизнес <span class="caret"></span>');
-//     $("#propertyType").val('Готовый бизнес');
-//
-//     $("#room").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#house").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#ready-business").css('display', 'block');
-// }
-// function Office(){
-//     $("#propertyTypeMenu").html('Офис <span class="caret"></span>');
-//     $("#propertyType").val('Офис');
-//
-//     $("#room").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#house").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#office").css('display', 'block');
-// }
-// function TradeArea(){
-//     $("#propertyTypeMenu").html('Торговая площадь <span class="caret"></span>');
-//     $("#propertyType").val('Торговая площадь');
-//
-//     $("#room").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#house").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#trade-area").css('display', 'block');
-// }
-// function WarehouseSpace(){
-//     $("#propertyTypeMenu").html('Складское помещение <span class="caret"></span>');
-//     $("#propertyType").val('Складское помещение');
-//
-//     $("#room").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#house").css('display', 'none');
-//     $("#free-destination-room").css('display', 'none');
-//
-//     $("#warehouse-spacepace").css('display', 'block');
-// }
-// function FreeDestinationRoom(){
-//     $("#propertyTypeMenu").html('Помещение свободного назначения <span class="caret"></span>');
-//     $("#propertyType").val('Помещение свободного назначения');
-//
-//     $("#room").css('display', 'none');
-//     $("#apartment").css('display', 'none');
-//     $("#cottage").css('display', 'none');
-//     $("#ready-business").css('display', 'none');
-//     $("#office").css('display', 'none');
-//     $("#trade-area").css('display', 'none');
-//     $("#warehouse-spacepace").css('display', 'none');
-//     $("#house").css('display', 'none');
-//
-//     $("#free-destination-room").css('display', 'block');
-// }
 function Cosmetic(){
     $("#repairs").val('Косметический');
     $("#selectRepairs").html('Косметический <span class="caret"></span>');
@@ -331,66 +209,6 @@ $('#cosmetic').on('click', function(){
 
     $('#inputRepairs').val('Косметический');
 });
-// $('#taCosmetic').on('click', function(){
-//     $('#taDesigner').removeClass('btn-primary');
-//     $('#taDesigner').addClass('btn-default');
-//
-//     $('#taEuro').removeClass('btn-primary');
-//     $('#taEuro').addClass('btn-default');
-//
-//     $('#taWithoutRepair').removeClass('btn-primary');
-//     $('#taWithoutRepair').addClass('btn-default');
-//
-//     $('#taCosmetic').removeClass('btn-default');
-//     $('#taCosmetic').addClass('btn-primary');
-//
-//     $('#taInputRepairs').val('Косметический');
-// });
-// $('#oCosmetic').on('click', function(){
-//     $('#oDesigner').removeClass('btn-primary');
-//     $('#oDesigner').addClass('btn-default');
-//
-//     $('#oEuro').removeClass('btn-primary');
-//     $('#oEuro').addClass('btn-default');
-//
-//     $('#oWithoutRepair').removeClass('btn-primary');
-//     $('#oWithoutRepair').addClass('btn-default');
-//
-//     $('#oCosmetic').removeClass('btn-default');
-//     $('#oCosmetic').addClass('btn-primary');
-//
-//     $('#oInputRepairs').val('Косметический');
-// });
-// $('#rCosmetic').on('click', function(){
-//     $('#rDesigner').removeClass('btn-primary');
-//     $('#rDesigner').addClass('btn-default');
-//
-//     $('#rEuro').removeClass('btn-primary');
-//     $('#rEuro').addClass('btn-default');
-//
-//     $('#rWithoutRepair').removeClass('btn-primary');
-//     $('#rWithoutRepair').addClass('btn-default');
-//
-//     $('#rCosmetic').removeClass('btn-default');
-//     $('#rCosmetic').addClass('btn-primary');
-//
-//     $('#rOutputRepairs').val('Косметический');
-// });
-// $('#hCosmetic').on('click', function(){
-//     $('#hDesigner').removeClass('btn-primary');
-//     $('#hDesigner').addClass('btn-default');
-//
-//     $('#hEuro').removeClass('btn-primary');
-//     $('#hEuro').addClass('btn-default');
-//
-//     $('#hWithoutRepair').removeClass('btn-primary');
-//     $('#hWithoutRepair').addClass('btn-default');
-//
-//     $('#hCosmetic').removeClass('btn-default');
-//     $('#hCosmetic').addClass('btn-primary');
-//
-//     $('#hOutputRepairs').val('Косметический');
-// });
 $('#designer').on('click', function(){
     $('#euro').removeClass('btn-primary');
     $('#euro').addClass('btn-default');
@@ -406,66 +224,6 @@ $('#designer').on('click', function(){
 
     $('#inputRepairs').val('Дизайнерский');
 });
-// $('#taDesigner').on('click', function(){
-//     $('#taEuro').removeClass('btn-primary');
-//     $('#taEuro').addClass('btn-default');
-//
-//     $('#taWithoutRepair').removeClass('btn-primary');
-//     $('#taWithoutRepair').addClass('btn-default');
-//
-//     $('#taCosmetic').removeClass('btn-primary');
-//     $('#taCosmetic').addClass('btn-default');
-//
-//     $('#taDesigner').removeClass('btn-default');
-//     $('#taDesigner').addClass('btn-primary');
-//
-//     $('#taInputRepairs').val('Дизайнерский');
-// });
-// $('#oDesigner').on('click', function(){
-//     $('#oEuro').removeClass('btn-primary');
-//     $('#oEuro').addClass('btn-default');
-//
-//     $('#oWithoutRepair').removeClass('btn-primary');
-//     $('#oWithoutRepair').addClass('btn-default');
-//
-//     $('#oCosmetic').removeClass('btn-primary');
-//     $('#oCosmetic').addClass('btn-default');
-//
-//     $('#oDesigner').removeClass('btn-default');
-//     $('#oDesigner').addClass('btn-primary');
-//
-//     $('#oInputRepairs').val('Дизайнерский');
-// });
-// $('#rDesigner').on('click', function(){
-//     $('#rEuro').removeClass('btn-primary');
-//     $('#rEuro').addClass('btn-default');
-//
-//     $('#rWithoutRepair').removeClass('btn-primary');
-//     $('#rWithoutRepair').addClass('btn-default');
-//
-//     $('#rCosmetic').removeClass('btn-primary');
-//     $('#rCosmetic').addClass('btn-default');
-//
-//     $('#rDesigner').removeClass('btn-default');
-//     $('#rDesigner').addClass('btn-primary');
-//
-//     $('#rOutputRepairs').val('Дизайнерский');
-// });
-// $('#hDesigner').on('click', function(){
-//     $('#hEuro').removeClass('btn-primary');
-//     $('#hEuro').addClass('btn-default');
-//
-//     $('#hWithoutRepair').removeClass('btn-primary');
-//     $('#hWithoutRepair').addClass('btn-default');
-//
-//     $('#hCosmetic').removeClass('btn-primary');
-//     $('#hCosmetic').addClass('btn-default');
-//
-//     $('#hDesigner').removeClass('btn-default');
-//     $('#hDesigner').addClass('btn-primary');
-//
-//     $('#hOutputRepairs').val('Дизайнерский');
-// });
 $('#euro').on('click', function(){
     $('#withoutRepair').removeClass('btn-primary');
     $('#withoutRepair').addClass('btn-default');
@@ -481,66 +239,6 @@ $('#euro').on('click', function(){
 
     $('#inputRepairs').val('Евро');
 });
-// $('#taEuro').on('click', function(){
-//     $('#taWithoutRepair').removeClass('btn-primary');
-//     $('#taWithoutRepair').addClass('btn-default');
-//
-//     $('#taCosmetic').removeClass('btn-primary');
-//     $('#taCosmetic').addClass('btn-default');
-//
-//     $('#taDesigner').removeClass('btn-primary');
-//     $('#taDesigner').addClass('btn-default');
-//
-//     $('#taEuro').removeClass('btn-default');
-//     $('#taEuro').addClass('btn-primary');
-//
-//     $('#taInputRepairs').val('Евро');
-// });
-// $('#oEuro').on('click', function(){
-//     $('#oWithoutRepair').removeClass('btn-primary');
-//     $('#oWithoutRepair').addClass('btn-default');
-//
-//     $('#oCosmetic').removeClass('btn-primary');
-//     $('#oCosmetic').addClass('btn-default');
-//
-//     $('#oDesigner').removeClass('btn-primary');
-//     $('#oDesigner').addClass('btn-default');
-//
-//     $('#oEuro').removeClass('btn-default');
-//     $('#oEuro').addClass('btn-primary');
-//
-//     $('#oInputRepairs').val('Евро');
-// });
-// $('#rEuro').on('click', function(){
-//     $('#rWithoutRepair').removeClass('btn-primary');
-//     $('#rWithoutRepair').addClass('btn-default');
-//
-//     $('#rCosmetic').removeClass('btn-primary');
-//     $('#rCosmetic').addClass('btn-default');
-//
-//     $('#rDesigner').removeClass('btn-primary');
-//     $('#rDesigner').addClass('btn-default');
-//
-//     $('#rEuro').removeClass('btn-default');
-//     $('#rEuro').addClass('btn-primary');
-//
-//     $('#rOutputRepairs').val('Евро');
-// });
-// $('#hEuro').on('click', function(){
-//     $('#hWithoutRepair').removeClass('btn-primary');
-//     $('#hWithoutRepair').addClass('btn-default');
-//
-//     $('#hCosmetic').removeClass('btn-primary');
-//     $('#hCosmetic').addClass('btn-default');
-//
-//     $('#hDesigner').removeClass('btn-primary');
-//     $('#hDesigner').addClass('btn-default');
-//
-//     $('#hEuro').removeClass('btn-default');
-//     $('#hEuro').addClass('btn-primary');
-//
-//     $('#hOutputRepairs').val('Евро');
-// });
 $('#withoutRepair').on('click', function(){
     $('#cosmetic').removeClass('btn-primary');
     $('#cosmetic').addClass('btn-default');
@@ -556,67 +254,6 @@ $('#withoutRepair').on('click', function(){
 
     $('#inputRepairs').val('Без ремонта');
 });
-// $('#taWithoutRepair').on('click', function(){
-//     $('#taCosmetic').removeClass('btn-primary');
-//     $('#taCosmetic').addClass('btn-default');
-//
-//     $('#taDesigner').removeClass('btn-primary');
-//     $('#taDesigner').addClass('btn-default');
-//
-//     $('#taEuro').removeClass('btn-primary');
-//     $('#taEuro').addClass('btn-default');
-//
-//     $('#taWithoutRepair').removeClass('btn-default');
-//     $('#taWithoutRepair').addClass('btn-primary');
-//
-//     $('#taInputRepairs').val('Без ремонта');
-// });
-// $('#oWithoutRepair').on('click', function(){
-//     $('#oCosmetic').removeClass('btn-primary');
-//     $('#oCosmetic').addClass('btn-default');
-//
-//     $('#oDesigner').removeClass('btn-primary');
-//     $('#oDesigner').addClass('btn-default');
-//
-//     $('#oEuro').removeClass('btn-primary');
-//     $('#oEuro').addClass('btn-default');
-//
-//     $('#oWithoutRepair').removeClass('btn-default');
-//     $('#oWithoutRepair').addClass('btn-primary');
-//
-//     $('#oInputRepairs').val('Без ремонта');
-// });
-// $('#rWithoutRepair').on('click', function(){
-//     $('#rCosmetic').removeClass('btn-primary');
-//     $('#rCosmetic').addClass('btn-default');
-//
-//     $('#rDesigner').removeClass('btn-primary');
-//     $('#rDesigner').addClass('btn-default');
-//
-//     $('#rEuro').removeClass('btn-primary');
-//     $('#rEuro').addClass('btn-default');
-//
-//     $('#rWithoutRepair').removeClass('btn-default');
-//     $('#rWithoutRepair').addClass('btn-primary');
-//
-//     $('#rOutputRepairs').val('Без ремонта');
-// });
-// $('#hWithoutRepair').on('click', function(){
-//     $('#hCosmetic').removeClass('btn-primary');
-//     $('#hCosmetic').addClass('btn-default');
-//
-//     $('#hDesigner').removeClass('btn-primary');
-//     $('#hDesigner').addClass('btn-default');
-//
-//     $('#hEuro').removeClass('btn-primary');
-//     $('#hEuro').addClass('btn-default');
-//
-//     $('#hWithoutRepair').removeClass('btn-default');
-//     $('#hWithoutRepair').addClass('btn-primary');
-//
-//     $('#hOutputRepairs').val('Без ремонта');
-// });
-// ------------------------------------------------------------------------------------------------
 $('#A').on('click', function(){
     $('#B').removeClass('btn-primary');
     $('#B').addClass('btn-default');
