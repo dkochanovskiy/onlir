@@ -46,7 +46,7 @@
                             Удалить
                         </button>
                     </div>
-                    <table class="col-md-12 table-striped table-bordered">
+                    <table class="table-striped table-bordered table-offer">
                         <tr>
                             <td>
                                 <form role="form">
@@ -59,33 +59,33 @@
                             </td>
                             <td>
                                 <div class="wrapper">
-                                    <div id="moi-obyavleniya1" class="carousel slide" data-ride="carousel">
+                                    <div id="photo1" class="carousel slide" data-ride="carousel">
                                         <!--Показатели-->
                                         <ol class="carousel-indicators">
-                                            <li data-target="#moi-obyavleniya1" data-slide-to="0" class="active"></li>
-                                            <li data-target="#moi-obyavleniya1" data-slide-to="1"></li>
-                                            <li data-target="#moi-obyavleniya1" data-slide-to="2"></li>
+                                            <li data-target="#photo1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#photo1" data-slide-to="1"></li>
+                                            <li data-target="#photo1" data-slide-to="2"></li>
                                         </ol>
 
                                         <!--Обертка для слайдов-->
                                         <div class="carousel-inner" role="listbox">
                                             <div class="item active">
-                                                <img src="{{ asset('images/slider/4.jpg') }}" alt="">
+                                                <img src="{{ asset('images/slider/1.jpg') }}" alt="Рисунок песком">
                                             </div>
                                             <div class="item">
-                                                <img src="{{ asset('images/slider/5.jpg') }}" alt="">
+                                                <img src="{{ asset('images/slider/2.jpg') }}" alt="Рисунок песком">
                                             </div>
                                             <div class="item">
-                                                <img src="{{ asset('images/slider/6.jpg') }}" alt="">
+                                                <img src="{{ asset('images/slider/3.jpg') }}" alt="Рисунок песком">
                                             </div>
                                         </div>
 
                                         <!--Элементы управления-->
-                                        <a class="left carousel-control" href="#moi-obyavleniya1" role="button" data-slide="prev">
+                                        <a class="left carousel-control" href="#photo1" role="button" data-slide="prev">
                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="right carousel-control" href="#moi-obyavleniya1" role="button" data-slide="next">
+                                        <a class="right carousel-control" href="#photo1" role="button" data-slide="next">
                                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
                                         </a>
@@ -112,40 +112,40 @@
                                 <form role="form">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="checkbox-completed">
+                                            <input type="checkbox" name="checkbox-favorites">
                                         </label>
                                     </div>
                                 </form>
                             </td>
                             <td>
                                 <div class="wrapper">
-                                    <div id="moi-obyavleniya2" class="carousel slide" data-ride="carousel">
+                                    <div id="photo2" class="carousel slide" data-ride="carousel">
                                         <!--Показатели-->
                                         <ol class="carousel-indicators">
-                                            <li data-target="#moi-obyavleniya2" data-slide-to="0" class="active"></li>
-                                            <li data-target="#moi-obyavleniya2" data-slide-to="1"></li>
-                                            <li data-target="#moi-obyavleniya2" data-slide-to="2"></li>
+                                            <li data-target="#photo2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#photo2" data-slide-to="1"></li>
+                                            <li data-target="#photo2" data-slide-to="2"></li>
                                         </ol>
 
                                         <!--Обертка для слайдов-->
                                         <div class="carousel-inner" role="listbox">
                                             <div class="item active">
-                                                <img src="{{ asset('images/slider/4.jpg') }}" alt="">
+                                                <img src="{{ asset('images/slider/1.jpg') }}" alt="Рисунок песком">
                                             </div>
                                             <div class="item">
-                                                <img src="{{ asset('images/slider/5.jpg') }}" alt="">
+                                                <img src="{{ asset('images/slider/2.jpg') }}" alt="Рисунок песком">
                                             </div>
                                             <div class="item">
-                                                <img src="{{ asset('images/slider/6.jpg') }}" alt="">
+                                                <img src="{{ asset('images/slider/3.jpg') }}" alt="Рисунок песком">
                                             </div>
                                         </div>
 
                                         <!--Элементы управления-->
-                                        <a class="left carousel-control" href="#moi-obyavleniya2" role="button" data-slide="prev">
+                                        <a class="left carousel-control" href="#photo2" role="button" data-slide="prev">
                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="right carousel-control" href="#moi-obyavleniya2" role="button" data-slide="next">
+                                        <a class="right carousel-control" href="#photo2" role="button" data-slide="next">
                                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
                                         </a>
@@ -153,19 +153,18 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="{{ route('obyavleniye')}}">
-                                    <div class="description">
-                                        <div class="description-top">
-                                            <div class="description-top-item">1-ком.</div>
-                                            <div class="description-top-item">60м2</div>
-                                            <div class="description-top-item">эт7/10</div>
-                                            <div class="description-top-item">25000</div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            Ул.Энгельса 17
-                                        </div>
+                                <div class="description">
+                                    <div class="description-top">
+                                        <div class="description-top-item">1-ком.</div>
+                                        <div class="description-top-item">60м2</div>
+                                        <div class="description-top-item">эт7/10</div>
+                                        <div class="description-top-item">25000</div>
                                     </div>
-                                </a>
+                                    <div class="description-bottom">
+                                        <div class="description-bottom-item">Ул.Энгельса 17</div>
+                                        <div class="description-bottom-item">8-962-594-38-80</div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -181,75 +180,65 @@
                             Удалить
                         </button>
                     </div>
-                    <table class="col-md-12 table-striped table-bordered">
+                    <table class="table-striped table-bordered table-offer">
                         <tr>
                             <td>
                                 <form role="form">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="checkbox-completed">
+                                            <input type="checkbox" name="checkbox-favorites">
                                         </label>
                                     </div>
                                 </form>
                             </td>
-                            {{--<td>--}}
-                                {{--<div id="drawingsWithSand" class="carousel slide" data-ride="carousel">--}}
-                                    {{--<!--Показатели-->--}}
-                                    {{--<ol class="carousel-indicators">--}}
-                                        {{--<li data-target="#drawingsWithSand" data-slide-to="0" class="active"></li>--}}
-                                        {{--<li data-target="#drawingsWithSand" data-slide-to="1"></li>--}}
-                                        {{--<li data-target="#drawingsWithSand" data-slide-to="2"></li>--}}
-                                    {{--</ol>--}}
-
-                                    {{--<!--Обертка для слайдов-->--}}
-                                    {{--<div class="carousel-inner" role="listbox">--}}
-                                        {{--<div class="item active">--}}
-                                            {{--<img class="center-block" src="{{ asset('images/slider/1.jpg') }}" alt="Стол для рисования песком">--}}
-                                        {{--</div>--}}
-                                        {{--<div class="item">--}}
-                                            {{--<img class="center-block" src="{{ asset('images/slider/2.jpg') }}" alt="Стол для рисования песком">--}}
-                                        {{--</div>--}}
-                                        {{--<div class="item">--}}
-                                            {{--<img class="center-block" src="{{ asset('images/slider/3.jpg') }}" alt="Стол для рисования песком">--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-
-                                    {{--<!--Элементы управления-->--}}
-                                    {{--<a class="left carousel-control" href="#drawingsWithSand" role="button" data-slide="prev">--}}
-                                        {{--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>--}}
-                                        {{--<span class="sr-only">Previous</span>--}}
-                                    {{--</a>--}}
-                                    {{--<a class="right carousel-control" href="#drawingsWithSand" role="button" data-slide="next">--}}
-                                        {{--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--}}
-                                        {{--<span class="sr-only">Next</span>--}}
-                                    {{--</a>--}}
-                                {{--</div>--}}
-                            {{--</td>--}}
                             <td>
-                                <a href="{{ route('obyavleniye')}}">
-                                    <div class="description">
-                                        <div class="description-top">
-                                            <div class="description-top-item">1-ком.</div>
-                                            <div class="description-top-item">60м2</div>
-                                            <div class="description-top-item">эт7/10</div>
-                                            <div class="description-top-item">25000</div>
-                                            <div class="description-top-item"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 23</div>
-                                        </div>
-                                        <div class="description-bottom">
-                                            <div class="description-bottom-item">Ул.Энгельса 17</div>
-                                            <div class="description-bottom-item">8-962-594-38-80</div>
-                                        </div>
-                                        <div class="description-additionally">
-                                            <div class="description-additionally-item">
-                                                Осталось 0 дней
+                                <div class="wrapper">
+                                    <div id="photo1" class="carousel slide" data-ride="carousel">
+                                        <!--Показатели-->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#photo1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#photo1" data-slide-to="1"></li>
+                                            <li data-target="#photo1" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!--Обертка для слайдов-->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="{{ asset('images/slider/1.jpg') }}" alt="Рисунок песком">
                                             </div>
-                                            <div class="description-additionally-item">
-                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Редактировать</button>
-                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Активировать</button>
+                                            <div class="item">
+                                                <img src="{{ asset('images/slider/2.jpg') }}" alt="Рисунок песком">
+                                            </div>
+                                            <div class="item">
+                                                <img src="{{ asset('images/slider/3.jpg') }}" alt="Рисунок песком">
                                             </div>
                                         </div>
+
+                                        <!--Элементы управления-->
+                                        <a class="left carousel-control" href="#photo1" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#photo1" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description">
+                                    <div class="description-top">
+                                        <div class="description-top-item">1-ком.</div>
+                                        <div class="description-top-item">60м2</div>
+                                        <div class="description-top-item">эт7/10</div>
+                                        <div class="description-top-item">25000</div>
+                                    </div>
+                                    <div class="description-bottom">
+                                        <div class="description-bottom-item">Ул.Энгельса 17</div>
+                                        <div class="description-bottom-item">8-962-594-38-80</div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -257,36 +246,59 @@
                                 <form role="form">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" name="checkbox-completed">
+                                            <input type="checkbox" name="checkbox-favorites">
                                         </label>
                                     </div>
                                 </form>
                             </td>
                             <td>
-                                <a href="{{ route('obyavleniye')}}">
-                                    <div class="description">
-                                        <div class="description-top">
-                                            <div class="description-top-item">1-ком.</div>
-                                            <div class="description-top-item">60м2</div>
-                                            <div class="description-top-item">эт7/10</div>
-                                            <div class="description-top-item">25000</div>
-                                            <div class="description-top-item"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 23</div>
-                                        </div>
-                                        <div class="description-bottom">
-                                            <div class="description-bottom-item">Ул.Энгельса 17</div>
-                                            <div class="description-bottom-item">8-962-594-38-80</div>
-                                        </div>
-                                        <div class="description-additionally">
-                                            <div class="description-additionally-item">
-                                                Осталось 0 дней
+                                <div class="wrapper">
+                                    <div id="photo2" class="carousel slide" data-ride="carousel">
+                                        <!--Показатели-->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#photo2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#photo2" data-slide-to="1"></li>
+                                            <li data-target="#photo2" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!--Обертка для слайдов-->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="{{ asset('images/slider/1.jpg') }}" alt="Рисунок песком">
                                             </div>
-                                            <div class="description-additionally-item">
-                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Редактировать</button>
-                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-flash"></span> Активировать</button>
+                                            <div class="item">
+                                                <img src="{{ asset('images/slider/2.jpg') }}" alt="Рисунок песком">
+                                            </div>
+                                            <div class="item">
+                                                <img src="{{ asset('images/slider/3.jpg') }}" alt="Рисунок песком">
                                             </div>
                                         </div>
+
+                                        <!--Элементы управления-->
+                                        <a class="left carousel-control" href="#photo2" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#photo2" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="description">
+                                    <div class="description-top">
+                                        <div class="description-top-item">1-ком.</div>
+                                        <div class="description-top-item">60м2</div>
+                                        <div class="description-top-item">эт7/10</div>
+                                        <div class="description-top-item">25000</div>
+                                    </div>
+                                    <div class="description-bottom">
+                                        <div class="description-bottom-item">Ул.Энгельса 17</div>
+                                        <div class="description-bottom-item">8-962-594-38-80</div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </table>

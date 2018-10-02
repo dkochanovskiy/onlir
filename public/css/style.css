@@ -260,7 +260,7 @@ footer a:hover{
     color: #ffffff!important;
 }
 .wrapper{
-    width: 32%;
+    width: 100%;
 }
 .container-content-title a:hover,
 .container-content-title a:active,
@@ -293,7 +293,7 @@ footer a:hover{
     text-align: center;
 }
 .description{
-    width: 600px;
+    width: 270px;
     margin: 0 0 0 60px;
     font-size: 17px!important;
     text-align: center;
