@@ -1,7 +1,7 @@
 @extends('template.template')
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="container">
             <hr class="col-md-12">
             <div class="col-md-2 text-center">
                 <ul class="nav nav-pills nav-stacked">
@@ -35,16 +35,10 @@
                     </div>
                 </div>
                 <div class="row margin-30">
+
                 </div>
-                @if( count($errors) > 0 )
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach( $errors->all() as $error ) <li>{{ $error }}</li> @endforeach
-                        </ul>
-                    </div>
-                @endif
                 <div class="row">
-                    <form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form">
+                    <form method="post" class="form-horizontal" role="form">
                         <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                         <div class="form-group">
                             <div class="dropdown">
@@ -126,105 +120,51 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="text" name="property_type" id="property_type" value="{{old('property_type')}}">
+                        <input type="hidden" name="propertyType" id="propertyType" value="Квартира">
                         <hr class="col-md-12">
                         <div class="header-in-the-form">
                             Об объекте
                         </div>
                         <div class="form-group">
-                            <label for="country" class="col-md-3 control-label">Страна</label>
+                            <label for="address" class="col-md-3 control-label">Адрес</label>
                             <div class="col-md-6">
-                                <input type="text" name="country" class="form-control" id="country" value="{{old('country')}}">
+                                <input type="text" name="address" class="form-control" id="address">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name_settlement" class="col-md-3 control-label">Город</label>
+                            <label for="metro" class="col-md-3 control-label">Ближайшая станция метро</label>
                             <div class="col-md-6">
-                                <input type="text" name="name_settlement" class="form-control" id="name_settlement" value="{{old('name_settlement')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="street" class="col-md-3 control-label">Улица</label>
-                            <div class="col-md-6">
-                                <input type="text" name="street" class="form-control" id="street" value="{{old('street')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="house_number" class="col-md-3 control-label">Номер дома</label>
-                            <div class="col-md-6">
-                                <input type="text" name="house_number" class="form-control" id="house_number" value="{{old('house_number')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="building_number" class="col-md-3 control-label">Номер строения</label>
-                            <div class="col-md-6">
-                                <input type="text" name="building_number" class="form-control" id="building_number" value="{{old('building_number')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="hull_number" class="col-md-3 control-label">Номер корпуса</label>
-                            <div class="col-md-6">
-                                <input type="text" name="hull_number" class="form-control" id="hull_number" value="{{old('hull_number')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="apartment_number" class="col-md-3 control-label">Номер квартиры</label>
-                            <div class="col-md-6">
-                                <input type="text" name="apartment_number" class="form-control" id="apartment_number" value="{{old('apartment_number')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="office_number" class="col-md-3 control-label">Номер офиса</label>
-                            <div class="col-md-6">
-                                <input type="text" name="office_number" class="form-control" id="office_number" value="{{old('office_number')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="cabinet_number" class="col-md-3 control-label">Номер кабинета</label>
-                            <div class="col-md-6">
-                                <input type="text" name="cabinet_number" class="form-control" id="cabinet_number" value="{{old('cabinet_number')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="warehouse_number" class="col-md-3 control-label">Номер складского помещения</label>
-                            <div class="col-md-6">
-                                <input type="text" name="warehouse_number" class="form-control" id="warehouse_number" value="{{old('warehouse_number')}}">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="nearest_metro_station" class="col-md-3 control-label">Ближайшая станция метро</label>
-                            <div class="col-md-6">
-                                <input type="text" name="nearest_metro_station" class="form-control" id="nearest_metro_station" value="{{old('nearest_metro_station')}}">
+                                <input type="text" class="form-control" id="metro">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="dropdown">
-                                <label class="col-md-3 control-label" for="to_metro">До метро</label>
+                                <label class="col-md-3 control-label" for="toMetro">До метро</label>
                                 <div class="col-md-2">
-                                    <button class="btn btn-default dropdown-toggle" type="button" name="to_metro" id="to_metro" value="{{old('to_metro')}}" data-toggle="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="toMetro" data-toggle="dropdown">
                                         Пешком
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Пешком', 'way_move_metro')">Пешком</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Пешком', 'inputToMetro')">Пешком</a>
                                         </li>
                                         <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Транспортом', 'way_move_metro')">Транспортом</a>
+                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Транспортом', 'inputToMetro')">Транспортом</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="travel_time_metro" value="{{old('travel_time_metro')}}">
+                                <input type="text" class="form-control" id="minutes">
                             </div>
                             <div class="row">
                                 <div class="col-md-1">
-                                    <label class="col-md-2 control-label" for="travel_time_metro">минут</label>
+                                    <label class="col-md-2 control-label" for="minutes">минут</label>
                                 </div>
                             </div>
                         </div>
-                        <input type="text" id="way_move_metro" name="way_move_metro" value="{{old('way_move_metro')}}">
+                        <input type="hidden" id="inputToMetro" name="inputToMetro" value="Пешком">
                         <hr class="col-md-12">
                         @include('include.property-type.house')
                         @include('include.property-type.room')
@@ -236,6 +176,12 @@
                         @include('include.property-type.warehouse-space')
                         @include('include.property-type.free-destination-room')
                         <hr>
+                        <div class="form-group">
+                            <label for="description" class="col-md-3 control-label">Описание</label>
+                            <div class="col-md-8">
+                                <textarea rows="5" class="form-control" name="description" id="description" placeholder="Опиcание..."></textarea>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label">Ремонт</label>
                             <div class="col-md-9">
@@ -255,26 +201,20 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="text" id="repairs" value="{{old('repairs')}}">
-                        <div class="form-group">
-                            <label for="description" class="col-md-3 control-label">Описание</label>
-                            <div class="col-md-8">
-                                <textarea rows="5" class="form-control" name="description" id="description" placeholder="Опиcание..."></textarea>
-                            </div>
-                        </div>
+                        <input type="hidden" id="inputRepairs" value="Косметический">
                         <hr>
                         <div class="header-in-the-form">
                             Арендная плата
                         </div>
                         <div class="form-group">
-                            <label for="monthly_rent" class="col-md-2 control-label">Цена в месяц</label>
+                            <label for="rent" class="col-md-2 control-label">Цена в месяц</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="monthly_rent" value="{{old('monthly_rent')}}">
+                                <input type="text" class="form-control" id="rent">
                             </div>
                             <div class="col-md-1">
                                 <div class="row">
                                     <div class="col-md-1">
-                                        <label for="monthly_rent" class="control-label">
+                                        <label for="rent" class="control-label">
                                             ₽
                                         </label>
                                     </div>
@@ -283,14 +223,14 @@
                             <div class="col-md-3">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="{{old('including_utilities')}}" id="including_utilities">
+                                        <input type="checkbox" value="">
                                         включая коммунальные
                                     </label>
                                 </div>
                             </div>
                             <label for="pledge" class="col-md-1 control-label">Залог</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="pledge" value="{{old('pledge')}}">
+                                <input type="text" class="form-control" id="pledge">
                             </div>
                             <div class="col-md-1">
                                 <div class="row">
@@ -308,24 +248,24 @@
                             @include('include.lease')
                         </div>
                         <hr>
-                        {{--<div class="header-in-the-form">--}}
-                            {{--Контактная информация--}}
-                        {{--</div>--}}
-                        {{--<div class="form-group">--}}
-                            {{--<label for="your-name" class="col-md-3 control-label">Ваше имя</label>--}}
-                            {{--<div class="col-md-2">--}}
-                                {{--<input type="text" class="form-control" id="your-name">--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="form-group">--}}
-                            {{--<label class="col-md-3 control-label">Телефон для связи</label>--}}
-                            {{--<div class="phone-communication-inner">--}}
-                                {{--<div class="phone-communication-font">--}}
-                                    {{--<span>8(962) 594-3880&#160;</span>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<hr>--}}
+                        <div class="header-in-the-form">
+                            Контактная информация
+                        </div>
+                        <div class="form-group">
+                            <label for="your-name" class="col-md-3 control-label">Ваше имя</label>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="your-name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Телефон для связи</label>
+                            <div class="phone-communication-inner">
+                                <div class="phone-communication-font">
+                                    <span>8(962) 594-3880&#160;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-offset-2 col-md-8 add-photo">
@@ -437,7 +377,7 @@
                         <hr>
                         <div class="submit-advertisement-button">
                             <div class="submit-advertisement-button-inner">
-                                <button type="submit" class="btn btn-success">Подать объявление</button>
+                                <div class="btn btn-success">Подать объявление</div>
                             </div>
                         </div>
                     </form>

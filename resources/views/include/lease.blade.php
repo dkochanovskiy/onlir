@@ -11,16 +11,16 @@
         </div>
     </div>
 </div>
-<input type="hidden" id="inputOfLease" value="Прямая аренда">
+<input type="text" id="rental_type" value="{{old("rental_type")}}">
 <div class="form-group">
-    <label for="theMinimumPeasePeriodFrom" class="col-md-3 control-label">Минимальный срок аренды от</label>
+    <label for="minimum_rental_period" class="col-md-3 control-label">Минимальный срок аренды от</label>
     <div class="col-md-2">
-        <input type="text" name="theMinimumPeasePeriodFrom" class="form-control" id="theMinimumPeasePeriodFrom">
+        <input type="text" name="minimum_rental_period" class="form-control" value="{{old("minimum_rental_period")}}" id="minimum_rental_period">
     </div>
     <div class="col-md-1">
         <div class="row">
             <div class="col-md-1">
-                <label for="theMinimumPeasePeriodFrom" class="control-label">мес.</label>
+                <label for="minimum_rental_period" class="control-label">мес.</label>
             </div>
         </div>
     </div>
@@ -38,4 +38,4 @@
         </div>
     </div>
 </div>
-<input type="hidden" id="inputRentalHolidays" value="Да">
+<input type="text" id="rental_holidays" value="{{old("rental_holidays")}}">

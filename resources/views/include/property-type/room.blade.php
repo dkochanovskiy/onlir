@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="rTotalArea" class="col-md-3 control-label">Общая площадь</label>
+        <label for="rTotalArea" class="col-md-3 control-label">Площадь квартиры</label>
         <div class="col-md-2">
             <input type="text" name="rTotalArea" class="form-control" id="rTotalArea">
         </div>

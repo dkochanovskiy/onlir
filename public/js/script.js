@@ -83,9 +83,9 @@ $('.contacts-inner-item').click(function(){
 $("#address").keyup(function(){
     $(".to-metro").css('display', 'block');
 });
-function DropDownListPropertyType(propertyType, show, hide1, hide2, hide3, hide4, hide5, hide6, hide7, hide8,hide9){
-    $("#propertyTypeMenu").html(propertyType + ' <span class="caret"></span>');
-    $("#propertyType").val(propertyType);
+function DropDownListPropertyType(property_type, show, hide1, hide2, hide3, hide4, hide5, hide6, hide7, hide8, hide9){
+    $("#propertyTypeMenu").html(property_type + ' <span class="caret"></span>');
+    $("#property_type").val(property_type);
 
     $("#" + hide1).css('display', 'none');
     $("#" + hide2).css('display', 'none');
@@ -99,16 +99,16 @@ function DropDownListPropertyType(propertyType, show, hide1, hide2, hide3, hide4
 
     $("#" + show).css('display', 'block');
 
-    if (propertyType == 'Дом'
-        || propertyType == 'Комната'
-        || propertyType == 'Квартира'
-        || propertyType == 'Коттедж'){
+    if (property_type == 'Дом'
+        || property_type == 'Комната'
+        || property_type == 'Квартира'
+        || property_type == 'Коттедж'){
             $('#lease').css('display', 'none');
-    } else if(propertyType == 'Готовый бизнес'
-        || propertyType == 'Офис'
-        || propertyType == 'Торговая площадь'
-        || propertyType == 'Складское помещение'
-        || propertyType == 'Помещение свободного назначения'){
+    } else if(property_type == 'Готовый бизнес'
+        || property_type == 'Офис'
+        || property_type == 'Торговая площадь'
+        || property_type == 'Складское помещение'
+        || property_type == 'Помещение свободного назначения'){
             $('#lease').css('display', 'block');
     }
 }
@@ -207,7 +207,7 @@ $('#cosmetic').on('click', function(){
     $('#cosmetic').removeClass('btn-default');
     $('#cosmetic').addClass('btn-primary');
 
-    $('#inputRepairs').val('Косметический');
+    $('#repairs').val('Косметический');
 });
 $('#designer').on('click', function(){
     $('#euro').removeClass('btn-primary');
@@ -222,7 +222,7 @@ $('#designer').on('click', function(){
     $('#designer').removeClass('btn-default');
     $('#designer').addClass('btn-primary');
 
-    $('#inputRepairs').val('Дизайнерский');
+    $('#repairs').val('Дизайнерский');
 });
 $('#euro').on('click', function(){
     $('#withoutRepair').removeClass('btn-primary');
@@ -237,7 +237,7 @@ $('#euro').on('click', function(){
     $('#euro').removeClass('btn-default');
     $('#euro').addClass('btn-primary');
 
-    $('#inputRepairs').val('Евро');
+    $('#repairs').val('Евро');
 });
 $('#withoutRepair').on('click', function(){
     $('#cosmetic').removeClass('btn-primary');
@@ -252,7 +252,7 @@ $('#withoutRepair').on('click', function(){
     $('#withoutRepair').removeClass('btn-default');
     $('#withoutRepair').addClass('btn-primary');
 
-    $('#inputRepairs').val('Без ремонта');
+    $('#repairs').val('Без ремонта');
 });
 $('#A').on('click', function(){
     $('#B').removeClass('btn-primary');
@@ -489,7 +489,7 @@ $('#directLease').on('click', function(){
     $('#directLease').removeClass('btn-default');
     $('#directLease').addClass('btn-primary');
 
-    $('#inputOfLease').val('Прямая аренда');
+    $('#rental_type').val('Прямая аренда');
 });
 $('#sublease').on('click', function(){
     $('#directLease').removeClass('btn-primary');
@@ -498,7 +498,7 @@ $('#sublease').on('click', function(){
     $('#sublease').removeClass('btn-default');
     $('#sublease').addClass('btn-primary');
 
-    $('#inputOfLease').val('Субаренда');
+    $('#rental_type').val('Субаренда');
 });
 $('#rentalHolidaysYes').on('click', function(){
     $('#rentalHolidaysNo').removeClass('btn-primary');
@@ -507,7 +507,7 @@ $('#rentalHolidaysYes').on('click', function(){
     $('#rentalHolidaysYes').removeClass('btn-default');
     $('#rentalHolidaysYes').addClass('btn-primary');
 
-    $('#inputRentalHolidays').val('Да');
+    $('#rental_holidays').val('Да');
 });
 $('#rentalHolidaysNo').on('click', function(){
     $('#rentalHolidaysYes').removeClass('btn-primary');
@@ -516,7 +516,7 @@ $('#rentalHolidaysNo').on('click', function(){
     $('#rentalHolidaysNo').removeClass('btn-default');
     $('#rentalHolidaysNo').addClass('btn-primary');
 
-    $('#inputRentalHolidays').val('Нет');
+    $('#rental_holidays').val('Нет');
 });
 $('#furnitureYes').on('click', function(){
     $('#furnitureNo').removeClass('btn-primary');
