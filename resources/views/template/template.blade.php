@@ -9,6 +9,7 @@
 
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-filestyle.min.js') }}"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <title>onlir - Аренда недвижимости в России</title>
@@ -86,12 +87,12 @@
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="{{ route('razmeshcheniye-obyavleniya') }}"
+                                            <a href="{{ route('vybor_tipa_nedvizhimosti') }}"
                                                onclick="event.preventDefault();
                                              document.getElementById('ad-delivery-form').submit();">
                                                 Подать объявления
                                             </a>
-                                            <form id="ad-delivery-form" action="{{ route('razmeshcheniye-obyavleniya') }}" method="POST" style="display: none;">
+                                            <form id="ad-delivery-form" action="{{ route('vybor_tipa_nedvizhimosti') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>

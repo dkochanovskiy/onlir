@@ -8,7 +8,7 @@
                     <li id="home"><a href="{{ route('moi-obyavleniya') }}">Мои объявления</a></li>
                     <li id="purse"><a href="{{ route('koshelek') }}">Кошелек</a></li>
                     <li id="amend-contract"><a href="{{ route('redaktirovaniye-dogovora') }}">Редактирование договора</a></li>
-                    <li class="active" id="ad-delivery"><a href="{{ route('razmeshcheniye-obyavleniya') }}">Размещение объявления</a></li>
+                    <li class="active" id="ad-delivery"><a href="{{ route('vybor_tipa_nedvizhimosti') }}">Размещение объявления</a></li>
                     <li id="settings"><a href="{{ route('nastroyki') }}">Настройки</a></li>
                 </ul>
             </div>
