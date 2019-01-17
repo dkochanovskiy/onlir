@@ -1,16 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\AreaPersonal;
+namespace App\Http\Controllers\AreaPersonal\PropertyTypes;
 
-use App\Http\Controllers\Controller;
-use App\Offer;
 use Illuminate\Http\Request;
-use Validator;
+use App\Http\Controllers\Controller;
 
-class OfferController extends Controller
+class ApartmentController extends Controller
 {
     public function index(){
-        return view('personal-area.razmeshcheniye-obyavleniya');
+        return view('personal-area.property_types.apartment');
     }
 
     public function save(Request $request)
