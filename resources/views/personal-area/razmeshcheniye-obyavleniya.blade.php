@@ -44,8 +44,9 @@
                     </div>
                 @endif
                 <div class="row">
-                    <form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form">
-                        <input name="_token" type="hidden" value="{{ csrf_token() }}" />
+                    {!! Form::open(array('route' => 'razmeshcheniye-obyavleniya', 'method' => 'post', 'class' => 'form-horizontal', 'files' => true, 'role' => 'form')) !!}
+                    {{--<form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form">--}}
+                        {{--<input name="_token" type="hidden" value="{{ csrf_token() }}" />--}}
                         <div class="form-group">
                             <div class="dropdown">
                                 <label class="col-md-3 control-label" for="propertyTypeMenu">Тип недвижимости </label>
@@ -326,6 +327,17 @@
                             {{--</div>--}}
                         {{--</div>--}}
                         {{--<hr>--}}
+                        <div class="form-group">
+                            {!! Form::label('images', 'Изображение:', ['class' => 'col-xs-2 control-label']) !!}
+                            <div class="col-md-8">
+                                {!! Form::file('images', ['value' => old('images'), 'class' => 'filestyle btn btn-primary', 'data-buttonText' => 'Выберите изображения', 'data-buttonName' => 'btn-primary', 'data-placeholder' => 'Файла нет'])!!}
+                            </div>
+                        </div>
+                        {{--<div class="form-group">--}}
+                            {{--<div class="col-md-offset-2 col-md-10">--}}
+                                {{--{!! Form::button('Сохранить', ['class' => 'btn btn-primary', 'type' => 'submit']) !!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-offset-2 col-md-8 add-photo">
@@ -440,7 +452,8 @@
                                 <button type="submit" class="btn btn-success">Подать объявление</button>
                             </div>
                         </div>
-                    </form>
+                    {!! Form::close() !!}
+                    {{--</form>--}}
                 </div>
             </div>
         </div><!--row-->

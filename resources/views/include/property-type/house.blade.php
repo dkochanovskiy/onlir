@@ -1,8 +1,8 @@
 <div id="house">
     <div class="form-group">
-        <label for="numberBerths" class="col-md-3 control-label">Год постройки</label>
+        <label for="year_construction" class="col-md-3 control-label">Год постройки</label>
         <div class="col-md-2">
-            <input type="text" name="yearOfConstruction" class="form-control" id="yearOfConstruction">
+            <input type="text" name="year_construction" class="form-control" id="year_construction">
         </div>
     </div>
     <div class="form-group">

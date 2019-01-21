@@ -9,6 +9,7 @@
 
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-filestyle.min.js') }}"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <title>onlir - Аренда недвижимости в России</title>
