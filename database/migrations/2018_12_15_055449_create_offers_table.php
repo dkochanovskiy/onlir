@@ -27,7 +27,7 @@ class CreateOffersTable extends Migration
             $table->unsignedTinyInteger('office_number')->nullable();
             $table->unsignedTinyInteger('cabinet_number')->nullable();
             $table->unsignedTinyInteger('warehouse_number')->nullable();
-            $table->string('nearest__metro_station', 100)->nullable();
+            $table->string('nearest_metro_station', 100)->nullable();
             $table->unsignedTinyInteger('way_move_metro')->nullable();
             $table->unsignedTinyInteger('travel_time_metro')->nullable();
 
@@ -37,24 +37,25 @@ class CreateOffersTable extends Migration
             $table->unsignedTinyInteger('including_utilities')->nullable();
             $table->unsignedTinyInteger('pledge')->nullable();
             $table->string('images')->nullable();
-            $table->unsignedTinyInteger('ways_post')->nullable();
+            $table->string('ways_post')->nullable();
             $table->unsignedTinyInteger('number_floors')->nullable();
             $table->unsignedTinyInteger('furniture')->nullable();
-            $table->unsignedTinyInteger('elevator')->nullable();
+            $table->string('elevator')->nullable();
 
             $table->unsignedTinyInteger('parking')->nullable();
             $table->unsignedTinyInteger('guarded')->nullable();
             $table->unsignedTinyInteger('floor_number')->nullable();
             $table->unsignedTinyInteger('number_rooms')->nullable();
-            $table->unsignedTinyInteger('possible_with_children')->nullable();
-            $table->unsignedTinyInteger('pets_allowed')->nullable();
-            $table->unsignedTinyInteger('can_smoke')->nullable();
+            $table->string('possible_with_children')->nullable();
+            $table->string('pets_allowed')->nullable();
+            $table->string('can_smoke')->nullable();
             $table->unsignedTinyInteger('fridge')->nullable();
             $table->unsignedTinyInteger('washer')->nullable();
             $table->unsignedTinyInteger('dishwasher')->nullable();
 
             $table->unsignedTinyInteger('television')->nullable();
             $table->unsignedTinyInteger('microwave')->nullable();
+            $table->unsignedTinyInteger('air_conditioning')->nullable();
             $table->unsignedTinyInteger('conditioning')->nullable();
             $table->unsignedTinyInteger('internet')->nullable();
             $table->unsignedTinyInteger('garage')->nullable();
@@ -80,7 +81,7 @@ class CreateOffersTable extends Migration
             $table->unsignedTinyInteger('flat_area')->nullable();
             $table->unsignedTinyInteger('room_area')->nullable();
             $table->unsignedTinyInteger('number_beds')->nullable();
-            $table->unsignedTinyInteger('kitchen_area')->nullable();
+            $table->unsignedTinyInteger('kitchen_area_area')->nullable();
             $table->unsignedTinyInteger('total_area')->nullable();
             $table->unsignedTinyInteger('living_space')->nullable();
             $table->unsignedTinyInteger('number_wet_spots')->nullable();

@@ -8,6 +8,6 @@ class ChoiceOfPropertyTypeController extends Controller
 {
     public function index()
     {
-        return view('personal-area.vybor_tipa_nedvizhimosti');
+        return view('personal-area.razmeshcheniye-obyavleniya');
     }
 }

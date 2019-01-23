@@ -33,37 +33,8 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('/redaktirovaniye-dogovora', 'AreaPersonal\AmendContractController@index')->name('redaktirovaniye-dogovora');
     Route::post('/redaktirovaniye-dogovora', 'AreaPersonal\AmendContractController@index');
 
-    Route::get('/vybor_tipa_nedvizhimosti', 'AreaPersonal\ChoiceOfPropertyTypeController@index')->name('vybor_tipa_nedvizhimosti');
-
-    Route::get('/house', 'AreaPersonal\PropertyTypes\HouseController@index')->name('house');
-    Route::post('/house', 'AreaPersonal\PropertyTypes\HouseController@save');
-
-    Route::get('/room', 'AreaPersonal\PropertyTypes\RoomController@index')->name('room');
-    Route::post('/room', 'AreaPersonal\PropertyTypes\RoomController@save');
-
-    Route::get('/apartment', 'AreaPersonal\PropertyTypes\ApartmentController@index')->name('apartment');
-    Route::post('/apartment', 'AreaPersonal\PropertyTypes\ApartmentController@save');
-
-    Route::get('/cottage', 'AreaPersonal\PropertyTypes\CottageController@index')->name('cottage');
-    Route::post('/cottage', 'AreaPersonal\PropertyTypes\CottageController@save');
-
-    Route::get('/ready_business', 'AreaPersonal\PropertyTypes\ReadyBusinessController@index')->name('ready_business');
-    Route::post('/ready_business', 'AreaPersonal\PropertyTypes\ReadyBusinessController@save');
-
-    Route::get('/office', 'AreaPersonal\PropertyTypes\OfficeController@index')->name('office');
-    Route::post('/office', 'AreaPersonal\PropertyTypes\OfficeController@save');
-
-    Route::get('/trade_area', 'AreaPersonal\PropertyTypes\TradeAreaController@index')->name('trade_area');
-    Route::post('/trade_area', 'AreaPersonal\PropertyTypes\TradeAreaController@save');
-
-    Route::get('/warehouse_space', 'AreaPersonal\PropertyTypes\WarehouseSpaceController@index')->name('warehouse_space');
-    Route::post('/warehouse_space', 'AreaPersonal\PropertyTypes\WarehouseSpaceController@save');
-
-    Route::get('/free_destination_room', 'AreaPersonal\PropertyTypes\FreeDestinationRoomController@index')->name('free_destination_room');
-    Route::post('/free_destination_room', 'AreaPersonal\PropertyTypes\FreeDestinationRoomController@save');
-
     Route::get('/razmeshcheniye-obyavleniya', 'AreaPersonal\OfferController@index')->name('razmeshcheniye-obyavleniya');
-    Route::post('/razmeshcheniye-obyavleniya', 'AreaPersonal\OfferController@save');
+    Route::post('/razmeshcheniye-obyavleniya', 'AreaPersonal\OfferController@index');
 
     Route::get('/soobshcheniya', 'AreaPersonal\MessagesController@index')->name('soobshcheniya');
     Route::post('/soobshcheniya', 'AreaPersonal\MessagesController@postMessages');

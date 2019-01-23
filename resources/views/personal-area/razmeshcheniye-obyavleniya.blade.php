@@ -8,7 +8,7 @@
                     <li id="home"><a href="{{ route('moi-obyavleniya') }}">Мои объявления</a></li>
                     <li id="purse"><a href="{{ route('koshelek') }}">Кошелек</a></li>
                     <li id="amend-contract"><a href="{{ route('redaktirovaniye-dogovora') }}">Редактирование договора</a></li>
-                    <li class="active" id="ad-delivery"><a href="{{ route('vybor_tipa_nedvizhimosti') }}">Размещение объявления</a></li>
+                    <li class="active" id="ad-delivery"><a href="{{ route('razmeshcheniye-obyavleniya') }}">Размещение объявления</a></li>
                     <li id="settings"><a href="{{ route('nastroyki') }}">Настройки</a></li>
                 </ul>
             </div>
@@ -45,8 +45,8 @@
                 @endif
                 <div class="row">
                     {!! Form::open(array('route' => 'razmeshcheniye-obyavleniya', 'method' => 'post', 'class' => 'form-horizontal', 'files' => true, 'role' => 'form')) !!}
-                    {{--<form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form">--}}
-                        {{--<input name="_token" type="hidden" value="{{ csrf_token() }}" />--}}
+                    <form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form">
+                        <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                         <div class="form-group">
                             <div class="dropdown">
                                 <label class="col-md-3 control-label" for="propertyTypeMenu">Тип недвижимости </label>
@@ -202,17 +202,13 @@
                             <div class="dropdown">
                                 <label class="col-md-3 control-label" for="to_metro">До метро</label>
                                 <div class="col-md-2">
-                                    <button class="btn btn-default dropdown-toggle" type="button" name="to_metro" id="to_metro" value="{{old('to_metro')}}" data-toggle="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="toMetro" data-toggle="dropdown">
                                         Пешком
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Пешком', 'way_move_metro')">Пешком</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Транспортом', 'way_move_metro')">Транспортом</a>
-                                        </li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Пешком', 'way_move_metro')">Пешком</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Транспортом', 'way_move_metro')">Транспортом</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -227,15 +223,15 @@
                         </div>
                         <input type="text" id="way_move_metro" name="way_move_metro" value="{{old('way_move_metro')}}">
                         <hr class="col-md-12">
-                        @include('include.property-type.house')
-                        @include('include.property-type.room')
+                        {{--@include('include.property-type.house')--}}
+                        {{--@include('include.property-type.room')--}}
                         @include('include.property-type.apartment')
-                        @include('include.property-type.cottage')
-                        @include('include.property-type.ready-business')
-                        @include('include.property-type.office')
-                        @include('include.property-type.trade-area')
-                        @include('include.property-type.warehouse-space')
-                        @include('include.property-type.free-destination-room')
+                        {{--@include('include.property-type.cottage')--}}
+                        {{--@include('include.property-type.ready-business')--}}
+                        {{--@include('include.property-type.office')--}}
+                        {{--@include('include.property-type.trade-area')--}}
+                        {{--@include('include.property-type.warehouse-space')--}}
+                        {{--@include('include.property-type.free-destination-room')--}}
                         <hr>
                         <div class="form-group">
                             <label class="col-md-3 control-label">Ремонт</label>
@@ -309,55 +305,10 @@
                             @include('include.lease')
                         </div>
                         <hr>
-                        {{--<div class="header-in-the-form">--}}
-                            {{--Контактная информация--}}
-                        {{--</div>--}}
-                        {{--<div class="form-group">--}}
-                            {{--<label for="your-name" class="col-md-3 control-label">Ваше имя</label>--}}
-                            {{--<div class="col-md-2">--}}
-                                {{--<input type="text" class="form-control" id="your-name">--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="form-group">--}}
-                            {{--<label class="col-md-3 control-label">Телефон для связи</label>--}}
-                            {{--<div class="phone-communication-inner">--}}
-                                {{--<div class="phone-communication-font">--}}
-                                    {{--<span>8(962) 594-3880&#160;</span>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<hr>--}}
                         <div class="form-group">
                             {!! Form::label('images', 'Изображение:', ['class' => 'col-xs-2 control-label']) !!}
                             <div class="col-md-8">
                                 {!! Form::file('images', ['value' => old('images'), 'class' => 'filestyle btn btn-primary', 'data-buttonText' => 'Выберите изображения', 'data-buttonName' => 'btn-primary', 'data-placeholder' => 'Файла нет'])!!}
-                            </div>
-                        </div>
-                        {{--<div class="form-group">--}}
-                            {{--<div class="col-md-offset-2 col-md-10">--}}
-                                {{--{!! Form::button('Сохранить', ['class' => 'btn btn-primary', 'type' => 'submit']) !!}--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-offset-2 col-md-8 add-photo">
-                                    <div class="camera">
-                                        <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-camera"></span>
-                                        </button>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="button" class="btn btn-primary">
-                                    <span class="glyphicon glyphicon-plus">
-                                        Загрузить фото
-                                    </span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-md-offset-2 col-md-8 text-center">
-                                    Не допускаются фотографии содержащие водяные знаки, чужие объекты, контакты и рекламные
-                                    баннеры. Максимальный размер фото 10 мб.   JGP, PNG, GIF
-                                </div>
                             </div>
                         </div>
                         <hr class="col-md-12">
@@ -370,7 +321,7 @@
                                             <div class="col-md-3 ways-accommodation-input-wrap">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation1" value="Бесплатное" checked>
+                                                        <input type="radio" class="ways-accommodation-input" name="ways_post" id="ways-accommodation1" value="Бесплатное" checked>
                                                         Бесплатное
                                                     </label>
                                                 </div>
@@ -385,7 +336,7 @@
                                             <div class="col-md-3 ways-accommodation-input-wrap">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation2" value="Выделенное">
+                                                        <input type="radio" class="ways-accommodation-input" name="ways_post" id="ways-accommodation2" value="Выделенное">
                                                         Выделенное
                                                     </label>
                                                 </div>
@@ -400,7 +351,7 @@
                                             <div class="col-md-3 ways-accommodation-input-wrap">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation3" value="Поднятие">
+                                                        <input type="radio" class="ways-accommodation-input" name="ways_post" id="ways-accommodation3" value="Поднятие">
                                                         Поднятие
                                                     </label>
                                                 </div>
@@ -415,7 +366,7 @@
                                             <div class="col-md-3 ways-accommodation-input-wrap">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" class="ways-accommodation-input" name="optionsRadios" id="ways-accommodation4" value="Топ-3">
+                                                        <input type="radio" class="ways-accommodation-input" name="ways_post" id="ways-accommodation4" value="Топ-3">
                                                         Топ-3
                                                     </label>
                                                 </div>

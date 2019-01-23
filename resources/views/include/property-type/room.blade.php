@@ -32,20 +32,20 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="rNumberBerths" class="col-md-3 control-label">Количество спальных мест</label>
+        <label for="rnumber_beds" class="col-md-3 control-label">Количество спальных мест</label>
         <div class="col-md-2">
-            <input type="text" name="rNumberBerths" class="form-control" id="rNumberBerths">
+            <input type="text" name="rnumber_beds" class="form-control" id="rnumber_beds">
         </div>
     </div>
     <div class="form-group">
-        <label for="rTotalArea" class="col-md-3 control-label">Площадь квартиры</label>
+        <label for="rtotal_area" class="col-md-3 control-label">Площадь квартиры</label>
         <div class="col-md-2">
-            <input type="text" name="rTotalArea" class="form-control" id="rTotalArea">
+            <input type="text" name="rtotal_area" class="form-control" id="rtotal_area">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="rTotalArea">м<sup>2</sup></label>
+                    <label class="control-label" for="rtotal_area">м<sup>2</sup></label>
                 </div>
             </div>
         </div>
@@ -64,14 +64,14 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="rKitchenArea" class="col-md-3 control-label">Площадь кухни</label>
+        <label for="rkitchen_areaArea" class="col-md-3 control-label">Площадь кухни</label>
         <div class="col-md-2">
-            <input type="text" name="rKitchenArea" class="form-control" id="rKitchenArea">
+            <input type="text" name="rkitchen_areaArea" class="form-control" id="rkitchen_areaArea">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="rKitchenArea">м<sup>2</sup></label>
+                    <label class="control-label" for="rkitchen_areaArea">м<sup>2</sup></label>
                 </div>
             </div>
         </div>
@@ -165,19 +165,19 @@
         <div class="col-md-offset-3">
             <div class="radio">
                 <label>
-                    <input type="radio" name="rKitchenSet" id="rKitchenSet1" checked>
+                    <input type="radio" name="rkitchen_areaSet" id="rkitchen_areaSet1" checked>
                     Кухонный гарнитур есть
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="rKitchenSet" id="rKitchenSet2">
+                    <input type="radio" name="rkitchen_areaSet" id="rkitchen_areaSet2">
                     Частично
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="rKitchenSet" id="rKitchenSet3">
+                    <input type="radio" name="rkitchen_areaSet" id="rkitchen_areaSet3">
                     Отсутствует
                 </label>
             </div>

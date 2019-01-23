@@ -19,67 +19,67 @@
             </div>
             <div class="checkbox">
                 <label style="margin: 10px 0 0 0">
-                    <input type="checkbox" value="">
+                    <input type="checkbox" value="1" name="isolated">
                     изолированная
                 </label>
             </div>
         </div>
     </div>
-    <input type="hidden" id="outputSelectNumberRooms" value="1">
+    <input type="hidden" id="number_rooms" value="1">
     <div class="form-group">
-        <label for="numberBerths" class="col-md-3 control-label">Количество спальных мест</label>
+        <label for="number_beds" class="col-md-3 control-label">Количество спальных мест</label>
         <div class="col-md-2">
-            <input type="text" name="numberBerths" class="form-control" id="numberBerths">
+            <input type="text" name="number_beds" class="form-control" id="number_beds">
         </div>
     </div>
     <div class="form-group">
-        <label for="totalArea" class="col-md-3 control-label">Общая площадь</label>
+        <label for="total_area" class="col-md-3 control-label">Общая площадь</label>
         <div class="col-md-2">
-            <input type="text" name="numberBerths" class="form-control" id="totalArea">
+            <input type="text" name="total_area" class="form-control" id="total_area">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="totalArea">м<sup>2</sup></label>
+                    <label class="control-label" for="total_area">м<sup>2</sup></label>
                 </div>
             </div>
         </div>
     </div>
     <div class="form-group">
-        <label class="col-md-3 control-label" for="residentialArea">Жилая площадь</label>
+        <label class="col-md-3 control-label" for="living_space">Жилая площадь</label>
         <div class="col-md-2">
-            <input type="text" class="form-control" id="residentialArea">
+            <input type="text" class="form-control" id="living_space">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="residentialArea">м<sup>2</sup></label>
+                    <label class="control-label" for="living_space">м<sup>2</sup></label>
                 </div>
             </div>
         </div>
     </div>
     <div class="form-group">
-        <label class="col-md-3 control-label" for="kitchen">Кухня</label>
+        <label class="col-md-3 control-label" for="kitchen_area">Площадь кухни</label>
         <div class="col-md-2">
-            <input type="text" class="form-control" id="kitchen">
+            <input type="text" class="form-control" id="kitchen_area">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="kitchen">м<sup>2</sup></label>
+                    <label class="control-label" for="kitchen_area">м<sup>2</sup></label>
                 </div>
             </div>
         </div>
     </div>
     <div class="form-group">
-        <label class="col-md-3 control-label" for="floorNumber">Этаж/этажность</label>
+        <label class="col-md-3 control-label" for="floor_number">Этаж/этажность</label>
         <div class="col-md-2">
-            <input type="text" class="form-control" id="floorNumber">
+            <input type="text" class="form-control" id="floor_number">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="totalFloors">
+                    <label class="control-label" for="number_floors">
                         из
                     </label>
                 </div>
@@ -88,7 +88,7 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-4">
-                    <input type="text" class="form-control" id="totalFloors">
+                    <input type="text" class="form-control" id="number_floors">
                 </div>
             </div>
         </div>
@@ -98,19 +98,19 @@
         <div class="col-md-offset-3">
             <div class="radio">
                 <label>
-                    <input type="radio" name="balcony" id="balcony1" checked>
+                    <input type="radio" name="balcony" id="balcony1" value="1" checked>
                     Балкон
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="balcony" id="balcony2">
+                    <input type="radio" name="balcony" id="balcony2" value="2">
                     Лоджия
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="balcony" id="balcony3">
+                    <input type="radio" name="balcony" id="balcony3" value="3">
                     Отсутствует
                 </label>
             </div>
@@ -120,46 +120,46 @@
         <div class="col-md-offset-3">
             <div class="radio">
                 <label>
-                    <input type="radio" name="furniture" id="furniture1" checked>
+                    <input type="radio" name="furniture" id="furniture1" value="1" checked>
                     Мебель есть
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="furniture" id="furniture2">
+                    <input type="radio" name="furniture" id="furniture2" value="2">
                     Частично
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="furniture" id="furniture3">
+                    <input type="radio" name="furniture" id="furniture3" value="3">
                     Отсутствует
                 </label>
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <div class="col-md-offset-3">
-            <div class="radio">
-                <label>
-                    <input type="radio" name="kitchenSet" id="kitchenSet1" checked>
-                    Кухонный гарнитур есть
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="kitchenSet" id="kitchenSet2">
-                    Частично
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="kitchenSet" id="kitchenSet3">
-                    Отсутствует
-                </label>
-            </div>
-        </div>
-    </div>
+    {{--<div class="form-group">--}}
+        {{--<div class="col-md-offset-3">--}}
+            {{--<div class="radio">--}}
+                {{--<label>--}}
+                    {{--<input type="radio" name="kitchenSet" id="kitchenSet1" checked>--}}
+                    {{--Кухонный гарнитур есть--}}
+                {{--</label>--}}
+            {{--</div>--}}
+            {{--<div class="radio">--}}
+                {{--<label>--}}
+                    {{--<input type="radio" name="kitchenSet" id="kitchenSet2">--}}
+                    {{--Частично--}}
+                {{--</label>--}}
+            {{--</div>--}}
+            {{--<div class="radio">--}}
+                {{--<label>--}}
+                    {{--<input type="radio" name="kitchenSet" id="kitchenSet3">--}}
+                    {{--Отсутствует--}}
+                {{--</label>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <hr class="col-md-12">
     <div class="form-group">
         <div class="dropdown">
@@ -178,44 +178,46 @@
             </div>
         </div>
     </div>
-    <input type="hidden" id="aOutputElevator" value="Пассажирский">
+    <input type="hidden" id="aOutputElevator" value="Пассажирский" name="elevator">
     <hr class="col-md-12">
     <div class="form-group">
         <label class="col-md-3 control-label">Можно с детьми</label>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary" id="labelPossibleWithChildrenYes">
-                <input type="radio" name="possibleWithChildren" value="Да">Да
+                <input type="radio" value="1">Да
             </label>
             <label class="btn btn-default" id="labelPossibleWithChildrenNo">
-                <input type="radio" name="possibleWithChildren" value="Нет">Нет
+                <input type="radio" value="0">Нет
             </label>
         </div>
     </div>
-    <input type="hidden" id="inputPossibleWithChildren" value="Да">
+    <input type="hidden" id="inputPossibleWithChildren" value="Да" name="possible_with_children">
+
     <div class="form-group">
         <label class="col-md-3 control-label">Можно с животными</label>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary" id="labelPossibleWithAnimalsYes">
-                <input type="radio" name="possibleWithAnimals" value="Да">Да
+                <input type="radio" value="1">Да
             </label>
             <label class="btn btn-default" id="labelPossibleWithAnimalsNo">
-                <input type="radio" name="possibleWithAnimals" value="Нет">Нет
+                <input type="radio" value="0">Нет
             </label>
         </div>
     </div>
-    <input type="hidden" id="inputPossibleWithAnimals" value="Да">
+    <input type="hidden" id="inputPossibleWithAnimals" value="1" name="pets_allowed">
+
     <div class="form-group">
         <label class="col-md-3 control-label">Можно курить</label>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary" id="labelYouCanSmokeYes">
-                <input type="radio" name="youCanSmoke" value="Да">Да
+                <input type="radio" value="1">Да
             </label>
             <label class="btn btn-default" id="labelYouCanSmokeNo">
-                <input type="radio" name="youCanSmoke" value="Нет">Нет
+                <input type="radio" value="0">Нет
             </label>
         </div>
     </div>
-    <input type="hidden" id="inputYouCanSmoke" value="Да">
+    <input type="hidden" id="inputYouCanSmoke" value="Да" name="can_smoke">
     <hr class="col-md-12">
     <div class="header-in-the-form">
         Удобства
@@ -230,31 +232,31 @@
             <div class="col-md-offset-3 col-md-6">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="fridge">
                         Холодильник
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="washer">
                         Стиральная машина
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="dishwasher">
                         Посудомоечная машина
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="television">
                         Телевизор
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="microwave">
                         Микроволновая печь
                     </label>
                 </div>
@@ -269,13 +271,13 @@
             <div class="col-md-offset-3 col-md-6">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="air_conditioning">
                         Кондиционер
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="internet">
                         Интернет
                     </label>
                 </div>
@@ -290,19 +292,19 @@
             <div class="col-md-offset-3 col-md-6">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="school">
                         Школа
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="playground">
                         Детская площадка
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="">
+                        <input type="checkbox" value="0" name="kindergarten">
                         Детский сад
                     </label>
                 </div>

@@ -32,22 +32,22 @@
     </div>
     <input type="hidden" id="outputTypeOfHouse" value="Кирпичный">
     <div class="form-group">
-        <label for="houseArea" class="col-md-3 control-label">Площадь дома</label>
+        <label for="house_area" class="col-md-3 control-label">Площадь дома</label>
         <div class="col-md-2">
-            <input type="text" name="houseArea" class="form-control" id="houseArea">
+            <input type="text" name="house_area" class="form-control" id="house_area">
         </div>
         <div class="col-md-1">
             <div class="row">
                 <div class="col-md-1">
-                    <label class="control-label" for="houseArea">м<sup>2</sup></label>
+                    <label class="control-label" for="house_area">м<sup>2</sup></label>
                 </div>
             </div>
         </div>
     </div>
     <div class="form-group">
-        <label for="floorsInTheHouse" class="col-md-3 control-label">Этажей в доме</label>
+        <label for="number_floors" class="col-md-3 control-label">Этажей в доме</label>
         <div class="col-md-2">
-            <input type="text" name="floorsInTheHouse" class="form-control" id="floorsInTheHouse">
+            <input type="text" name="number_floors" class="form-control" id="number_floors">
         </div>
     </div>
     <div class="form-group">
