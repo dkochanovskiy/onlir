@@ -1,5 +1,18 @@
 <div id="apartment">
     <div class="form-group">
+        <div class="col-md-2">
+            <select class="form-control" name="number_rooms">
+                <option value="Студия">Студия</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
         <div class="dropdown">
             <label class="col-md-3 control-label" for="selectNumberRooms">Количество комнат</label>
             <div class="col-md-2">
@@ -8,24 +21,26 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', 'Студия', 'outputSelectNumberRooms')">Студия</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '1', 'outputSelectNumberRooms')">1</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '2', 'outputSelectNumberRooms')">2</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '3', 'outputSelectNumberRooms')">3</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '4', 'outputSelectNumberRooms')">4</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '5', 'outputSelectNumberRooms')">5</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '6', 'outputSelectNumberRooms')">6</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', 'Студия', 'number_rooms')">Студия</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '1', 'number_rooms')">1</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '2', 'number_rooms')">2</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '3', 'number_rooms')">3</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '4', 'number_rooms')">4</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '5', 'number_rooms')">5</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '6', 'number_rooms')">6</a></li>
                 </ul>
-            </div>
-            <div class="checkbox">
-                <label style="margin: 10px 0 0 0">
-                    <input type="checkbox" value="1" name="isolated">
-                    изолированная
-                </label>
             </div>
         </div>
     </div>
-    <input type="hidden" id="number_rooms" value="1">
+    <div class="form-group">
+        <div class="checkbox">
+            <label style="margin: 10px 0 0 0">
+                <input type="checkbox" value="1" name="isolated">
+                изолированная
+            </label>
+        </div>
+    </div>
+    {{--<input type="text" id="number_rooms" value="1">--}}
     <div class="form-group">
         <label for="number_beds" class="col-md-3 control-label">Количество спальных мест</label>
         <div class="col-md-2">
