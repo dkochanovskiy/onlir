@@ -44,23 +44,23 @@
             </div>
         </div>
     </div>
+    {{--<div class="form-group">--}}
+        {{--<label for="number_floors" class="col-md-3 control-label">Этажей в доме</label>--}}
+        {{--<div class="col-md-2">--}}
+            {{--<input type="text" name="number_floors" class="form-control" id="number_floors">--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <div class="form-group">
-        <label for="number_floors" class="col-md-3 control-label">Этажей в доме</label>
-        <div class="col-md-2">
-            <input type="text" name="number_floors" class="form-control" id="number_floors">
-        </div>
+        {{--<label for="hNumberOfRooms" class="col-md-3 control-label">Количество комнат</label>--}}
+        {{--<div class="col-md-2">--}}
+            {{--<input type="text" name="hNumberOfRooms" class="form-control" id="hNumberOfRooms">--}}
+        {{--</div>--}}
     </div>
     <div class="form-group">
-        <label for="hNumberOfRooms" class="col-md-3 control-label">Количество комнат</label>
-        <div class="col-md-2">
-            <input type="text" name="hNumberOfRooms" class="form-control" id="hNumberOfRooms">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="numberOfBedrooms" class="col-md-3 control-label">Количество спален</label>
-        <div class="col-md-2">
-            <input type="text" name="numberOfBedrooms" class="form-control" id="numberOfBedrooms">
-        </div>
+        {{--<label for="numberOfBedrooms" class="col-md-3 control-label">Количество спален</label>--}}
+        {{--<div class="col-md-2">--}}
+            {{--<input type="text" name="numberOfBedrooms" class="form-control" id="numberOfBedrooms">--}}
+        {{--</div>--}}
         <div class="checkbox">
             <label>
                 <input type="checkbox" value="">
@@ -83,17 +83,17 @@
     </div>
     <input type="hidden" id="outputBathroom" value="На улице">
     <div class="form-group">
-        <label for="landArea" class="col-md-3 control-label">Площадь участка</label>
-        <div class="col-md-2">
-            <input type="text" name="landArea" class="form-control" id="landArea">
-        </div>
-        <div class="col-md-1">
-            <div class="row">
-                <div class="col-md-1">
-                    <label class="control-label" for="landArea">соток</label>
-                </div>
-            </div>
-        </div>
+        {{--<label for="landArea" class="col-md-3 control-label">Площадь участка</label>--}}
+        {{--<div class="col-md-2">--}}
+            {{--<input type="text" name="landArea" class="form-control" id="landArea">--}}
+        {{--</div>--}}
+        {{--<div class="col-md-1">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col-md-1">--}}
+                    {{--<label class="control-label" for="landArea">соток</label>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
     </div>
     <div class="form-group">
         <div class="dropdown">

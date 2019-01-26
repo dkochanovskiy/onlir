@@ -1,7 +1,8 @@
 <div id="apartment">
     <div class="form-group">
+        <label class="col-md-3 control-label" for="number_rooms">Количество комнат</label>
         <div class="col-md-2">
-            <select class="form-control" name="number_rooms">
+            <select class="form-control" name="number_rooms" value="{{old('number_rooms')}}">
                 <option value="Студия">Студия</option>
                 <option value="1" selected>1</option>
                 <option value="2">2</option>
@@ -11,36 +12,15 @@
                 <option value="6">6</option>
             </select>
         </div>
-    </div>
-    <div class="form-group">
-        <div class="dropdown">
-            <label class="col-md-3 control-label" for="selectNumberRooms">Количество комнат</label>
-            <div class="col-md-2">
-                <button class="btn btn-default dropdown-toggle" type="button" id="selectNumberRooms" data-toggle="dropdown">
-                    1
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', 'Студия', 'number_rooms')">Студия</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '1', 'number_rooms')">1</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '2', 'number_rooms')">2</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '3', 'number_rooms')">3</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '4', 'number_rooms')">4</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '5', 'number_rooms')">5</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('selectNumberRooms', '6', 'number_rooms')">6</a></li>
-                </ul>
+        <div class="col-md-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="1" name="isolated">
+                    изолированная
+                </label>
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <div class="checkbox">
-            <label style="margin: 10px 0 0 0">
-                <input type="checkbox" value="1" name="isolated">
-                изолированная
-            </label>
-        </div>
-    </div>
-    {{--<input type="text" id="number_rooms" value="1">--}}
     <div class="form-group">
         <label for="number_beds" class="col-md-3 control-label">Количество спальных мест</label>
         <div class="col-md-2">
@@ -113,7 +93,7 @@
         <div class="col-md-offset-3">
             <div class="radio">
                 <label>
-                    <input type="radio" name="balcony" id="balcony1" value="1" checked>
+                    <input type="radio" name="balcony" id="balcony1" value="1">
                     Балкон
                 </label>
             </div>
@@ -135,19 +115,19 @@
         <div class="col-md-offset-3">
             <div class="radio">
                 <label>
-                    <input type="radio" name="furniture" id="furniture1" value="1" checked>
+                    <input type="radio" name="furniture" id="furniture1" checked>
                     Мебель есть
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="furniture" id="furniture2" value="2">
+                    <input type="radio" name="furniture" id="furniture2">
                     Частично
                 </label>
             </div>
             <div class="radio">
                 <label>
-                    <input type="radio" name="furniture" id="furniture3" value="3">
+                    <input type="radio" name="furniture" id="furniture3">
                     Отсутствует
                 </label>
             </div>
@@ -177,23 +157,16 @@
     {{--</div>--}}
     <hr class="col-md-12">
     <div class="form-group">
-        <div class="dropdown">
-            <label class="col-md-3 control-label" for="aSelectElevator">Лифт</label>
-            <div class="col-md-2">
-                <button class="btn btn-default dropdown-toggle" type="button" id="aSelectElevator" data-toggle="dropdown">
-                    Пассажирский
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Пассажирский и грузовой', 'aOutputElevator')">Пассажирский и грузовой</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Пассажирский', 'aOutputElevator')">Пассажирский</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Грузовой', 'aOutputElevator')">Грузовой</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('aSelectElevator', 'Отсутствует', 'aOutputElevator')">Отсутствует</a></li>
-                </ul>
-            </div>
+        <label class="col-md-3 control-label" for="elevator">Лифт</label>
+        <div class="col-md-3">
+            <select class="form-control" name="elevator">
+                <option value="Пассажирский и грузовой">Пассажирский и грузовой</option>
+                <option value="Пассажирский" selected>Пассажирский</option>
+                <option value="Грузовой">Грузовой</option>
+                <option value="Отсутствует">Отсутствует</option>
+            </select>
         </div>
     </div>
-    <input type="hidden" id="aOutputElevator" value="Пассажирский" name="elevator">
     <hr class="col-md-12">
     <div class="form-group">
         <label class="col-md-3 control-label">Можно с детьми</label>

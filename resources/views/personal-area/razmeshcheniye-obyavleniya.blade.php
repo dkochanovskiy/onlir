@@ -48,86 +48,79 @@
                     <form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form">
                         <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                         <div class="form-group">
-                            <div class="dropdown">
-                                <label class="col-md-3 control-label" for="propertyTypeMenu">Тип недвижимости </label>
-                                <div class="col-md-9">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="propertyTypeMenu" data-toggle="dropdown">
-                                        Квартира
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li role="presentation" class="dropdown-header">Жилая</li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                            <label class="col-md-3 control-label" for="property_type">Тип недвижимости</label>
+                            <div class="col-md-3">
+                                <select class="form-control" name="property_type">
+                                    <option disabled>Жилая</option>
+                                    <option value="Дом">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Дом','house','room','apartment','cottage','ready-business','office',
                                             'trade-area','warehouse-spacepace','free-destination-room')">
-                                                Дом
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Дом
+                                        </a>
+                                    </option>
+                                    <option value="Комната">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Комната','room','house','apartment','cottage','ready-business','office',
                                             'trade-area','warehouse-spacepace','free-destination-room')">
-                                                Комната
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Комната
+                                        </a>
+                                    </option>
+                                    <option value="Квартира" selected>
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Квартира','apartment','room','house','cottage','ready-business','office',
                                             'trade-area','warehouse-spacepace','free-destination-room')">
-                                                Квартира
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Квартира
+                                        </a>
+                                    </option>
+                                    <option value="Коттедж">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Коттедж','cottage','room','house','apartment','ready-business','office',
                                             'trade-area','warehouse-spacepace','free-destination-room')">
-                                                Коттедж
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="divider"></li>
-                                        <li role="presentation" class="dropdown-header">Коммерческая</li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Коттедж
+                                        </a>
+                                    </option>
+                                    <option disabled>──────────</option>
+                                    <option disabled>Коммерческая</option>
+                                    <option value="Готовый бизнес">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Готовый бизнес','ready-business','room','house','apartment','cottage',
                                             'office','trade-area','warehouse-spacepace','free-destination-room')">
-                                                Готовый бизнес
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Готовый бизнес
+                                        </a>
+                                    </option>
+                                    <option value="Офис">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Офис','office','room','house','apartment','cottage','ready-business',
                                             'trade-area','warehouse-spacepace','free-destination-room')">
-                                                Офис
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Офис
+                                        </a>
+                                    </option>
+                                    <option value="Торговая площадь">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Торговая площадь','trade-area','room','house','apartment','cottage',
                                             'ready-business','office','warehouse-spacepace','free-destination-room')">
-                                                Торговая площадь
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Торговая площадь
+                                        </a>
+                                    </option>
+                                    <option value="Складское помещение">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Складское помещение','warehouse-spacepace','room','house','apartment',
                                             'cottage','ready-business','office','trade-area','free-destination-room')">
-                                                Складское помещение
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
+                                            Складское помещение
+                                        </a>
+                                    </option>
+                                    <option value="Помещение свободного назначения">
+                                        <a role="menuitem" tabindex="-1" href="javascript:DropDownListPropertyType
                                             ('Помещение свободного назначения','free-destination-room','room','house',
                                             'apartment','cottage','ready-business','office','trade-area',
                                             'warehouse-spacepace')">
-                                                Помещение свободного назначения
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                            Помещение свободного назначения
+                                        </a>
+                                    </option>
+                                </select>
                             </div>
                         </div>
-                        <input type="text" name="property_type" id="property_type" value="{{old('property_type')}}">
                         <hr class="col-md-12">
                         <div class="header-in-the-form">
                             Об объекте
@@ -223,7 +216,7 @@
                         </div>
                         <input type="text" id="way_move_metro" name="way_move_metro" value="{{old('way_move_metro')}}">
                         <hr class="col-md-12">
-                        {{--@include('include.property-type.house')--}}
+                        @include('include.property-type.house')
                         {{--@include('include.property-type.room')--}}
                         @include('include.property-type.apartment')
                         {{--@include('include.property-type.cottage')--}}
