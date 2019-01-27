@@ -192,18 +192,15 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="dropdown">
-                                <label class="col-md-3 control-label" for="to_metro">До метро</label>
-                                <div class="col-md-2">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="toMetro" data-toggle="dropdown">
-                                        Пешком
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Пешком', 'way_move_metro')">Пешком</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:DropDownList('toMetro', 'Транспортом', 'way_move_metro')">Транспортом</a></li>
-                                    </ul>
-                                </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="way_move_metro">До метро</label>
+                            <div class="col-md-2">
+                                <select class="form-control" name="way_move_metro" id="way_move_metro">
+                                    <option value="Пешком" selected>Пешком</option>
+                                    <option value="Транспортом" >Транспортом</option>
+                                </select>
                             </div>
                             <div class="col-md-2">
                                 <input type="text" class="form-control" id="travel_time_metro" value="{{old('travel_time_metro')}}">
@@ -214,7 +211,6 @@
                                 </div>
                             </div>
                         </div>
-                        <input type="text" id="way_move_metro" name="way_move_metro" value="{{old('way_move_metro')}}">
                         <hr class="col-md-12">
                         @include('include.property-type.house')
                         {{--@include('include.property-type.room')--}}
