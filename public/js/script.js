@@ -84,8 +84,8 @@ $("#address").keyup(function(){
     $(".to-metro").css('display', 'block');
 });
 function DropDownListPropertyType(property_type, show, hide1, hide2, hide3, hide4, hide5, hide6, hide7, hide8, hide9){
-    // $("#propertyTypeMenu").html(property_type + ' <span class="caret"></span>');
-    // $("#property_type").val(property_type);
+    $("#propertyTypeMenu").html(property_type + ' <span class="caret"></span>');
+    $("#property_type").val(property_type);
 
     $("#" + hide1).css('display', 'none');
     $("#" + hide2).css('display', 'none');
