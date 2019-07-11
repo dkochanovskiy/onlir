@@ -44,8 +44,8 @@
                     </div>
                 @endif
                 <div class="row">
-                    {!! Form::open(array('route' => 'razmeshcheniye-obyavleniya', 'method' => 'post', 'class' => 'form-horizontal', 'files' => true, 'role' => 'form')) !!}
-                    {{--<form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form">--}}
+                    {{--{!! Form::open(array('route' => 'razmeshcheniye-obyavleniya', 'method' => 'post', 'class' => 'form-horizontal', 'files' => true, 'role' => 'form')) !!}--}}
+                    <form method="post" action="{{route('razmeshcheniye-obyavleniya')}}" class="form-horizontal" role="form" enctype="multipart/form-data">
                         <input name="_token" type="hidden" value="{{ csrf_token() }}" />
                         <div class="form-group">
                             <div class="dropdown">
@@ -298,11 +298,20 @@
                         </div>
                         <hr>
                         <div class="form-group">
-                            {!! Form::label('images', 'Изображение:', ['class' => 'col-xs-2 control-label']) !!}
-                            <div class="col-md-8">
-                                {!! Form::file('images', ['value' => old('images'), 'class' => 'filestyle btn btn-primary', 'data-buttonText' => 'Выберите изображения', 'data-buttonName' => 'btn-primary', 'data-placeholder' => 'Файла нет'])!!}
-                            </div>
+                            <input type="file" name="image">
+                            @isset($path)
+                            <img src="{{ asset('/storage/' . $path) }}" class="img-fluid" alt="">
+                            @endisset
                         </div>
+                        <button type="submit" class="btn btn-default">
+                            Загрузка
+                        </button>
+                        {{--<div class="form-group">--}}
+                            {{--{!! Form::label('images', 'Изображение:', ['class' => 'col-xs-2 control-label']) !!}--}}
+                            {{--<div class="col-md-8">--}}
+                                {{--{!! Form::file('images', ['value' => old('images'), 'class' => 'filestyle btn btn-primary', 'data-buttonText' => 'Выберите изображения', 'data-buttonName' => 'btn-primary', 'data-placeholder' => 'Файла нет'])!!}--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                         <hr class="col-md-12">
                         <div class="row">
                             <label class="col-md-3 control-label">Способы размещения</label>
@@ -391,8 +400,8 @@
                                 <button type="submit" class="btn btn-success">Подать объявление</button>
                             </div>
                         </div>
-                    {!! Form::close() !!}
-                    {{--</form>--}}
+{{--                    {!! Form::close() !!}--}}
+                    </form>
                 </div>
             </div>
         </div><!--row-->
