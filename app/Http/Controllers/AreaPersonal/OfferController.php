@@ -11,7 +11,12 @@ class OfferController extends Controller
 {
     public function index(Request $request)
     {
-        $path = $request->file('image')->store('uploads', 'public');
+        $path = null;
+        if ($request->file('image') == null) {
+            $path = "";
+        } else {
+            $path = $request->file('image')->store('uploads', 'public');
+        }
         if($request->isMethod('post')){
             $input = $request->except('_token');
             $rules = [
@@ -57,6 +62,6 @@ class OfferController extends Controller
             $offer->save();
         }
 
-        return view('personal-area.razmeshcheniye-obyavleniya', ['path' => $path]);
+        return view('personal-area.razmeshcheniye-obyavleniya', compact($path));
     }
 }

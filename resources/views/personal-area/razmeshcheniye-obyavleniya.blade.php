@@ -298,10 +298,9 @@
                         </div>
                         <hr>
                         <div class="form-group">
+                            <h1>Загрузка изображения</h1>
+                            {{--<image-upload></image-upload>--}}
                             <input type="file" name="image">
-                            @isset($path)
-                            <img src="{{ asset('/storage/' . $path) }}" class="img-fluid" alt="">
-                            @endisset
                         </div>
                         <button type="submit" class="btn btn-default">
                             Загрузка
