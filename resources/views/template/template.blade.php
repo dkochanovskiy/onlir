@@ -87,12 +87,12 @@
                                             </form>
                                         </li>
                                         <li>
-                                            <a href="{{ route('razmeshcheniye-obyavleniya') }}"
+                                            <a href="{{ route('ad-placement-apartment') }}"
                                                onclick="event.preventDefault();
-                                             document.getElementById('ad-delivery-form').submit();">
+                                             document.getElementById('ad-placement-apartment-form').submit();">
                                                 Подать объявления
                                             </a>
-                                            <form id="ad-delivery-form" action="{{ route('razmeshcheniye-obyavleniya') }}" method="POST" style="display: none;">
+                                            <form id="ad-placement-apartment-form" action="{{ route('ad-placement-apartment') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
                                         </li>

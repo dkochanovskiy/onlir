@@ -12,7 +12,7 @@
                 <div class="row margin-30">
                     <div class="col-md-12">
                         <div class="col-md-offset-5 col-md-1">
-                            <a href="{{ route('razmeshcheniye-obyavleniya') }}">
+                            <a href="{{ route('ad-placement-apartment') }}">
                                 <div class="btn btn-primary">Сдать</div>
                             </a>
                         </div>

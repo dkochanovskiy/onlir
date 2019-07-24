@@ -33,8 +33,8 @@ Route::group(['middleware'=>'auth'], function (){
     Route::get('/redaktirovaniye-dogovora', 'AreaPersonal\AmendContractController@index')->name('redaktirovaniye-dogovora');
     Route::post('/redaktirovaniye-dogovora', 'AreaPersonal\AmendContractController@index');
 
-    Route::get('/razmeshcheniye-obyavleniya', 'AreaPersonal\OfferController@index')->name('razmeshcheniye-obyavleniya');
-    Route::post('/razmeshcheniye-obyavleniya', 'AreaPersonal\OfferController@index');
+    Route::get('/ad-placement-apartment', 'AreaPersonal\ApartmentController@index')->name('ad-placement-apartment');
+    Route::post('/ad-placement-apartment', 'AreaPersonal\ApartmentController@index');
 
     Route::get('/soobshcheniya', 'AreaPersonal\MessagesController@index')->name('soobshcheniya');
     Route::post('/soobshcheniya', 'AreaPersonal\MessagesController@postMessages');

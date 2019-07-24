@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\AreaPersonal\PropertyTypes;
+namespace App\Http\Controllers\AreaPersonal;
 
+use App\Apartment;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class ApartmentController extends Controller
 {
     public function index(){
-        return view('personal-area.property_types.apartment');
+        return view('personal-area.ad-placement-apartment');
     }
 
     public function save(Request $request)
@@ -38,7 +39,7 @@ class ApartmentController extends Controller
             $validator = \Validator::make($request->except('_token'), $rules, $messages);
             if( $validator->fails() ) {
                 $request->flash();
-                return view('personal-area.razmeshcheniye-obyavleniya')
+                return view('personal-area.ad-placement-apartments')
                     ->withErrors($validator);
             }
 
@@ -50,27 +51,27 @@ class ApartmentController extends Controller
                 $file->move(public_path().'/assets/img', $input['images']);
             }
 
-            $offer = new Offer();
-            $offer->fill($input);
-//            $offer = new Offer;
+            $apartment = new Apartment();
+            $apartment->fill($input);
+//            $apartment = new Apartment;
 //
-//            $offer->country = $request->input('country');
-//            $offer->name_settlement = $request->input('name_settlement');
-//            $offer->street = $request->input('street');
-//            $offer->house_number = '';
-//            $offer->building_number = '';
-//            $offer->hull_number = '';
-//            $offer->apartment_number = '';
-//            $offer->office_number = '';
-//            $offer->cabinet_number = '';
-//            $offer->warehouse_number = '';
-//            $offer->nearest_metro_station = '';
-//            $offer->way_move_metro = '';
-//            $offer->travel_time_metro = '';
+//            $apartment->country = $request->input('country');
+//            $apartment->name_settlement = $request->input('name_settlement');
+//            $apartment->street = $request->input('street');
+//            $apartment->house_number = '';
+//            $apartment->building_number = '';
+//            $apartment->hull_number = '';
+//            $apartment->apartment_number = '';
+//            $apartment->office_number = '';
+//            $apartment->cabinet_number = '';
+//            $apartment->warehouse_number = '';
+//            $apartment->nearest_metro_station = '';
+//            $apartment->way_move_metro = '';
+//            $apartment->travel_time_metro = '';
 //
-            $offer->save();
+            $apartment->save();
 
-//            if($offer->save()){
+//            if($apartment->save()){
 //                return redirect('')->with('status', 'Объявление упешно размещено');
 //            }
         }
