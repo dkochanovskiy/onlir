@@ -8,8 +8,10 @@ use App\Http\Controllers\Controller;
 
 class ApartmentController extends Controller
 {
-    public function index(){
-        return view('personal-area.ad-placement-apartment');
+    public function index(Request $request){
+        $path = $request->file('image')->store('uploads', 'public');
+
+        return view('personal-area.ad-placement-apartment', ['path' => $path]);
     }
 
     public function save(Request $request)

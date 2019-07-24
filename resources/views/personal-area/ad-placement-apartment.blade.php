@@ -135,16 +135,6 @@
                             </div>
                         </div>
                         <hr class="col-md-12">
-                        @include('include.property-type.house')
-                        {{--@include('include.property-type.room')--}}
-                        @include('include.property-type.apartment')
-                        {{--@include('include.property-type.cottage')--}}
-                        {{--@include('include.property-type.ready-business')--}}
-                        {{--@include('include.property-type.office')--}}
-                        {{--@include('include.property-type.trade-area')--}}
-                        {{--@include('include.property-type.warehouse-space')--}}
-                        {{--@include('include.property-type.free-destination-room')--}}
-                        <hr>
                         <div class="form-group">
                             <label class="col-md-3 control-label">Ремонт</label>
                             <div class="col-md-9">
@@ -224,6 +214,9 @@
                         <button type="submit" class="btn btn-default">
                             Загрузка
                         </button>
+                        @isset ($path)
+                        $path
+                        @endisset
                         {{--<div class="form-group">--}}
                             {{--{!! Form::label('images', 'Изображение:', ['class' => 'col-xs-2 control-label']) !!}--}}
                             {{--<div class="col-md-8">--}}
