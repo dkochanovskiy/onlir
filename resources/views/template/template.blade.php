@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-filestyle.min.js') }}"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="{{ asset('js/app.js') }}" defer></script>
+    <script type="application/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+    <script type="application/javascript" src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
+    <script type="application/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <title>onlir - Аренда недвижимости в России</title>
 </head>
 <body>
+<div id="app">
     <header class="margin-10">
         <div class="container">
             <div class="row">
@@ -128,52 +130,13 @@
         </div><!--container-->
     </header>
     <section>
-
-                @section('content')
-                @show
-
+        @section('content')
+        @show
     </section>
     {{--<footer>--}}
         {{--<div class="container">--}}
             {{--<div class="row">--}}
-                {{--<div class="col-md-12">--}}
-                    {{--<div class="row center-block margin-30">--}}
-                        {{--<div class="col-md-offset-3 col-md-1">--}}
-                            {{--<a href="{{ route('welcome') }}">Главная</a>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-md-offset-1 col-md-1">--}}
-                            {{--<div class="row">--}}
-                                {{--<div class="col-md-12">--}}
-                                    {{--<a href="javascript:PopupLoginShow()">--}}
-                                        {{--Войти--}}
-                                    {{--</a>--}}
-                                {{--</div>--}}
-                                {{--<div class="col-md-12  margin-30">--}}
-                                    {{--<a href="javascript:PopupRegistrationShow()">--}}
-                                        {{--Регистрация--}}
-                                    {{--</a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-md-offset-1 col-md-2">--}}
-                            {{--<div class="row">--}}
-                                {{--<div class="col-md-12">--}}
-                                    {{--<a href="{{ route('razmeshcheniye-obyavleniya') }}">--}}
-                                        {{--Сдать квартиру--}}
-                                    {{--</a>--}}
-                                {{--</div>--}}
-                                {{--<div class="col-md-12  margin-30">--}}
-                                    {{--<a href="{{ route('razmeshcheniye-obyavleniya') }}">--}}
-                                        {{--Заказать договор--}}
-                                    {{--</a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-md-12">--}}
-                            {{--© 2018 onlir--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
+
             {{--</div><!--row-->--}}
         {{--</div><!--container-->--}}
     {{--</footer>--}}
@@ -182,9 +145,10 @@
     @include('include.popup.popup-registration')
     {{--/popups--}}
 
-    <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    <script type="application/javascript" src="{{ asset('js/script.js') }}"></script>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="application/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="application/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</div>
 </body>
 </html>

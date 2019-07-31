@@ -16,3 +16,5 @@
 14. Внутри контейнера переходим в папку с проектом командой cd ../onlir
 15. Накатываем миграции командой php artisan migrate
 16. Выполняем команду npm install
+17. Выполняем команду npm install cross-env@latest --save-dev
+18. Выполняем команду rm -rf node_modules rm package-lock.json yarn.lock npm cache clear --force npm install

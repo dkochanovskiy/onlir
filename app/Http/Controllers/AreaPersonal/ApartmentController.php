@@ -9,7 +9,11 @@ use App\Http\Controllers\Controller;
 class ApartmentController extends Controller
 {
     public function index(Request $request){
-        $path = $request->file('image')->store('uploads', 'public');
+        $path = null;
+
+        if($request->file('image')){
+            $path = $request->file('image')->store('uploads', 'public');
+        }
 
         return view('personal-area.ad-placement-apartment', ['path' => $path]);
     }

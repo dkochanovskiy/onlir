@@ -208,15 +208,8 @@
                         <hr>
                         <div class="form-group">
                             <h1>Загрузка изображения</h1>
-                            {{--<image-upload></image-upload>--}}
-                            <input type="file" name="image">
+                            <image-upload></image-upload>
                         </div>
-                        <button type="submit" class="btn btn-default">
-                            Загрузка
-                        </button>
-                        @isset ($path)
-                        $path
-                        @endisset
                         {{--<div class="form-group">--}}
                             {{--{!! Form::label('images', 'Изображение:', ['class' => 'col-xs-2 control-label']) !!}--}}
                             {{--<div class="col-md-8">--}}
