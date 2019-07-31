@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-    <script type="application/javascript" src="{{ asset('js/app.js') }}" defer></script>
+    {{--<script type="application/javascript" src="{{ asset('js/app.js') }}" defer></script>--}}
     <script type="application/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script type="application/javascript" src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
     <script type="application/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
