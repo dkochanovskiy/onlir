@@ -8,17 +8,7 @@ use App\Http\Controllers\Controller;
 
 class ApartmentController extends Controller
 {
-    public function index(Request $request){
-        $path = null;
-
-        if($request->file('image')){
-            $path = $request->file('image')->store('uploads', 'public');
-        }
-
-        return view('personal-area.ad-placement-apartment', ['path' => $path]);
-    }
-
-    public function save(Request $request)
+    public function index(Request $request)
     {
         if($request->isMethod('post')){
             $input = $request->except('_token');
@@ -36,7 +26,7 @@ class ApartmentController extends Controller
 //                'travel_time_metro' => 'integer',
             ];
             $messages = [
-                'required' => 'Поле :attribute обязателно к заполнению',
+                'required' => 'Поле :attribute обязательно к заполнению',
                 'max' => 'Поле :attribute превышает максимально допустимое значение',
                 'integer' => 'Значение в поле :attribute должно быть целым числом',
                 'string' => 'Значение в поле :attribute должно быть строкой',
@@ -45,16 +35,16 @@ class ApartmentController extends Controller
             $validator = \Validator::make($request->except('_token'), $rules, $messages);
             if( $validator->fails() ) {
                 $request->flash();
-                return view('personal-area.ad-placement-apartments')
+                return view('personal-area.ad-placement-apartment')
                     ->withErrors($validator);
             }
 
-            if($request->hasFile('images')){
-                $file = $request->file('images');
+            if($request->hasFile('img_1')){
+                $file = $request->file('img_1');
 
-                $input['images'] = $file->getClientOriginalName();
+                $input['img_1'] = $file->getClientOriginalName();
 
-                $file->move(public_path().'/assets/img', $input['images']);
+                $file->move(public_path().'/assets/img', $input['img_1']);
             }
 
             $apartment = new Apartment();
@@ -77,9 +67,10 @@ class ApartmentController extends Controller
 //
             $apartment->save();
 
-//            if($apartment->save()){
-//                return redirect('')->with('status', 'Объявление упешно размещено');
-//            }
+            if($apartment->save()){
+                return redirect('ad-placement-apartment')->with('status', 'Объявление упешно размещено');
+            }
         }
+        return view('personal-area.ad-placement-apartment');
     }
 }
